@@ -99,7 +99,7 @@ function UserLayout({
   ];
 
   const logo_place_holder = {
-    imageUrl: "/images/newlogo.png",
+    imageUrl: "/images/newlogo2.png",
     link: "/",
   };
 

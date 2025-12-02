@@ -14,7 +14,6 @@ const ForgotPasswordView = () => {
               src="/images/background/login.png"
               fill
               className="absolute opacity-[2.5] object-cover "
-
               alt=""
             />
           </div>
@@ -23,28 +22,32 @@ const ForgotPasswordView = () => {
           <div className="relative w-full max-w-[330px] h-[100px] mb-[150px] items-center gap-2 justify-center rounded-[10px]  flex flex-row  z-20 bg-gradient-to-b from-black/40 to-black/60">
             <div className="relative w-[82px] h-[82px]">
               <Image
-                src="/images/logobb.png"
+                src="/images/newlogo2.png"
                 alt="logo"
                 className="absolute"
                 layout="fill"
               />
             </div>
             <div className="flex flex-col relative">
-              <p className="font-Gordita-Bold text-[32px] text-[#5297FF]">
-                ONE
-                <span className="text-white">CASA</span>
+              <p className="font-Gordita-Bold text-[32px] text-[#2173A2]">
+                The
+                <span className="text-white">Improvement</span>
               </p>
               <p className="text-[12px]  mt-[-10px] text-center text-white">
-                One Roof Every Solution
+                Building Better. Every Day.
               </p>
             </div>
           </div>
           <p className="relative md:text-[32px] text-[24px] leading-[42px] text-center text-white font-Gordita-Bold">
-            Excellent Property are Sales Now
+            Quality Home Improvement Services You Can Trust
           </p>
+
           <p className="text-center">
-            Dream Casa includes listings for various types of properties such as
-            apartments, houses, villas, offices, and retail spaces.
+            The Improvement LLC offers reliable and professional home
+            improvement services, including construction, demolition, flooring,
+            plumbing, HVAC, roofing, painting, and exterior works. We deliver
+            high-quality craftsmanship to enhance, upgrade, and maintain your
+            residential or commercial property.
           </p>
         </div>
       </div>

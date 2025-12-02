@@ -53,8 +53,8 @@ const URLS = {
   builder_leads:`${base_url}builder_leads`,
   
   delete_account: `${base_url}delete-account`,
- wishlist: `${base_url}wishlist`,
-  cart: `${base_url}cart`,
+ 
+ 
   queries: `${base_url}queries`,
 
   s3bucket: `${base_url}s3bucket`,

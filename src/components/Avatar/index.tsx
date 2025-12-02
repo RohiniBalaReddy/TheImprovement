@@ -21,7 +21,7 @@ import { signOut, useSession } from "next-auth/react";
 import Button from "@/common/Button";
 
 import apiClient from "@/utils/apiClient";
-import { useWishlistStore } from "@/store/wishlist";
+
 interface AvatarProps {
   showAbove?: boolean;
 }
@@ -32,7 +32,7 @@ const Avatar: React.FC<AvatarProps> = ({ showAbove = true }) => {
   const session = useSession();
   const [user, setUser] = useState<any>();
 
-  const { syncWishlistWithBackend } = useWishlistStore();
+ 
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -43,7 +43,7 @@ const Avatar: React.FC<AvatarProps> = ({ showAbove = true }) => {
       const sessionUser = session.data?.user;
       setUser(sessionUser);
 
-      syncWishlistWithBackend(sessionUser.id);
+      
     }
   }, [session?.status]);
 
