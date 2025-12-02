@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useSession } from "next-auth/react";
 import Image from "next/image";
-import apiClient from "@/utils/apiClient";
-import { useCartStore } from "@/store/cart";
-import { useWishlistStore } from "@/store/wishlist";
+
+
 import { IoCartOutline, IoHeart, IoStar, IoEye } from "react-icons/io5";
 import {
   FiBox,
@@ -44,27 +43,7 @@ export default function UserDashBoardView() {
     return `${firstInitial}${lastInitial}`.toUpperCase();
   };
 
-  const { items } = useCartStore((state: any) => state);
-  const { items: wishListItems } = useWishlistStore((state) => state);
-
-  // Stats cards data
-  const stats = [
-    {
-      title: "Cart Items",
-      value: items.length,
-      icon: <IoCartOutline className="text-[#5297FF]" size={20} />,
-      color: "bg-[#5297ff]",
-      href: "/cart",
-    },
-    {
-      title: "Wishlist",
-      value: wishListItems.length,
-      icon: <IoHeart className="text-pink-500" size={20} />,
-      color: "bg-pink-500",
-      href: "/user/wishlist",
-    },
-  ];
-
+  
   return (
     <div className="min-h-screen bg-gray-50 p-4 md:p-6">
       <div className="mb-6">
@@ -137,27 +116,7 @@ export default function UserDashBoardView() {
           </div>
 
           {/* Stats Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {stats.map((stat, index) => (
-              <Link key={index} href={stat.href}>
-                <div className="bg-gray-50 rounded-lg md:p-4 p-2 hover:bg-blue-50 transition-colors duration-200 cursor-pointer border border-gray-100">
-                  <div className="flex items-center justify-between mb-2">
-                    <div
-                      className={`md:p-2 p-1.5 rounded-lg ${stat.color} bg-opacity-10`}
-                    >
-                      {stat.icon}
-                    </div>
-                    <span className="text-2xl font-Gordita-Bold text-gray-900">
-                      {stat.value}
-                    </span>
-                  </div>
-                  <p className="text-sm text-gray-500 font-Gordita-Medium">
-                    {stat.title}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </div>
+          
         </div>
       </div>
     </div>

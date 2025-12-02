@@ -13,8 +13,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import Drawer from "@/common/Drawer";
 import Avatar from "@/components/Avatar";
 import { IoCartOutline } from "react-icons/io5";
-import { useCartStore } from "@/store/cart";
-import { useWishlistStore } from "@/store/wishlist";
+
 import { CheckCircle2 } from "lucide-react";
 import { fetchHomePageCity } from "@/utils/locationDetails/datafetchingFunctions";
 
@@ -188,7 +187,7 @@ const NavDropDown = ({ item, subLink }: any) => {
                 className={clsx("transition-transform duration-200", {
                   "ml-1 text-white text-base cursor-pointer":
                     !item.isActive && !subLink,
-                  "text-[#3586FF]": item.isActive && !subLink,
+                  "text-[#2173A2]": item.isActive && !subLink,
                   "rotate-180": open,
                 })}
               />
@@ -303,7 +302,7 @@ const NavDropDown = ({ item, subLink }: any) => {
                                       className="font-Gordita-Medium md:text-[12px] text-[10px] flex items-center gap-1"
                                     >
                                       <CheckCircle2 className="w-4 h-4 text-[#5297FF] mt-0.5" />
-                                     Paint cost estimator
+                                      Paint cost estimator
                                     </Link>
                                   </h1>
                                   <h1>
@@ -412,11 +411,10 @@ const Navbar = ({ isVisibleItems }: ShowItems) => {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const [user, setUser] = useState<User | null>();
   const [token, setToken] = useState<string | null>();
-  const { items: wishListItems } = useWishlistStore((state) => state);
+
   const { openAuth } = useAuthModal();
 
   const session = useSession();
-  const { items } = useCartStore((state: any) => state);
 
   const toggleMobileSideBar = (flag: boolean) => {
     setMobileSidebarOpen(flag);
@@ -434,7 +432,7 @@ const Navbar = ({ isVisibleItems }: ShowItems) => {
   }, [session?.status]);
 
   const logo_place_holder = {
-    imageUrl: "/images/newlogo.png",
+    imageUrl: "/images/newlogo2.png",
     link: "/",
   };
 
@@ -550,6 +548,9 @@ const Navbar = ({ isVisibleItems }: ShowItems) => {
       )}
     </div>
   );
+  // components/ImprovementIcon.tsx
+ 
+
 
   return (
     <>
@@ -568,7 +569,7 @@ const Navbar = ({ isVisibleItems }: ShowItems) => {
                   fill
                 />
               </div>
-              <div className="xl:ml-2 flex flex-col items-center gap-1 justify-center">
+              <div className="flex flex-col items-center gap-1 justify-center">
                 <p className="font-Gordita-Bold xl:text-[20px] lg:text-[20px] text-[#5297FF]">
                   THE
                   <span className="text-[#FFFFFF]"> IMPROVEMENT</span>
@@ -594,7 +595,7 @@ const Navbar = ({ isVisibleItems }: ShowItems) => {
                       defaultMethod: "phone",
                     })
                   }
-                  className="py-[4px] px-[18px] md:text-[14px] bg-[#5297FF] font-Gordita-Medium text-white rounded"
+                  className="py-[4px] px-[18px] md:text-[14px] bg-[#2173A2] font-Gordita-Medium text-white rounded"
                 >
                   Login
                 </Button>
@@ -622,7 +623,7 @@ const Navbar = ({ isVisibleItems }: ShowItems) => {
               />
             </div>
             <div className="leading-tight">
-              <p className="font-Gordita-Bold text-[16px] text-[#5297FF]">
+              <p className="font-Gordita-Bold text-[16px] text-[#2173A2]">
                 THE<span className="text-white">IMPROVEMENT</span>
               </p>
               <p className="text-[9px] text-white/80 -mt-1">
@@ -845,7 +846,7 @@ const MobileMenu = ({
         {!isAuthed ? (
           <Button
             onClick={handleLoginBtnClick}
-            className="w-full max-w-[150px] rounded-lg bg-[#5297FF] px-4 py-2 text-[14px] font-Gordita-Medium text-white"
+            className="w-full max-w-[150px] rounded-lg bg-[#2173A2] px-4 py-2 text-[14px] font-Gordita-Medium text-white"
           >
             Login
           </Button>
