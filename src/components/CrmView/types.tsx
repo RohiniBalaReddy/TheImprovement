@@ -2,10 +2,6 @@ import {
   FaHome,
   FaPaintRoller,
   FaTools,
-  FaTruck,
-  FaChair,
-  FaSun,
-  FaUserTie,
   FaHouseUser,
   FaPlus,
   FaPhone,
@@ -19,91 +15,93 @@ import {
   FaListUl,
   FaInfoCircle,
   FaChartLine,
-  FaBan ,FaPowerOff,FaExclamationTriangle ,FaBellSlash
+  FaBan,
+  FaPowerOff,
+  FaExclamationTriangle,
+  FaBellSlash,
+  FaHammer,
+  FaBuilding,
+  FaWind,
+  FaWater,
 } from "react-icons/fa";
-import { GiPaintBrush, GiVibratingShield } from "react-icons/gi";
-import {FilterState} from "@/common/SearchFilter"
+import { FilterState } from "@/common/SearchFilter";
+
+import { GiBrickWall, GiHouseKeys } from "react-icons/gi";
+
 import {
-  MdEngineering,
-  MdPlumbing,
   MdHelpOutline,
   MdApartment,
   MdHolidayVillage,
+  MdRoofing,
 } from "react-icons/md";
-import { TbBuildingSkyscraper } from "react-icons/tb";
-import { HiOutlineHomeModern } from "react-icons/hi2";
-import { RiGlobalLine } from "react-icons/ri";
 
 // ============================================================================
 // ENUMS (matching backend)
 // ============================================================================
 
 export enum ServiceCategory {
-  RealEstate = 'RealEstate',
-  Interiors = 'Interiors',
-  CustomBuilder = 'CustomBuilder',
-  Solar = 'Solar',
-  PackersAndMovers = 'PackersAndMovers',
-  Painting = 'Painting',
-  Plumber = 'Plumber',
-  EarthMovers = 'EarthMovers',
-  HomeDecor = 'HomeDecor',
-  Furniture = 'Furniture',
-  CivilEngineeringDesign = 'CivilEngineeringDesign',
-  VaastuConsultation = 'VaastuConsultation',
+  Construction = "Construction",
+  Demolition = "Demolition",
+  Flooring = "Flooring",
+
+  Plumbing = "Plumbing",
+  HVAC = "HVAC",
+  Roofing = "Roofing",
+  Painting = "Painting",
+  Exteriors = "Exteriors",
 }
 
 export enum LeadStatus {
-  YES = 'Yes',
-  NO = 'No',
-  New = 'New',
-  Contacted = 'Contacted',
-  Follow_up = 'Follow-up',
-  Interested = 'Interested',
-  NotInterested = 'Not Interested',
-  Closed = 'Closed',
-  SiteVisit = 'Site Visit',
-  Visit_Scheduled = 'Visit Scheduled',
-  Visit_Done = 'Visit Done',
-  Not_Lifted = 'Not Lifted',
-  Switched_Off = 'Switched Off',
-  Wrong_Number = 'Wrong Number',
-  DND = 'DND',
-  SiteVisited = 'Site visited',
-  completed = 'completed',
-  Notcompleted = 'Not completed',
-  NotAnswered = 'Not Answered',
-  Rejected = 'Rejected',
+  YES = "Yes",
+  NO = "No",
+  New = "New",
+  Contacted = "Contacted",
+  Follow_up = "Follow-up",
+  Interested = "Interested",
+  NotInterested = "Not Interested",
+  Closed = "Closed",
+  SiteVisit = "Site Visit",
+  Visit_Scheduled = "Visit Scheduled",
+  Visit_Done = "Visit Done",
+  Not_Lifted = "Not Lifted",
+  Switched_Off = "Switched Off",
+  Wrong_Number = "Wrong Number",
+  DND = "DND",
+  SiteVisited = "Site visited",
+  completed = "completed",
+  Notcompleted = "Not completed",
+  NotAnswered = "Not Answered",
+  Rejected = "Rejected",
 }
 
 export enum PropertyTypeEnum {
-  flat = 'Flat',
-  villa = 'Villa',
-  independent_house = 'Independent House',
-  independent_floor = 'Independent Floor',
+  flat = "Flat",
+  villa = "Villa",
+  independent_house = "Independent House",
+  independent_floor = "Independent Floor",
 }
 
 export enum PlatForm {
-  MAGIC_BRICKS = 'MAGIC BRICKS',
-  NINETY_NINE_ACRES = '99 ACERS',
-  HOUSING = 'HOUSING.Com',
-  TOLET = 'TOLET',
-  WALKIN = 'Walkin',
-  OWNER_REFERENCE = 'OWNER REFERENCE',
-  HIHIKER = 'Hihiker',
-  SULEKHA = 'SULEKHA',
-  BUILDER_LEAD = 'Builder Lead',
-  COMMONFLOOR = 'commonfloor',
-  PROPTEINSION = 'propteinsion',
-  MAKSAAN = 'maksaen',
-  COMMENY = 'commeny',
-  REAL_ESTATE_INDIA = 'real estate India',
-  BNI = 'BNI',
-  SQUAREYARD = 'squareyard',
-  NO_BROKER = 'no broker',
-  WEB_SITE = 'Website',
-  FACEBOOK = 'Facebook',
-  INSTAGRAM = 'Instagram',
+  MAGIC_BRICKS = "MAGIC BRICKS",
+  NINETY_NINE_ACRES = "99 ACERS",
+  HOUSING = "HOUSING.Com",
+  TOLET = "TOLET",
+  WALKIN = "Walkin",
+  OWNER_REFERENCE = "OWNER REFERENCE",
+  HIHIKER = "Hihiker",
+  SULEKHA = "SULEKHA",
+  BUILDER_LEAD = "Builder Lead",
+  COMMONFLOOR = "commonfloor",
+  PROPTEINSION = "propteinsion",
+  MAKSAAN = "maksaen",
+  COMMENY = "commeny",
+  REAL_ESTATE_INDIA = "real estate India",
+  BNI = "BNI",
+  SQUAREYARD = "squareyard",
+  NO_BROKER = "no broker",
+  WEB_SITE = "Website",
+  FACEBOOK = "Facebook",
+  INSTAGRAM = "Instagram",
 }
 
 export enum PaintingTypeEnum {
@@ -119,10 +117,10 @@ export enum PaintingPackageEnum {
 }
 
 export enum Categories {
-  Commercial = 'Commercial',
-  Residential = 'Residential',
-  Industrial = 'Industrial',
-  Agriculture = 'Agriculture',
+  Commercial = "Commercial",
+  Residential = "Residential",
+  Industrial = "Industrial",
+  Agriculture = "Agriculture",
 }
 
 // ============================================================================
@@ -201,13 +199,13 @@ export interface SavedView {
   activeStatus: string;
 }
 
-export type DateFilterType = 
-  | "all" 
-  | "today" 
-  | "yesterday" 
-  | "last7Days" 
-  | "last14Days" 
-  | "lastMonth" 
+export type DateFilterType =
+  | "all"
+  | "today"
+  | "yesterday"
+  | "last7Days"
+  | "last14Days"
+  | "lastMonth"
   | "custom";
 
 // ============================================================================
@@ -215,18 +213,14 @@ export type DateFilterType =
 // ============================================================================
 
 export const roleIcons: Record<string, JSX.Element> = {
-  RealEstate: <FaHome size={12} />,
-  Interiors: <FaChair size={12} />,
-  CustomBuilder: <TbBuildingSkyscraper size={12} />,
-  Solar: <FaSun size={12} />,
-  PackersAndMovers: <FaTruck size={12} />,
-  Painting: <GiPaintBrush size={12} />,
-  Plumber: <MdPlumbing size={12} />,
-  EarthMovers: <FaTools size={12} />,
-  HomeDecor: <FaChair size={12} />,
-  Furniture: <FaChair size={12} />,
-  CivilEngineeringDesign: <MdEngineering size={12} />,
-  VaastuConsultation: <GiVibratingShield size={12} />,
+  Construction: <FaHammer size={12} />,
+  Demolition: <FaTools size={12} />,
+  Flooring: <GiBrickWall size={12} />,
+  Plumbing: <FaWater size={12} />,
+  HVAC: <FaWind size={12} />,
+  Roofing: <MdRoofing size={12} />,
+  Painting: <FaPaintRoller size={12} />,
+  Exteriors: <GiHouseKeys size={12} />,
   unknown: <MdHelpOutline size={12} />,
 };
 
@@ -238,18 +232,14 @@ export const propertyTypeIcons: Record<string, JSX.Element> = {
 };
 
 export const roleColors: Record<string, string> = {
-  RealEstate: "text-emerald-600 bg-emerald-100",
-  Interiors: "text-fuchsia-600 bg-fuchsia-100",
-  CustomBuilder: "text-sky-600 bg-sky-100",
-  Solar: "text-amber-500 bg-amber-100",
-  PackersAndMovers: "text-orange-800 bg-orange-100",
-  Painting: "text-indigo-500 bg-indigo-100",
-  Plumber: "text-cyan-600 bg-cyan-100",
-  EarthMovers: "text-stone-600 bg-stone-100",
-  HomeDecor: "text-rose-500 bg-rose-100",
-  Furniture: "text-violet-500 bg-violet-100",
-  CivilEngineeringDesign: "text-lime-600 bg-lime-100",
-  VaastuConsultation: "text-teal-600 bg-teal-100",
+  Construction: "text-amber-700 bg-amber-100",
+  Demolition: "text-red-700 bg-red-100",
+  Flooring: "text-yellow-700 bg-yellow-100",
+  Plumbing: "text-blue-700 bg-blue-100",
+  HVAC: "text-cyan-700 bg-cyan-100",
+  Roofing: "text-slate-700 bg-slate-100",
+  Painting: "text-purple-700 bg-purple-100",
+  Exteriors: "text-green-700 bg-green-100",
   unknown: "text-gray-700 bg-gray-100",
 };
 
@@ -270,15 +260,19 @@ export const statusColors: Record<string, string> = {
 // DATA ARRAYS
 // ============================================================================
 
-export const categoryData = Object.values(ServiceCategory).map((role, index) => ({
-  id: index + 1,
-  role,
-}));
+export const categoryData = Object.values(ServiceCategory).map(
+  (role, index) => ({
+    id: index + 1,
+    role,
+  })
+);
 
-export const propertytypedata = Object.values(PropertyTypeEnum).map((propertytype, index) => ({
-  id: index + 1,
-  propertytype,
-}));
+export const propertytypedata = Object.values(PropertyTypeEnum).map(
+  (propertytype, index) => ({
+    id: index + 1,
+    propertytype,
+  })
+);
 
 export const platformData = Object.values(PlatForm).map((platform, index) => ({
   id: index + 1,
@@ -318,27 +312,81 @@ export const filtersdata: Array<{ id: DateFilterType; label: string }> = [
 export const status_Tabs = [
   { label: "All", value: "all", icon: <FaListUl />, count: 0 },
   { label: "New", value: LeadStatus.New, icon: <FaPlus />, count: 0 },
-  { label: "Contacted", value: LeadStatus.Contacted, icon: <FaPhone />, count: 0 },
-  { label: "Follow-up", value: LeadStatus.Follow_up, icon: <FaRegCalendarCheck />, count: 0 },
-  { label: "Interested", value: LeadStatus.Interested, icon: <FaThumbsUp />, count: 0 },
-  { label: "Not Interested", value: LeadStatus.NotInterested, icon: <FaThumbsDown />, count: 0 },
-  { label: "Completed", value: LeadStatus.completed, icon: <FaCheckCircle />, count: 0 },
-  { label: "Site Visit", value: LeadStatus.SiteVisit, icon: <FaMapMarkerAlt />, count: 0 },
-  { label: "Visit Scheduled", value: LeadStatus.Visit_Scheduled, icon: <FaRegCalendarAlt />, count: 0 },
-  { label: "Visit Done", value: LeadStatus.Visit_Done, icon: <FaClipboardCheck />, count: 0 },
-   { label: "Not Answered", value: "Not Answered", icon: <FaBan />,count: 0  },
-    { label: "Switched Off", value: "Switched Off", icon: <FaPowerOff />,count: 0  },
-    {
-      label: "Wrong Number",
-      value: "Wrong Number",
-      icon: <FaExclamationTriangle />,count: 0 
-    },
-    { label: "DND", value: "DND", icon: <FaBellSlash /> ,count: 0 },
+  {
+    label: "Contacted",
+    value: LeadStatus.Contacted,
+    icon: <FaPhone />,
+    count: 0,
+  },
+  {
+    label: "Follow-up",
+    value: LeadStatus.Follow_up,
+    icon: <FaRegCalendarCheck />,
+    count: 0,
+  },
+  {
+    label: "Interested",
+    value: LeadStatus.Interested,
+    icon: <FaThumbsUp />,
+    count: 0,
+  },
+  {
+    label: "Not Interested",
+    value: LeadStatus.NotInterested,
+    icon: <FaThumbsDown />,
+    count: 0,
+  },
+  {
+    label: "Completed",
+    value: LeadStatus.completed,
+    icon: <FaCheckCircle />,
+    count: 0,
+  },
+  {
+    label: "Site Visit",
+    value: LeadStatus.SiteVisit,
+    icon: <FaMapMarkerAlt />,
+    count: 0,
+  },
+  {
+    label: "Visit Scheduled",
+    value: LeadStatus.Visit_Scheduled,
+    icon: <FaRegCalendarAlt />,
+    count: 0,
+  },
+  {
+    label: "Visit Done",
+    value: LeadStatus.Visit_Done,
+    icon: <FaClipboardCheck />,
+    count: 0,
+  },
+  { label: "Not Answered", value: "Not Answered", icon: <FaBan />, count: 0 },
+  {
+    label: "Switched Off",
+    value: "Switched Off",
+    icon: <FaPowerOff />,
+    count: 0,
+  },
+  {
+    label: "Wrong Number",
+    value: "Wrong Number",
+    icon: <FaExclamationTriangle />,
+    count: 0,
+  },
+  { label: "DND", value: "DND", icon: <FaBellSlash />, count: 0 },
 ];
 
 export const tabLabels = [
-  { key: "OverView", label: "Overview", icon: <FaInfoCircle className="text-[12px]" /> },
-  { key: "DashBoard", label: "Dashboard", icon: <FaChartLine className="text-[12px]" /> },
+  {
+    key: "OverView",
+    label: "Overview",
+    icon: <FaInfoCircle className="text-[12px]" />,
+  },
+  {
+    key: "DashBoard",
+    label: "Dashboard",
+    icon: <FaChartLine className="text-[12px]" />,
+  },
 ];
 
 // ============================================================================
@@ -377,7 +425,10 @@ export const GetDateshow = (status: string): keyof Lead => {
   }
 };
 
-export const statusFieldConfig: Record<string, { name: string; label: string }> = {
+export const statusFieldConfig: Record<
+  string,
+  { name: string; label: string }
+> = {
   "Follow-up": {
     name: "followUpDate",
     label: "Follow-up Date",
@@ -401,7 +452,9 @@ export const formatDate = (dateString: string | null | undefined): string => {
   });
 };
 
-export const formatDateTime = (dateString: string | null | undefined): string => {
+export const formatDateTime = (
+  dateString: string | null | undefined
+): string => {
   if (!dateString) return "N/A";
   return new Date(dateString).toLocaleString("en-IN", {
     day: "2-digit",
@@ -416,12 +469,15 @@ export const formatDateTime = (dateString: string | null | undefined): string =>
 // NOTIFICATION HELPERS
 // ============================================================================
 
-export const getUpcomingFollowUps = (leads: Lead[], days: number = 7): Lead[] => {
+export const getUpcomingFollowUps = (
+  leads: Lead[],
+  days: number = 7
+): Lead[] => {
   const now = new Date();
   const futureDate = new Date();
   futureDate.setDate(now.getDate() + days);
 
-  return leads.filter(lead => {
+  return leads.filter((lead) => {
     if (!lead.followUpDate) return false;
     const followUp = new Date(lead.followUpDate);
     return followUp >= now && followUp <= futureDate;
@@ -430,9 +486,12 @@ export const getUpcomingFollowUps = (leads: Lead[], days: number = 7): Lead[] =>
 
 export const getOverdueFollowUps = (leads: Lead[]): Lead[] => {
   const now = new Date();
-  return leads.filter(lead => {
+  return leads.filter((lead) => {
     if (!lead.followUpDate) return false;
-    return new Date(lead.followUpDate) < now && lead.leadstatus === LeadStatus.Follow_up;
+    return (
+      new Date(lead.followUpDate) < now &&
+      lead.leadstatus === LeadStatus.Follow_up
+    );
   });
 };
 
@@ -442,7 +501,7 @@ export const getTodayFollowUps = (leads: Lead[]): Lead[] => {
   const tomorrow = new Date(today);
   tomorrow.setDate(tomorrow.getDate() + 1);
 
-  return leads.filter(lead => {
+  return leads.filter((lead) => {
     if (!lead.followUpDate) return false;
     const followUp = new Date(lead.followUpDate);
     return followUp >= today && followUp < tomorrow;

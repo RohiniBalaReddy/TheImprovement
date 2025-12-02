@@ -3,8 +3,9 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { FiHome, FiUser } from "react-icons/fi";
-import { MdApartment } from "react-icons/md";
+import { MdApartment,MdReviews } from "react-icons/md";
 import { IoCartOutline } from "react-icons/io5";
+import { LuUsers } from "react-icons/lu";
 
 const BottomNav = () => {
     const [isClient, setIsClient] = useState(false);
@@ -33,17 +34,17 @@ const BottomNav = () => {
                 </div>
             </Link>
 
-            <Link href="/properties">
+            <Link href="/user/testimonials">
                 <div className="flex flex-col items-center footer-text">
-                    <MdApartment
-                        className={`text-xl ${router.pathname.startsWith("/properties") ? activeClass : inactiveClass
+                    <MdReviews
+                        className={`text-xl ${router.pathname.startsWith("/testimonials") ? activeClass : inactiveClass
                             }`}
                     />
                     <span
-                        className={`text-[10px] ${router.pathname.startsWith("/properties") ? activeClass : inactiveClass
+                        className={`text-[10px] ${router.pathname.startsWith("/testimonials") ? activeClass : inactiveClass
                             }`}
                     >
-                        Properties
+                       Testimonials
                     </span>
                 </div>
             </Link>
@@ -79,17 +80,17 @@ const BottomNav = () => {
                     </span>
                 </div>
             </Link>
-            <Link href="/cart">
+            <Link href="/user/crm">
                 <div className="flex flex-col items-center footer-text">
-                    <IoCartOutline
-                        className={`text-xl ${router.pathname.startsWith("/cart") ? activeClass : inactiveClass
+                    <LuUsers
+                        className={`text-xl ${router.pathname.startsWith("/crm") ? activeClass : inactiveClass
                             }`}
                     />
                     <span
-                        className={`text-[10px] ${router.pathname.startsWith("/cart") ? activeClass : inactiveClass
+                        className={`text-[10px] ${router.pathname.startsWith("/crm") ? activeClass : inactiveClass
                             }`}
                     >
-                        Cart
+                       CRM
                     </span>
                 </div>
             </Link>

@@ -1,4 +1,4 @@
-import Painting from "@/pages/painting";
+import Painting from "@/pages/services/painting";
 import React, { useEffect, useState } from "react";
 import BreadCrumb from "../../BreadCrumb";
 import HeroSection, { IServiceHeroSectionInterfaceProps } from "./HeroSection";
@@ -19,7 +19,7 @@ import OurPartners from "../Components/OurPartners";
 import TestimonialsSection, {
   ITestimonialsSectionProps,
 } from "../Components/TestimonialsSection";
-import GoogleAdSense from "@/components/GoogleAdSense";
+
 import FAQSComp from "../Components/FAQSComp";
 import apiClient from "@/utils/apiClient";
 import BlogCard from "@/components/BlogCard";
@@ -35,10 +35,12 @@ const PaintingHeroSectionData: IServiceHeroSectionInterfaceProps = {
 
   bookingCtaUrl: { label: "Discover More", url: "" },
   locationcta: [
-    { label: "Hyderabad", url: "" },
-    { label: "Chennai", url: "" },
-    { label: "Bengaluru ", url: "" },
-  ],
+  { label: "New York", url: "" },
+  { label: "Los Angeles", url: "" },
+  { label: "Chicago", url: "" },
+  { label: "Houston", url: "" },
+],
+
   selectedId: { id: 6, service: "Painting" },
 };
 
@@ -237,7 +239,7 @@ const PaintingComponent = () => {
           </Button>
 
           <Button
-            onClick={() => router.push('/painting/paint-cost-calculator')}
+            onClick={() => router.push('/services/painting/paint-cost-calculator')}
             className="bg-gradient-to-b from-orange-500 to-red-400 text-white font-Gordita-Medium md:px-3 px-1 md:py-2 py-2 rotate-180 [writing-mode:vertical-rl] rounded-tl-lg rounded-bl-lg shadow-lg hover:scale-105 transition-transform duration-300 md:text-[14px] text-[11px]"
           >
             PAINTING COST
@@ -251,9 +253,7 @@ const PaintingComponent = () => {
       {/* <PaintingServiceCard /> */}
       <PaintServices services={services} />
       <OurPartners images={PartnerImages} />
-      <div className="md:px-8 px-3 mb-[45px] max-w-[98%] mx-auto md:mb-[64px] flex flex-col items-center gap-4">
-        <GoogleAdSense />
-      </div>
+      
 
       <TestimonialsSection {...testimonialsData} />
       <div className="mb-[45px] md:mb-[64px]">

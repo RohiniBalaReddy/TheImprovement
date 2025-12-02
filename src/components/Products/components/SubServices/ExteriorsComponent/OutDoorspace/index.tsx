@@ -12,7 +12,7 @@ export default function OutdoorSpacesShowcase({
   spaces: OutdoorSpace[];
 }) {
   return (
-    <section className="py-8 md:py-16 md:px-4 px-2">
+    <section className="py-8 md:py-16 md:px-8 px-2">
       <div className="text-center mb-10">
         <h2 className="font-Gordita-Bold text-[18px] md:text-[24px] lg:text-[26px] text-[#212227] md:mb-4 mb-2 leading-tight  text-center mx-auto">
           Outdoor Spaces We Transform

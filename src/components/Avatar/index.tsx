@@ -6,7 +6,6 @@ import {
   FiGrid,
   FiUser,
   FiHome,
-  FiShoppingCart,
   FiHeart,
   FiTool,
   FiSettings,
@@ -20,7 +19,7 @@ import { MdReviews } from "react-icons/md";
 import { LuCheckCircle } from "react-icons/lu";
 import { signOut, useSession } from "next-auth/react";
 import Button from "@/common/Button";
-import { useCartStore } from "@/store/cart";
+
 import apiClient from "@/utils/apiClient";
 import { useWishlistStore } from "@/store/wishlist";
 interface AvatarProps {
@@ -32,32 +31,18 @@ const Avatar: React.FC<AvatarProps> = ({ showAbove = true }) => {
   const dropdownRef = useRef<HTMLDivElement>(null);
   const session = useSession();
   const [user, setUser] = useState<any>();
-  const { syncCartWithBackend, setInitialCart } = useCartStore();
+
   const { syncWishlistWithBackend } = useWishlistStore();
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
 
-  const fetchCart = async (userId: any) => {
-    if (!user?.id) return;
-    try {
-      const response = await apiClient.get(
-        `${apiClient.URLS.cart}/${user?.id}`,
-        {}
-      );
-      setInitialCart(response.body.items);
-    } catch (error) {
-      console.error("Error fetching cart:", error);
-    }
-  };
-
   useEffect(() => {
     if (session?.status === "authenticated" && session.data?.user) {
       const sessionUser = session.data?.user;
       setUser(sessionUser);
-      syncCartWithBackend(sessionUser.id);
-      fetchCart(sessionUser.id);
+
       syncWishlistWithBackend(sessionUser.id);
     }
   }, [session?.status]);

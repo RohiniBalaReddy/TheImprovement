@@ -299,11 +299,11 @@ const NavDropDown = ({ item, subLink }: any) => {
                                   </h1>
                                   <h1>
                                     <Link
-                                      href="/services/electrical"
+                                      href="/services/painting/paint-cost-calculator"
                                       className="font-Gordita-Medium md:text-[12px] text-[10px] flex items-center gap-1"
                                     >
                                       <CheckCircle2 className="w-4 h-4 text-[#5297FF] mt-0.5" />
-                                      Electrical Services
+                                     Paint cost estimator
                                     </Link>
                                   </h1>
                                   <h1>
@@ -434,7 +434,7 @@ const Navbar = ({ isVisibleItems }: ShowItems) => {
   }, [session?.status]);
 
   const logo_place_holder = {
-    imageUrl: "/images/logobw.jpg",
+    imageUrl: "/images/newlogo.png",
     link: "/",
   };
 
@@ -495,11 +495,11 @@ const Navbar = ({ isVisibleItems }: ShowItems) => {
           link: "/services/roofing",
           isActive: router.pathname === "/services/roofing",
         },
-        // {
-        //   name: "Painting",
-        //   link: "/services/painting",
-        //   isActive: router.pathname === "/services/painting",
-        // },
+        {
+          name: "Painting",
+          link: "/services/painting",
+          isActive: router.pathname === "/services/painting",
+        },
         {
           name: "Driveway & Exterior Works",
           link: "/services/exteriors",
@@ -513,6 +513,16 @@ const Navbar = ({ isVisibleItems }: ShowItems) => {
       name: "Blogs",
       link: "/blogs",
       isActive: router.pathname === "/blogs",
+      onClick: () => {
+        if (mobileSidebarOpen) {
+          toggleMobileSideBar(false);
+        }
+      },
+    },
+    {
+      name: "About us",
+      link: "/about-us",
+      isActive: router.pathname === "/about-us",
       onClick: () => {
         if (mobileSidebarOpen) {
           toggleMobileSideBar(false);

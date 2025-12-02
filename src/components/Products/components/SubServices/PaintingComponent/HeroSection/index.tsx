@@ -156,7 +156,7 @@ function HeroSection({
             <div className="mb-6 md:mb-10 w-full">
               <Button
                 className="rounded-lg bg-[#5297FF] text-[13px] md:text-[16px] px-3 py-2 md:px-5 md:py-4 font-Gordita-Regular md:font-Gordita-Medium text-white cursor-pointer "
-                onClick={() => router.push("/painting/paint-cost-calculator")}
+                onClick={() => router.push("/services/painting/paint-cost-calculator")}
               >
                 <div className="flex flex-row gap-3 items-center">
                   <p>Estimate Painting Cost</p>

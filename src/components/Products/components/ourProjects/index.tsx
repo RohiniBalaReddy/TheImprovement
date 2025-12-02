@@ -12,80 +12,81 @@ const OurProjects = () => {
   const gotoNext = () => sliderRef.current?.slickNext();
   const gotoPrev = () => sliderRef.current?.slickPrev();
 
-  const data = [
-    {
-      projectName: "Dream Heights",
-      imageLink: "/ourProjects/sample-image-1.jpg",
-      location: "Madhapur, Hyderabad",
-      link: "/projects/dreamheights",
-    },
-    {
-      projectName: "Urban Oasis",
-      imageLink: "/ourProjects/sample-image-2.jpg",
-      location: "Rajaji Nagar, Bengaluru",
-      link: "/projects/urbanoasis",
-    },
-    {
-      projectName: "Skyline Residency",
-      imageLink: "/ourProjects/sample-image-3.jpg",
-      location: "Bandra, Mumbai",
-      link: "/projects/skylineresidency",
-    },
-    {
-      projectName: "Green Valley",
-      imageLink: "/ourProjects/sample-image-4.jpg",
-      location: "Whitefield, Bengaluru",
-      link: "/projects/greenvalley",
-    },
-    {
-      projectName: "Sunset Apartments",
-      imageLink: "/ourProjects/sample-image-5.jpg",
-      location: "Kothrud, Pune",
-      link: "/projects/sunsetapartments",
-    },
-    {
-      projectName: "Lake View Homes",
-      imageLink: "/ourProjects/sample-image-6.jpg",
-      location: "Gachibowli, Hyderabad",
-      link: "/projects/lakeviewhomes",
-    },
-    {
-      projectName: "Golden Gate",
-      imageLink: "/ourProjects/sample-image-7.jpg",
-      location: "T Nagar, Chennai",
-      link: "/projects/goldengate",
-    },
-    {
-      projectName: "Silver Springs",
-      imageLink: "/ourProjects/sample-image-8.jpg",
-      location: "Salt Lake, Kolkata",
-      link: "/projects/silversprings",
-    },
-    {
-      projectName: "Palm Grove",
-      imageLink: "/ourProjects/sample-image-9.jpg",
-      location: "Viman Nagar, Pune",
-      link: "/projects/palmgrove",
-    },
-    {
-      projectName: "Elite Enclave",
-      imageLink: "/ourProjects/sample-image-3.jpg",
-      location: "Jubilee Hills, Hyderabad",
-      link: "/projects/eliteenclave",
-    },
-    {
-      projectName: "Royal Orchard",
-      imageLink: "/ourProjects/sample-image-7.jpg",
-      location: "MG Road, Bengaluru",
-      link: "/projects/royalorchard",
-    },
-    {
-      projectName: "Emerald Park",
-      imageLink: "/ourProjects/sample-image-4.jpg",
-      location: "Sector 62, Noida",
-      link: "/projects/emeraldpark",
-    },
-  ];
+ const data = [
+  {
+    projectName: "Skyline Towers",
+    imageLink: "/ourProjects/sample-image-1.jpg",
+    location: "Manhattan, New York",
+    link: "/projects/skylinetowers",
+  },
+  {
+    projectName: "Urban Retreat",
+    imageLink: "/ourProjects/sample-image-2.jpg",
+    location: "Downtown, Los Angeles",
+    link: "/projects/urbanretreat",
+  },
+  {
+    projectName: "Harbor View Residency",
+    imageLink: "/ourProjects/sample-image-3.jpg",
+    location: "Navy Pier, Chicago",
+    link: "/projects/harborview",
+  },
+  {
+    projectName: "Green Meadows",
+    imageLink: "/ourProjects/sample-image-4.jpg",
+    location: "Bellevue, Seattle",
+    link: "/projects/greenmeadows",
+  },
+  {
+    projectName: "Sunset Villas",
+    imageLink: "/ourProjects/sample-image-5.jpg",
+    location: "Mission District, San Francisco",
+    link: "/projects/sunsetvillas",
+  },
+  {
+    projectName: "Lakefront Homes",
+    imageLink: "/ourProjects/sample-image-6.jpg",
+    location: "Lakeview, Chicago",
+    link: "/projects/lakefronthomes",
+  },
+  {
+    projectName: "Golden Gate Residency",
+    imageLink: "/ourProjects/sample-image-7.jpg",
+    location: "Marina District, San Francisco",
+    link: "/projects/goldengateresidency",
+  },
+  {
+    projectName: "Silver Creek",
+    imageLink: "/ourProjects/sample-image-8.jpg",
+    location: "Brooklyn Heights, New York",
+    link: "/projects/silvercreek",
+  },
+  {
+    projectName: "Palm Ridge",
+    imageLink: "/ourProjects/sample-image-9.jpg",
+    location: "South Beach, Miami",
+    link: "/projects/palmridge",
+  },
+  {
+    projectName: "Elite Estates",
+    imageLink: "/ourProjects/sample-image-3.jpg",
+    location: "Beverly Hills, Los Angeles",
+    link: "/projects/eliteestates",
+  },
+  {
+    projectName: "Royal Gardens",
+    imageLink: "/ourProjects/sample-image-7.jpg",
+    location: "Downtown, Houston",
+    link: "/projects/royalgardens",
+  },
+  {
+    projectName: "Emerald Hills",
+    imageLink: "/ourProjects/sample-image-4.jpg",
+    location: "Cambridge, Boston",
+    link: "/projects/emeraldhills",
+  },
+];
+
 
   const sliderSettings = {
     cssEase: "ease-in-out",

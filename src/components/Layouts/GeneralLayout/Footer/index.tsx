@@ -17,11 +17,7 @@ const services = [
     label: "Flooring",
     href: "/services/flooring",
   },
-  {
-    image: "/images/services/electrical.png",
-    label: "Electrical",
-    href: "/services/electrical",
-  },
+
   {
     image: "/images/services/plumbing.png",
     label: "Plumbing",

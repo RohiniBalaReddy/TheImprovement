@@ -7,11 +7,11 @@ import { MdSupportAgent } from "react-icons/md";
 import toast from "react-hot-toast";
 // import { serviceOptions } from "@/utils/solar/solar-data";
 import Modal from "@/common/Modal";
-  enum ServiceCategory {
+enum ServiceCategory {
   Construction = "Construction",
   Demolition = "Demolition",
   Flooring = "Flooring",
-  Electrical = "Electrical",
+
   Plumbing = "Plumbing",
   HVAC = "HVAC",
   Roofing = "Roofing",
@@ -19,11 +19,11 @@ import Modal from "@/common/Modal";
   Exteriors = "Exteriors",
 }
 
- const serviceOptions = [
+const serviceOptions = [
   { id: 1, service: ServiceCategory.Construction },
   { id: 2, service: ServiceCategory.Demolition },
   { id: 3, service: ServiceCategory.Flooring },
-  { id: 4, service: ServiceCategory.Electrical },
+
   { id: 5, service: ServiceCategory.Plumbing },
   { id: 6, service: ServiceCategory.HVAC },
   { id: 7, service: ServiceCategory.Roofing },
@@ -53,7 +53,10 @@ const ContactForm = ({
         description: formData.description,
         serviceType: formData.services,
       };
-      const res = await apiClient.post(apiClient.URLS.servicecustomlead, payload);
+      const res = await apiClient.post(
+        apiClient.URLS.servicecustomlead,
+        payload
+      );
 
       if (res.status === 201) {
         setShowConfirmation(true);
@@ -93,7 +96,10 @@ const ContactForm = ({
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSelectChange = (selectedOption: { id: number; service: string }) => {
+  const handleSelectChange = (selectedOption: {
+    id: number;
+    service: string;
+  }) => {
     setFormData({
       ...formData,
       services: selectedOption.service,
@@ -153,9 +159,7 @@ const ContactForm = ({
               handleChange={(name, value) => {
                 if (!isServiceFixed) handleSelectChange(value);
               }}
-              buttonCls={
-                isServiceFixed ? "opacity-60 pointer-events-none" : ""
-              }
+              buttonCls={isServiceFixed ? "opacity-60 pointer-events-none" : ""}
               openButtonCls={isServiceFixed ? "pointer-events-none" : ""}
             />
           </div>
@@ -191,7 +195,9 @@ const ContactForm = ({
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-Gordita-Bold md:text-[24px] text-[#5297FF]">Thank You!</h3>
+              <h3 className="text-xl font-Gordita-Bold md:text-[24px] text-[#5297FF]">
+                Thank You!
+              </h3>
               <p className="text-[14px] md:text-[18px] font-Gordita-Medium text-center text-gray-600">
                 Your details have been submitted successfully.
               </p>
@@ -208,7 +214,7 @@ const ContactForm = ({
           </Modal>
         )}
       </>
-    </div >
+    </div>
   );
 };
 export default ContactForm;

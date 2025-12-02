@@ -50,10 +50,9 @@ export default function LeadDetailsModal({
 
   const fetchTimeline = async () => {
     try {
-      const branchId = lead?.branchId;
       const res = await apiClient.get(
         `${apiClient.URLS.crmlead}/${lead?.id}/timeline`,
-        { branchId },
+        {},
         true
       );
       if (res.status === 200) {

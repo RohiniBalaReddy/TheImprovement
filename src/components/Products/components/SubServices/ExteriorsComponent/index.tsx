@@ -12,14 +12,14 @@ export default function ExteriorsComponent() {
     heading: "Driveway & Exterior Works",
     subHeading:
       "Professional driveway, patio, fencing, and landscaping services to enhance your property's functionality and curb appeal.",
-    bgImageUrl: "/images/earthmoves/herosection/herosectionimage.png",
+    bgImageUrl: "/images/services/herosectionimage.png",
     bookingCtaUrl: { label: "Book Exterior Service", url: "" },
     locationcta: [
       { label: "New York", url: "" },
       { label: "California", url: "" },
       { label: "Texas", url: "" },
     ],
-    selectedId: { id: 9, service: "Exteriors" },
+    selectedId: { id: 8, service: "Exteriors" },
     description:
       "Professional driveway, patio, fencing, and landscaping services to enhance your property's functionality and curb appeal.",
   };
@@ -28,28 +28,28 @@ export default function ExteriorsComponent() {
     {
       title: "Driveways",
       description: "Durable vehicle access solutions",
-      image: "/images/exteriors/driveway.jpg",
+      image: "/images/services/exteriors/Driveways.png",
       features: ["Concrete", "Asphalt", "Pavers", "Gravel"],
       href: "/services/exteriors/driveways",
     },
     {
       title: "Patios & Decks",
       description: "Outdoor living and entertainment areas",
-      image: "/images/exteriors/patio.jpg",
+      image: "/images/services/exteriors/Patios.png",
       features: ["Stone Patios", "Wooden Decks", "Composite Decking"],
       href: "/services/exteriors/patios",
     },
     {
       title: "Pathways & Walkways",
       description: "Beautiful pedestrian routes",
-      image: "/images/exteriors/pathway.jpg",
+      image: "/images/services/exteriors/Pathways.png",
       features: ["Paved Paths", "Garden Walkways", "Stepping Stones"],
       href: "/services/exteriors/pathways",
     },
     {
       title: "Retaining Walls",
       description: "Structural landscaping solutions",
-      image: "/images/exteriors/retaining-wall.jpg",
+      image: "/images/services/exteriors/RetainingWalls.png",
       features: ["Block Walls", "Stone Walls", "Terracing"],
       href: "/services/exteriors/retaining-walls",
     },
@@ -57,7 +57,7 @@ export default function ExteriorsComponent() {
   const materialsData: Material[] = [
     {
       name: "Concrete",
-      image: "/images/materials/concrete.jpg",
+      image: "/images/services/exteriors/materials/concrete.png",
       lifespan: "30-40 years",
       maintenance: "Low",
       costLevel: "$$",
@@ -67,7 +67,7 @@ export default function ExteriorsComponent() {
     },
     {
       name: "Pavers",
-      image: "/images/materials/pavers.jpg",
+      image: "/images/services/exteriors/materials/pavers.png",
       lifespan: "25-50 years",
       maintenance: "Medium",
       costLevel: "$$$",
@@ -77,7 +77,7 @@ export default function ExteriorsComponent() {
     },
     {
       name: "Asphalt",
-      image: "/images/materials/asphalt.jpg",
+      image: "/images/services/exteriors/materials/asphalt.png",
       lifespan: "15-20 years",
       maintenance: "Medium",
       costLevel: "$",
@@ -87,7 +87,7 @@ export default function ExteriorsComponent() {
     },
     {
       name: "Natural Stone",
-      image: "/images/materials/stone.jpg",
+      image: "/images/services/exteriors/materials/stone.png",
       lifespan: "50+ years",
       maintenance: "Low",
       costLevel: "$$$",
@@ -151,7 +151,7 @@ export default function ExteriorsComponent() {
         <MaintenanceTips />
       </div>
        <FAQSComp
-        image="/images/earthmoves/packagesandservices/loaderrental.png"
+        image="/images/services/exteriors/faqsimage.png"
         faqs={faqs}
       />
 

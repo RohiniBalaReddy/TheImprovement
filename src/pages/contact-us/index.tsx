@@ -132,7 +132,7 @@ function ContactUs() {
       <SEO
         title="Contact TheImprovement • Real Estate, Interiors & Home Services"
         description="Get in touch with TheImprovement for property listings, interiors, custom construction, and support. Share your project or query and we'll reach out."
-        keywords="TheImprovement contact, property inquiry, interiors contact, construction contact, Hyderabad real estate"
+        keywords="TheImprovement contact, property inquiry, interiors contact, construction contact, New York real estate"
         breadcrumbs={[
           { name: "Home", item: "https://www.TheImprovement.in/" },
           { name: "Contact Us", item: "https://www.TheImprovement.in/contact-us" },
@@ -140,7 +140,7 @@ function ContactUs() {
         faq={[
           {
             question: "What's the best way to contact TheImprovement?",
-            answer: "You can reach us via phone at +918897574909, through our contact form, or by visiting our office in Hyderabad during business hours."
+            answer: "You can reach us via phone at +918897574909, through our contact form, or by visiting our office in New York during business hours."
           }
         ]}
         service={{

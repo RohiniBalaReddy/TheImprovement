@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Button from "@/common/Button";
 import SingleSelect from "@/common/FormElements/SingleSelect";
 import SelectBtnGrp from "@/common/SelectBtnGrp";
-// import { ServiceCategory } from "@/utils/solar/solar-data";
+
 import { FaPaintRoller, FaWater, FaShieldAlt } from "react-icons/fa";
 import apiClient from "@/utils/apiClient";
 import { HiCheck } from "react-icons/hi";
@@ -19,24 +19,18 @@ import {
 } from "react-icons/md";
 import toast from "react-hot-toast";
 import CustomInput from "@/common/FormElements/CustomInput";
-// import {
-//   stateOptions,
-//   RadioButton,
-// } from "@/components/Products/components/SubServices/InteriorsComponent/interiorsCalculator";
+
 import ThemeLoader from "@/common/ThemeLoader";
- enum ServiceCategory {
-  RealEstate = "RealEstate",
-  Interiors = "Interiors",
-  CustomBuilder = "CustomBuilder",
-  Solar = "Solar",
-  PackersAndMovers = "PackersAndMovers",
+enum ServiceCategory {
+  Construction = "Construction",
+  Demolition = "Demolition",
+  Flooring = "Flooring",
+
+  Plumbing = "Plumbing",
+  HVAC = "HVAC",
+  Roofing = "Roofing",
   Painting = "Painting",
-  Plumber = "Plumber",
-  EarthMovers = "EarthMovers",
-  HomeDecor = "HomeDecor",
-  Furniture = "Furniture",
-  CivilEngineeringDesign = "CivilEngineeringDesign",
-  VaastuConsultation = "VaastuConsultation",
+  Exteriors = "Exteriors",
 }
 
 const PaintingCostEstimator: React.FC = () => {
@@ -58,11 +52,11 @@ const PaintingCostEstimator: React.FC = () => {
   const [estimate, setEstimate] = useState<number | null>(null);
 
   const cityOptions = [
-    { id: 1, name: "Bangalore" },
-    { id: 2, name: "Hyderabad" },
-    { id: 3, name: "Chennai" },
-    { id: 4, name: "Pune" },
-    { id: 5, name: "Andhra" },
+    { id: 1, name: "New York" },
+    { id: 2, name: "Los Angeles" },
+    { id: 3, name: "Chicago" },
+    { id: 4, name: "Houston" },
+    { id: 5, name: "Phoenix" },
   ];
 
   const paintAreaOptions = [
@@ -78,6 +72,49 @@ const PaintingCostEstimator: React.FC = () => {
     <MdOutlineStarRate />,
     <MdPersonOutline />,
   ];
+  interface RadioButtonProps {
+    id: string;
+    name: string;
+    value: string;
+    checked: boolean;
+    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    children: React.ReactNode;
+    className?: string;
+  }
+  const RadioButton: React.FC<RadioButtonProps> = ({
+    id,
+    name,
+    value,
+    checked,
+    onChange,
+    className = "",
+    children,
+  }) => (
+    <label
+      htmlFor={id}
+      className={`flex items-center space-x-1 border p-2 rounded cursor-pointer 
+            ${
+              checked
+                ? "bg-[#5297ff] text-slate-100"
+                : "bg-white border-gray-300 hover:bg-blue-50"
+            }
+             ${className}`}
+    >
+      <input
+        type="radio"
+        id={id}
+        name={name}
+        value={value}
+        checked={checked}
+        onChange={onChange}
+        className="hidden"
+      />
+      <span className={`${checked ? "text-white" : "text-gray-800"} text-sm`}>
+        {children}
+      </span>
+    </label>
+  );
+
   const validateFields = (step: number): boolean => {
     const newErrors: { [key: string]: string } = {};
 
@@ -188,7 +225,7 @@ const PaintingCostEstimator: React.FC = () => {
         paintArea: formData.paintArea,
         paintingType: formData.paintingType,
 
-        city: formData.city || "Bangalore",
+        city: formData.city || "New York",
         platform: "Website",
         serviceType: ServiceCategory.Painting,
         leadstatus: "New",
@@ -296,7 +333,7 @@ const PaintingCostEstimator: React.FC = () => {
         <h2 className="font-Gordita-Medium label-text text-[#5297ff] mb-2">
           Select the size of your house
         </h2>
-        {/* <div className="flex flex-row md:gap-3 gap-2">
+        <div className="flex flex-row md:gap-3 gap-2">
           {["1", "2", "3", "4", "5"].map((bhk) => (
             <RadioButton
               key={bhk}
@@ -310,7 +347,7 @@ const PaintingCostEstimator: React.FC = () => {
               {bhk} BHK
             </RadioButton>
           ))}
-        </div> */}
+        </div>
         {errors.bhkType && (
           <p className="text-red-500 text-sm mt-1">{errors.bhkType}</p>
         )}
@@ -325,10 +362,11 @@ const PaintingCostEstimator: React.FC = () => {
             <div
               key={option.id}
               className={`relative bg-white  flex-1 border rounded-lg md:p-4 p-1 transition
-                    ${formData.paintingType === option.title
-                  ? "border-[#5297ff] bg-gradient-to-br from-blue-50 to-blue-100 shadow-xl scale-105 ring-2 ring-blue-200"
-                  : "border-gray-200 bg-gradient-to-br from-white to-gray-50 shadow-lg hover:border-blue-300"
-                }
+                    ${
+                      formData.paintingType === option.title
+                        ? "border-[#5297ff] bg-gradient-to-br from-blue-50 to-blue-100 shadow-xl scale-105 ring-2 ring-blue-200"
+                        : "border-gray-200 bg-gradient-to-br from-white to-gray-50 shadow-lg hover:border-blue-300"
+                    }
                   `}
               onClick={() => handleChange("paintingType", option.title)}
             >
@@ -459,10 +497,11 @@ const PaintingCostEstimator: React.FC = () => {
               onClick={() => handleChange("package", pkg.name)}
               className={`cursor-pointer w-full flex flex-col justify-between md:gap-4 gap-2 md:p-3 p-1 md:rounded-[12px] rounded-[6px] text-center shadow-sm transition-all duration-300
     bg-gradient-to-b ${pkg.headerCls} 
-    ${formData.package === pkg.name
-                  ? `ring-2 ${pkg.ringCls} ${pkg.borderCls} scale-[1.01] shadow-md`
-                  : "hover:shadow-md hover:scale-[1.01] focus:ring-2 focus:ring-gray-300"
-                }`}
+    ${
+      formData.package === pkg.name
+        ? `ring-2 ${pkg.ringCls} ${pkg.borderCls} scale-[1.01] shadow-md`
+        : "hover:shadow-md hover:scale-[1.01] focus:ring-2 focus:ring-gray-300"
+    }`}
             >
               {formData.package === pkg.name && (
                 <div className="absolute -top-2 -right-2 w-6 h-6 bg-[#5297ff] rounded-full flex items-center justify-center shadow-lg">
@@ -815,12 +854,13 @@ const PaintingCostEstimator: React.FC = () => {
                     >
                       <div
                         className={`md:w-10 w-7 md:h-10 h-7 flex items-center justify-center rounded-full md:text-[14px] text-[12px] font-Gordita-Bold relative z-10 transition-all duration-300 transform
-          ${currentStep === step
-                            ? "bg-[#5297ff] text-white shadow-lg shadow-[#5297ff]/30 scale-110 ring-4 ring-blue-100"
-                            : step < currentStep
-                              ? "bg-green-500 text-white shadow-lg shadow-green-500/30 scale-105"
-                              : "bg-gray-100 text-gray-400 shadow"
-                          }`}
+          ${
+            currentStep === step
+              ? "bg-[#5297ff] text-white shadow-lg shadow-[#5297ff]/30 scale-110 ring-4 ring-blue-100"
+              : step < currentStep
+              ? "bg-green-500 text-white shadow-lg shadow-green-500/30 scale-105"
+              : "bg-gray-100 text-gray-400 shadow"
+          }`}
                       >
                         {step < currentStep ? (
                           <HiCheck className="w-5 h-5" />
@@ -832,23 +872,23 @@ const PaintingCostEstimator: React.FC = () => {
                       </div>
 
                       <p
-                        className={`md:text-[14px] text-[12px] font-Gordita-Medium mt-3 transition-colors duration-300 ${currentStep === step
-                          ? "text-[#5297ff] font-Gordita-Bold"
-                          : step < currentStep
+                        className={`md:text-[14px] text-[12px] font-Gordita-Medium mt-3 transition-colors duration-300 ${
+                          currentStep === step
+                            ? "text-[#5297ff] font-Gordita-Bold"
+                            : step < currentStep
                             ? "text-green-600"
                             : "text-gray-500"
-                          }`}
+                        }`}
                       >
                         {stepLabels[idx]}
                       </p>
-
 
                       <span className="md:text-[14px] text-[12px] font-Gordita-Regular text-gray-400 mt-1">
                         {step < currentStep
                           ? "Completed"
                           : step === currentStep
-                            ? "Active"
-                            : "Pending"}
+                          ? "Active"
+                          : "Pending"}
                       </span>
                     </div>
                   ))}

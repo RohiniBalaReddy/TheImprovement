@@ -142,7 +142,7 @@ export default function CSVUploadModal({
               <li>• Phone numbers must be 10 digits starting with 6-9</li>
               <li>• Duplicate entries will be skipped</li>
               <li>• Invalid rows will be ignored</li>
-              <li>• All leads will be assigned to your active branch</li>
+             
             </ul>
           </div>
 

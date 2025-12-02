@@ -25,42 +25,44 @@ const DemolitionComponent = () => {
         title: "Inspection & Planning",
         description:
           "We inspect the site, identify risk areas, and create a safe demolition plan.",
-        icon: "/icons/demolition/inspection.svg",
+        icon: "/icons/demolition/inspection.png",
       },
       {
         step: "02",
         title: "Safety Setup",
         description:
           "Barricading, equipment setup, and safety measures are deployed before demolition.",
-        icon: "/icons/demolition/safety.svg",
+        icon: "/icons/demolition/safety.png",
       },
       {
         step: "03",
         title: "Demolition Execution",
         description:
           "Using advanced tools and machinery, we demolish structures efficiently.",
-        icon: "/icons/demolition/execution.svg",
+        icon: "/icons/demolition/execution.png",
       },
       {
         step: "04",
         title: "Debris Removal",
         description:
           "All waste is removed and the site is cleaned for the next construction phase.",
-        icon: "/icons/demolition/cleanup.svg",
+        icon: "/icons/demolition/cleanup.png",
       },
     ],
   };
   const DemolitionHeroSectionData: IServiceHeroSectionInterfaceProps = {
     heading: "Professional Demolition Services",
     subHeading: "Safe • Efficient • Fully Managed Demolition",
-    bgImageUrl: "/images/earthmoves/packagesandservices/demolition.png",
+    bgImageUrl: "/images/earthmoves/herosection/herosectionimage.png",
     bookingCtaUrl: { label: "Discover More", url: "" },
     locationcta: [
-      { label: "Hyderabad", url: "" },
-      { label: "Chennai", url: "" },
-      { label: "Bengaluru", url: "" },
-    ],
-    selectedId: { id: 2, service: "Demolition Services" },
+  { label: "New York", url: "" },
+  { label: "Los Angeles", url: "" },
+  { label: "Chicago", url: "" },
+  { label: "Houston", url: "" },
+],
+
+    selectedId: { id: 2, service: "Demolition" },
   };
 
   const whyToChooseDemolitionData: WhyToChooseDemolitionProps = {
@@ -69,13 +71,13 @@ const DemolitionComponent = () => {
     highlightColor: "#0047AB",
 
     experience: {
-      years: "12+",
+      years: "10+",
       label: "DEMOLITION EXPERIENCE",
     },
 
     images: {
-      main: "/images/custombuilder/subservices/demolition/aboutus.png",
-      side: "/images/custombuilder/subservices/demolition/team.png",
+      main: "/images/earthmoves/whychooseus/image2.png",
+      side: "/images/earthmoves/whychooseus/image4.png",
     },
 
     features: [
@@ -163,7 +165,7 @@ const DemolitionComponent = () => {
         }))}
       />
       <FAQSComp
-        image="/images/earthmoves/packagesandservices/demolition.png"
+        image="/images/earthmoves/herosection/herosectionimage.png"
         faqs={faqs}
       />
 

@@ -27,7 +27,7 @@ export default function RoofingComponent() {
       { label: "Texas", url: "" },
     ],
 
-    selectedId: { id: 7, service: "Roofing" },
+    selectedId: { id: 6, service: "Roofing" },
 
     description:
       "Reliable and long-lasting roofing services including installation, repairs, replacements, and waterproofing for residential and commercial buildings.",

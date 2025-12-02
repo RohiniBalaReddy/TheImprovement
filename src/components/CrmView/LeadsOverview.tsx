@@ -157,14 +157,14 @@ export default function LeadsOverview({
       setPendingLeadId(id);
       setStatusModalOpen(true);
     } else {
-      handleStatusSelect({ leadstatus: value }, id, lead?.branchId ?? 0);
+      handleStatusSelect({ leadstatus: value }, id, );
     }
   };
 
   const handleStatusSelect = async (
     payload: LeadStatusPayload,
     leadId: number,
-    branchId: number
+   
   ) => {
     setAllLeads((prevLeads: any) =>
       prevLeads.map((lead: any) =>
@@ -178,7 +178,7 @@ export default function LeadsOverview({
         {
           ...payload,
           actorId: user?.id,
-          actorBranchId: branchId,
+          
         },
         true
       );
@@ -227,7 +227,7 @@ export default function LeadsOverview({
     if (pendingLeadId) {
       const lead = allLeads.find((l: any) => l.id === pendingLeadId);
       if (lead) {
-        handleStatusSelect(payload, pendingLeadId, lead.branchId);
+        handleStatusSelect(payload, pendingLeadId);
       }
     }
 
@@ -343,7 +343,7 @@ export default function LeadsOverview({
   const handleDelete = async (lead: any) => {
     try {
       const res = await apiClient.delete(
-        `${apiClient.URLS.crmlead}/${lead.id}?branchId=${lead.branchId}`,
+        `${apiClient.URLS.crmlead}/${lead.id}`,
         {},
         true
       );

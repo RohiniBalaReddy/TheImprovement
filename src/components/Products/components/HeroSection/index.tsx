@@ -57,9 +57,14 @@ const BuilderHeroSection = () => {
   };
   const router = useRouter();
   const LocationData = [
-    { id: 1, location: "Hyderabad" },
-    { id: 2, location: "Pune" },
-    { id: 3, location: "Mumbai" },
+    { id: 1, location: "New York" },
+    { id: 2, location: "Los Angeles" },
+    { id: 3, location: "Chicago" },
+    { id: 4, location: "Houston" },
+    { id: 5, location: "San Francisco" },
+    { id: 6, location: "Miami" },
+    { id: 7, location: "Seattle" },
+    { id: 8, location: "Boston" },
   ];
   return (
     <div className="relative md:w-full   h-[600px] mx-auto mt-[-15px]">
@@ -93,7 +98,6 @@ const BuilderHeroSection = () => {
                       src={item.image}
                       alt="icons_cred"
                       fill
-
                       className="object-cover"
                       loading="lazy"
                       decoding="async"
@@ -193,15 +197,20 @@ const BuilderHeroSection = () => {
                     labelCls="font-Gordita-Medium  md:text-[14px] text-[12px]"
                     name="location"
                     options={[
-                      { id: 1, location: "Hyderabad" },
-                      { id: 2, location: "Pune" },
-                      { id: 3, location: "Mumbai" },
+                      { id: 1, location: "New York" },
+                      { id: 2, location: "Los Angeles" },
+                      { id: 3, location: "Chicago" },
+                      { id: 4, location: "Houston" },
+                      { id: 5, location: "San Francisco" },
+                      { id: 6, location: "Miami" },
+                      { id: 7, location: "Seattle" },
+                      { id: 8, location: "Boston" },
                     ]}
                     handleChange={(name, value) => handleselectChange(value)}
                     selectedOption={
                       LocationData.find(
                         (loc) => loc.location === formValue.location
-                      ) || { id: 1, location: "Hyderabad" }
+                      ) || { id: 1, location: "New York" }
                     }
                     optionsInterface={{ isObj: true, displayKey: "location" }}
                   />
@@ -228,8 +237,6 @@ const BuilderHeroSection = () => {
             </div>
             <div className="flex flex-row md:gap-[10px] gap-[6px] justify-center md:items-end items-center">
               <div className="flex gap-1 md:gap-2 items-center">
-
-
                 <div className="">
                   <CautionIcon />
                 </div>

@@ -21,27 +21,28 @@ import HeroSection, { IHerosectionprops } from "./Herosection";
 const testimonialsData: ITestimonialsSectionProps = {
   words: [
     {
-      name: "Nisha",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem",
+      name: "Emily",
+      desc: "Amazing service! The team was professional, responsive, and made the entire process smooth and stress-free.",
+      rating: 5,
+    },
+    {
+      name: "Michael",
+      desc: "Great experience overall. They understood my requirements perfectly and delivered exactly what I needed.",
       rating: 4,
     },
     {
-      name: "Nisha",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem",
-      rating: 4,
+      name: "Sophia",
+      desc: "Highly recommended! The staff was friendly, knowledgeable, and easy to work with from start to finish.",
+      rating: 5,
     },
     {
-      name: "Nisha",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem",
-      rating: 4,
-    },
-    {
-      name: "Nisha",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem",
+      name: "Daniel",
+      desc: "Wonderful support and excellent attention to detail. I would definitely work with them again.",
       rating: 4,
     },
   ],
 };
+
 
 export const serviceProcessData: ServiceProcessProps = {
   title: "The Way We Work",
@@ -85,7 +86,7 @@ const ourProjects: IOurProjectsProps = {
     "Explore our portfolio of exceptional construction projects that showcase our commitment to quality, innovation, and client satisfaction",
   projects: [
     {
-      imageUrl: "/images/custombuilder/subservices/project-image.png",
+      imageUrl: "/images/newlylaunched/apartments3.png",
       title: "Luxury Residential Complex",
       descriptionPoints: [
         "A premium residential complex in CBD, Bengaluru with modern layouts and city views.",
@@ -94,7 +95,7 @@ const ourProjects: IOurProjectsProps = {
       area: "25,000 sq.ft",
     },
     {
-      imageUrl: "/images/custombuilder/subservices/project-image.png",
+      imageUrl: "/images/custombuilder/subservices/civilengineering/packages/modal.jpg",
       title: "Modern Corporate Office",
       descriptionPoints: [
         "State-of-the-art corporate office in Whitefield, Bengaluru designed for productivity and innovation.",
@@ -103,7 +104,7 @@ const ourProjects: IOurProjectsProps = {
       area: "45,000 sq.ft",
     },
     {
-      imageUrl: "/images/custombuilder/subservices/project-image.png",
+      imageUrl: "/ourProjects/sample-image-3.jpg",
       title: "Boutique Hotel & Spa",
       descriptionPoints: [
         "Luxury boutique hotel in Electronic City, Bengaluru with spa and rooftop views.",
@@ -141,21 +142,21 @@ const categoriesdata: ITagsProps = {
       projectCount: 52,
     },
     {
-      imageUrl: "/images/custombuilder/subservices/category-image.png",
+      imageUrl: "/images/custombuilder/subservices/civilengineering/herosection.png",
       name: "Hotel/Resort",
       description:
         "Luxury hospitality spaces that combine comfort, functionality, and aesthetic appeal to create unforgettable guest experiences.",
       projectCount: 28,
     },
     {
-      imageUrl: "/images/custombuilder/subservices/category-image.png",
+      imageUrl: "/images/custombuilder/subservices/civilengineering/services/concrete.png",
       name: "Hospital Building",
       description:
         "Healthcare facilities built with precision, incorporating advanced medical technologies and patient-centered design principles.",
       projectCount: 15,
     },
     {
-      imageUrl: "/images/custombuilder/subservices/category-image.png",
+      imageUrl: "/images/custombuilder/subservices/civilengineering/services/analysis.png",
       name: "Farm/Guest House",
       description:
         "Serene retreats and functional farm structures that harmonize with natural surroundings while providing modern comfort and utility.",

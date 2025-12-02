@@ -27,7 +27,7 @@ const HvacComponent = () => {
       { label: "Texas", url: "" },
     ],
 
-    selectedId: { id: 7, service: "HVAC" },
+    selectedId: { id: 5, service: "HVAC" },
 
     description:
       "Professional HVAC installation, repair, and maintenance services designed to deliver energy-efficient heating, cooling, and ventilation for homes and commercial spaces.",

@@ -35,10 +35,16 @@ type Testimonial = {
 };
 
 const CATEGORY_OPTIONS = [
-  { id: 1, category: "furniture" },
-  { id: 2, category: "custom_builder" },
-  { id: 3, category: "interiors" },
+  { id: 1, category: "construction" },
+  { id: 2, category: "demolition" },
+  { id: 3, category: "flooring" },
+  { id: 4, category: "plumbing" },
+  { id: 5, category: "hvac" },
+  { id: 6, category: "roofing" },
+  { id: 7, category: "painting" },
+  { id: 8, category: "exteriors" },
 ];
+
 
 const ratingOptions = ["1", "2", "3", "4", "5"];
 

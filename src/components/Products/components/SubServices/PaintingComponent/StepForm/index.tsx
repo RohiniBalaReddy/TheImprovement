@@ -6,21 +6,18 @@ import apiClient from "@/utils/apiClient";
 import toast from "react-hot-toast";
 import CustomDate from "@/common/FormElements/CustomDate";
 import { FaCalendarAlt, FaCheckCircle } from "react-icons/fa";
-// import { ServiceCategory } from "@/utils/solar/solar-data";
+
 import { HiClipboardCheck, HiCheck } from "react-icons/hi";
- enum ServiceCategory {
-  RealEstate = "RealEstate",
-  Interiors = "Interiors",
-  CustomBuilder = "CustomBuilder",
-  Solar = "Solar",
-  PackersAndMovers = "PackersAndMovers",
+enum ServiceCategory {
+  Construction = "Construction",
+  Demolition = "Demolition",
+  Flooring = "Flooring",
+
+  Plumbing = "Plumbing",
+  HVAC = "HVAC",
+  Roofing = "Roofing",
   Painting = "Painting",
-  Plumber = "Plumber",
-  EarthMovers = "EarthMovers",
-  HomeDecor = "HomeDecor",
-  Furniture = "Furniture",
-  CivilEngineeringDesign = "CivilEngineeringDesign",
-  VaastuConsultation = "VaastuConsultation",
+  Exteriors = "Exteriors",
 }
 
 const StepForm = () => {
@@ -46,11 +43,12 @@ const StepForm = () => {
     { id: 4, propertytype: "Independent Floor" },
   ];
   const cityOptions = [
-    { id: 1, city: "Bangalore" },
-    { id: 2, city: "Hyderabad" },
-    { id: 3, city: "Chennai" },
-    { id: 4, city: "Andhra Pradesh" },
+    { id: 1, city: "New York" },
+    { id: 2, city: "Los Angeles" },
+    { id: 3, city: "Chicago" },
+    { id: 4, city: "Houston" },
   ];
+
   const handleSelectChange = (field: string, selectedOption: any) => {
     setFormData((prev) => ({
       ...prev,
@@ -58,21 +56,20 @@ const StepForm = () => {
     }));
   };
 
-
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
- const handleNextStep = async () => {
+  const handleNextStep = async () => {
     if (step === 1) {
       const { Fullname, Phonenumber, city } = FormData;
       if (!Fullname || !Phonenumber || !city) {
         toast.error("Please fill all Step 1 fields");
         return;
       }
-     
+
       setStep(2);
     } else if (step === 2) {
       const {
@@ -99,11 +96,10 @@ const StepForm = () => {
       try {
         setIsLoading(true);
 
-       
         const payload = {
           Fullname: FormData.Fullname,
           Phonenumber: FormData.Phonenumber,
-          city: FormData.city || "Bangalore",
+          city: FormData.city || "New York",
           serviceType: ServiceCategory.Painting,
           propertytype: FormData.propertytype || "Flat",
           visitScheduledAt: FormData.visitScheduledAt,
@@ -118,7 +114,6 @@ const StepForm = () => {
         toast.success("Site inspection booked successfully!");
         setIsSubmitted(true);
 
-      
         setFormData({
           Fullname: "",
           Phonenumber: "",
@@ -139,9 +134,6 @@ const StepForm = () => {
       }
     }
   };
-
-
-  
 
   if (isSubmitted) {
     setTimeout(() => {
@@ -173,13 +165,15 @@ const StepForm = () => {
 
   return (
     <div
-      className={`rounded-[10px] shadow-custom-card z-[9999] bg-white min-h-[inherit] h-full ${step === 1 ? "p-6" : "p-3"
-        } w-full h-auto`}
+      className={`rounded-[10px] shadow-custom-card z-[9999] bg-white min-h-[inherit] h-full ${
+        step === 1 ? "p-6" : "p-3"
+      } w-full h-auto`}
     >
       <form className="flex flex-col md:gap-4 gap-2 w-full">
         <div
-          className={`flex flex-col ${step === 1 ? "md:gap-3" : "md:gap-1"
-            } gap-1 items-center text-center`}
+          className={`flex flex-col ${
+            step === 1 ? "md:gap-3" : "md:gap-1"
+          } gap-1 items-center text-center`}
         >
           {step === 1 ? (
             <>
@@ -214,24 +208,25 @@ const StepForm = () => {
               </p>
             </>
           )}
-
         </div>
 
         <div className="flex items-center gap-2 bg-blue-100 justify-center py-1 md:rounded-[10px] rounded-[4px]">
           <div
-            className={`flex items-center justify-center w-8 h-8 rounded-full border-2 ${step === 1
-              ? "bg-white text-[#5297ff] border-white"
-              : "bg-[#5297ff] border-white text-white"
-              }`}
+            className={`flex items-center justify-center w-8 h-8 rounded-full border-2 ${
+              step === 1
+                ? "bg-white text-[#5297ff] border-white"
+                : "bg-[#5297ff] border-white text-white"
+            }`}
           >
             <span className="text-sm font-Gordita-Medium">1</span>
           </div>
           <div className="w-12 h-1 bg-[#5297ff] rounded-full"></div>
           <div
-            className={`flex items-center justify-center w-8 h-8 rounded-full border-2 ${step === 2
-              ? "bg-white text-[#5297ff] border-white"
-              : "bg-[#5297ff] border-white text-white"
-              }`}
+            className={`flex items-center justify-center w-8 h-8 rounded-full border-2 ${
+              step === 2
+                ? "bg-white text-[#5297ff] border-white"
+                : "bg-[#5297ff] border-white text-white"
+            }`}
           >
             <span className="text-sm font-Gordita-Medium">2</span>
           </div>

@@ -157,7 +157,7 @@ const PrivacyComp = () => {
                                 Privacy Policy
                             </h1>
                             <p className="text-blue-100 font-Gordita-Medium text-lg">
-                                Transparent, secure, and customer-first privacy for all OneCasa
+                                Transparent, secure, and customer-first privacy for all TheImprovement
                                 services.
                             </p>
                         </div>
@@ -262,7 +262,7 @@ const PrivacyComp = () => {
                             <div className="prose max-w-none">
                                 <p className="text-slate-700 leading-relaxed font-Gordita-Medium text-lg mb-4">
                                     Welcome to{" "}
-                                    <span className="font-Gordita-Bold text-blue-500">OneCasa</span>, your
+                                    <span className="font-Gordita-Bold text-blue-500">TheImprovement</span>, your
                                     comprehensive platform for{" "}
                                     <span className="font-Gordita-Bold">
                                         real estate listings, interior design, and construction services
@@ -899,7 +899,7 @@ const PrivacyComp = () => {
                                             Age Requirement: 18+
                                         </h3>
                                         <p className="text-slate-700 font-Gordita-Medium mb-3">
-                                            OneCasa is intended for individuals aged 18 years and above. We do
+                                            TheImprovement is intended for individuals aged 18 years and above. We do
                                             not knowingly collect personal information from children.
                                         </p>
                                         <p className="text-slate-700 font-Gordita-Medium">
@@ -978,7 +978,7 @@ const PrivacyComp = () => {
 
                                 <div className="grid md:grid-cols-3 gap-4">
                                     <a
-                                        href="mailto:admin@onecasa.in"
+                                        href="mailto:admin@TheImprovement.in"
                                         className="group bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-xl p-6 border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:shadow-md"
                                     >
                                         <div className="flex flex-col items-center text-center">
@@ -987,7 +987,7 @@ const PrivacyComp = () => {
                                             </div>
                                             <h4 className="font-Gordita-Bold text-slate-800 mb-2">Email Us</h4>
                                             <p className="text-sm text-blue-500 font-Gordita-Bold break-all">
-                                                admin@onecasa.in
+                                                admin@TheImprovement.in
                                             </p>
                                         </div>
                                     </a>
@@ -1012,7 +1012,7 @@ const PrivacyComp = () => {
                                             <div className="p-4 bg-slate-700 rounded-full text-white mb-4">
                                                 <MdBusiness className="text-3xl" />
                                             </div>
-                                            <h4 className="font-Gordita-Bold text-slate-800 mb-2">OneCasa</h4>
+                                            <h4 className="font-Gordita-Bold text-slate-800 mb-2">TheImprovement</h4>
                                             <p className="text-sm text-slate-600 font-Gordita-Bold">
                                                 Real Estate, Interiors &amp; Construction Platform
                                             </p>
@@ -1056,7 +1056,7 @@ const PrivacyComp = () => {
                                 <div>
                                     <h3 className="text-2xl font-Gordita-Bold mb-3">Your Trust Matters</h3>
                                     <p className="font-Gordita-Medium label-text leading-relaxed mb-4">
-                                        By using OneCasa's services, you acknowledge that you have read,
+                                        By using TheImprovement's services, you acknowledge that you have read,
                                         understood, and agree to this Privacy Policy. We are committed to
                                         constantly improving our platform with your privacy and trust at the
                                         center.

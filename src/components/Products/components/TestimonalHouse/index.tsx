@@ -12,16 +12,35 @@ const TestimonalBuilder = () => {
 
   const data = [
     {
-      desc: "TheImprovement Pvt Limited is your premier partner in turning dreams into reality when it comes to finding your perfect home. With a commitment to excellence and a passion for creating spaces that inspire",
-      author: "Mahesh",
-      location: "Madhapur, Hyderabad",
+      desc: "TheImprovement Pvt Limited helped us find a home that truly feels like a dream. Their dedication, professionalism, and attention to detail made the entire experience easy and stress-free.",
+      author: "Michael",
+      location: "Manhattan, New York",
     },
     {
-      author: "Sachin",
-      desc: "Exceptional service! I had the pleasure of working with TheImprovement Pvt Limited, and their attention to detail exceeded my expectations.",
-      location: "Rajaji Nagar, Bengaluru",
+      author: "Jessica",
+      desc: "Outstanding service! TheImprovement Pvt Limited understood exactly what we were looking for. Their expertise and commitment made our home-search journey smooth and enjoyable.",
+      location: "Santa Monica, Los Angeles",
     },
-    // ...rest of your testimonials
+    {
+      author: "Robert",
+      desc: "I’m extremely satisfied with the level of service provided. They guided me through every step and helped me secure a beautiful property in a great neighborhood.",
+      location: "Downtown, Chicago",
+    },
+    {
+      author: "Emily",
+      desc: "Professional, friendly, and highly knowledgeable! TheImprovement Pvt Limited made the entire home-buying process effortless. I couldn't have asked for a better team.",
+      location: "Brooklyn, New York",
+    },
+    {
+      author: "Daniel",
+      desc: "From start to finish, they delivered exceptional support. Their understanding of the market and quick response times really stood out.",
+      location: "Austin, Texas",
+    },
+    {
+      author: "Sophia",
+      desc: "Amazing experience! They helped us find the perfect home near the waterfront. Highly recommend their services to anyone looking for a reliable real estate partner.",
+      location: "Miami Beach, Florida",
+    },
   ];
 
   return (

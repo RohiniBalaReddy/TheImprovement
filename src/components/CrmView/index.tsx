@@ -1,4 +1,10 @@
-import React, { useState, useEffect, useCallback, useRef } from "react";
+import React, {
+  useState,
+  useEffect,
+  useCallback,
+  useRef,
+  useMemo,
+} from "react";
 import { useSession } from "next-auth/react";
 import toast from "react-hot-toast";
 import { CSVLink } from "react-csv";
@@ -283,6 +289,82 @@ export default function CrmView() {
     const day = String(date.getDate()).padStart(2, "0");
     return `${year}-${month}-${day}`;
   }
+  type FollowUpTab = "ALL" | "TODAY" | "TOMORROW" | "NEXT_7_DAYS";
+
+  const FOLLOW_UP_TABS: { key: FollowUpTab; label: string }[] = [
+    { key: "ALL", label: "All Leads" },
+    { key: "TODAY", label: "Today Follow-ups" },
+    { key: "TOMORROW", label: "Tomorrow Follow-ups" },
+    { key: "NEXT_7_DAYS", label: "Next 7 Days" },
+  ];
+
+  const startOfDay = (date: Date) => {
+    const d = new Date(date);
+    d.setHours(0, 0, 0, 0);
+    return d;
+  };
+
+  const endOfDay = (date: Date) => {
+    const d = new Date(date);
+    d.setHours(23, 59, 59, 999);
+    return d;
+  };
+
+  const addDays = (date: Date, days: number) => {
+    const d = new Date(date);
+    d.setDate(d.getDate() + days);
+    return d;
+  };
+
+  const [followUpTab, setFollowUpTab] = useState<FollowUpTab>("ALL");
+
+  const getLeadFollowUpDate = (lead: any): Date | null => {
+    const raw = lead.followUpDate || null;
+
+    if (!raw) return null;
+
+    const d = new Date(raw);
+    if (isNaN(d.getTime())) return null;
+    return d;
+  };
+
+  const displayLeads = useMemo(() => {
+    if (!allLeads || !Array.isArray(allLeads)) return [];
+
+    if (followUpTab === "ALL") {
+      return allLeads;
+    }
+
+    const now = new Date();
+    const todayStart = startOfDay(now);
+    const todayEnd = endOfDay(now);
+
+    return allLeads.filter((lead) => {
+      const followDate = getLeadFollowUpDate(lead);
+      if (!followDate) return false;
+
+      if (followUpTab === "TODAY") {
+        return followDate >= todayStart && followDate <= todayEnd;
+      }
+
+      if (followUpTab === "TOMORROW") {
+        const tomorrowStart = startOfDay(addDays(now, 1));
+        const tomorrowEnd = endOfDay(addDays(now, 1));
+        return followDate >= tomorrowStart && followDate <= tomorrowEnd;
+      }
+
+      if (followUpTab === "NEXT_7_DAYS") {
+        // const start = startOfDay(addDays(now, 1));
+        // const end = endOfDay(addDays(now, 7));
+        // return followDate >= start && followDate <= end;
+        const start = startOfDay(addDays(now, 2));
+        const end = endOfDay(addDays(now, 7));
+        return followDate >= start && followDate <= end;
+      }
+
+      return true;
+    });
+  }, [allLeads, followUpTab]);
 
   function getDateRange(
     filter: DateFilterType,
@@ -650,7 +732,7 @@ export default function CrmView() {
         `${apiClient.URLS.crmlead}/bulk`,
         {
           leads: data,
-          branchId: session?.data?.user?.branchMemberships?.[0]?.branchId,
+
           createdById: session?.data?.user.id,
         },
         true
@@ -686,7 +768,10 @@ export default function CrmView() {
       const { startDate, endDate } = getDateRange(selectedDateFilter, range);
 
       if (user?.id) {
-        // fetchAllLeads(user.id, selectedDateFilter, { startDate: startDate!, endDate: endDate! });
+        fetchAllLeads(user.id, selectedDateFilter, {
+          startDate: startDate!,
+          endDate: endDate!,
+        });
       }
     } catch (err) {
       console.error("error", err);
@@ -759,11 +844,28 @@ export default function CrmView() {
       <p className="md:text-[16px] text-[12px] font-Gordita-Bold">
         {activeTab === "OverView" ? "Leads Overview" : "Analytics Dashboard"}
       </p>
+      {activeTab === "OverView" && (
+        <div className="flex items-center overflow-x-auto md:gap-3 gap-1 mb-2 md:mt-4 mt-2 px-2 md:px-4 py-2">
+          {FOLLOW_UP_TABS.map((tab) => (
+            <Button
+              key={tab.key}
+              onClick={() => setFollowUpTab(tab.key)}
+              className={`md:px-3 px-2 py-1 text-nowrap rounded-md text-[10px] md:text-[12px] font-Gordita-Medium ${
+                followUpTab === tab.key
+                  ? "bg-[#3586FF] text-white"
+                  : "bg-gray-200 text-gray-600"
+              }`}
+            >
+              {tab.label}
+            </Button>
+          ))}
+        </div>
+      )}
 
       {/* Main Content */}
       {activeTab === "OverView" ? (
         <LeadsOverview
-          allLeads={allLeads}
+          allLeads={displayLeads}
           setAllLeads={setAllLeads}
           user={user}
           searchQuery={searchQuery}

@@ -23,13 +23,11 @@ import Link from "next/link";
 import { generateSlug } from "@/utils/helpers";
 import Button from "@/common/Button";
 
-
-
 export default function UserDashBoardView() {
   const session = useSession();
   const [order, setOrders] = useState<any>();
   const [user, setUser] = useState<any>();
-  
+
   const [loading, setLoading] = useState(true);
   const router = useRouter();
 
@@ -49,23 +47,6 @@ export default function UserDashBoardView() {
   const { items } = useCartStore((state: any) => state);
   const { items: wishListItems } = useWishlistStore((state) => state);
 
-  useEffect(() => {
-    const fetchOrders = async () => {
-      if (!user?.id) return;
-      try {
-        const res = await apiClient.get(`${apiClient.URLS.orders}/${user.id}`);
-        if (res.status === 200) {
-          setOrders(res.body);
-        }
-      } catch (error) {
-        console.error("Error fetching orders:", error);
-      }
-    };
-    fetchOrders();
-  }, [user?.id]);
-
- 
-
   // Stats cards data
   const stats = [
     {
@@ -81,13 +62,6 @@ export default function UserDashBoardView() {
       icon: <IoHeart className="text-pink-500" size={20} />,
       color: "bg-pink-500",
       href: "/user/wishlist",
-    },
-    {
-      title: "Your Orders",
-      value: order?.length ?? 0,
-      icon: <FiBox className="text-green-500" size={20} />,
-      color: "bg-green-500",
-      href: "/user/orders",
     },
   ];
 

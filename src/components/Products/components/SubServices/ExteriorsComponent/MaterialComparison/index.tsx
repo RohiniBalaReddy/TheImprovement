@@ -29,7 +29,7 @@ export default function MaterialComparison({
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-yellow-400 mx-auto mt-4 rounded-full"></div>
 
-        <div className="flex md:flex-wrap overflow-auto justify-center md:gap-4 gap-2 md:mb-8 mb-4">
+        <div className="flex md:flex-wrap overflow-auto justify-center md:gap-4 gap-2 md:mb-8 mb-4 mt-2 md:mt-1">
           {materials.map((material) => (
             <Button
               key={material.name}
@@ -37,7 +37,7 @@ export default function MaterialComparison({
               className={`md:px-6 px-3 md:py-3 py-2 rounded-lg  md:text-[14px] text-[12px] font-Gordita-Medium transition-all ${
                 selectedMaterial.name === material.name
                   ? "bg-[#5297ff] text-white shadow-lg"
-                  : "bg-white text-gray-700 hover:bg-gray-100"
+                  : "bg-gray-200 text-gray-700 hover:bg-gray-100"
               }`}
             >
               {material.name}

@@ -93,7 +93,7 @@ const AboutUs = () => {
 
           <div className="relative w-full md:h-full h-[340px] rounded-xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/custombuilder/subservices/demolition/aboutus.png"
+              src="/images/earthmoves/whychooseus/bgimage.png"
               alt="Demolition team working on-site"
               fill
               className="object-cover hover:scale-105 transition-transform duration-700"

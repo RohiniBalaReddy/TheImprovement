@@ -32,37 +32,33 @@ const data = [
 ];
 const services = [
   {
-    image: "/images/services/construction.png",
+    image: "/images/services/construction.jpg",
     label: "Construction",
     href: "/services/construction",
   },
   {
-    image: "/images/services/demolition.png",
+    image: "/images/services/demolition.jpg",
     label: "Demolition",
     href: "/services/demolition",
   },
   {
-    image: "/images/services/flooring.png",
+    image: "/images/services/flooring.jpg",
     label: "Flooring",
     href: "/services/flooring",
   },
-  {
-    image: "/images/services/electrical.png",
-    label: "Electrical",
-    href: "/services/electrical",
-  },
+  
   {
     image: "/images/services/plumbing.png",
     label: "Plumbing",
     href: "/services/plumbing",
   },
   {
-    image: "/images/services/hvac.png",
+    image: "/images/services/hvac.jpg",
     label: "HVAC",
     href: "/services/hvac",
   },
   {
-    image: "/images/services/roofing.png",
+    image: "/images/services/roofing.jpg",
     label: "Roofing",
     href: "/services/roofing",
   },
@@ -72,7 +68,7 @@ const services = [
     href: "/services/painting",
   },
   {
-    image: "/images/services/exteriors.png",
+    image: "/images/services/exteriors.jpg",
     label: "Driveway & Exterior Works",
     href: "/services/exteriors",
   },

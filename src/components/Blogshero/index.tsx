@@ -8,7 +8,7 @@ import Loader from "@/components/Loader";
 import { BlogPageProps } from "@/pages/blogs";
 import { useRouter } from "next/router";
 import Button from "@/common/Button";
-import GoogleAdSense from "@/components/GoogleAdSense";
+
 
 const filterTags = [
   "Furniture",
@@ -185,9 +185,7 @@ const BlogsHero = ({
           </div>
 
         
-          <div className="px-3 mb-12 max-w-full mx-auto flex flex-col items-center gap-4">
-            <GoogleAdSense />
-          </div>
+          
         </div>
       </div>
     </>

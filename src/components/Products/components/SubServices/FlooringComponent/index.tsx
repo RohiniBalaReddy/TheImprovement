@@ -49,7 +49,7 @@ const FlooringComponent = () => {
   const flooringTypesData = [
     {
       name: "Hardwood Flooring",
-      image: "/images/services/flooring/hardwood.jpg",
+      image: "/images/services/flooring/hardwood.png",
       description:
         "Elegant, durable, and timeless hardwood flooring for your home or office.",
       icon: <MdCheckCircle size={12} className="text-blue-600" />,
@@ -105,28 +105,29 @@ const FlooringComponent = () => {
         title: "Consultation & Selection",
         description:
           "Choose the best flooring material for your home or office with our expert guidance.",
-        icon: "/icons/flooring/consultation.svg",
+        icon: "/images/custombuilder/subservices/plumbing/appointment.png",
       },
       {
         step: "02",
         title: "Site Preparation",
         description:
           "We prepare the floor surface to ensure a smooth and durable installation.",
-        icon: "/icons/flooring/preparation.svg",
+        icon: "/icons/flooring/preparation.png",
       },
       {
         step: "03",
         title: "Installation",
+
         description:
           "Professional installation of selected flooring type with high-quality tools and techniques.",
-        icon: "/icons/flooring/installation.svg",
+        icon: "/icons/flooring/installation.png",
       },
       {
         step: "04",
         title: "Finishing & Cleaning",
         description:
           "Final finishing touches, polishing, and cleaning to deliver a ready-to-use floor.",
-        icon: "/icons/flooring/finishing.svg",
+        icon: "/icons/flooring/finishing.png",
       },
     ],
   };
@@ -134,68 +135,70 @@ const FlooringComponent = () => {
   const FlooringHeroSectionData = {
     heading: "Professional Flooring Services",
     subHeading: "Durable • Stylish • Expertly Installed",
-    bgImageUrl: "/images/services/flooring.png",
+    bgImageUrl: "/images/services/flooring.jpg",
     bookingCtaUrl: { label: "Discover More", url: "" },
-    locationcta: [
-      { label: "Hyderabad", url: "" },
-      { label: "Chennai", url: "" },
-      { label: "Bengaluru", url: "" },
-    ],
+   locationcta: [
+  { label: "New York", url: "" },
+  { label: "Los Angeles", url: "" },
+  { label: "Chicago", url: "" },
+  { label: "Houston", url: "" },
+],
+
     selectedId: { id: 3, service: "Flooring" },
   };
 
   const completedProjectsData = [
     {
-      image: "/images/services/flooring/projects/project1.jpg",
+      image: "/images/services/flooring/modenlivingroom.jpg",
       title: "Modern Living Room Hardwood",
       category: "Hardwood",
       location: "New York",
       duration: "2 Weeks",
     },
     {
-      image: "/images/services/flooring/projects/project2.jpg",
+      image: "/images/services/flooring/luxurykitchen.jpg",
       title: "Luxury Kitchen Tiles",
       category: "Tiles",
       location: "Los Angeles",
       duration: "3 Weeks",
     },
     {
-      image: "/images/services/flooring/projects/project3.jpg",
+      image: "/images/services/flooring/CorporateOffice.jpg",
       title: "Corporate Office Laminate",
       category: "Laminate",
       location: "Chicago",
       duration: "4 Weeks",
     },
     {
-      image: "/images/services/flooring/projects/project4.jpg",
+      image: "/images/services/flooring/elegantbedroom.jpg",
       title: "Elegant Bedroom Vinyl",
       category: "Vinyl",
       location: "Houston",
       duration: "2 Weeks",
     },
     {
-      image: "/images/services/flooring/projects/project5.jpg",
+      image: "/images/services/flooring/CommercialSpace.jpg",
       title: "Commercial Space Hardwood",
       category: "Commercial",
       location: "San Francisco",
       duration: "6 Weeks",
     },
     {
-      image: "/images/services/flooring/projects/project6.jpg",
+      image: "/images/services/flooring/ApartmentComplex.jpg",
       title: "Apartment Complex Tiles",
       category: "Residential",
       location: "Seattle",
       duration: "8 Weeks",
     },
     {
-      image: "/images/services/flooring/projects/project7.jpg",
+      image: "/images/services/flooring/vinyl.jpg",
       title: "Showroom Luxury Vinyl",
       category: "Vinyl",
       location: "Miami",
       duration: "3 Weeks",
     },
     {
-      image: "/images/services/flooring/projects/project8.jpg",
+      image: "/images/newlylaunched/apartment6.png",
       title: "Villa Hardwood Flooring",
       category: "Hardwood",
       location: "Dallas",
@@ -253,7 +256,7 @@ const FlooringComponent = () => {
 
       <Gallery projects={completedProjectsData} />
 
-      <FAQSComp image="/images/services/flooring.png" faqs={faqs} />
+      <FAQSComp image="/Interiors/InteriorsCalculatorBg.jpg" faqs={faqs} />
       <div className="flex flex-col items-center gap-y-[20px] mb-[45px] md:mb-[64px]">
         <div className="md:flex flex-col justify-center items-center gap-4  hidden">
           <h1 className="text-black font-Gordita-Medium md:font-Gordita-Bold text-[24px] md:text-[25px]  text-start">

@@ -59,10 +59,15 @@ const BuildHome = ({ initialBlogs }: HomepageProps) => {
       </div>
       <TriedOptions />
       <CostEstimator />
-     
+
       <BuilderProcess />
-      <OurProjects />
-      <TestimonalBuilder />
+      <div className=" mb-[45px] md:mb-[64px]">
+        <OurProjects />
+      </div>
+      <div className=" mb-[45px] md:mb-[64px]">
+        <TestimonalBuilder />
+      </div>
+
       <FAQSComp
         image={"/images/custombuilder/subservices/homedecor/faqs/faqsimage.png"}
         faqs={faqs}

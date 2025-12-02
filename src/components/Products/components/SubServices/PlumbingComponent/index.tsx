@@ -18,7 +18,7 @@ import OurServices, {
 } from "../Components/OurServices";
 import FAQSComp from "../Components/FAQSComp";
 import apiClient from "@/utils/apiClient";
-import GoogleAdSense from "@/components/GoogleAdSense";
+
 import BlogCard from "@/components/BlogCard";
 import Button from "@/common/Button";
 import { FaMapMarkerAlt, FaSearch } from "react-icons/fa";
@@ -459,12 +459,7 @@ const PlumbingComponent = () => {
       <div className="mb-[45px] md:mb-[64px] ">
         <BookNowSection {...BookNowData} />
       </div>
-      <div className="md:px-8 px-3 mb-[45px] max-w-[98%] mx-auto md:mb-[64px] flex flex-col items-center gap-4">
-        <h1 className="font-Gordita-Bold md:text-[24px] text-[18px] ">
-          Recommended for You
-        </h1>
-        <GoogleAdSense />
-      </div>
+     
       <div className="mb-[45px] md:mb-[64px]">
         <ChooseServices {...ChooseServicesData} />
       </div>
