@@ -44,9 +44,9 @@ export const RoutebreadCrumbs = () => {
                 className={clsx({
                   "inline-block md:text-[18px] text-base font-Gordita-Medium":
                     true,
-                  "pointer-events-none cursor-default text-[#3586FF]":
+                  "pointer-events-none cursor-default text-[#2872a1]":
                     index === generatedBreadCrumbs.length - 1,
-                  "text-[#000000] hover:text-[#3586FF]":
+                  "text-[#000000] hover:text-[#2872a1]":
                     index !== generatedBreadCrumbs.length - 1,
                 })}
                 href={breadCrumb.href}

@@ -49,7 +49,7 @@ export default function CSVUploadModal({
           {/* Header */}
           <div className="flex items-center gap-3 mb-6">
             <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-              <FaFileCsv className="text-blue-600 text-[24px]" />
+              <FaFileCsv className="text-[#2872a1] text-[24px]" />
             </div>
             <div>
               <h3 className="text-[18px] font-Gordita-Bold text-gray-800">
@@ -94,7 +94,7 @@ export default function CSVUploadModal({
               htmlFor="csv-file-input"
               className="w-full cursor-pointer block"
             >
-              <div className="w-full px-6 py-8 border-2 border-dashed border-gray-300 hover:border-blue-400 rounded-lg text-center transition-colors bg-gray-50 hover:bg-blue-50">
+              <div className="w-full px-6 py-8 border-2 border-dashed border-gray-300 hover:border-[#1d547] rounded-lg text-center transition-colors bg-gray-50 hover:bg-blue-50">
                 <FaUpload className="mx-auto text-gray-400 text-[32px] mb-3" />
                 {selectedFile ? (
                   <div>
@@ -104,7 +104,7 @@ export default function CSVUploadModal({
                     <p className="text-[12px] text-gray-600 font-Gordita-Medium">
                       {(selectedFile.size / 1024).toFixed(2)} KB
                     </p>
-                    <p className="text-[11px] text-blue-600 font-Gordita-Medium mt-2">
+                    <p className="text-[11px] text-[#2872a1] font-Gordita-Medium mt-2">
                       Click to change file
                     </p>
                   </div>
@@ -127,7 +127,7 @@ export default function CSVUploadModal({
             <a
               href="data:text/csv;charset=utf-8,Fullname,Phonenumber,email,city,state,propertytype,bhk,platform,serviceType,leadstatus%0AJohn Doe,9876543210,john@example.com,Hyderabad,Telangana,Flat,3,Walkin,RealEstate,New%0AJane Smith,8765432109,jane@example.com,Bangalore,Karnataka,Villa,4,Facebook,Interiors,Contacted"
               download="sample_leads.csv"
-              className="block w-full text-center py-2 text-[12px] font-Gordita-Medium text-blue-600 hover:text-blue-700 hover:underline"
+              className="block w-full text-center py-2 text-[12px] font-Gordita-Medium text-[#2872a1] hover:text-blue-700 hover:underline"
             >
               📥 Download Sample CSV Template
             </a>
@@ -142,7 +142,7 @@ export default function CSVUploadModal({
               <li>• Phone numbers must be 10 digits starting with 6-9</li>
               <li>• Duplicate entries will be skipped</li>
               <li>• Invalid rows will be ignored</li>
-             
+
             </ul>
           </div>
 
@@ -157,11 +157,10 @@ export default function CSVUploadModal({
             <Button
               onClick={onUpload}
               disabled={!selectedFile}
-              className={`flex-1 py-3 px-4 rounded-lg text-[14px] font-Gordita-Medium transition-colors flex items-center justify-center gap-2 ${
-                selectedFile
-                  ? "bg-blue-600 text-white hover:bg-blue-700"
-                  : "bg-gray-200 text-gray-400 cursor-not-allowed"
-              }`}
+              className={`flex-1 py-3 px-4 rounded-lg text-[14px] font-Gordita-Medium transition-colors flex items-center justify-center gap-2 ${selectedFile
+                ? "bg-[#2872a1] text-white hover:bg-blue-700"
+                : "bg-gray-200 text-gray-400 cursor-not-allowed"
+                }`}
             >
               <FaUpload />
               Upload Leads

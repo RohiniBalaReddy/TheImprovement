@@ -7,5 +7,5 @@ export const buildPropertyLink = (
   const cityPath = city || "Hyderabad";
   const purposeParam = purpose ? `?commercialPurpose=${purpose}` : "";
 
-  return `https://www.onecasa.in/properties/${typePath}/${cityPath}${purposeParam}`;
+  return `https://www.theimprovementllc.in/properties/${typePath}/${cityPath}${purposeParam}`;
 };

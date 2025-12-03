@@ -11,8 +11,8 @@ const About = () => {
         description="OneCasa is India's all-in-one platform for real estate, interiors, construction, furniture, legal services, and home improvement. Learn how we help you buy, build, and style your dream home across cities like Hyderabad, Mumbai, Bangalore, Pune, Chennai, and more."
         keywords="About OneCasa, OneCasa story, real estate company India, interior design firm, construction company India, buy property India, home building, DreamCasa to OneCasa, Hyderabad real estate, Mumbai real estate, Bangalore interiors, Pune property services"
         breadcrumbs={[
-          { name: "Home", item: "https://www.onecasa.in" },
-          { name: "About Us", item: "https://www.onecasa.in/about-us" },
+          { name: "Home", item: "https://www.theimprovementllc.in" },
+          { name: "About Us", item: "https://www.theimprovementllc.in/about-us" },
         ]}
         faq={[
           {

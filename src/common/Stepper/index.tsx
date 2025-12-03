@@ -18,12 +18,12 @@ const Stepper = ({ currentStep, steps, handleClick, iconMap }: StepperProps) => 
         return (
           <div
             key={index}
-            className={`flex flex-col items-center  flex- cursor-pointer  z-10 ${isActive ? "text-[#5297FF]" : "text-gray-500"}`}
+            className={`flex flex-col items-center  flex- cursor-pointer  z-10 ${isActive ? "text-[#2872a1]" : "text-gray-500"}`}
             onClick={handleClick(index)}
           >
             <div
               className={`flex items-center justify-center w-10 h-10 rounded-full border-2 mb-2  
-              ${isCompleted || isActive ? "border-[#5297ff] bg-blue-100 z-10  font-Gordita-Medium" : "border-gray-300"}`}
+              ${isCompleted || isActive ? "border-[#2872a1] bg-blue-100 z-10  font-Gordita-Medium" : "border-gray-300"}`}
             >
               {icon ? icon : <span className="text-xs font-Gordita-Medium">{index + 1}</span>}
             </div>
@@ -31,7 +31,7 @@ const Stepper = ({ currentStep, steps, handleClick, iconMap }: StepperProps) => 
             {index !== steps.length - 1 && (
               <div
                 className={`absolute top-5 w-full max-w-[180px] h-1 
-                  ${isCompleted ? "bg-blue-600" : "bg-gray-300"}
+                  ${isCompleted ? "bg-[#2872a1]" : "bg-gray-300"}
                 `}
                 style={{
                   transform: "translateX(50%)",

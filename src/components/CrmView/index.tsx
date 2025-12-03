@@ -171,7 +171,7 @@ export default function CrmView() {
     try {
       const raw = localStorage.getItem("crm_saved_views");
       if (raw) setSavedViews(JSON.parse(raw));
-    } catch {}
+    } catch { }
   }, []);
 
   // =========== API CALLS ===========
@@ -256,8 +256,7 @@ export default function CrmView() {
       };
 
       const res = await apiClient.get(
-        `${apiClient.URLS.crmlead}/by-user/${
-          user.id
+        `${apiClient.URLS.crmlead}/by-user/${user.id
         }?startDate=${encodeURIComponent(
           startDate
         )}&endDate=${encodeURIComponent(endDate)}`
@@ -269,10 +268,10 @@ export default function CrmView() {
           activeStatus === "all"
             ? todayLeads
             : todayLeads.filter(
-                (lead: Lead) =>
-                  lead.leadstatus?.trim().toLowerCase() ===
-                  activeStatus.trim().toLowerCase()
-              );
+              (lead: Lead) =>
+                lead.leadstatus?.trim().toLowerCase() ===
+                activeStatus.trim().toLowerCase()
+            );
 
         setTodayLeadsCount(todayFilteredLeads.length);
       }
@@ -482,7 +481,7 @@ export default function CrmView() {
     setSavedViews(views);
     try {
       localStorage.setItem("crm_saved_views", JSON.stringify(views));
-    } catch {}
+    } catch { }
   };
 
   const saveCurrentView = (viewName: string) => {
@@ -829,11 +828,10 @@ export default function CrmView() {
           <Button
             key={item.key}
             onClick={() => setActiveTab(item.key)}
-            className={`md:px-4 py-1 px-2 md:py-1 max-md:text-nowrap rounded-md transform uppercase text-[10px] md:text-[12px] font-Gordita-Bold flex items-center gap-2 ${
-              activeTab === item.key
-                ? "bg-[#3586FF] text-white"
-                : "bg-gray-200 text-gray-600"
-            }`}
+            className={`md:px-4 py-1 px-2 md:py-1 max-md:text-nowrap rounded-md transform uppercase text-[10px] md:text-[12px] font-Gordita-Bold flex items-center gap-2 ${activeTab === item.key
+              ? "bg-[#2872a1] text-white"
+              : "bg-gray-200 text-gray-600"
+              }`}
           >
             {item.icon}
             {item.label}
@@ -850,11 +848,10 @@ export default function CrmView() {
             <Button
               key={tab.key}
               onClick={() => setFollowUpTab(tab.key)}
-              className={`md:px-3 px-2 py-1 text-nowrap rounded-md text-[10px] md:text-[12px] font-Gordita-Medium ${
-                followUpTab === tab.key
-                  ? "bg-[#3586FF] text-white"
-                  : "bg-gray-200 text-gray-600"
-              }`}
+              className={`md:px-3 px-2 py-1 text-nowrap rounded-md text-[10px] md:text-[12px] font-Gordita-Medium ${followUpTab === tab.key
+                ? "bg-[#2872a1] text-white"
+                : "bg-gray-200 text-gray-600"
+                }`}
             >
               {tab.label}
             </Button>
@@ -922,9 +919,8 @@ export default function CrmView() {
         <CSVLink
           data={allLeads}
           headers={headers}
-          filename={`onecasa-leads-${
-            new Date().toISOString().split("T")[0]
-          }.csv`}
+          filename={`theimprovementllc-leads-${new Date().toISOString().split("T")[0]
+            }.csv`}
         >
           Export
         </CSVLink>

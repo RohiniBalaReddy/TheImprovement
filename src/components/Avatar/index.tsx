@@ -32,7 +32,7 @@ const Avatar: React.FC<AvatarProps> = ({ showAbove = true }) => {
   const session = useSession();
   const [user, setUser] = useState<any>();
 
- 
+
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -43,7 +43,7 @@ const Avatar: React.FC<AvatarProps> = ({ showAbove = true }) => {
       const sessionUser = session.data?.user;
       setUser(sessionUser);
 
-      
+
     }
   }, [session?.status]);
 
@@ -125,16 +125,15 @@ const Avatar: React.FC<AvatarProps> = ({ showAbove = true }) => {
             />
           </div>
         ) : (
-          <div className="w-10 h-10 rounded-full bg-[#5297ff] flex items-center justify-center shadow-sm">
+          <div className="w-10 h-10 rounded-full bg-[#2872a1] flex items-center justify-center shadow-sm">
             <span className="text-white font-Gordita-Medium text-sm font-semibold">
               {getInitials(user?.firstName, user?.lastName)}
             </span>
           </div>
         )}
         <FiChevronDown
-          className={`text-gray-500 transition-transform duration-200 ${
-            isOpen ? "rotate-180" : ""
-          }`}
+          className={`text-gray-500 transition-transform duration-200 ${isOpen ? "rotate-180" : ""
+            }`}
           size={16}
         />
       </div>
@@ -161,7 +160,7 @@ const Avatar: React.FC<AvatarProps> = ({ showAbove = true }) => {
                     />
                   </div>
                 ) : (
-                  <div className=" w-10  h-10 rounded-full bg-[#5297ff] flex items-center justify-center shadow-md">
+                  <div className=" w-10  h-10 rounded-full bg-[#2872a1] flex items-center justify-center shadow-md">
                     <span className="text-white font-Gordita-Medium md:text-base text-[12px]">
                       {getInitials(user?.firstName, user?.lastName)}
                     </span>
@@ -175,7 +174,7 @@ const Avatar: React.FC<AvatarProps> = ({ showAbove = true }) => {
                 <p className="md:text-xs text-[10px] text-gray-500 truncate md:max-w-[160px] max-w-[130px]">
                   {user?.email}
                 </p>
-                <p className="md:text-xs text-[10px] font-Gordita-Medium text-[#5297FF] md:mt-1 mt-0">
+                <p className="md:text-xs text-[10px] font-Gordita-Medium text-[#2872a1] md:mt-1 mt-0">
                   {user?.role || "Customer"}
                 </p>
               </div>

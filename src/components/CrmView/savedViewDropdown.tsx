@@ -68,7 +68,7 @@ export default function SavedViewsDropdown({
               {!showNameInput ? (
                 <Button
                   onClick={() => setShowNameInput(true)}
-                  className="w-full flex items-center justify-center gap-2 bg-blue-600 text-white px-3 py-2 rounded-md md:text-[12px] text-[10px] font-Gordita-Medium hover:bg-blue-700 transition-colors"
+                  className="w-full flex items-center justify-center gap-2 bg-[#2872a1] text-white px-3 py-2 rounded-md md:text-[12px] text-[10px] font-Gordita-Medium hover:bg-blue-700 transition-colors"
                 >
                   <FaSave />
                   Save Current View
@@ -88,7 +88,7 @@ export default function SavedViewsDropdown({
                     <Button
                       onClick={handleSave}
                       disabled={!saveViewName.trim()}
-                      className="flex-1 bg-blue-600 text-white px-2 py-1.5 rounded-md text-[11px] font-Gordita-Medium hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="flex-1 bg-[#2872a1] text-white px-2 py-1.5 rounded-md text-[11px] font-Gordita-Medium hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                       Save
                     </Button>
@@ -126,7 +126,7 @@ export default function SavedViewsDropdown({
                       className="flex items-center justify-between p-3 hover:bg-gray-50 transition-colors group"
                     >
                       <Button
-                        className="flex-1 text-left text-[12px] font-Gordita-Medium text-gray-700 hover:text-blue-600 transition-colors truncate"
+                        className="flex-1 text-left text-[12px] font-Gordita-Medium text-gray-700 hover:text-[#2872a1] transition-colors truncate"
                         onClick={() => {
                           onApply(view);
                           setIsSaveViewOpen(false);
@@ -135,7 +135,7 @@ export default function SavedViewsDropdown({
                         title={view.name}
                       >
                         <div className="flex items-center gap-2">
-                          <FaEye className="text-gray-400 group-hover:text-blue-500 transition-colors flex-shrink-0" />
+                          <FaEye className="text-gray-400 group-hover:text-[#2872a1] transition-colors flex-shrink-0" />
                           <span className="truncate">{view.name}</span>
                         </div>
                       </Button>

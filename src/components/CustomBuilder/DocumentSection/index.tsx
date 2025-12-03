@@ -111,7 +111,7 @@ const DocumentSection = ({
 
       <div className="mt-8">
         {currentDocuments?.length === 0 ? (
-          <div className="flex flex-row justify-center text-[#5297FF] items-center font-Gordita-Medium bg-blue-100 py-3 px-4 rounded-md shadow-custom w-full md:text-[12px] text-[10px] border ">
+          <div className="flex flex-row justify-center text-[#2872a1] items-center font-Gordita-Medium bg-blue-100 py-3 px-4 rounded-md shadow-custom w-full md:text-[12px] text-[10px] border ">
             <p>There are no Documents for  {activeTab} .</p>
           </div>
         ) : (
@@ -214,14 +214,14 @@ const DocumentSection = ({
                   <div className="pointer-events-none absolute inset-x-0 top-2 right-3 flex justify-center opacity-0 transition-all duration-200 group-hover:opacity-100">
                     <div className="pointer-events-auto flex gap-2 bg-white/95 backdrop-blur-sm py-1 px-2 rounded-full shadow-md border border-gray-200">
                       <Button
-                        className="bg-[#5297ff] text-white p-1 rounded-full hover:bg-gray-400"
+                        className="bg-[#2872a1] text-white p-1 rounded-full hover:bg-gray-400"
                         onClick={() => handlePreview(doc.fileUrl)}
                       >
                         <IoMdEye className="md:text-[14px] text-[12px]" />
                       </Button>
 
                       <Button
-                        className="bg-[#5297ff] text-white p-1 rounded-full hover:bg-blue-700"
+                        className="bg-[#2872a1] text-white p-1 rounded-full hover:bg-blue-700"
                         onClick={() => handleDownload(doc.fileUrl, index)}
                         disabled={downloadingIndex === index}
                       >
@@ -279,7 +279,7 @@ const DocumentSection = ({
             </div>
             <div className="flex space-x-2">
               <Button
-                className="text-[#5297FF] hover:text-blue-800 hover:bg-blue-50 px-3 py-1.5 rounded-md text-[12px] font-Gordita-Medium transition-colors duration-200 flex items-center"
+                className="text-[#2872a1] hover:text-blue-800 hover:bg-blue-50 px-3 py-1.5 rounded-md text-[12px] font-Gordita-Medium transition-colors duration-200 flex items-center"
                 onClick={() => handleDownload(previewUrl, 0)}
               >
                 <MdDownload className="w-4 h-4 mr-1" />

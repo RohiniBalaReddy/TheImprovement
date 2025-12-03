@@ -23,27 +23,26 @@ export default function ConsultLegalExpert({
     <>
       <div className="max-w-[1392px] min-h-[616px] mx-auto flex flex-col items-center ">
         <div className="mb-12 text-center">
-             <div className="relative ">
-          <h1 className="font-Gordita-Bold text-[18px] md:text-[24px] lg:text-[26px] text-[#212227] md:mb-4 mb-2 leading-tight">
-            {heading}
-          </h1>
-         
-        </div>
-        <h2 className="text-[14px] font-Gordita-Medium md:text-[16px] text-gray-600 leading-relaxed px-4">
-          {subheading}
-        </h2>
-        <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-yellow-400 mx-auto mt-4 rounded-full"></div>
+          <div className="relative ">
+            <h1 className="font-Gordita-Bold text-[18px] md:text-[24px] lg:text-[26px] text-[#212227] md:mb-4 mb-2 leading-tight">
+              {heading}
+            </h1>
+
+          </div>
+          <h2 className="text-[14px] font-Gordita-Medium md:text-[16px] text-gray-600 leading-relaxed px-4">
+            {subheading}
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#2872a1] to-yellow-400 mx-auto mt-4 rounded-full"></div>
 
         </div>
-       
+
         <div className="flex items-center max-w-[1392px] min-h-[428px] gap-x-[91px] flex-wrap">
           <div className="flex flex-col items-center justify-center max-w-[733px] min-h-[428px] gap-y-[32px]">
             {listItems.map((item, index) => {
               return (
                 <div
-                  className={`flex items-center max-w-[697px] min-h-[83px] gap-x-[16px] ${
-                    index % 2 != 0 ? "pl-[18px]" : "pr-[18px]"
-                  }`}
+                  className={`flex items-center max-w-[697px] min-h-[83px] gap-x-[16px] ${index % 2 != 0 ? "pl-[18px]" : "pr-[18px]"
+                    }`}
                   key={index}
                 >
                   <div>

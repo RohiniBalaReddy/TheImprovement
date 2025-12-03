@@ -12,80 +12,80 @@ const OurProjects = () => {
   const gotoNext = () => sliderRef.current?.slickNext();
   const gotoPrev = () => sliderRef.current?.slickPrev();
 
- const data = [
-  {
-    projectName: "Skyline Towers",
-    imageLink: "/ourProjects/sample-image-1.jpg",
-    location: "Manhattan, New York",
-    link: "/projects/skylinetowers",
-  },
-  {
-    projectName: "Urban Retreat",
-    imageLink: "/ourProjects/sample-image-2.jpg",
-    location: "Downtown, Los Angeles",
-    link: "/projects/urbanretreat",
-  },
-  {
-    projectName: "Harbor View Residency",
-    imageLink: "/ourProjects/sample-image-3.jpg",
-    location: "Navy Pier, Chicago",
-    link: "/projects/harborview",
-  },
-  {
-    projectName: "Green Meadows",
-    imageLink: "/ourProjects/sample-image-4.jpg",
-    location: "Bellevue, Seattle",
-    link: "/projects/greenmeadows",
-  },
-  {
-    projectName: "Sunset Villas",
-    imageLink: "/ourProjects/sample-image-5.jpg",
-    location: "Mission District, San Francisco",
-    link: "/projects/sunsetvillas",
-  },
-  {
-    projectName: "Lakefront Homes",
-    imageLink: "/ourProjects/sample-image-6.jpg",
-    location: "Lakeview, Chicago",
-    link: "/projects/lakefronthomes",
-  },
-  {
-    projectName: "Golden Gate Residency",
-    imageLink: "/ourProjects/sample-image-7.jpg",
-    location: "Marina District, San Francisco",
-    link: "/projects/goldengateresidency",
-  },
-  {
-    projectName: "Silver Creek",
-    imageLink: "/ourProjects/sample-image-8.jpg",
-    location: "Brooklyn Heights, New York",
-    link: "/projects/silvercreek",
-  },
-  {
-    projectName: "Palm Ridge",
-    imageLink: "/ourProjects/sample-image-9.jpg",
-    location: "South Beach, Miami",
-    link: "/projects/palmridge",
-  },
-  {
-    projectName: "Elite Estates",
-    imageLink: "/ourProjects/sample-image-3.jpg",
-    location: "Beverly Hills, Los Angeles",
-    link: "/projects/eliteestates",
-  },
-  {
-    projectName: "Royal Gardens",
-    imageLink: "/ourProjects/sample-image-7.jpg",
-    location: "Downtown, Houston",
-    link: "/projects/royalgardens",
-  },
-  {
-    projectName: "Emerald Hills",
-    imageLink: "/ourProjects/sample-image-4.jpg",
-    location: "Cambridge, Boston",
-    link: "/projects/emeraldhills",
-  },
-];
+  const data = [
+    {
+      projectName: "Skyline Towers",
+      imageLink: "/ourProjects/sample-image-1.jpg",
+      location: "Manhattan, New York",
+      link: "/projects/skylinetowers",
+    },
+    {
+      projectName: "Urban Retreat",
+      imageLink: "/ourProjects/sample-image-2.jpg",
+      location: "Downtown, Los Angeles",
+      link: "/projects/urbanretreat",
+    },
+    {
+      projectName: "Harbor View Residency",
+      imageLink: "/ourProjects/sample-image-3.jpg",
+      location: "Navy Pier, Chicago",
+      link: "/projects/harborview",
+    },
+    {
+      projectName: "Green Meadows",
+      imageLink: "/ourProjects/sample-image-4.jpg",
+      location: "Bellevue, Seattle",
+      link: "/projects/greenmeadows",
+    },
+    {
+      projectName: "Sunset Villas",
+      imageLink: "/ourProjects/sample-image-5.jpg",
+      location: "Mission District, San Francisco",
+      link: "/projects/sunsetvillas",
+    },
+    {
+      projectName: "Lakefront Homes",
+      imageLink: "/ourProjects/sample-image-6.jpg",
+      location: "Lakeview, Chicago",
+      link: "/projects/lakefronthomes",
+    },
+    {
+      projectName: "Golden Gate Residency",
+      imageLink: "/ourProjects/sample-image-7.jpg",
+      location: "Marina District, San Francisco",
+      link: "/projects/goldengateresidency",
+    },
+    {
+      projectName: "Silver Creek",
+      imageLink: "/ourProjects/sample-image-8.jpg",
+      location: "Brooklyn Heights, New York",
+      link: "/projects/silvercreek",
+    },
+    {
+      projectName: "Palm Ridge",
+      imageLink: "/ourProjects/sample-image-9.jpg",
+      location: "South Beach, Miami",
+      link: "/projects/palmridge",
+    },
+    {
+      projectName: "Elite Estates",
+      imageLink: "/ourProjects/sample-image-3.jpg",
+      location: "Beverly Hills, Los Angeles",
+      link: "/projects/eliteestates",
+    },
+    {
+      projectName: "Royal Gardens",
+      imageLink: "/ourProjects/sample-image-7.jpg",
+      location: "Downtown, Houston",
+      link: "/projects/royalgardens",
+    },
+    {
+      projectName: "Emerald Hills",
+      imageLink: "/ourProjects/sample-image-4.jpg",
+      location: "Cambridge, Boston",
+      link: "/projects/emeraldhills",
+    },
+  ];
 
 
   const sliderSettings = {
@@ -107,7 +107,7 @@ const OurProjects = () => {
   return (
     <div className="w-full flex flex-col gap-4 md:gap-12 my-4">
       <p className="text-center font-Gordita-Bold md:text-[28px] text-[20px] leading-[32px] text-[#081221]">
-        Our <span className="text-[#5297FF]">Projects</span>
+        Our <span className="text-[#2872a1]">Projects</span>
       </p>
 
       <div className="relative">
@@ -157,7 +157,7 @@ const OurProjects = () => {
                         px-3 md:px-4 py-1.5
                         text-[12px] md:text-[13px]
                         rounded-md text-white
-                        bg-gradient-to-r from-[#5297FF] to-[#5B8BFF]
+                        bg-gradient-to-r from-[#2872a1] to-[#5B8BFF]
                         shadow-sm hover:shadow-md
                         transition-all duration-300
                         hover:scale-[1.03] active:scale-[0.98]

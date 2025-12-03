@@ -64,7 +64,7 @@ const StepPill = ({
   <div
     className={`px-2.5 py-1 rounded-[6px] text-xs font-Gordita-Medium border
     ${active
-        ? "bg-blue-50 text-[#5297ff] border-blue-200"
+        ? "bg-blue-50 text-[#2872a1] border-blue-200"
         : "bg-gray-50 text-gray-600 border-gray-200"
       }`}
   >
@@ -301,7 +301,7 @@ const AuthModal = ({ isOpen, closeModal, callbackUrl }: AuthModalProps) => {
           maxLength={1}
           inputMode="numeric"
           className="w-10 h-10 md:text-xl text-[12px] text-center border-2 border-gray-200 rounded-xl
-                     focus:border-[#5297ff] focus:ring-2 focus:ring-blue-100 bg-white shadow-sm transition"
+                     focus:border-[#2872a1] focus:ring-2 focus:ring-blue-100 bg-white shadow-sm transition"
           onChange={(e) => {
             const val = e.target.value.replace(/\D/g, "");
             const next = [...otp];
@@ -348,7 +348,7 @@ const AuthModal = ({ isOpen, closeModal, callbackUrl }: AuthModalProps) => {
             <div className="leading-tight">
               <h2 className="text-[18px] md:text-[20px]  font-Gordita-Bold text-gray-900">
                 Welcome to{" "}
-                <span className="text-[#5297FF] font-Gordita-Bold">TheIMprovement</span>
+                <span className="text-[#2872a1] font-Gordita-Bold">TheIMPROVEMENT</span>
               </h2>
               <p className="text-[10px] md:text-[12px] font-Gordita-Regular text-gray-500 tracking-wide">
                 Building Better. Every Day.
@@ -379,7 +379,7 @@ const AuthModal = ({ isOpen, closeModal, callbackUrl }: AuthModalProps) => {
                   }}
                   className={`px-3  py-1 rounded-md label-text font-Gordita-Medium transition
                     ${method === "phone"
-                      ? "bg-white shadow-sm text-[#5297FF]"
+                      ? "bg-white shadow-sm text-[#2872a1]"
                       : "text-gray-600 hover:text-gray-900"
                     }`}
                   aria-pressed={method === "phone"}
@@ -393,7 +393,7 @@ const AuthModal = ({ isOpen, closeModal, callbackUrl }: AuthModalProps) => {
                   }}
                   className={`px-3 py-1 rounded-md label-text transition font-Gordita-Medium
                     ${method === "email"
-                      ? "bg-white shadow-sm text-[#5297FF]"
+                      ? "bg-white shadow-sm text-[#2872a1]"
                       : "text-gray-600 hover:text-gray-900"
                     }`}
                   aria-pressed={method === "email"}
@@ -423,7 +423,7 @@ const AuthModal = ({ isOpen, closeModal, callbackUrl }: AuthModalProps) => {
 
               <Button
                 type="submit"
-                className="w-full bg-[#5297ff] md:text-[16px] text-[14px] hover:bg-[#5297FF] text-white md:py-2 py-1 rounded-lg font-Gordita-Medium shadow-sm transition disabled:opacity-60"
+                className="w-full bg-[#2872a1] md:text-[16px] text-[14px] hover:bg-[#2872a1] text-white md:py-2 py-1 rounded-lg font-Gordita-Medium shadow-sm transition disabled:opacity-60"
                 disabled={loading || !identifier}
               >
                 {loading ? "Sending OTP…" : "Login"}
@@ -438,7 +438,7 @@ const AuthModal = ({ isOpen, closeModal, callbackUrl }: AuthModalProps) => {
                 <Button
                   type="button"
                   onClick={() => setStep("SIGNUP")}
-                  className="text-[#5297FF] font-Gordita-Medium hover:underline"
+                  className="text-[#2872a1] font-Gordita-Medium hover:underline"
                 >
                   Sign Up
                 </Button>
@@ -457,7 +457,7 @@ const AuthModal = ({ isOpen, closeModal, callbackUrl }: AuthModalProps) => {
 
               <p className="text-gray-700 text-[12px]">
                 Enter the 4-digit code sent to{" "}
-                <span className="font-Gordita-Medium text-[#5297FF]">
+                <span className="font-Gordita-Medium text-[#2872a1]">
                   {identifier}
                 </span>
               </p>
@@ -474,7 +474,7 @@ const AuthModal = ({ isOpen, closeModal, callbackUrl }: AuthModalProps) => {
                 {canResend ? (
                   <Button
                     onClick={resendOtp}
-                    className="text-[#5297FF] font-Gordita-Medium hover:underline"
+                    className="text-[#2872a1] font-Gordita-Medium hover:underline"
                   >
                     Resend code
                   </Button>
@@ -492,7 +492,7 @@ const AuthModal = ({ isOpen, closeModal, callbackUrl }: AuthModalProps) => {
               </div>
 
               <Button
-                className="w-full bg-[#5297FF] hover:bg-blue-700 md:text-[16px] text-[14px] text-white md:py-2 py-1 rounded-lg font-Gordita-Medium shadow-sm transition disabled:opacity-60"
+                className="w-full bg-[#2872a1] hover:bg-blue-700 md:text-[16px] text-[14px] text-white md:py-2 py-1 rounded-lg font-Gordita-Medium shadow-sm transition disabled:opacity-60"
                 onClick={verifyOtp}
                 disabled={loading || otp.some((d) => !d)}
               >
@@ -573,7 +573,7 @@ const AuthModal = ({ isOpen, closeModal, callbackUrl }: AuthModalProps) => {
                     onClick={() => setIsAgent(true)}
                     className={`flex-1 label-text py-1 max-w-[100px] rounded-md border-2 transition
                       ${isAgent === true
-                        ? "bg-blue-50 border-[#5297ff]  text-[#5297ff]"
+                        ? "bg-blue-50 border-[#2872a1]  text-[#2872a1]"
                         : "border-gray-300 text-gray-700 hover:border-gray-400"
                       }`}
                   >
@@ -583,7 +583,7 @@ const AuthModal = ({ isOpen, closeModal, callbackUrl }: AuthModalProps) => {
                     onClick={() => setIsAgent(false)}
                     className={`flex-1 py-1 label-text max-w-[100px] rounded-md border-2 transition
                       ${isAgent === false
-                        ? "bg-blue-50 border-[#5297ff] text-[#5297ff]"
+                        ? "bg-blue-50 border-[#2872a1] text-[#2872a1]"
                         : "border-gray-300 text-gray-700 hover:border-gray-400"
                       }`}
                   >
@@ -600,7 +600,7 @@ const AuthModal = ({ isOpen, closeModal, callbackUrl }: AuthModalProps) => {
 
               <Button
                 type="submit"
-                className="w-full bg-[#5297FF]hover:bg-blue-700 text-white py-2.5 rounded-lg font-Gordita-Medium shadow-sm transition disabled:opacity-60"
+                className="w-full bg-[#2872a1]hover:bg-blue-700 text-white py-2.5 rounded-lg font-Gordita-Medium shadow-sm transition disabled:opacity-60"
                 disabled={loading}
               >
                 {loading && <InlineSpinner />}

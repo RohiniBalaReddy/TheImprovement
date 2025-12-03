@@ -220,7 +220,7 @@ export default function LoginComponent() {
                             <div className=" flex gap-x-[2px]  mb-0">
                               <p className="font-Gordita-Bold text-[21.38px] leading-[30.47px] text-[#000000]">
                                 ONE
-                                <span className="text-[#5297FF]">CASA</span>
+                                <span className="text-[#2872a1]">CASA</span>
                               </p>
                             </div>
                             <div className="max-w-[148.28px] min-h-[13.08px]  mb-0">
@@ -233,7 +233,7 @@ export default function LoginComponent() {
                       </div>
                     </div>
                     <div className=" w-full text-center flex flex-col items-center mx-auto gap-y-[16px]">
-                      <p className="max-w-[517px] min-h-[44px] text-[#3586FF] font-Gordita-Bold text-center md:text-[24px] text-[18px] md:leading-[44.17px] leading-[34.17px]">
+                      <p className="max-w-[517px] min-h-[44px] text-[#2872a1] font-Gordita-Bold text-center md:text-[24px] text-[18px] md:leading-[44.17px] leading-[34.17px]">
                         Excellent Properties are on Sale Now
                       </p>
                       <p className="max-w-[662px] min-h-[46px] text-[#8C8989] font-Gordita-Medium text-center md:text-[14px] text-[12x] md:leading-[22.8px] leading-[18.52px]">
@@ -285,7 +285,7 @@ export default function LoginComponent() {
 
                 <Button
                   type="submit"
-                  className="flex w-full font-Gordita-Medium md:py-2 py-2 md:text-[14px] text-[12px] rounded-[8px] bg-[#3586FF] items-center justify-center font-500  leading-[20.5px] text-[#FFFFFF]"
+                  className="flex w-full font-Gordita-Medium md:py-2 py-2 md:text-[14px] text-[12px] rounded-[8px] bg-[#2872a1] items-center justify-center font-500  leading-[20.5px] text-[#FFFFFF]"
                 >
                   Continue
                 </Button>
@@ -305,7 +305,7 @@ export default function LoginComponent() {
                     <div>
                       <EmailIcon />
                     </div>
-                    <p className="ml-2 font-Gordita-Medium text-[#5297FF]">
+                    <p className="ml-2 font-Gordita-Medium text-[#2872a1]">
                       Continue with {isEmail ? "Phone" : "Email"}
                     </p>
                   </div>
@@ -314,7 +314,7 @@ export default function LoginComponent() {
 
               <h2 className="text-sm text-center text-gray-400">
                 By clicking you agree to{" "}
-                <a href="/terms" className="text-[#5297FF] font-Gordita-Medium">
+                <a href="/terms" className="text-[#2872a1] font-Gordita-Medium">
                   Terms and Conditions
                 </a>
               </h2>

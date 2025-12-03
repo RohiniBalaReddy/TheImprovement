@@ -49,7 +49,7 @@ const Chatbot = () => {
     reload,
     append
   } = useChat({
-    id: "onecasa-global-chat",
+    id: "theimprovementllc-global-chat",
     api: "/api/chat",
     initialInput: "",
     keepLastMessageOnError: true,
@@ -126,7 +126,7 @@ const Chatbot = () => {
         {url?.[0] && (
           <a
             href={url[0]}
-            className="text-[#3586FF] font-Gordita-Regular underline underline-offset-2"
+            className="text-[#2872a1] font-Gordita-Regular underline underline-offset-2"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -141,7 +141,7 @@ const Chatbot = () => {
     return (
       <Button
         onClick={onOpen}
-        className="fixed md:bottom-10 bottom-[60px] right-4 z-20 bg-[#3586FF] text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-600 animate-bounce"
+        className="fixed md:bottom-10 bottom-[60px] right-4 z-20 bg-[#2872a1] text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-600 animate-bounce"
         aria-label="Open chatbot"
       >
         <RiRobot2Line className="w-6 h-6" />
@@ -154,7 +154,7 @@ const Chatbot = () => {
       className={`fixed bottom-[50px] right-2 sm:right-4 z-[999] w-[300px] sm:w-96 bg-white rounded-xl shadow-2xl transition-all duration-300 transform ${isMinimized ? "h-16" : "h-[340px] sm:h-[460px]"}`}
     >
       {/* === YOUR ORIGINAL HEADER (kept) === */}
-      <div className="bg-gradient-to-r from-[#3586FF] to-blue-700 p-4 rounded-t-xl flex items-center justify-between">
+      <div className="bg-gradient-to-r from-[#2872a1] to-blue-700 p-4 rounded-t-xl flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 bg-[#212227] backdrop-blur-sm rounded-full flex items-center justify-center">
             <Image src="/images/logobw.png" alt="logo" width={24} height={24} />
@@ -211,7 +211,7 @@ const Chatbot = () => {
                       className={`w-8 h-8 rounded-full flex items-center justify-center ${isUser ? "bg-blue-100" : "bg-gray-100"}`}
                     >
                       {isUser ? (
-                        <FiUser className="w-4 h-4 text-[#3586FF]" />
+                        <FiUser className="w-4 h-4 text-[#2872a1]" />
                       ) : (
                         <div className="w-[30px] h-[30px] bg-[#212227] backdrop-blur-sm rounded-full flex items-center justify-center">
                           <Image src="/images/logobw.png" alt="logo" width={24} height={24} />
@@ -219,12 +219,12 @@ const Chatbot = () => {
                       )}
                     </div>
                     <div
-                      className={`relative px-4 py-2 rounded-2xl font-Gordita-Regular text-[12px] max-w-[75%] shadow-sm ${isUser ? "bg-[#3586FF] text-white rounded-br-none" : "bg-white rounded-bl-none"
+                      className={`relative px-4 py-2 rounded-2xl font-Gordita-Regular text-[12px] max-w-[75%] shadow-sm ${isUser ? "bg-[#2872a1] text-white rounded-br-none" : "bg-white rounded-bl-none"
                         }`}
                     >
                       {/* tiny triangle tail */}
                       <span
-                        className={`absolute w-3 h-3 bottom-0 translate-y-1 rotate-45 ${isUser ? "right-0 bg-[#3586FF]" : "left-0 bg-white"
+                        className={`absolute w-3 h-3 bottom-0 translate-y-1 rotate-45 ${isUser ? "right-0 bg-[#2872a1]" : "left-0 bg-white"
                           }`}
                       />
                       {!isUser && looksLikeHTML(msg.content) ? (
@@ -262,7 +262,7 @@ const Chatbot = () => {
                 <button
                   key={i}
                   onClick={() => onSuggestion(s)}
-                  className="text-[11px] whitespace-nowrap px-3 py-[2px] rounded-full bg-gray-50 border border-gray-200 hover:border-blue-400 hover:text-blue-600 transition"
+                  className="text-[11px] whitespace-nowrap px-3 py-[2px] rounded-full bg-gray-50 border border-gray-200 hover:border-[#1d547] hover:text-[#2872a1] transition"
                 >
                   {s}
                 </button>
@@ -277,11 +277,11 @@ const Chatbot = () => {
                   value={input}
                   onChange={handleInputChange}
                   placeholder="Ask about properties, Vastu, interiors, painting…"
-                  className="flex-1 px-4 py-1 bg-gray-50 rounded-[10px] text-[12px] font-Gordita-Regular focus:outline-none focus:ring-2 focus:ring-[#3586FF] focus:bg-white transition-all border border-gray-200"
+                  className="flex-1 px-4 py-1 bg-gray-50 rounded-[10px] text-[12px] font-Gordita-Regular focus:outline-none focus:ring-2 focus:ring-[#2872a1] focus:bg-white transition-all border border-gray-200"
                 />
                 <Button
                   disabled={!input.trim() || isLoading}
-                  className="bg-[#3586FF] text-white p-2 rounded-xl flex items-center justify-center hover:bg-blue-700 disabled:bg-blue-300 disabled:cursor-not-allowed transition-colors"
+                  className="bg-[#2872a1] text-white p-2 rounded-xl flex items-center justify-center hover:bg-blue-700 disabled:bg-blue-300 disabled:cursor-not-allowed transition-colors"
                   type="submit"
                   aria-label="Send message"
                 >
@@ -294,7 +294,7 @@ const Chatbot = () => {
                   <button
                     type="button"
                     onClick={() => reload()}
-                    className="text-xs text-[#3586FF] underline underline-offset-2"
+                    className="text-xs text-[#2872a1] underline underline-offset-2"
                   >
                     Retry
                   </button>

@@ -124,9 +124,8 @@ const GeneralFooter = () => {
 
   return (
     <>
-      <div className="w-full bg-[#081221]">
+      <div className="w-full bg-[#0c1c32]">
         <div className="md:divide-x p-6 md:p-10 max-md:mb-7 md:divide-slate-500 grid grid-flow-row md:grid-flow-col md:auto-cols-[minmax(min-content,auto)] gap-y-3 md:gap-y-0 divide-y md:divide-y-0">
-          {/* CONTACT + SOCIAL */}
           <div className="w-full flex justify-start items-start">
             <div className="flex w-fit flex-col gap-3">
               <span className="text-[#FBFBFB] leading-[22.8px] md:text-base text-[14px] font-Gordita-Bold">
@@ -199,7 +198,7 @@ const GeneralFooter = () => {
                 <div className="flex flex-row flex-wrap md:flex-none md:flex-col gap-x-2 gap-y-[6px] md:gap-2">
                   {section.links.map((link, idx) => (
                     <Link
-                      className="whitespace-nowrap md:whitespace-normal hover:text-[#3586FF] text-[#FBFBFB] leading-[19.95px] md:text-sm text-[12px] font-Gordita-Medium"
+                      className="whitespace-nowrap md:whitespace-normal hover:text-[#2872a1] text-[#FBFBFB] leading-[19.95px] md:text-sm text-[12px] font-Gordita-Medium"
                       key={`index-${idx}-link-${link.label}`}
                       href={link.url}
                       aria-label={link.label}

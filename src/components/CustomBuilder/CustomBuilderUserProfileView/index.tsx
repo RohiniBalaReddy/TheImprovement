@@ -141,12 +141,12 @@ const CustomBuilderUserProfileView = () => {
         </div>
         <section className=" bg-white rounded-[8px] md:p-[24px] p-3">
           <div className="flex items-center justify-between mb-[39px]">
-            <h2 className=" font-Gordita-Bold md:text-[16px] text-[14px] text-[#3586FF] flex items-center gap-2">
+            <h2 className=" font-Gordita-Bold md:text-[16px] text-[14px] text-[#2872a1] flex items-center gap-2">
               <FaUser />
               Personal Information
             </h2>
             <button
-              className=" text-sm md:px-4 md:py-2 px-2 py-1 md:text-[14px] text-[10px] font-Gordita-Medium border-[1px] text-[#3586FF] border-[#3586FF] flex items-center justify-center rounded-[8px] gap-2"
+              className=" text-sm md:px-4 md:py-2 px-2 py-1 md:text-[14px] text-[10px] font-Gordita-Medium border-[1px] text-[#2872a1] border-[#2872a1] flex items-center justify-center rounded-[8px] gap-2"
               onClick={() => setOpenDrawer(true)}
             >
               <MdEdit /> Edit
@@ -199,16 +199,16 @@ const CustomBuilderUserProfileView = () => {
         {/* Address */}
         <section className="bg-white rounded-[8px] md:p-[24px] p-3">
           <div className="flex items-center justify-between mb-[39px]">
-            <h2 className=" font-Gordita-Bold md:text-[16px] text-[14px] text-[#3586FF] flex items-center gap-2">
+            <h2 className=" font-Gordita-Bold md:text-[16px] text-[14px] text-[#2872a1] flex items-center gap-2">
               <FaLocationDot />
               Address
             </h2>
             <div className="flex gap-[22px] items-center">
-              {/* <button className="text-[#5297ff] text-sm px-4 py-2 text-[16px] font-Gordita-Medium border-[1px] border-[#3586FF] flex items-center justify-center rounded-[8px] gap-2">
+              {/* <button className="text-[#2872a1] text-sm px-4 py-2 text-[16px] font-Gordita-Medium border-[1px] border-[#2872a1] flex items-center justify-center rounded-[8px] gap-2">
               <FiPlus /> Add
             </button> */}
               <button
-                className=" text-sm md:px-4 md:py-2 px-2 py-1 md:text-[14px] text-[12px] font-Gordita-Medium border-[1px] text-[#3586FF] border-[#3586FF] flex items-center justify-center rounded-[8px] gap-2"
+                className=" text-sm md:px-4 md:py-2 px-2 py-1 md:text-[14px] text-[12px] font-Gordita-Medium border-[1px] text-[#2872a1] border-[#2872a1] flex items-center justify-center rounded-[8px] gap-2"
               >
                 <MdEdit /> Edit
               </button>
@@ -261,7 +261,7 @@ const CustomBuilderUserProfileView = () => {
         {/* Property Details */}
         <section className="bg-white rounded-[8px] md:p-[24px] p-3">
           <div className="flex items-center justify-between mb-[20px]">
-            <h2 className=" font-Gordita-Bold md:text-[16px] text-[14px] text-[#3586FF] flex items-center gap-2">
+            <h2 className=" font-Gordita-Bold md:text-[16px] text-[14px] text-[#2872a1] flex items-center gap-2">
               <FaHome />
               Property Details
             </h2>

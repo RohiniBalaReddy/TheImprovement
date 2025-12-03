@@ -57,7 +57,7 @@ const BlogsHero = ({
             Blogs
           </h1>
 
-          <div className="w-16 h-1 bg-[#5297ff] rounded-full mt-2 mb-6 relative z-10"></div>
+          <div className="w-16 h-1 bg-[#2872a1] rounded-full mt-2 mb-6 relative z-10"></div>
 
           <h2 className="md:text-[20px] text-[14px] mx-auto text-[#7B7C83] font-Gordita-Medium leading-[30px] md:max-w-[60%] max-w-full relative z-10">
             Explore our latest blog posts to stay informed about industry trends
@@ -66,15 +66,15 @@ const BlogsHero = ({
         </div>
 
         <div className="max-w-[1292px] w-full mx-auto px-4 md:px-8">
-         
+
           <div className="bg-white rounded-2xl shadow-md p-4 md:p-6 -mt-8 md:-mt-12 relative z-10">
             <div className="flex md:flex-row flex-col items-center justify-between gap-4">
-             
+
               <div className="relative w-full max-w-md">
                 <CustomInput
                   type="text"
                   name="tag-search"
-                  className="w-full px-4 md:py-3 py-1 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#5297ff] focus:border-transparent transition-all shadow-sm"
+                  className="w-full md:px-4 px-1 py-1 border border-gray-200 rounded-xl  transition-all shadow-sm"
                   placeholder="Search tags..."
                   value={tagSearchTerm}
                   onChange={(e) => setTagSearchTerm(e.target.value)}
@@ -86,7 +86,7 @@ const BlogsHero = ({
                       <Button
                         key={`filtered-tag-${index}`}
                         className={clsx(
-                          "md:px-4 px-2 md:py-2 py-1 md:text-[14px] text-[12px] cursor-pointer transition-colors",
+                          "md:px-4 px-2 md:py-1 py-1 md:text-[14px] text-[12px] cursor-pointer transition-colors",
                           blogType === tag
                             ? "bg-blue-100 text-blue-800 font-medium"
                             : "bg-white text-gray-800 hover:bg-gray-50"
@@ -100,7 +100,7 @@ const BlogsHero = ({
                 )}
               </div>
 
-             
+
               <div className="flex flex-row gap-2  py-1 justify-start overflow-x-auto custom-scrollbar w-full md:w-auto">
                 {filterTags.map((tag, index) => (
                   <Button
@@ -108,7 +108,7 @@ const BlogsHero = ({
                     className={clsx(
                       "md:px-4 px-3 md:py-2 py-1 text-[12px] md:text-[14px] font-Gordita-Medium rounded-lg cursor-pointer min-w-max transition-colors duration-200 ease-in-out",
                       blogType === tag
-                        ? "bg-[#5297ff] text-white shadow-md"
+                        ? "bg-[#2872a1] text-white shadow-md"
                         : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                     )}
                     onClick={() => handleFilterClick(tag)}
@@ -120,7 +120,7 @@ const BlogsHero = ({
             </div>
           </div>
 
-         
+
           <div className="flex flex-col md:flex-row gap-4 md:px-4 px-5 md:mt-5 mt-2">
             {initialFeaturedBlogs.length > 0 && (
               <div className="md:flex-1">
@@ -184,8 +184,8 @@ const BlogsHero = ({
               ))}
           </div>
 
-        
-          
+
+
         </div>
       </div>
     </>

@@ -19,9 +19,8 @@ const BreadCrumb = ({ steps, currentStep }: BreadCrumbProps) => {
       {steps.map((step, index) => (
         <div key={index} className="flex flex-row items-center">
           <p
-            className={`font-Gordita-Medium md:text-[20px] text-[12px] cursor-pointer hover:opacity-80 ${
-              step.label === currentStep ? "text-[#5297FF]" : ""
-            }`}
+            className={`font-Gordita-Medium md:text-[20px] text-[12px] cursor-pointer hover:opacity-80 ${step.label === currentStep ? "text-[#2872a1]" : ""
+              }`}
           >
             {step.onClick ? (
               <button

@@ -61,7 +61,7 @@ const ForgotPasswordView = () => {
               An OTP sent to your email
             </h2>
             <div className="flex flex-row gap-1 items-center ">
-              <p className="text-[#3586FF] text-[13px] font-Gordita-Regular leading-5">
+              <p className="text-[#2872a1] text-[13px] font-Gordita-Regular leading-5">
                 (support@theimprovementllc.com)
               </p>
               <EditIcon />
@@ -87,7 +87,7 @@ const ForgotPasswordView = () => {
               onClick={(e) => {
                 return;
               }}
-              className="flex w-full h-[45px] rounded-[8px] bg-[#3586FF]  items-center justify-center font-500 text-[16px] leading-[20.5px] text-[#FFFFFF]"
+              className="flex w-full h-[45px] rounded-[8px] bg-[#2872a1]  items-center justify-center font-500 text-[16px] leading-[20.5px] text-[#FFFFFF]"
             >
               Send OTP
             </Button>

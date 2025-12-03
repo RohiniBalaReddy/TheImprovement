@@ -26,15 +26,13 @@ const WelcomeModal = () => {
                 {showConfetti && <Confetti width={window.innerWidth} height={window.innerHeight} />}
                 <div className="fixed inset-0 flex items-center justify-center">
                     <div className="bg-white p-6 rounded-lg  max-w-lg text-center">
-                        <h2 className="md:text-[32px] text-[18px] font-Gordita-Bold  text-[#5297FF]">WELCOME  TO ONECASA!</h2>
-                        <p className="md:text-[16px] text-[12px] text-gray-500 max-w-[280px] mx-auto font-Gordita-Medium mt-2 mb-4">The Only Platform You Need for Your Dream Home </p>
+                        <h2 className="md:text-[32px] text-[18px] font-Gordita-Bold  text-[#2872a1]">WELCOME  TO IMPROVEMENT LCC!</h2>
+                        <p className="md:text-[14px] text-[12px] text-gray-500 max-w-[280px] mx-auto font-Gordita-Medium mt-2 mb-4">The Only Platform You Need for Your Dream Home </p>
                         <div className="relative md:w-[100px] md:h-[100px] w-[80px] h-[80px] mx-auto bg-gray-300 rounded-lg ">
                             <Image src="/images/logobb.png" alt="logo" width={100} height={100} className="absolute object-cover p-1" />
                         </div>
                         <p className="text-gray-400 mt-4 md:text-[16px] text-[12px] font-Gordita-Medium md:mb-7 mb-10  max-md:max-w-[300px] text-center mx-auto">
-                            Explore our exclusive <span className="text-yellow-400">
-                                Property Listings</span>, <span className="text-yellow-400">
-                                Best offers</span> & <span className="text-yellow-400"> Home solutions!</span>
+                            We are happy to construct your dream home with our expert team.
                         </p>
                         <div className="mt-4 flex justify-center gap-10">
                             <Button
@@ -44,7 +42,7 @@ const WelcomeModal = () => {
                                 Learn More
                             </Button>
                             <Button
-                                className="md:px-9 px-5 md:py-3 border bg-[#5297ff] py-1  text-[12px] md:text-[16px]  rounded-lg text-white font-Gordita-Medium hover:bg-blue-600"
+                                className="md:px-9 px-5 md:py-3 border bg-[#2872a1] py-1  text-[12px] md:text-[16px]  rounded-lg text-white font-Gordita-Medium hover:bg-[#2872a1]"
                                 onClick={() => setIsOpen(false)}
                             >
                                 Continue

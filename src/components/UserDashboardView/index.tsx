@@ -43,7 +43,7 @@ export default function UserDashBoardView() {
     return `${firstInitial}${lastInitial}`.toUpperCase();
   };
 
-  
+
   return (
     <div className="min-h-screen bg-gray-50 p-4 md:p-6">
       <div className="mb-6">
@@ -56,7 +56,7 @@ export default function UserDashBoardView() {
       </div>
 
       {/* Welcome Banner */}
-      <div className="bg-[#5297ff] rounded-xl p-6 md:p-8 text-white mb-8 shadow-lg">
+      <div className="bg-[#2872a1] rounded-xl p-6 md:p-8 text-white mb-8 shadow-lg">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="text-xl md:text-2xl font-Gordita-Bold mb-2">
@@ -96,7 +96,7 @@ export default function UserDashBoardView() {
                   />
                 </div>
               ) : (
-                <div className="md:w-16 md:h-16 w-12 h-12 rounded-full bg-gradient-to-br from-[#5297ff] to-[#5297ff] flex items-center justify-center">
+                <div className="md:w-16 md:h-16 w-12 h-12 rounded-full bg-gradient-to-br from-[#2872a1] to-[#2872a1] flex items-center justify-center">
                   <span className="text-white font-Gordita-Bold md:text-lg text-[14px] ">
                     {getInitials(user?.firstName, user?.lastName)}
                   </span>
@@ -108,7 +108,7 @@ export default function UserDashBoardView() {
                 {user?.firstName} {user?.lastName}
               </h3>
               <p className="text-gray-500 text-sm">{user?.email}</p>
-              <p className="text-[#5297FF] text-xs font-Gordita-Medium mt-1">
+              <p className="text-[#2872a1] text-xs font-Gordita-Medium mt-1">
                 Member since{" "}
                 {new Date(user?.createdAt || Date.now()).toLocaleDateString()}
               </p>
@@ -116,7 +116,7 @@ export default function UserDashBoardView() {
           </div>
 
           {/* Stats Grid */}
-          
+
         </div>
       </div>
     </div>

@@ -46,7 +46,7 @@ export default function PropertyDocumentsView() {
         <section className="bg-white rounded-[8px] md:p-6 p-3">
           <div className="flex items-center justify-between md:mb-[22px] mb-[10px]">
             <div className="w-full flex items-center gap-2 md:mb-4 mb-2">
-              <IoDocumentSharp className="text-[#5297ff] md:w-6 w-3 md:h-6 h-3" />
+              <IoDocumentSharp className="text-[#2872a1] md:w-6 w-3 md:h-6 h-3" />
               <h1 className="font-Gordita-Bold md:text-[18px] text-[14px] ">
                 Property Documents
               </h1>

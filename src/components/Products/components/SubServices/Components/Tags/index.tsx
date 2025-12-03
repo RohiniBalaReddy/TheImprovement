@@ -26,7 +26,7 @@ export const Tags = ({ heading, subheading, tags }: ITagsProps) => {
             {subheading}
           </p>
         )}
-        <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-yellow-400 mx-auto mt-4 rounded-full"></div>
+        <div className="w-20 h-1 bg-gradient-to-r from-[#2872a1] to-yellow-400 mx-auto mt-4 rounded-full"></div>
       </div>
 
       <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8  gap-3 w-full max-w-7xl">
@@ -62,9 +62,9 @@ export const Tags = ({ heading, subheading, tags }: ITagsProps) => {
                 {tag.icon ? (
                   tag.icon
                 ) : (
-                  <Building className="w-4 h-4 text-blue-[#5297ff]" />
+                  <Building className="w-4 h-4 text-blue-[#2872a1]" />
                 )}
-                <h3 className="text-[16px] lg:text-[18px] font-Gordita-Medium text-[#212227] leading-tight group-hover:text-blue-600 transition-colors duration-300">
+                <h3 className="text-[16px] lg:text-[18px] font-Gordita-Medium text-[#212227] leading-tight group-hover:text-[#2872a1] transition-colors duration-300">
                   {tag.name}
                 </h3>
               </div>
@@ -75,13 +75,13 @@ export const Tags = ({ heading, subheading, tags }: ITagsProps) => {
                 </p>
               )}
 
-              <div className="flex items-center text-blue-600 md:text-sm text-[10px] font-Gordita-Medium group-hover:text-blue-700 transition-colors gap-1">
+              <div className="flex items-center text-[#2872a1] md:text-sm text-[10px] font-Gordita-Medium group-hover:text-blue-700 transition-colors gap-1">
                 <span>Explore Projects</span>
                 <ArrowRight className="w-4 h-4" />
               </div>
             </div>
 
-            <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-500/10 to-purple-600/10 rounded-bl-full transform translate-x-10 -translate-y-10 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-500"></div>
+            <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#2872a1]/10 to-purple-600/10 rounded-bl-full transform translate-x-10 -translate-y-10 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-500"></div>
           </div>
         ))}
       </div>
@@ -108,7 +108,7 @@ export const Tags = ({ heading, subheading, tags }: ITagsProps) => {
                   {tag.icon ? (
                     tag.icon
                   ) : (
-                    <Building className="w-4 h-4 text-blue-500" />
+                    <Building className="w-4 h-4 text-[#2872a1]" />
                   )}
                   <h3 className="text-[12px] font-semibold text-[#212227] leading-tight">
                     {tag.name}
@@ -123,7 +123,7 @@ export const Tags = ({ heading, subheading, tags }: ITagsProps) => {
                 {tag.description && (
                   <p className="text-[10px] text-gray-500">{tag.description}</p>
                 )}
-                <div className="flex items-center text-blue-600 text-[10px] font-medium gap-1 mt-1">
+                <div className="flex items-center text-[#2872a1] text-[10px] font-medium gap-1 mt-1">
                   <span>Explore</span>
                   <ArrowRight className="w-3 h-3" />
                 </div>

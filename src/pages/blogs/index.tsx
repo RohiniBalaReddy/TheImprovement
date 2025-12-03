@@ -20,14 +20,14 @@ const Blogs = ({
 }: BlogPageProps) => {
   return (
     <div>
-       <SEO
+      <SEO
         title="Exploring Neighborhoods: Your Guide to Locating the Perfect Home"
         description="Explore the world of real estate investment with OneCasa's in-depth blog guide. From property market trends to expert homebuying and selling tips, gain valuable insights to make smarter real estate decisions."
         keywords="OneCasa Blog, Real Estate Investment, Property Market Trends, Homebuying Tips, Selling Strategies, Neighborhood Exploration, Real Estate Financing, Property Advice India, Homeownership Guide"
         favicon="/images/logobb.png"
         breadcrumbs={[
-          { name: 'Home', item: 'https://www.onecasa.in' },
-          { name: 'Blogs', item: 'https://www.onecasa.in/blogs' }
+          { name: 'Home', item: 'https://www.theimprovementllc.in' },
+          { name: 'Blogs', item: 'https://www.theimprovementllc.in/blogs' }
         ]}
       />
       <BlogsHero

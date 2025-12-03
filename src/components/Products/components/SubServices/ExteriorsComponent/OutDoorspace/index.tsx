@@ -20,7 +20,7 @@ export default function OutdoorSpacesShowcase({
         <p className="text-[14px] font-Gordita-Medium md:text-[16px] text-gray-600 leading-relaxed px-4">
           Enhance your property's exterior appeal
         </p>
-        <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-yellow-400 mx-auto mt-4 rounded-full"></div>
+        <div className="w-24 h-1 bg-gradient-to-r from-[#2872a1] to-yellow-400 mx-auto mt-4 rounded-full"></div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6 gap-3">

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { FiHome, FiUser } from "react-icons/fi";
-import { MdApartment,MdReviews } from "react-icons/md";
+import { MdApartment, MdReviews } from "react-icons/md";
 import { IoCartOutline } from "react-icons/io5";
 import { LuUsers } from "react-icons/lu";
 
@@ -11,7 +11,7 @@ const BottomNav = () => {
     const [isClient, setIsClient] = useState(false);
 
     const router = useRouter();
-    const activeClass = "text-[#5297FF] font-Gordita-Medium";
+    const activeClass = "text-[#2872a1] font-Gordita-Medium";
     const inactiveClass = "text-gray-500 font-Gordita-Medium";
     useEffect(() => {
         setIsClient(true);
@@ -44,7 +44,7 @@ const BottomNav = () => {
                         className={`text-[10px] ${router.pathname.startsWith("/testimonials") ? activeClass : inactiveClass
                             }`}
                     >
-                       Testimonials
+                        Testimonials
                     </span>
                 </div>
             </Link>
@@ -90,7 +90,7 @@ const BottomNav = () => {
                         className={`text-[10px] ${router.pathname.startsWith("/crm") ? activeClass : inactiveClass
                             }`}
                     >
-                       CRM
+                        CRM
                     </span>
                 </div>
             </Link>

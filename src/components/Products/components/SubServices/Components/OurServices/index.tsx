@@ -27,7 +27,7 @@ const ServiceCard = ({
           fill
         />
       </div>
-      <div className="max-w-[300px] max-h-[166px] -mt-[90px] border-b-[4px] border-[#3586FF] bg-white p-4 rounded-md flex flex-col gap-4">
+      <div className="max-w-[300px] max-h-[166px] -mt-[90px] border-b-[4px] border-[#2872a1] bg-white p-4 rounded-md flex flex-col gap-4">
         <p className="font-Gordita-Medium md:text-[20px] text-[16px] text-center">
           {name}
         </p>
@@ -104,14 +104,14 @@ const OurServices = (props: OurServiceProps) => {
     <div className="relative py-10 px-6 mb-20 ">
       <div className="flex flex-col gap-2 items-center justify-center mb-8  ">
         <div className="relative">
-           <h1 className="  font-Gordita-Medium md:text-[25px] text-[20px] text-center">
-          {title}
-        </h1>
-          <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-[3px] bg-gradient-to-r from-[#0052CC] to-[#3586FF] rounded-full"></div>
+          <h1 className="  font-Gordita-Medium md:text-[25px] text-[20px] text-center">
+            {title}
+          </h1>
+          <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-[3px] bg-gradient-to-r from-[#0052CC] to-[#2872a1] rounded-full"></div>
 
         </div>
-       
-       
+
+
         <h2 className="font-Gordita-Medium md:text-[20px] text-[16px] text-[#7B7C83] text-center">
           {subTitle}
         </h2>

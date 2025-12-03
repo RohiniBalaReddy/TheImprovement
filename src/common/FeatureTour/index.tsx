@@ -169,7 +169,7 @@ function TourOverlay({ step, index, total, onClose, onPrev, onNext, goTo }: { st
             {spot && (
                 <div
                     aria-hidden
-                    className="absolute border-[3px] border-transparent bg-gradient-to-r from-blue-500 via-blue-500 to-pink-500 rounded-xl shadow-2xl animate-pulse"
+                    className="absolute border-[3px] border-transparent bg-gradient-to-r from-[#2872a1] via-[#2872a1] to-pink-500 rounded-xl shadow-2xl animate-pulse"
                     style={{
                         left: spot.left,
                         top: spot.top,
@@ -192,11 +192,11 @@ function TourOverlay({ step, index, total, onClose, onPrev, onNext, goTo }: { st
                 <div className="flex items-start justify-between mb-3">
                     <div className="flex items-center gap-2">
                         {step.badge && (
-                            <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-Gordita-Medium bg-gradient-to-r from-blue-500 to-blue-600 text-white">
+                            <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-Gordita-Medium bg-gradient-to-r from-[#2872a1] to-[#2872a1] text-white">
                                 {step.badge}
                             </span>
                         )}
-                        <div className="flex items-center gap-1 text-sm text-[#5297ff] dark:text-blue-400">
+                        <div className="flex items-center gap-1 text-sm text-[#2872a1] dark:text-[#1d547]">
                             <Star className="w-3 h-3 fill-current" />
                             <span className="font-Gordita-Medium">Step {index + 1}</span>
                         </div>
@@ -260,7 +260,7 @@ function TourOverlay({ step, index, total, onClose, onPrev, onNext, goTo }: { st
 
                         <Button
                             onClick={index + 1 === total ? onClose : onNext}
-                            className="inline-flex items-center gap-2 label-text font-Gordita-Medium rounded-lg px-3 md:py-2 py-1 bg-gradient-to-r from-blue-400 to-blue-500 text-white hover:from-blue-700 hover:to-blue-700 shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+                            className="inline-flex items-center gap-2 label-text font-Gordita-Medium rounded-lg px-3 md:py-2 py-1 bg-gradient-to-r from-[#1d547] to-[#2872a1] text-white hover:from-blue-700 hover:to-blue-700 shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
                         >
                             {index + 1 === total ? (
                                 <>

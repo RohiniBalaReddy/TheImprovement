@@ -93,7 +93,7 @@ const CustomDate = forwardRef<CustomDateRef, ICustomDateFullProps>(
                 <div
                     className={twMerge(
                         clsx({
-                            'w-full flex gap-1 mb-1 items-center border border-solid rounded-[6px] border-[#C7C2C2] focus-within:border-blue-400 px-3 py-2':
+                            'w-full flex gap-1 mb-1 items-center border border-solid rounded-[6px] border-[#C7C2C2] focus-within:border-[#1d547] px-3 py-2':
                                 true,
                         }),
                         outerInputCls,

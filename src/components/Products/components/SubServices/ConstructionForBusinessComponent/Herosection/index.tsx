@@ -70,14 +70,14 @@ const HeroSection = ({
                   }}
                 >
                   {btntext}
-                  <span className="text-white bg-[#5297ff] hover:bg-[#5297FF] w-[40px] h-[40px] rounded-full flex justify-center items-center ml-2">
+                  <span className="text-white bg-[#2872a1] hover:bg-[#2872a1] w-[40px] h-[40px] rounded-full flex justify-center items-center ml-2">
                     <BsArrowUpRight className="w-4 h-4" />
                   </span>
                 </Button>
                 <div className="flex flex-wrap gap-4 mt-6 justify-center md:justify-start">
-                  <div className="group relative flex-1 min-w-[80px] max-w-[140px] bg-gradient-to-br from-[#5297ff]/15 to-blue-600/10 backdrop-blur-xl rounded-2xl md:p-3 p-1 flex flex-col items-center shadow-lg hover:shadow-[#5297ff]/30 border border-white/20 hover:border-blue-400/40 transition-all duration-500 hover:-translate-y-1 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#5297ff]/0 via-blue-400/5 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div className="relative z-10 bg-gradient-to-br from-[#5297ff] to-blue-600 w-10 h-10 rounded-2xl flex items-center justify-center shadow-md shadow-[#5297ff]/25 mb-2 group-hover:scale-110 transition-transform duration-300">
+                  <div className="group relative flex-1 min-w-[80px] max-w-[140px] bg-gradient-to-br from-[#2872a1]/15 to-[#2872a1]/10 backdrop-blur-xl rounded-2xl md:p-3 p-1 flex flex-col items-center shadow-lg hover:shadow-[#2872a1]/30 border border-white/20 hover:border-[#1d547]/40 transition-all duration-500 hover:-translate-y-1 overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#2872a1]/0 via-[#1d547]/5 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="relative z-10 bg-gradient-to-br from-[#2872a1] to-[#2872a1] w-10 h-10 rounded-2xl flex items-center justify-center shadow-md shadow-[#2872a1]/25 mb-2 group-hover:scale-110 transition-transform duration-300">
                       <BsClock className="text-white w-4 h-4" />
                     </div>
                     <div className="text-xl font-Gordita-Bold text-white">
@@ -88,9 +88,9 @@ const HeroSection = ({
                     </div>
                   </div>
 
-                  <div className="group relative flex-1 min-w-[80px] max-w-[140px] bg-gradient-to-br from-blue-400/15 to-[#5297ff]/10 backdrop-blur-xl rounded-2xl md:p-3 p-1 flex flex-col items-center shadow-lg hover:shadow-blue-400/30 border border-white/20 hover:border-blue-300/40 transition-all duration-500 hover:-translate-y-1 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-400/0 via-blue-300/5 to-cyan-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div className="relative z-10 bg-gradient-to-br from-blue-400 to-[#5297ff] w-10 h-10 rounded-2xl flex items-center justify-center shadow-md shadow-blue-400/25 mb-2 group-hover:scale-110 transition-transform duration-300">
+                  <div className="group relative flex-1 min-w-[80px] max-w-[140px] bg-gradient-to-br from-[#1d547]/15 to-[#2872a1]/10 backdrop-blur-xl rounded-2xl md:p-3 p-1 flex flex-col items-center shadow-lg hover:shadow-[#1d547]/30 border border-white/20 hover:border-blue-300/40 transition-all duration-500 hover:-translate-y-1 overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#1d547]/0 via-blue-300/5 to-cyan-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="relative z-10 bg-gradient-to-br from-[#1d547] to-[#2872a1] w-10 h-10 rounded-2xl flex items-center justify-center shadow-md shadow-[#1d547]/25 mb-2 group-hover:scale-110 transition-transform duration-300">
                       <BsBriefcase className="text-white w-4 h-4" />
                     </div>
                     <div className="text-xl font-Gordita-Bold text-white">
@@ -101,9 +101,9 @@ const HeroSection = ({
                     </div>
                   </div>
 
-                  <div className="group relative flex-1 min-w-[80px] max-w-[140px] bg-gradient-to-br from-blue-300/15 to-blue-400/10 backdrop-blur-xl rounded-2xl md:p-3 p-1 flex flex-col items-center shadow-lg hover:shadow-blue-300/30 border border-white/20 hover:border-cyan-400/40 transition-all duration-500 hover:-translate-y-1 overflow-hidden">
+                  <div className="group relative flex-1 min-w-[80px] max-w-[140px] bg-gradient-to-br from-blue-300/15 to-[#1d547]/10 backdrop-blur-xl rounded-2xl md:p-3 p-1 flex flex-col items-center shadow-lg hover:shadow-blue-300/30 border border-white/20 hover:border-cyan-400/40 transition-all duration-500 hover:-translate-y-1 overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/0 via-cyan-400/5 to-blue-300/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div className="relative z-10 bg-gradient-to-br from-cyan-500 to-blue-400 w-10 h-10 rounded-2xl flex items-center justify-center shadow-md shadow-cyan-500/25 mb-2 group-hover:scale-110 transition-transform duration-300">
+                    <div className="relative z-10 bg-gradient-to-br from-cyan-500 to-[#1d547] w-10 h-10 rounded-2xl flex items-center justify-center shadow-md shadow-cyan-500/25 mb-2 group-hover:scale-110 transition-transform duration-300">
                       <BsHeadset className="text-white w-4 h-4" />
                     </div>
                     <div className="text-xl font-Gordita-Bold text-white">

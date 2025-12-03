@@ -157,7 +157,7 @@ export default function ProgressImagesView() {
       <section className="bg-white rounded-[8px] md:p-6 p-3">
         <div className="flex items-center justify-between md:mb-[32px] mb-[22px]">
           <div className="w-full flex items-center gap-2 md:mb-6 mb-3">
-            <MdOutlineImage size={24} className="text-[#5297ff] w-6 h-6" />
+            <MdOutlineImage size={24} className="text-[#2872a1] w-6 h-6" />
             <h1 className="font-Gordita-Bold md:text-[18px] text-[14px]">
               Progress Images
             </h1>
@@ -173,7 +173,7 @@ export default function ProgressImagesView() {
                 setVisibleCount(PAGE_SIZE);
               }}
               className={`md:px-4 px-2 md:py-2 py-1 md:text-[14px] flex items-center md:gap-1 gap-0.5 text-[12px] rounded-[4px] md:rounded-[10px]  font-Gordita-Medium ${activeMonth === index
-                ? "bg-[#5297ff] text-white"
+                ? "bg-[#2872a1] text-white"
                 : "bg-gray-200 text-gray-800"
                 }`}
             >
@@ -196,7 +196,7 @@ export default function ProgressImagesView() {
                 className="w-full flex justify-between items-center text-left"
               >
                 <div className="flex items-center gap-1">
-                  <div className="bg-blue-100 text-[#5297FF] md:rounded-[10px] rounded-[4px] md:p-2 py-0.5 px-1">
+                  <div className="bg-blue-100 text-[#2872a1] md:rounded-[10px] rounded-[4px] md:p-2 py-0.5 px-1">
                     <span className="font-Gordita-Medium md:text-[16px] text-[12px]">
                       Day {log.day}
                     </span>
@@ -206,7 +206,7 @@ export default function ProgressImagesView() {
                   </h2>
                 </div>
 
-                <span className="text-[#5297ff]">
+                <span className="text-[#2872a1]">
                   {expandedDay === log.day ? "▲" : "▼"}
                 </span>
               </Button>
@@ -309,7 +309,7 @@ export default function ProgressImagesView() {
           <div className="flex justify-center md:mt-6 mt-3">
             <Button
               onClick={() => setVisibleCount((prev) => prev + PAGE_SIZE)}
-              className="md:px-6 px-3 md:py-2 py-1 bg-[#5297ff] text-white md:text-[14px] text-[12px] rounded-[4px] md:rounded-[10px]"
+              className="md:px-6 px-3 md:py-2 py-1 bg-[#2872a1] text-white md:text-[14px] text-[12px] rounded-[4px] md:rounded-[10px]"
             >
               Load More
             </Button>
@@ -321,7 +321,7 @@ export default function ProgressImagesView() {
         isOpen={openPreviewModal}
         closeModal={() => setOpenPreviewModal(false)}
         title={"Preview"}
-        titleCls="font-Gordita-Medium md:text-[18px] text-[12px] text-center text-[#5297FF]"
+        titleCls="font-Gordita-Medium md:text-[18px] text-[12px] text-center text-[#2872a1]"
         className="md:max-w-[800px] max-w-[320px] w-full"
         rootCls="z-[99999]"
       >

@@ -23,7 +23,7 @@ const PackageDetails: React.FC<PackageDetailsProps> = ({
 
   return (
     <div>
-      <p className="text-center font-Gordita-Bold text-[#5297FF] sticky top-0 leading-8 md:text-[20px] text-[16px] mb-3 z-20 ">
+      <p className="text-center font-Gordita-Bold text-[#2872a1] sticky top-0 leading-8 md:text-[20px] text-[16px] mb-3 z-20 ">
         {packageData[active].title}
       </p>
       <div className="w-full z-10">
@@ -43,7 +43,7 @@ const PackageDetails: React.FC<PackageDetailsProps> = ({
 
             {dropdownState[index] && (
               <div className="absolute left-0 top-full mt-2 w-full bg-white shadow-md rounded-md p-2 z-10">
-                <p className="text-gray-500 md:text-[16px] text-[12px]">{item.desc}</p>
+                <p className="text-gray-500 md:text-[14px] text-[12px]">{item.desc}</p>
               </div>
             )}
           </div>

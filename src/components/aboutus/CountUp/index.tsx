@@ -89,7 +89,7 @@ export function ImpactStrip() {
     return (
         <section className="max-w-7xl mx-auto px-5 md:px-8 py-6 md:py-8">
             <div className="text-center md:mb-6 mb-4">
-                <h2 className="font-Gordita-Bold text-2xl md:text-[28px] text-[#5297FF]">Our Impact</h2>
+                <h2 className="font-Gordita-Bold text-2xl md:text-[28px] text-[#2872a1]">Our Impact</h2>
                 <p className="md:text-sm md:text-[12px] text-[#5E6470]">
                     OneCasa by the numbers.
                 </p>

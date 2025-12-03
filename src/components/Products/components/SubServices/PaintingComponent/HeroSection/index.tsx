@@ -155,7 +155,7 @@ function HeroSection({
 
             <div className="mb-6 md:mb-10 w-full">
               <Button
-                className="rounded-lg bg-[#5297FF] text-[13px] md:text-[16px] px-3 py-2 md:px-5 md:py-4 font-Gordita-Regular md:font-Gordita-Medium text-white cursor-pointer "
+                className="rounded-lg bg-[#2872a1] text-[13px] md:text-[16px] px-3 py-2 md:px-5 md:py-4 font-Gordita-Regular md:font-Gordita-Medium text-white cursor-pointer "
                 onClick={() => router.push("/services/painting/paint-cost-calculator")}
               >
                 <div className="flex flex-row gap-3 items-center">
@@ -178,7 +178,7 @@ function HeroSection({
           <div className="fixed bottom-[7%] left-0 w-full bg-white shadow-md border-t pb-1 px-4 z-50 md:hidden block">
             <div className="max-w-[1600px] w-full mx-auto p-3 flex items-center justify-center">
               <Button
-                className="bg-[#3586FF] font-Gordita-Medium md:px-5 px-3 md:py-3 py-3 md:text-[16px] text-[14px] rounded-[4px] text-white md:max-w-[50%] w-full flex items-center justify-center gap-2"
+                className="bg-[#2872a1] font-Gordita-Medium md:px-5 px-3 md:py-3 py-3 md:text-[16px] text-[14px] rounded-[4px] text-white md:max-w-[50%] w-full flex items-center justify-center gap-2"
                 onClick={() => setIsStepFormVisible(true)}
               >
                 <MdEventAvailable className="text-white w-5 h-5" /> Book Site
@@ -212,7 +212,7 @@ function HeroSection({
               key={step.id}
               className="flex  items-center md:items-start relative gap-1 md:gap-2 md:flex-1"
             >
-              <div className="md:w-12 w-8 md:h-12 h-8 bg-[#5297ff] rounded-full flex items-center justify-center text-white font-Gordita-Bold mb-2 z-10">
+              <div className="md:w-12 w-8 md:h-12 h-8 bg-[#2872a1] rounded-full flex items-center justify-center text-white font-Gordita-Bold mb-2 z-10">
                 {step.icon}
               </div>
 

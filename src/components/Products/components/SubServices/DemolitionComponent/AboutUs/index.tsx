@@ -13,8 +13,8 @@ const AboutUs = () => {
 
       <div className="relative flex flex-col lg:flex-row gap-12 lg:gap-16 justify-between items-center px-6 sm:px-4 lg:px-12 py-16 lg:py-20 mt-10 max-w-7xl mx-auto">
         <div className="flex flex-col md:gap-8 gap-4 relative z-10">
-          <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-600 px-4 py-2 rounded-full w-fit">
-            <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+          <div className="inline-flex items-center gap-2 bg-blue-50 text-[#2872a1] px-4 py-2 rounded-full w-fit">
+            <div className="w-2 h-2 bg-[#2872a1] rounded-full"></div>
             <span className="font-Gordita-Medium tracking-wide">
               WHO WE ARE
             </span>
@@ -41,7 +41,7 @@ const AboutUs = () => {
               <div className="flex flex-row gap-4 sm:gap-2 md:pt-4 pt-2">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <div className="w-4 h-4 bg-blue-600 rounded-full"></div>
+                    <div className="w-4 h-4 bg-[#2872a1] rounded-full"></div>
                   </div>
                   <span className="font-Gordita-Regular text-gray-700 md:text-[16px] text-[12px]">
                     Safety Certified Experts
@@ -70,14 +70,14 @@ const AboutUs = () => {
           <div className="flex gap-4 md:pt-4 pt-2">
             <Button
               onClick={() => router.push("/about-us")}
-              className="bg-blue-600 text-white md:px-8 px-3 md:py-3 py-1 md:text-[16px] text-[12px] rounded-lg font-Gordita-Medium hover:bg-blue-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
+              className="bg-[#2872a1] text-white md:px-8 px-3 md:py-3 py-1 md:text-[16px] text-[12px] rounded-lg font-Gordita-Medium hover:bg-blue-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
             >
               Learn More
             </Button>
 
             <Button
               onClick={() => router.push("/contact-us")}
-              className="border border-gray-300 text-gray-700 md:px-8 px-3 md:py-3 py-1 md:text-[16px] text-[12px] rounded-lg font-Gordita-Medium hover:border-blue-300 hover:text-blue-600 transition-all duration-300"
+              className="border border-gray-300 text-gray-700 md:px-8 px-3 md:py-3 py-1 md:text-[16px] text-[12px] rounded-lg font-Gordita-Medium hover:border-blue-300 hover:text-[#2872a1] transition-all duration-300"
             >
               Contact Us
             </Button>
@@ -85,7 +85,7 @@ const AboutUs = () => {
         </div>
 
         <div className="relative aspect-[16/9] md:w-[700px] w-full h-[380px] lg:h-[500px]">
-          <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-400 rounded-full animate-bounce z-20"></div>
+          <div className="absolute -top-4 -right-4 w-8 h-8 bg-[#1d547] rounded-full animate-bounce z-20"></div>
           <div className="absolute -bottom-2 -left-4 w-6 h-6 bg-yellow-400 rounded-full animate-bounce z-20 delay-300"></div>
 
           <div className="absolute -inset-6 bg-gradient-to-r from-blue-200/50 via-yellow-200/40 to-white/30 rounded-3xl transform rotate-3 blur-sm"></div>
@@ -102,7 +102,7 @@ const AboutUs = () => {
             <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm rounded-lg md:p-4 p-2 shadow-lg">
               <div className="flex items-center gap-3">
                 <div className="md:w-12 w-8 md:h-12 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                  <div className="md:w-6 w-3 md:h-6 h-3 bg-blue-600 rounded-full"></div>
+                  <div className="md:w-6 w-3 md:h-6 h-3 bg-[#2872a1] rounded-full"></div>
                 </div>
                 <div>
                   <p className="font-Gordita-Bold md:text-[16px] text-[12px] text-gray-900">

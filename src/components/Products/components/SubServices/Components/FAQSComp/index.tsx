@@ -54,7 +54,7 @@ const FAQSComp = ({ image, faqs }: FAQSProps) => {
                   <span
                     className={`
                       transform transition-transform duration-300
-                      ${isOpen ? "rotate-90 text-[#5297FF]" : "text-gray-500"}
+                      ${isOpen ? "rotate-90 text-[#2872a1]" : "text-gray-500"}
                     `}
                   >
                     <RightViewArrow />

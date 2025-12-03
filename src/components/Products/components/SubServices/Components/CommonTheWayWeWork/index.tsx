@@ -31,7 +31,7 @@ function CommonTheWayWeWork({
               className="flex flex-col items-center gap-y-4"
             >
               <div className="w-[140px] h-[140px] rounded-full border border-[#000000] md:p-[15px] p-[10px] relative">
-                <span className="text-xl z-10 absolute top-[50%] right-0 translate-y-[-50%] translate-x-[50%] leading-[28.5px] h-[30px] w-[30px] flex justify-center items-center rounded-full bg-[#3586FF] text-[#FFFFFF]">
+                <span className="text-xl z-10 absolute top-[50%] right-0 translate-y-[-50%] translate-x-[50%] leading-[28.5px] h-[30px] w-[30px] flex justify-center items-center rounded-full bg-[#2872a1] text-[#FFFFFF]">
                   {index + 1}
                 </span>
                 <div className="w-full h-full flex items-center justify-center rounded-full bg-[#E2ECFA] ">

@@ -415,7 +415,7 @@ export default function ProjectOverviewAdminStyle() {
       y={y}
       dy={16}
       textAnchor="middle"
-      className="fill-[#5297ff] md:text-[12px] text-[10px] font-Gordita-Medium"
+      className="fill-[#2872a1] md:text-[12px] text-[10px] font-Gordita-Medium"
     >
       {payload.value}
     </text>
@@ -453,7 +453,7 @@ export default function ProjectOverviewAdminStyle() {
               key={item.key}
               onClick={() => setActiveTab(item.key as any)}
               className={`md:px-4  px-2 py-1 max-md:text-nowrap rounded-md text-[12px] md:text-[14px] font-Gordita-Bold flex items-center gap-2 ${activeTab === item.key
-                ? "bg-[#3586FF] text-white"
+                ? "bg-[#2872a1] text-white"
                 : "bg-gray-200 text-gray-600"
                 }`}
             >
@@ -466,7 +466,7 @@ export default function ProjectOverviewAdminStyle() {
           <>
             <div className="w-full md:max-w-[1200px] max-w-[360px]  mt-3  px-2">
               <div className="flex items-center gap-2  mb-3">
-                <MdOutlineBarChart className="text-[#5297ff] md:w-4 w-3 md:h-4 h-3" />
+                <MdOutlineBarChart className="text-[#2872a1] md:w-4 w-3 md:h-4 h-3" />
                 <h2 className="step-heading font-Gordita-Bold text-gray-900">
                   Project Overview
                 </h2>
@@ -548,7 +548,7 @@ export default function ProjectOverviewAdminStyle() {
 
             <div className="w-full md:max-w-[1200px] max-w-[360px]  mt-3 md:px-4 px-2">
               <div className="flex items-center gap-2 md:mb-6 mb-3">
-                <ClipboardList className="text-[#5297ff] md:w-4 w-3 md:h-4 h-3" />
+                <ClipboardList className="text-[#2872a1] md:w-4 w-3 md:h-4 h-3" />
                 <h3 className="step-heading font-Gordita-Bold text-gray-900">
                   Week Report
                 </h3>
@@ -614,8 +614,8 @@ export default function ProjectOverviewAdminStyle() {
                           setShowAllLogs(true);
                         }}
                         className={`md:px-3 px-1 py-1 text-[12px] text-nowrap md:text-[14px] font-Gordita-Medium md:rounded-[10px] rounded-[4px] border transition-all duration-200 ${showAllLogs
-                          ? "bg-[#5297ff] text-white border-[#5297ff] shadow-md"
-                          : "bg-white text-[#5297FF] border-[#5297ff] hover:bg-blue-50"
+                          ? "bg-[#2872a1] text-white border-[#2872a1] shadow-md"
+                          : "bg-white text-[#2872a1] border-[#2872a1] hover:bg-blue-50"
                           }`}
                       >
                         Show All
@@ -662,7 +662,7 @@ export default function ProjectOverviewAdminStyle() {
 
                       <Button
                         onClick={exportCSV}
-                        className="md:px-3 px-2 md:py-2 flex items-center gap-1 py-1 md:rounded-[10px] rounded-[4px] border border-[#5297ff] font-Gordita-Medium text-[#5297FF] hover:bg-blue-50 text-[12px] text-nowrap"
+                        className="md:px-3 px-2 md:py-2 flex items-center gap-1 py-1 md:rounded-[10px] rounded-[4px] border border-[#2872a1] font-Gordita-Medium text-[#2872a1] hover:bg-blue-50 text-[12px] text-nowrap"
                       >
                         <MdFileDownload className="text-[14px]" /> Export
                       </Button>
@@ -684,7 +684,7 @@ export default function ProjectOverviewAdminStyle() {
                         key={s}
                         onClick={() => setStatusFilter(s)}
                         className={`md:px-3 px-1 text-nowrap py-1 md:rounded-[10px] rounded-[4px] md:text-[12px] text-[10px] border transition ${statusFilter === s
-                          ? "bg-[#5297FF]text-white border-blue-600 shadow-md"
+                          ? "bg-[#2872a1]text-white border-[#2872a1] shadow-md"
                           : "bg-white hover:bg-slate-50"
                           }`}
                         title={`Filter: ${s}`}
@@ -709,7 +709,7 @@ export default function ProjectOverviewAdminStyle() {
                   <div className="flex flex-wrap gap-2">
                     <Button
                       className={`md:px-3 px-2 py-1 md:rounded-[10px] rounded-[4px] md:text-[12px] text-[10px] font-Gordita-Medium ${selectedPhaseId === null
-                        ? "bg-[#5297ff] text-white shadow-md"
+                        ? "bg-[#2872a1] text-white shadow-md"
                         : "bg-gray-200 text-black"
                         }`}
                       onClick={() => setSelectedPhaseId(null)}
@@ -720,7 +720,7 @@ export default function ProjectOverviewAdminStyle() {
                       <Button
                         key={phase.id}
                         className={`md:px-3 px-2 py-1 md:rounded-[10px] border rounded-[4px] md:text-[12px] text-[10px] font-Gordita-Medium text-nowrap ${selectedPhaseId === phase.id
-                          ? "bg-[#5297ff] text-white shadow-md"
+                          ? "bg-[#2872a1] text-white shadow-md"
                           : "bg-gray-200 text-black border-gray-200"
                           }`}
                         onClick={() => {
@@ -811,7 +811,7 @@ export default function ProjectOverviewAdminStyle() {
                                 className={`px-2 py-1 rounded-md ${log?.status === "Completed"
                                   ? "text-green-700 bg-green-100"
                                   : log?.status === "In Progress"
-                                    ? "bg-blue-100 text-[#5297ff]"
+                                    ? "bg-blue-100 text-[#2872a1]"
                                     : log?.status === "Pending"
                                       ? "bg-yellow-100 text-yellow-700"
                                       : log?.status === "Delayed"
@@ -856,7 +856,7 @@ export default function ProjectOverviewAdminStyle() {
                                   href={`https://www.google.com/maps/search/?api=1&query=${log.uploadLocation.latitude},${log.uploadLocation.longitude}`}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="text-[#5297FF] flex items-center justify-center gap-1 cursor-pointer"
+                                  className="text-[#2872a1] flex items-center justify-center gap-1 cursor-pointer"
                                   title={`City: ${log.uploadLocation.city}
 State: ${log.uploadLocation.state}
 Country: ${log.uploadLocation.country}
@@ -875,7 +875,7 @@ Lng: ${log.uploadLocation.longitude}`}
                             <td className="border p-2 text-center">
                               {log?.uploadedByProfile?.length > 0 ? (
                                 <Button
-                                  className="text-[#5297FF] text-nowrap font-Gordita-Medium"
+                                  className="text-[#2872a1] text-nowrap font-Gordita-Medium"
                                   onClick={() => {
                                     setSelectedMedia(
                                       (Array.isArray(log?.uploadedByProfile)
@@ -902,7 +902,7 @@ Lng: ${log.uploadLocation.longitude}`}
                             <td className="border p-2 text-center">
                               {log?.imageOrVideo?.length > 0 ? (
                                 <Button
-                                  className="text-[#5297FF] text-nowrap font-Gordita-Medium"
+                                  className="text-[#2872a1] text-nowrap font-Gordita-Medium"
                                   onClick={() => {
                                     setSelectedMedia(
                                       log.imageOrVideo.map((item: any) => ({
@@ -931,7 +931,7 @@ Lng: ${log.uploadLocation.longitude}`}
                                     : "Media Gallery"
                                 }
                                 rootCls="z-[99999]"
-                                titleCls="font-Gordita-Medium md:text-[18px] text-[12px] text-center text-[#5297FF]"
+                                titleCls="font-Gordita-Medium md:text-[18px] text-[12px] text-center text-[#2872a1]"
                                 isCloseRequired={true}
                                 className="md:max-w-[800px] max-w-[320px] w-full"
                               >
@@ -993,7 +993,7 @@ Lng: ${log.uploadLocation.longitude}`}
                     <Legend
                       data={[
                         { colorclass: "bg-green-500", label: "Completed" },
-                        { colorclass: "bg-[#5297ff]", label: "In Progress" },
+                        { colorclass: "bg-[#2872a1]", label: "In Progress" },
                         { colorclass: "bg-yellow-500", label: "Pending" },
                         { colorclass: "bg-red-500", label: "Delayed" },
                       ]}
@@ -1034,7 +1034,7 @@ Lng: ${log.uploadLocation.longitude}`}
                       <Button
                         onClick={() => setPage((p) => p + 1)}
                         disabled={page >= Math.ceil(totalLogs / limit)}
-                        className="bg-[#5297FF] hover:bg-[#5297ff] flex items-center gap-1 text-[12px] md:text-[14px] text-white px-3 py-2 rounded-md font-Gordita-Medium"
+                        className="bg-[#2872a1] hover:bg-[#2872a1] flex items-center gap-1 text-[12px] md:text-[14px] text-white px-3 py-2 rounded-md font-Gordita-Medium"
                       >
                         <FaChevronRight />
                       </Button>

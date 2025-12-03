@@ -223,11 +223,10 @@ const NavDropDown = ({ item, subLink }: any) => {
                               {item.subLink.map((linkItem: any, i: number) => (
                                 <Link key={i} href={linkItem.link}>
                                   <div
-                                    className={`text-sm cursor-pointer transition-colors duration-200 ease-in-out ${
-                                      hoveredPropertyType === linkItem.name
-                                        ? "text-[#3586FF]"
-                                        : "text-black"
-                                    } hover:text-[#3586FF]`}
+                                    className={`text-sm cursor-pointer transition-colors duration-200 ease-in-out ${hoveredPropertyType === linkItem.name
+                                      ? "text-[#3586FF]"
+                                      : "text-black"
+                                      } hover:text-[#3586FF]`}
                                   >
                                     {linkItem.name}
                                   </div>
@@ -432,7 +431,7 @@ const Navbar = ({ isVisibleItems }: ShowItems) => {
   }, [session?.status]);
 
   const logo_place_holder = {
-    imageUrl: "/images/newlogo2.png",
+    imageUrl: "/llclogo.png",
     link: "/",
   };
 
@@ -548,9 +547,6 @@ const Navbar = ({ isVisibleItems }: ShowItems) => {
       )}
     </div>
   );
-  // components/ImprovementIcon.tsx
- 
-
 
   return (
     <>
@@ -561,7 +557,7 @@ const Navbar = ({ isVisibleItems }: ShowItems) => {
             href={logo_place_holder.link}
           >
             <div className="flex flex-row">
-              <div className=" relative  md:h-[50px] md:w-[50px] ">
+              <div className=" relative  md:h-[40px] md:w-[40px] ">
                 <Image
                   src={logo_place_holder.imageUrl}
                   alt={`source_image`}
@@ -570,12 +566,10 @@ const Navbar = ({ isVisibleItems }: ShowItems) => {
                 />
               </div>
               <div className="flex flex-col items-center gap-1 justify-center">
-                <p className="font-Gordita-Bold xl:text-[20px] lg:text-[20px] text-[#5297FF]">
+                <p className="font-Gordita-Bold xl:text-[20px] lg:text-[20px] text-[#2872a1]">
                   THE
                   <span className="text-[#FFFFFF]"> IMPROVEMENT</span>
                 </p>
-
-                {/* Choose any one below */}
                 <p className="text-[10px] text-center mt-[-10px] text-white">
                   Building Better. Every Day.
                 </p>
@@ -607,7 +601,6 @@ const Navbar = ({ isVisibleItems }: ShowItems) => {
             </div>
           }
         </div>
-        {/* for mobile view */}
 
         <div className="flex lg:hidden w-full items-center justify-between px-3 py-2">
           <Link
@@ -634,8 +627,6 @@ const Navbar = ({ isVisibleItems }: ShowItems) => {
           </Link>
 
           <div className="flex items-center gap-2">
-            {/* wishlist + cart kept tight and aligned */}
-
             <RxHamburgerMenu
               className="text-white h-6 w-6"
               onClick={() => toggleMobileSideBar(true)}
@@ -673,7 +664,7 @@ const Navbar = ({ isVisibleItems }: ShowItems) => {
                 </div>
                 <div>
                   <p className="font-Gordita-Bold text-[16px] text-white">
-                    <span className="text-[#5297FF]">THE</span>IMPROVEMENT
+                    <span className="text-[#2872a1]">THE</span>IMPROVEMENT
                   </p>
                   <p className="text-[9px] text-white/80 -mt-1">
                     {" "}
@@ -791,9 +782,8 @@ const MobileMenu = ({
                   >
                     <span className="text-[14px]">{it.name}</span>
                     <ChevronDown
-                      className={`h-4 w-4 shrink-0 transition-transform duration-200 ${
-                        open ? "rotate-180" : "rotate-0"
-                      }`}
+                      className={`h-4 w-4 shrink-0 transition-transform duration-200 ${open ? "rotate-180" : "rotate-0"
+                        }`}
                       aria-hidden="true"
                     />
                   </Disclosure.Button>

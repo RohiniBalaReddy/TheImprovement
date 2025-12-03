@@ -22,11 +22,11 @@ import Button from "@/common/Button";
 import ReusableSearchFilter from "@/common/SearchFilter";
 import Modal from "@/common/Modal";
 import CustomDate from "@/common/FormElements/CustomDate";
-import {FilterState} from "@/common/SearchFilter"
+import { FilterState } from "@/common/SearchFilter"
 
 import {
   Lead,
-  
+
   DateFilterType,
   status_Tabs,
   headers,
@@ -82,7 +82,7 @@ interface LeadsOverviewProps {
   handleFileUpload: (event: React.ChangeEvent<HTMLInputElement>) => void;
   handleUpload: () => void;
   applyFilter: () => void;
-  
+
   fileInputRef: React.RefObject<HTMLInputElement>;
   setFormData: any;
   formData: any;
@@ -118,7 +118,7 @@ export default function LeadsOverview({
   handleFileUpload,
   handleUpload,
   applyFilter,
-  
+
   fileInputRef,
   setFormData,
   formData,
@@ -157,14 +157,14 @@ export default function LeadsOverview({
       setPendingLeadId(id);
       setStatusModalOpen(true);
     } else {
-      handleStatusSelect({ leadstatus: value }, id, );
+      handleStatusSelect({ leadstatus: value }, id,);
     }
   };
 
   const handleStatusSelect = async (
     payload: LeadStatusPayload,
     leadId: number,
-   
+
   ) => {
     setAllLeads((prevLeads: any) =>
       prevLeads.map((lead: any) =>
@@ -178,7 +178,7 @@ export default function LeadsOverview({
         {
           ...payload,
           actorId: user?.id,
-          
+
         },
         true
       );
@@ -296,10 +296,10 @@ export default function LeadsOverview({
     return activeStatus === "all"
       ? filteredData
       : filteredData.filter(
-          (lead) =>
-            lead.leadstatus?.trim().toLowerCase() ===
-            activeStatus.trim().toLowerCase()
-        );
+        (lead) =>
+          lead.leadstatus?.trim().toLowerCase() ===
+          activeStatus.trim().toLowerCase()
+      );
   }, [filteredData, activeStatus]);
 
   const paginatedData = useMemo(() => {
@@ -425,7 +425,7 @@ export default function LeadsOverview({
               </h2>
             </div>
             <div className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center">
-              <FaUsers className="text-blue-600 w-5 h-5" />
+              <FaUsers className="text-[#2872a1] w-5 h-5" />
             </div>
           </div>
 
@@ -438,7 +438,7 @@ export default function LeadsOverview({
                   className="flex items-center justify-between px-2 py-1 rounded-lg bg-gray-50 hover:bg-blue-50 transition-colors"
                 >
                   <div className="flex items-center gap-2 min-w-0">
-                    <span className="h-2 w-2 rounded-full bg-[#5297ff] flex-shrink-0" />
+                    <span className="h-2 w-2 rounded-full bg-[#2872a1] flex-shrink-0" />
                     <span className="text-[12px] font-Gordita-Medium text-gray-700 truncate capitalize">
                       {state.replace(/_/g, " ")}
                     </span>
@@ -537,11 +537,10 @@ export default function LeadsOverview({
             }}
             onDragOver={onDragOver}
             onDrop={() => onDrop(status.value)}
-            className={`md:px-3 px-2 py-1 text-nowrap rounded-md text-[10px] md:text-[10px] font-Gordita-Bold flex items-center gap-2 ${
-              activeStatus === status.value
-                ? "bg-[#3586FF] text-white"
-                : "bg-gray-100 border-[1px] border-gray-300 text-gray-600"
-            }`}
+            className={`md:px-3 px-2 py-1 text-nowrap rounded-md text-[10px] md:text-[10px] font-Gordita-Bold flex items-center gap-2 ${activeStatus === status.value
+              ? "bg-[#2872a1] text-white"
+              : "bg-gray-100 border-[1px] border-gray-300 text-gray-600"
+              }`}
           >
             <span className="md:text-[12px] text-[10px]">{status.icon}</span>
             {status.label}
@@ -555,7 +554,7 @@ export default function LeadsOverview({
         <div className="md:max-w-[30%] max-w-full w-full bg-white border-r border-gray-300 md:rounded-[8px] rounded-[4px] shadow-custom max-h-[670px] max-md:mb-6 custom-scrollbar overflow-x-hidden">
           <div className="sticky top-0 z-20 bg-white border-b border-gray-300 py-2 px-2">
             <div className="flex items-center justify-between">
-              <p className="font-Gordita-Bold text-[#5297FF] md:text-[16px] text-[14px]">
+              <p className="font-Gordita-Bold text-[#2872a1] md:text-[16px] text-[14px]">
                 All Leads
               </p>
               <p className="font-Gordita-Medium md:text-[13px] text-[12px]">
@@ -576,7 +575,7 @@ export default function LeadsOverview({
                     setOpenDetailsModal(true);
                   }}
                   onStatusChange={(id, status) => handleChange(status, id)}
-                  
+
                   onEdit={handleEdit}
                   onDelete={handleDelete}
                   onAssign={handleAssignUser}
@@ -606,11 +605,10 @@ export default function LeadsOverview({
                 }}
                 onDragOver={onDragOver}
                 onDrop={() => onDrop(status.value)}
-                className={`md:px-2 px-2 py-1 text-nowrap rounded-md text-[10px] md:text-[11px] font-Gordita-Bold flex items-center gap-1 ${
-                  activeStatus === status.value
-                    ? "bg-[#3586FF] text-white"
-                    : "bg-gray-100 border-[1px] border-gray-300 text-gray-600"
-                }`}
+                className={`md:px-2 px-2 py-1 text-nowrap rounded-md text-[10px] md:text-[11px] font-Gordita-Bold flex items-center gap-1 ${activeStatus === status.value
+                  ? "bg-[#2872a1] text-white"
+                  : "bg-gray-100 border-[1px] border-gray-300 text-gray-600"
+                  }`}
               >
                 <span className="md:text-[12px] text-[10px]">
                   {status.icon}
@@ -625,7 +623,7 @@ export default function LeadsOverview({
               closeModal={() => setStatusModalOpen(false)}
               title={pendingStatus}
               isCloseRequired={false}
-              titleCls="font-Gordita-Medium uppercase md:text-[18px] text-[12px] text-center text-[#5297FF]"
+              titleCls="font-Gordita-Medium uppercase md:text-[18px] text-[12px] text-center text-[#2872a1]"
               className="md:max-w-[400px] max-w-[300px] "
               rootCls="z-[99999] "
             >
@@ -634,23 +632,23 @@ export default function LeadsOverview({
                   {["Follow-up", "Visit Scheduled", "Visit Done"].includes(
                     pendingStatus
                   ) && (
-                    <div>
-                      <CustomDate
-                        type="date"
-                        label={
-                          statusFieldConfig[pendingStatus]?.label ||
-                          "Select Date"
-                        }
-                        labelCls="md:text-[16px] mt-2 text-[12px] font-Gordita-Medium"
-                        value={dateValue}
-                        onChange={(e) => setDateValue(e.target.value)}
-                        placeholder="Date"
-                        className="md:px-2 px-1 md:py-1 py-[0.5px]"
-                        name={statusFieldConfig[pendingStatus]?.name || "date"}
-                        errorMsg={dateErrors.date}
-                      />
-                    </div>
-                  )}
+                      <div>
+                        <CustomDate
+                          type="date"
+                          label={
+                            statusFieldConfig[pendingStatus]?.label ||
+                            "Select Date"
+                          }
+                          labelCls="md:text-[16px] mt-2 text-[12px] font-Gordita-Medium"
+                          value={dateValue}
+                          onChange={(e) => setDateValue(e.target.value)}
+                          placeholder="Date"
+                          className="md:px-2 px-1 md:py-1 py-[0.5px]"
+                          name={statusFieldConfig[pendingStatus]?.name || "date"}
+                          errorMsg={dateErrors.date}
+                        />
+                      </div>
+                    )}
                   {pendingStatus === "completed" && (
                     <div className="mt-2">
                       <CustomInput
@@ -664,8 +662,8 @@ export default function LeadsOverview({
                         onChange={(e) => setReviewValue(e.target.value)}
                         placeholder="Write a short review / remark…"
                         required
-                        // className="w-full rounded-md border border-gray-300 bg-white px-2 py-2 text-[12px] md:text-[14px] outline-none focus:ring-2 focus:ring-blue-300"
-                        // maxLength={400}
+                      // className="w-full rounded-md border border-gray-300 bg-white px-2 py-2 text-[12px] md:text-[14px] outline-none focus:ring-2 focus:ring-blue-300"
+                      // maxLength={400}
                       />
                     </div>
                   )}
@@ -827,7 +825,7 @@ export default function LeadsOverview({
 
             <div className="flex items-center md:gap-3 gap-1 lg:mb-6 mb-3">
               <Button
-                className="bg-[#5297ff] md:text-[14px] text-nowrap text-[12px] font-Gordita-Medium text-white px-5 py-1 rounded-[4px] md:rounded-md"
+                className="bg-[#2872a1] md:text-[14px] text-nowrap text-[12px] font-Gordita-Medium text-white px-5 py-1 rounded-[4px] md:rounded-md"
                 onClick={() => setOpenFileModal(true)}
               >
                 CSV Uploader
@@ -836,11 +834,10 @@ export default function LeadsOverview({
               <CSVLink
                 data={allLeads}
                 headers={headers}
-                filename={`onecasa-leads-${
-                  new Date().toISOString().split("T")[0]
-                }.csv`}
+                filename={`theimprovementllc-leads-${new Date().toISOString().split("T")[0]
+                  }.csv`}
               >
-                <Button className="px-2 py-1 bg-[#5297ff] text-white md:rounded-[6px] font-Gordita-Medium rounded-[4px] flex items-center gap-2 md:text-[14px] text-[12px] flex-nowrap">
+                <Button className="px-2 py-1 bg-[#2872a1] text-white md:rounded-[6px] font-Gordita-Medium rounded-[4px] flex items-center gap-2 md:text-[14px] text-[12px] flex-nowrap">
                   <LuDownload className="text-white md:text-[14px] text-[12px]" />
                   Export
                 </Button>
@@ -848,7 +845,7 @@ export default function LeadsOverview({
 
               <Button
                 // disabled={!hasPermission("crm", "create")}
-                className="bg-[#5297ff] md:text-[14px] text-[12px] font-Gordita-Medium text-white md:px-[14px] px-[7px] py-0 md:py-1 rounded-[4px] md:rounded-md flex items-center gap-1"
+                className="bg-[#2872a1] md:text-[14px] text-[12px] font-Gordita-Medium text-white md:px-[14px] px-[7px] py-0 md:py-1 rounded-[4px] md:rounded-md flex items-center gap-1"
                 onClick={() => setOpenModal(true)}
               >
                 <FaPlus />
@@ -931,7 +928,7 @@ export default function LeadsOverview({
           onEdit={handleEdit}
           onDelete={handleDelete}
           onStatusChange={(id, status) => handleChange(status, id)}
-         
+
         />
       )}
     </div>

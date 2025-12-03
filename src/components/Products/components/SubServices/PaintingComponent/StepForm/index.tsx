@@ -147,7 +147,7 @@ const StepForm = () => {
           <HiCheck className="text-green-600 w-10 h-10" />
         </div>
 
-        <h2 className="font-Gordita-Medium text-[#5297FF] md:text-[20px] text-[16px] uppercase animate-fade-in-delayed">
+        <h2 className="font-Gordita-Medium text-[#2872a1] md:text-[20px] text-[16px] uppercase animate-fade-in-delayed">
           Thank You!
         </h2>
 
@@ -157,7 +157,7 @@ const StepForm = () => {
         </p>
 
         <div className="w-40 h-[4px] bg-blue-100 rounded-full overflow-hidden">
-          <div className="h-full bg-[#5297ff] rounded-full animate-progress-bar"></div>
+          <div className="h-full bg-[#2872a1] rounded-full animate-progress-bar"></div>
         </div>
       </div>
     );
@@ -165,24 +165,22 @@ const StepForm = () => {
 
   return (
     <div
-      className={`rounded-[10px] shadow-custom-card z-[9999] bg-white min-h-[inherit] h-full ${
-        step === 1 ? "p-6" : "p-3"
-      } w-full h-auto`}
+      className={`rounded-[10px] shadow-custom-card z-[9999] bg-white min-h-[inherit] h-full ${step === 1 ? "p-6" : "p-3"
+        } w-full h-auto`}
     >
       <form className="flex flex-col md:gap-4 gap-2 w-full">
         <div
-          className={`flex flex-col ${
-            step === 1 ? "md:gap-3" : "md:gap-1"
-          } gap-1 items-center text-center`}
+          className={`flex flex-col ${step === 1 ? "md:gap-3" : "md:gap-1"
+            } gap-1 items-center text-center`}
         >
           {step === 1 ? (
             <>
               <div className="flex items-center gap-1">
                 <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-                  <HiClipboardCheck className="w-5 h-5 text-[#5297FF]" />
+                  <HiClipboardCheck className="w-5 h-5 text-[#2872a1]" />
                 </div>
 
-                <h2 className="font-Gordita-Medium md:text-[18px] text-[14px] text-[#5297ff] uppercase">
+                <h2 className="font-Gordita-Medium md:text-[18px] text-[14px] text-[#2872a1] uppercase">
                   Book Your Site Visit
                 </h2>
               </div>
@@ -195,10 +193,10 @@ const StepForm = () => {
             <>
               <div className="flex items-center gap-1">
                 <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-                  <HiClipboardCheck className="w-5 h-5 text-[#5297FF]" />
+                  <HiClipboardCheck className="w-5 h-5 text-[#2872a1]" />
                 </div>
 
-                <h2 className="font-Gordita-Medium md:text-[18px] text-[14px] text-[#5297ff]  uppercase">
+                <h2 className="font-Gordita-Medium md:text-[18px] text-[14px] text-[#2872a1]  uppercase">
                   Schedule Your Visit Details
                 </h2>
               </div>
@@ -212,21 +210,19 @@ const StepForm = () => {
 
         <div className="flex items-center gap-2 bg-blue-100 justify-center py-1 md:rounded-[10px] rounded-[4px]">
           <div
-            className={`flex items-center justify-center w-8 h-8 rounded-full border-2 ${
-              step === 1
-                ? "bg-white text-[#5297ff] border-white"
-                : "bg-[#5297ff] border-white text-white"
-            }`}
+            className={`flex items-center justify-center w-8 h-8 rounded-full border-2 ${step === 1
+                ? "bg-white text-[#2872a1] border-white"
+                : "bg-[#2872a1] border-white text-white"
+              }`}
           >
             <span className="text-sm font-Gordita-Medium">1</span>
           </div>
-          <div className="w-12 h-1 bg-[#5297ff] rounded-full"></div>
+          <div className="w-12 h-1 bg-[#2872a1] rounded-full"></div>
           <div
-            className={`flex items-center justify-center w-8 h-8 rounded-full border-2 ${
-              step === 2
-                ? "bg-white text-[#5297ff] border-white"
-                : "bg-[#5297ff] border-white text-white"
-            }`}
+            className={`flex items-center justify-center w-8 h-8 rounded-full border-2 ${step === 2
+                ? "bg-white text-[#2872a1] border-white"
+                : "bg-[#2872a1] border-white text-white"
+              }`}
           >
             <span className="text-sm font-Gordita-Medium">2</span>
           </div>
@@ -282,7 +278,7 @@ const StepForm = () => {
 
             <Button
               onClick={handleNextStep}
-              className="bg-[#5297ff] font-Gordita-Medium md:rounded-[6px] rounded-[4px] shadow-custom md:text-[14px] text-[12px]  md:py-[6px] py-1   text-white"
+              className="bg-[#2872a1] font-Gordita-Medium md:rounded-[6px] rounded-[4px] shadow-custom md:text-[14px] text-[12px]  md:py-[6px] py-1   text-white"
             >
               Next Step →
             </Button>
@@ -403,7 +399,7 @@ const StepForm = () => {
               </Button>
               <Button
                 onClick={handleNextStep}
-                className="bg-[#5297ff]   md:px-6 px-3 md:rounded-[10px] rounded-[4px] font-Gordita-Medium md:text-[16px] text-[12px] md:py-2 py-2   text-white"
+                className="bg-[#2872a1]   md:px-6 px-3 md:rounded-[10px] rounded-[4px] font-Gordita-Medium md:text-[16px] text-[12px] md:py-2 py-2   text-white"
               >
                 Submit
               </Button>

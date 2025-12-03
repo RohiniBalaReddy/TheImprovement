@@ -75,27 +75,27 @@ function UserLayout({
       icon: <FiUser className="text-[18px]" />,
       isActive: router.asPath.startsWith("/user/profile"),
     },
-     {
+    {
       name: "CRM",
       link: "/user/crm",
       icon: <LuUsers className="text-[18px]" />,
       isActive: router.asPath.startsWith("/user/crm"),
     },
-   
+
     {
       name: "Custom builder",
       link: "/user/custom-builder",
       icon: <FiTool className="text-[18px]" />,
       isActive: router.asPath.startsWith("/user/custom-builder"),
     },
-   
+
     {
       name: "Testimonials",
       link: "/user/testimonials",
       icon: <MdReviews className="text-[18px]" />,
       isActive: router.pathname === "/user/testimonials",
     },
-    
+
   ];
 
   const logo_place_holder = {
@@ -173,7 +173,7 @@ function UserLayout({
             </div>
             <div className=" md:block font-Gordita-Bold leading-tight">
               <p className="flex gap-1">
-                <span className="text-[18px] text-[#5297FF]">ONE</span>
+                <span className="text-[18px] text-[#2872a1]">ONE</span>
                 <span className="text-[18px] text-gray-900">CASA</span>
               </p>
               <p className="text-[11px] font-Gordita-Medium text-gray-600">
@@ -194,7 +194,7 @@ function UserLayout({
         <div className="mt-auto pt-6 border-t border-gray-200">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-              <span className="text-[#5297ff] font-Gordita-Medium">
+              <span className="text-[#2872a1] font-Gordita-Medium">
                 {user?.firstName?.[0]}{user?.lastName?.[0]}
               </span>
             </div>
@@ -289,7 +289,7 @@ function UserLayout({
                             variant="ghost"
                             size="sm"
                             onClick={markAllAsRead}
-                            className="text-[#5297ff] hover:text-[#5297ff] hover:bg-blue-50 px-3 py-1 md:text-xs text-[12px] font-Gordita-Medium transition-colors"
+                            className="text-[#2872a1] hover:text-[#2872a1] hover:bg-blue-50 px-3 py-1 md:text-xs text-[12px] font-Gordita-Medium transition-colors"
                           >
                             Mark all read
                           </Button>
@@ -311,7 +311,7 @@ function UserLayout({
                           {displayedNotifications.map((notification) => (
                             <div
                               key={notification.id}
-                              className={`md:p-4 p-2 transition-all duration-200 hover:bg-gray-50 cursor-pointer ${!notification.isRead ? "bg-blue-50 border-l-4 border-l-[#5297ff]" : ""
+                              className={`md:p-4 p-2 transition-all duration-200 hover:bg-gray-50 cursor-pointer ${!notification.isRead ? "bg-blue-50 border-l-4 border-l-[#2872a1]" : ""
                                 }`}
                               onClick={() => {
                                 if (!notification.isRead) {
@@ -321,7 +321,7 @@ function UserLayout({
                               <div className="flex items-start gap-3">
                                 <div className={`flex-shrink-0 md:w-8 md:h-8 w-5 h-5 rounded-full flex items-center justify-center ${!notification.isRead ? "bg-blue-100" : "bg-gray-100"
                                   }`}>
-                                  <div className={`w-2 h-2 rounded-full ${!notification?.isRead ? "bg-[#5297ff]" : "bg-gray-400"
+                                  <div className={`w-2 h-2 rounded-full ${!notification?.isRead ? "bg-[#2872a1]" : "bg-gray-400"
                                     }`} />
                                 </div>
 
@@ -339,7 +339,7 @@ function UserLayout({
                                       />
                                     </p>
                                     {!notification.isRead && (
-                                      <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-Gordita-Medium bg-blue-100 text-[#5297ff]">
+                                      <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-Gordita-Medium bg-blue-100 text-[#2872a1]">
                                         New
                                       </span>
                                     )}
@@ -456,9 +456,9 @@ const NavigationMenu = ({ items, isMobile = false }: INavigationMenuProps) => {
               className={clsx(
                 "flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-Gordita-Medium transition-colors",
                 {
-                  "text-[#5297ff] bg-blue-50 border-r-2 border-blue-600":
+                  "text-[#2872a1] bg-blue-50 border-r-2 border-[#2872a1]":
                     item.isActive,
-                  "text-gray-700 hover:text-[#5297ff] hover:bg-blue-50":
+                  "text-gray-700 hover:text-[#2872a1] hover:bg-blue-50":
                     !item.isActive,
                 }
               )}
@@ -481,8 +481,8 @@ const NavigationMenu = ({ items, isMobile = false }: INavigationMenuProps) => {
                           className={clsx(
                             "flex items-center justify-between w-full px-4 py-3 rounded-lg text-sm font-Gordita-Medium transition-colors",
                             {
-                              "text-[#5297ff] bg-blue-50": item.isActive || open,
-                              "text-gray-700 hover:text-[#5297ff] hover:bg-blue-50":
+                              "text-[#2872a1] bg-blue-50": item.isActive || open,
+                              "text-gray-700 hover:text-[#2872a1] hover:bg-blue-50":
                                 !item.isActive && !open,
                             }
                           )}

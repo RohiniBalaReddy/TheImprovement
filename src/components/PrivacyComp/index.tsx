@@ -102,7 +102,7 @@ const PrivacyComp = () => {
             blue: {
                 wrapper: "from-blue-50 to-blue-100 border-blue-100",
                 dot: "bg-white-500",
-                bullet: "text-blue-500",
+                bullet: "text-[#2872a1]",
             },
             green: {
                 wrapper: "from-green-50 to-green-100 border-green-100",
@@ -179,7 +179,7 @@ const PrivacyComp = () => {
                         <Button
                             onClick={() => setActiveTab("all")}
                             className={`px-6 py-3 rounded-lg font-Gordita-Bold text-sm whitespace-nowrap transition-all duration-300 ${activeTab === "all"
-                                ? "bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-md"
+                                ? "bg-gradient-to-r from-[#2872a1] to-[#2872a1] text-white shadow-md"
                                 : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                                 }`}
                         >
@@ -188,7 +188,7 @@ const PrivacyComp = () => {
                         <Button
                             onClick={() => setActiveTab("realestate")}
                             className={`px-6 py-3 rounded-lg font-Gordita-Bold text-sm whitespace-nowrap transition-all duration-300 flex items-center gap-2 ${activeTab === "realestate"
-                                ? "bg-gradient-to-r from-blue-600 to-blue-500 text-white shadow-md"
+                                ? "bg-gradient-to-r from-[#2872a1] to-[#2872a1] text-white shadow-md"
                                 : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                                 }`}
                         >
@@ -221,7 +221,7 @@ const PrivacyComp = () => {
                     <div className="lg:col-span-1">
                         <div className="sticky top-24 bg-white rounded-2xl shadow-md p-6 border border-slate-100">
                             <h3 className="font-Gordita-Bold text-slate-800 text-lg mb-4 flex items-center gap-2">
-                                <MdInfo className="text-blue-600" />
+                                <MdInfo className="text-[#2872a1]" />
                                 Quick Navigation
                             </h3>
                             <nav className="space-y-2">
@@ -229,7 +229,7 @@ const PrivacyComp = () => {
                                     <Button
                                         key={item.id}
                                         onClick={() => scrollToSection(item.id)}
-                                        className="w-full text-left px-4 py-2.5 rounded-lg text-sm font-Gordita-Medium text-slate-600 hover:bg-slate-50 hover:text-blue-500 transition-all duration-300 flex items-center gap-3 group"
+                                        className="w-full text-left px-4 py-2.5 rounded-lg text-sm font-Gordita-Medium text-slate-600 hover:bg-slate-50 hover:text-[#2872a1] transition-all duration-300 flex items-center gap-3 group"
                                     >
                                         <span className="text-lg group-hover:scale-110 transition-transform duration-300">
                                             {item.icon}
@@ -245,7 +245,7 @@ const PrivacyComp = () => {
                                 </p>
                                 <Button
                                     onClick={() => scrollToSection("contact")}
-                                    className="w-full px-4 py-2 bg-gradient-to-r from-blue-600 to-green-500 text-white rounded-lg text-sm font-Gordita-Bold hover:shadow-md transition-all duration-300 hover:scale-105"
+                                    className="w-full px-4 py-2 bg-gradient-to-r from-[#2872a1] to-green-500 text-white rounded-lg text-sm font-Gordita-Bold hover:shadow-md transition-all duration-300 hover:scale-105"
                                 >
                                     Contact Us
                                 </Button>
@@ -262,7 +262,7 @@ const PrivacyComp = () => {
                             <div className="prose max-w-none">
                                 <p className="text-slate-700 leading-relaxed font-Gordita-Medium text-lg mb-4">
                                     Welcome to{" "}
-                                    <span className="font-Gordita-Bold text-blue-500">TheImprovement</span>, your
+                                    <span className="font-Gordita-Bold text-[#2872a1]">TheImprovement</span>, your
                                     comprehensive platform for{" "}
                                     <span className="font-Gordita-Bold">
                                         real estate listings, interior design, and construction services
@@ -271,7 +271,7 @@ const PrivacyComp = () => {
                                 </p>
                                 <div className="grid md:grid-cols-3 gap-4 mt-6">
                                     <div className="text-center p-4 bg-slate-50 rounded-xl border border-slate-100">
-                                        <FaHome className="text-4xl text-blue-600 mx-auto mb-2" />
+                                        <FaHome className="text-4xl text-[#2872a1] mx-auto mb-2" />
                                         <h4 className="font-Gordita-Bold text-slate-800">Real Estate</h4>
                                         <p className="text-sm text-slate-600 font-Gordita-Medium mt-1">
                                             Buy, Sell &amp; Rent
@@ -384,9 +384,9 @@ const PrivacyComp = () => {
                             icon={<MdVerifiedUser />}
                         >
                             <div className="space-y-6">
-                                <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-xl p-6 border-l-4 border-blue-400">
+                                <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-xl p-6 border-l-4 border-[#1d547]">
                                     <h3 className="font-Gordita-Bold text-slate-800 text-lg mb-3 flex items-center gap-2">
-                                        <FaHome className="text-blue-600" />
+                                        <FaHome className="text-[#2872a1]" />
                                         Real Estate Services
                                     </h3>
                                     <ul className="space-y-2">
@@ -400,7 +400,7 @@ const PrivacyComp = () => {
                                                 key={idx}
                                                 className="flex items-start gap-2 text-slate-700 font-Gordita-Medium"
                                             >
-                                                <span className="text-blue-500 mt-1">✓</span>
+                                                <span className="text-[#2872a1] mt-1">✓</span>
                                                 <span>{item}</span>
                                             </li>
                                         ))}
@@ -532,7 +532,7 @@ const PrivacyComp = () => {
                             <div className="space-y-6">
                                 <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-6 border-2 border-blue-100">
                                     <h3 className="font-Gordita-Bold text-slate-800 text-lg mb-4 flex items-center gap-2">
-                                        <MdLock className="text-blue-600" />
+                                        <MdLock className="text-[#2872a1]" />
                                         Our Security Measures
                                     </h3>
                                     <div className="grid md:grid-cols-2 gap-4">
@@ -627,7 +627,7 @@ const PrivacyComp = () => {
                                     ].map((item, idx) => {
                                         const map = {
                                             blue: {
-                                                badge: "bg-blue-100 text-blue-500",
+                                                badge: "bg-blue-100 text-[#2872a1]",
                                                 border: "border-blue-100",
                                             },
                                             green: {
@@ -721,13 +721,13 @@ const PrivacyComp = () => {
                                         </div>
                                     ))}
                                 </div>
-                                <div className="bg-blue-50 rounded-lg p-5 border-l-4 border-blue-500">
+                                <div className="bg-blue-50 rounded-lg p-5 border-l-4 border-[#2872a1]">
                                     <p className="text-slate-700 font-Gordita-Medium">
                                         <strong>Response Time:</strong> We aim to respond to verified requests
                                         within 30 days. You can reach us using the details in the{" "}
                                         <a
                                             href="#contact"
-                                            className="text-blue-500 underline decoration-blue-300"
+                                            className="text-[#2872a1] underline decoration-blue-300"
                                         >
                                             Contact Us
                                         </a>{" "}
@@ -777,7 +777,7 @@ const PrivacyComp = () => {
                                         const map = {
                                             blue: {
                                                 bg: "bg-blue-100",
-                                                icon: "text-blue-600",
+                                                icon: "text-[#2872a1]",
                                             },
                                             green: {
                                                 bg: "bg-green-100",
@@ -979,14 +979,14 @@ const PrivacyComp = () => {
                                 <div className="grid md:grid-cols-3 gap-4">
                                     <a
                                         href="mailto:admin@TheImprovement.in"
-                                        className="group bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-xl p-6 border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 hover:shadow-md"
+                                        className="group bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-xl p-6 border-2 border-blue-100 hover:border-[#1d547] transition-all duration-300 hover:shadow-md"
                                     >
                                         <div className="flex flex-col items-center text-center">
-                                            <div className="p-4 bg-blue-600 rounded-full text-white mb-4 group-hover:scale-110 transition-transform duration-300">
+                                            <div className="p-4 bg-[#2872a1] rounded-full text-white mb-4 group-hover:scale-110 transition-transform duration-300">
                                                 <MdEmail className="text-3xl" />
                                             </div>
                                             <h4 className="font-Gordita-Bold text-slate-800 mb-2">Email Us</h4>
-                                            <p className="text-sm text-blue-500 font-Gordita-Bold break-all">
+                                            <p className="text-sm text-[#2872a1] font-Gordita-Bold break-all">
                                                 admin@TheImprovement.in
                                             </p>
                                         </div>
@@ -1024,7 +1024,7 @@ const PrivacyComp = () => {
                                     <div className="grid md:grid-cols-2 gap-4">
                                         <div>
                                             <h4 className="font-Gordita-Bold text-slate-800 mb-2 flex items-center gap-2">
-                                                <MdSchedule className="text-blue-600" />
+                                                <MdSchedule className="text-[#2872a1]" />
                                                 Business Hours
                                             </h4>
                                             <p className="text-sm text-slate-700 font-Gordita-Medium">
@@ -1050,7 +1050,7 @@ const PrivacyComp = () => {
                         </CollapsibleSection>
 
                         {/* Acknowledgment Footer */}
-                        <div className="bg-gradient-to-r from-blue-400 via-blue-500  rounded-2xl p-8 text-white shadow-xl mt-8">
+                        <div className="bg-gradient-to-r from-[#1d547] via-[#2872a1]  rounded-2xl p-8 text-white shadow-xl mt-8">
                             <div className="flex items-start gap-4">
                                 <MdSecurity className="text-5xl flex-shrink-0" />
                                 <div>

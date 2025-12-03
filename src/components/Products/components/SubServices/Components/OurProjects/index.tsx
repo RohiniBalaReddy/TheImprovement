@@ -30,7 +30,7 @@ export const OurProjects = ({
             {subheading}
           </p>
         )}
-        <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-yellow-400 mx-auto mt-4 rounded-full"></div>
+        <div className="w-24 h-1 bg-gradient-to-r from-[#2872a1] to-yellow-400 mx-auto mt-4 rounded-full"></div>
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 max-w-7xl mx-auto">
@@ -58,7 +58,7 @@ export const OurProjects = ({
 
             {/* Content */}
             <div className="p-3 flex-1 flex flex-col">
-              <h2 className="font-Gordita-Medium text-[14px] md:text-[16px] text-[#212227] mb-1 group-hover:text-blue-600 transition-colors duration-300">
+              <h2 className="font-Gordita-Medium text-[14px] md:text-[16px] text-[#212227] mb-1 group-hover:text-[#2872a1] transition-colors duration-300">
                 {project.title}
               </h2>
 
@@ -70,7 +70,7 @@ export const OurProjects = ({
 
               {project.area && (
                 <div className="mt-auto flex items-center gap-2 text-gray-800 font-Gordita-Medium">
-                  <FaRulerCombined className="text-blue-600 w-4 h-4 flex-shrink-0" />
+                  <FaRulerCombined className="text-[#2872a1] w-4 h-4 flex-shrink-0" />
                   <span className="text-[12px] md:text-[13px]">
                     {project.area}
                   </span>

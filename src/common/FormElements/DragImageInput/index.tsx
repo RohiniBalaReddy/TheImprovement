@@ -141,8 +141,8 @@ const ImageUploader: React.FC<ImageUploaderProps> = ({
                     dragging ? 'bg-blue-100 border-blue-300' : 'bg-gray-50',
                 )}
             >
-                <p className="text-[#5297FF] md:text-[16px] text-[14px] font-Gordita-Medium">Drag and drop your photos here</p>
-                <p className="text-gray-500 md:text-[16px] text-[12px]">
+                <p className="text-[#2872a1] md:text-[16px] text-[14px] font-Gordita-Medium">Drag and drop your photos here</p>
+                <p className="text-gray-500 md:text-[14px] text-[12px]">
                     Up to {maxFiles} photos • Max size {maxFileSize}MB • Formats: {acceptedFormats.join(', ')}
                 </p>
 
@@ -157,7 +157,7 @@ const ImageUploader: React.FC<ImageUploaderProps> = ({
                 <div className="mt-4">
                     <Button
                         type="button"
-                        className={twMerge('px-4 py-2 bg-[#5297ff] !font-Gordita-Medium text-[14px] md:text-[16px] text-white rounded-md', buttonCls)}
+                        className={twMerge('px-4 py-2 bg-[#2872a1] !font-Gordita-Medium text-[14px] md:text-[16px] text-white rounded-md', buttonCls)}
                     >
                         Upload Photos Now
                     </Button>
@@ -165,7 +165,7 @@ const ImageUploader: React.FC<ImageUploaderProps> = ({
                 {uploading && (
                     <div className="mt-4 w-full bg-gray-200 rounded-full h-3 overflow-hidden">
                         <div
-                            className="bg-[#5297ff] h-3 rounded-full transition-all duration-500 ease-in-out"
+                            className="bg-[#2872a1] h-3 rounded-full transition-all duration-500 ease-in-out"
                             style={{ width: `${uploadProgress}%` }}
                         />
                     </div>

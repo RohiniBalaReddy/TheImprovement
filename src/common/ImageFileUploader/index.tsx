@@ -167,7 +167,7 @@ const ImageFileUploader = ({
             <Loader />
             <div className="w-[80%] bg-gray-300 h-2 mt-4 rounded-full overflow-hidden">
               <div
-                className="bg-[#5297ff] h-2 rounded-full transition-all duration-500 ease-in-out"
+                className="bg-[#2872a1] h-2 rounded-full transition-all duration-500 ease-in-out"
                 style={{ width: `${uploadProgress}%` }}
               />
             </div>

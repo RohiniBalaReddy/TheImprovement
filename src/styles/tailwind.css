@@ -40,7 +40,7 @@ select:-webkit-autofill:focus {
     @apply text-[12px] md:text-[14px] font-Gordita-Medium;
   }
   .heading-text {
-    @apply text-[16px] md:text-[24px] font-Gordita-Bold text-[#5297FF] transform uppercase;
+    @apply text-[16px] md:text-[24px] font-Gordita-Bold text-[#2872a1] transform uppercase;
   }
   .sub-heading-text {
     @apply text-[14px] md:text-[16px] font-Gordita-Medium;
@@ -53,6 +53,6 @@ select:-webkit-autofill:focus {
     @apply text-[11px] md:text-[12px] font-Gordita-Medium font-semibold text-gray-700;
   }
   .step-heading {
-    @apply text-[16px] md:text-[18px] font-Gordita-Bold text-[#5297FF];
+    @apply text-[16px] md:text-[18px] font-Gordita-Bold text-[#2872a1];
   }
 }

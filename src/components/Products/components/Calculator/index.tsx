@@ -153,7 +153,7 @@ const CalculatorInputs = ({
         {packageDetails.map((pkg, index) => (
           <Button
             key={pkg.title}
-            className={`p-2 text-[#3586FF]  md:text-[14px] text-[12px] md:rounded-[10px] rounded-[4px] font-Gordita-Bold px-[px] md:py-[4px] py-[2px] md:w-1/4 h-full ${activeTab === index ? "bg-white shadow-md"
+            className={`p-2 text-[#2872a1]  md:text-[14px] text-[12px] md:rounded-[10px] rounded-[4px] font-Gordita-Bold px-[px] md:py-[4px] py-[2px] md:w-1/4 h-full ${activeTab === index ? "bg-white shadow-md"
               : "hover:bg-[#d2e3ff]"
               }`}
             onClick={() => {
@@ -310,7 +310,7 @@ const CalculatorInputs = ({
         {/* Get Estimated Cost */}
         <div>
           <Button
-            className="bg-[#5297FF] md:py-[6px] py-[4px] w-full md:text-[14px] text-[12px] rounded-[6px] text-white font-Gordita-Bold"
+            className="bg-[#2872a1] md:py-[6px] py-[4px] w-full md:text-[14px] text-[12px] rounded-[6px] text-white font-Gordita-Bold"
             onClick={() => handleSubmit(false)}
           >
             Get estimated cost
@@ -326,7 +326,7 @@ const CalculatorInputs = ({
             <div className="text-center flex">
               {estimatedCost && (
                 <>
-                  <p className="md:text-[16px] text-[12px] font-Gordita-Medium leading-[23px] text-[#5297FF] border-black border-b">
+                  <p className="md:text-[16px] text-[12px] font-Gordita-Medium leading-[23px] text-[#2872a1] border-black border-b">
                     {new Intl.NumberFormat("en-IN", {
                       style: "currency",
                       currency: "INR",
@@ -343,7 +343,7 @@ const CalculatorInputs = ({
           </div>
           <Link
             href="/"
-            className="md:text-[14px] text-[12px] underline font-Gordita-Medium leading-[23px] text-[#3586FF] text-nowrap"
+            className="md:text-[14px] text-[12px] underline font-Gordita-Medium leading-[23px] text-[#2872a1] text-nowrap"
           >
             Know more
           </Link>

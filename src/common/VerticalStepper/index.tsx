@@ -10,9 +10,9 @@ const VerticalStepper = ({ steps, currentStep, scorePercentage, handleEdit }: an
                             <div className="flex flex-col items-center">
                                 <div
                                     className={`w-8 h-8 flex items-center justify-center rounded-full border-2 ${currentStep > index
-                                        ? 'border-[#5297ff] bg-[#5297ff] text-white'
+                                        ? 'border-[#2872a1] bg-[#2872a1] text-white'
                                         : currentStep === index
-                                            ? 'border-[#5297ff] bg-white text-[#5297FF]'
+                                            ? 'border-[#2872a1] bg-white text-[#2872a1]'
                                             : 'border-gray-300 bg-white text-gray-400'
                                         }`}
                                 >
@@ -25,7 +25,7 @@ const VerticalStepper = ({ steps, currentStep, scorePercentage, handleEdit }: an
 
                                 {index !== steps.length - 1 && (
                                     <div
-                                        className={`xl:h-[68px] md:h-10 border-l-2 ${currentStep > index ? 'border-[#5297ff]' : 'border-gray-300'
+                                        className={`xl:h-[68px] md:h-10 border-l-2 ${currentStep > index ? 'border-[#2872a1]' : 'border-gray-300'
                                             }`}
                                     ></div>
                                 )}
@@ -33,7 +33,7 @@ const VerticalStepper = ({ steps, currentStep, scorePercentage, handleEdit }: an
                             <div className="ml-4 flex flex-row justify-center gap-2 items-center ">
                                 <div>
                                     <h4
-                                        className={`font-Gordita-Medium text-[16px] ${currentStep >= index ? 'text-[#5297FF]' : 'text-gray-600'
+                                        className={`font-Gordita-Medium text-[16px] ${currentStep >= index ? 'text-[#2872a1]' : 'text-gray-600'
                                             }`}
                                     >
                                         {step.label}
@@ -44,7 +44,7 @@ const VerticalStepper = ({ steps, currentStep, scorePercentage, handleEdit }: an
                                 </div>
                                 <div className="cursor-pointer" onClick={() => handleEdit(index)}>
                                     {currentStep > index && (
-                                        <p className="text-[#5297FF] text-sm">
+                                        <p className="text-[#2872a1] text-sm">
                                             Edit
                                         </p>
                                     )}

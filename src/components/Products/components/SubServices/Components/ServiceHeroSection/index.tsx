@@ -50,7 +50,7 @@ function ServiceHeroSection({
           </div>
           <div className="mb-6 md:mb-0 w-full">
             <Button
-              className="rounded-lg bg-[#3b7ee4] hover:bg-[#5297FF]text-[13px] md:text-[16px] py-2 px-[12px] md:p-4 font-regular md:font-Gordita-Medium text-white  cursor-pointer"
+              className="rounded-lg bg-[#3b7ee4] hover:bg-[#2872a1]text-[13px] md:text-[16px] py-2 px-[12px] md:p-4 font-regular md:font-Gordita-Medium text-white  cursor-pointer"
               aria-label={`Go to this {bookingCtaUrl.label}`}
             >
               <Link

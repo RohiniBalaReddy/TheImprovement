@@ -89,7 +89,7 @@ export default function LeadDetailsModal({
       closeModal={onClose}
       title="Lead Details"
       rootCls="z-[999]"
-      titleCls="font-Gordita-Medium md:text-[18px] text-[12px] text-center text-[#5297FF]"
+      titleCls="font-Gordita-Medium md:text-[18px] text-[12px] text-center text-[#2872a1]"
       isCloseRequired={true}
       className="md:max-w-[1100px] w-full max-w-[95vw]"
     >
@@ -99,7 +99,7 @@ export default function LeadDetailsModal({
           <div className="flex items-start justify-between gap-3">
             <div className="flex items-center gap-3">
               {/* Avatar */}
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#E3EEFF] text-[#5297FF] font-Gordita-Bold uppercase">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#E3EEFF] text-[#2872a1] font-Gordita-Bold uppercase">
                 {lead.Fullname?.[0] || "L"}
               </div>
               <div className="flex flex-col gap-1">
@@ -123,7 +123,7 @@ export default function LeadDetailsModal({
                 onClick={() => onEdit(lead)}
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 hover:bg-blue-50 transition disabled:opacity-60"
               >
-                <FaEdit className="text-[#5297FF] md:text-[18px] text-[14px]" />
+                <FaEdit className="text-[#2872a1] md:text-[18px] text-[14px]" />
               </button>
 
               {/* Delete */}
@@ -179,7 +179,7 @@ export default function LeadDetailsModal({
               value={
                 <a
                   href={`tel:${lead.Phonenumber}`}
-                  className="text-blue-600 hover:underline break-all"
+                  className="text-[#2872a1] hover:underline break-all"
                 >
                   {lead.Phonenumber}
                 </a>
@@ -231,7 +231,7 @@ export default function LeadDetailsModal({
 
             {lead?.houseNo && (
               <IconBlock
-                icon={<HiOutlineHomeModern className="text-blue-400" />}
+                icon={<HiOutlineHomeModern className="text-[#1d547]" />}
                 label="House No"
                 value={lead.houseNo}
               />
@@ -239,7 +239,7 @@ export default function LeadDetailsModal({
 
             {lead?.apartmentName && (
               <IconBlock
-                icon={<MdApartment className="text-blue-400" />}
+                icon={<MdApartment className="text-[#1d547]" />}
                 label="Apartment"
                 value={lead.apartmentName}
               />
@@ -247,7 +247,7 @@ export default function LeadDetailsModal({
 
             {lead?.areaName && (
               <IconBlock
-                icon={<FaMapMarkerAlt className="text-blue-400" />}
+                icon={<FaMapMarkerAlt className="text-[#1d547]" />}
                 label="Location"
                 value={lead.areaName}
               />
@@ -255,7 +255,7 @@ export default function LeadDetailsModal({
 
             {lead?.pincode && (
               <IconBlock
-                icon={<MdPin className="text-blue-400" />}
+                icon={<MdPin className="text-[#1d547]" />}
                 label="Pin Code"
                 value={lead.pincode}
               />

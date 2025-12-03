@@ -123,7 +123,7 @@ const ReusableSearchFilter = ({
                 (filters as GroupedFilter[]).map((group) => (
                   <li key={group.key} className="border-b px-3 py-2">
                     <div
-                      className="font-Gordita-Bold cursor-pointer text-[#5297FF]"
+                      className="font-Gordita-Bold cursor-pointer text-[#2872a1]"
                       onClick={() => toggleGroup(group.key)}
                     >
                       {group.groupLabel}
@@ -139,7 +139,7 @@ const ReusableSearchFilter = ({
                               type="checkbox"
                               checked={
                                 selectedFilters?.[group.key]?.[
-                                  String(option.id)
+                                String(option.id)
                                 ] ?? false
                               }
                               onChange={(e) =>

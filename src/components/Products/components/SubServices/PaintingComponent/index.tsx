@@ -35,11 +35,11 @@ const PaintingHeroSectionData: IServiceHeroSectionInterfaceProps = {
 
   bookingCtaUrl: { label: "Discover More", url: "" },
   locationcta: [
-  { label: "New York", url: "" },
-  { label: "Los Angeles", url: "" },
-  { label: "Chicago", url: "" },
-  { label: "Houston", url: "" },
-],
+    { label: "New York", url: "" },
+    { label: "Los Angeles", url: "" },
+    { label: "Chicago", url: "" },
+    { label: "Houston", url: "" },
+  ],
 
   selectedId: { id: 6, service: "Painting" },
 };
@@ -233,7 +233,7 @@ const PaintingComponent = () => {
         <div className="fixed top-1/2 -translate-y-1/2 right-0 flex flex-col items-end gap-3 z-50">
           <Button
             onClick={handleEnquireNow}
-            className="bg-gradient-to-b from-blue-600 to-cyan-400 text-white font-Gordita-Medium px-1 md:px-3 md:py-2 py-2  rotate-180 [writing-mode:vertical-rl] rounded-tl-lg rounded-bl-lg shadow-lg hover:scale-105 transition-transform duration-300 md:text-[14px] text-[11px]"
+            className="bg-gradient-to-b from-[#2872a1] to-cyan-400 text-white font-Gordita-Medium px-1 md:px-3 md:py-2 py-2  rotate-180 [writing-mode:vertical-rl] rounded-tl-lg rounded-bl-lg shadow-lg hover:scale-105 transition-transform duration-300 md:text-[14px] text-[11px]"
           >
             ENQUIRE NOW
           </Button>
@@ -253,7 +253,7 @@ const PaintingComponent = () => {
       {/* <PaintingServiceCard /> */}
       <PaintServices services={services} />
       <OurPartners images={PartnerImages} />
-      
+
 
       <TestimonialsSection {...testimonialsData} />
       <div className="mb-[45px] md:mb-[64px]">
@@ -281,7 +281,7 @@ const PaintingComponent = () => {
           {blogs.length > 3 && (
             <div className="max-w-[69px] min-h-[23px] ">
               <Button
-                className="text-[#3586FF] text-[16px] leading-[22.8px] text-nowrap font-Gordita-Medium"
+                className="text-[#2872a1] text-[16px] leading-[22.8px] text-nowrap font-Gordita-Medium"
                 onClick={() => handleshowall()}
               >
                 {showAll ? "View Less" : "View All"}
@@ -319,7 +319,7 @@ const PaintingComponent = () => {
         {blogs.length > 4 && (
           <div className="md:flex justify-center hidden mt-5">
             <button
-              className="bg-[#5297ff] text-white px-4 py-2 rounded-lg"
+              className="bg-[#2872a1] text-white px-4 py-2 rounded-lg"
               onClick={() => setShowMore(!showMore)}
             >
               {showMore ? "See Less" : "See More"}

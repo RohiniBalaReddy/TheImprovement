@@ -52,7 +52,7 @@ const FlooringComponent = () => {
       image: "/images/services/flooring/hardwood.png",
       description:
         "Elegant, durable, and timeless hardwood flooring for your home or office.",
-      icon: <MdCheckCircle size={12} className="text-blue-600" />,
+      icon: <MdCheckCircle size={12} className="text-[#2872a1]" />,
       badge: "Premium",
     },
     {
@@ -137,12 +137,12 @@ const FlooringComponent = () => {
     subHeading: "Durable • Stylish • Expertly Installed",
     bgImageUrl: "/images/services/flooring.jpg",
     bookingCtaUrl: { label: "Discover More", url: "" },
-   locationcta: [
-  { label: "New York", url: "" },
-  { label: "Los Angeles", url: "" },
-  { label: "Chicago", url: "" },
-  { label: "Houston", url: "" },
-],
+    locationcta: [
+      { label: "New York", url: "" },
+      { label: "Los Angeles", url: "" },
+      { label: "Chicago", url: "" },
+      { label: "Houston", url: "" },
+    ],
 
     selectedId: { id: 3, service: "Flooring" },
   };
@@ -275,7 +275,7 @@ const FlooringComponent = () => {
           {blogs.length > 3 && (
             <div className="max-w-[69px] min-h-[23px] ">
               <Button
-                className="text-[#3586FF] text-[16px] leading-[22.8px] text-nowrap font-Gordita-Medium"
+                className="text-[#2872a1] text-[16px] leading-[22.8px] text-nowrap font-Gordita-Medium"
                 onClick={() => handleshowall()}
               >
                 {showAll ? "View Less" : "View All"}
@@ -313,7 +313,7 @@ const FlooringComponent = () => {
         {blogs.length > 4 && (
           <div className="md:flex justify-center hidden mt-5">
             <button
-              className="bg-[#5297ff] text-white px-4 py-2 rounded-lg"
+              className="bg-[#2872a1] text-white px-4 py-2 rounded-lg"
               onClick={() => setShowMore(!showMore)}
             >
               {showMore ? "See Less" : "See More"}

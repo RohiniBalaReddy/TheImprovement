@@ -62,7 +62,7 @@ const PaintingServiceCard = () => {
 
   return (
     <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300">
-      <div className="relative bg-gradient-to-r from-blue-600 to-indigo-700 p-6 text-white">
+      <div className="relative bg-gradient-to-r from-[#2872a1] to-indigo-700 p-6 text-white">
         <div className="flex justify-between items-start">
           <div>
             <h2 className="text-[16px] md:text-[20px] font-Gordita-Bold md:mb-2 mb-1">
@@ -122,7 +122,7 @@ const PaintingServiceCard = () => {
                     <span>+₹{addon.price}</span>
                   </div>
                 ))}
-              <div className="border-t pt-2 flex justify-between font-Gordita-Bold text-[12px] md:text-[16px] text-[#5297FF]">
+              <div className="border-t pt-2 flex justify-between font-Gordita-Bold text-[12px] md:text-[16px] text-[#2872a1]">
                 <span>Total Amount</span>
                 <span>₹{totalPrice.toLocaleString()}</span>
               </div>
@@ -179,7 +179,7 @@ const PaintingServiceCard = () => {
               <div className="flex items-center justify-between md:p-4 p-2 bg-white rounded-xl border-2 border-gray-200 hover:border-blue-300 transition-all duration-200">
                 <div className="flex items-center md:gap-3 gap-1">
                   <div className="p-2 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <BsHouse className="w-4 h-4 text-[#5297ff]" />
+                    <BsHouse className="w-4 h-4 text-[#2872a1]" />
                   </div>
                   <div>
                     <div className="font-Gordita-Bold md:text-[16px] text-[12px] text-gray-900">
@@ -197,7 +197,7 @@ const PaintingServiceCard = () => {
                     onChange={(e) => setIncludeCeiling(e.target.checked)}
                     className="sr-only peer"
                   />
-                  <div className="w-11 h-6 bg-gray-200 peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                  <div className="w-11 h-6 bg-gray-200 peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#2872a1]"></div>
                 </label>
               </div>
             </div>
@@ -273,7 +273,7 @@ const PaintingServiceCard = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="font-Gordita-Medium md:text-[12px] text-[10px] text-[#5297ff]">
+                    <div className="font-Gordita-Medium md:text-[12px] text-[10px] text-[#2872a1]">
                       +₹{addon.price}
                     </div>
                   </div>
@@ -284,7 +284,7 @@ const PaintingServiceCard = () => {
 
           <Button
             onClick={handleBookNow}
-            className="md:mt-4 mt-2 w-full md:py-3 py-2 md:text-[16px] text-[12px]  font-Gordita-Medium bg-[#5297ff] hover:bg-blue-700 rounded-2xl text-white shadow-lg"
+            className="md:mt-4 mt-2 w-full md:py-3 py-2 md:text-[16px] text-[12px]  font-Gordita-Medium bg-[#2872a1] hover:bg-blue-700 rounded-2xl text-white shadow-lg"
           >
             Book Now
           </Button>
@@ -295,7 +295,7 @@ const PaintingServiceCard = () => {
               Quality Guaranteed
             </div>
             <div className="flex items-center gap-1">
-              <RiSecurePaymentLine className="text-[#5297FF] w-4 h-4" />
+              <RiSecurePaymentLine className="text-[#2872a1] w-4 h-4" />
               Secure Booking
             </div>
           </div>

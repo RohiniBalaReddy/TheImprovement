@@ -69,7 +69,7 @@ export default function LeadCard({
         <p className="text-[12px] font-Gordita-Medium">
           <a
             href={`tel:${lead.Phonenumber}`}
-            className="text-blue-600 hover:underline"
+            className="text-[#2872a1] hover:underline"
             onClick={(e) => e.stopPropagation()}
           >
             {lead?.Phonenumber}
@@ -98,9 +98,8 @@ export default function LeadCard({
       {/* Status & Meta */}
       <div className="flex justify-between flex-col items-center gap-2 font-Gordita-Medium">
         <div
-          className={`md:text-[10px] text-[10px] md:rounded-[6px] rounded-[4px] text-center px-1.5 py-1 flex items-center justify-center gap-1 ${
-            roleColors[lead.serviceType] || "text-gray-700"
-          }`}
+          className={`md:text-[10px] text-[10px] md:rounded-[6px] rounded-[4px] text-center px-1.5 py-1 flex items-center justify-center gap-1 ${roleColors[lead.serviceType] || "text-gray-700"
+            }`}
         >
           {roleIcons[lead.serviceType]}
           {lead.serviceType}

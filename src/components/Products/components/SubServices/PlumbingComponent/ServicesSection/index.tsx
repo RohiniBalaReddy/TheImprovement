@@ -99,7 +99,7 @@ export default function ServicesSection({
                           </div>
                           <div className="max-w-[158px] min-[23px] text-centertext-[16px] leading-[22.8px]">
                             <span className="font-Gordita-Regular text-[#000000]">
-                              (You save 
+                              (You save
                             </span>{" "}
                             <span className="font-Gordita-Medium text-[#000000]">
                               {item.save})
@@ -108,16 +108,16 @@ export default function ServicesSection({
                           <div className="max-w-[101px] min-[23px]">
                             <Link
                               href=""
-                              className="text-[#3586FF] text-center  text-[16px] font-Gordita-Medium leading-[22.8px]"
+                              className="text-[#2872a1] text-center  text-[16px] font-Gordita-Medium leading-[22.8px]"
                             >
                               {section.btntext}
                             </Link>
                           </div>
                           <div className="w-full flex items-center gap-x-[24px] mx-auto">
-                            <Button className=" border-[1px] rounded-[8px] border-[#3586FF]  px-8 py-3 text-[#000000] text-center bg-[#FFFFFF]  text-[16px] font-Gordita-Medium leading-[22.8px]">
+                            <Button className=" border-[1px] rounded-[8px] border-[#2872a1]  px-8 py-3 text-[#000000] text-center bg-[#FFFFFF]  text-[16px] font-Gordita-Medium leading-[22.8px]">
                               {section.btn1}
                             </Button>
-                            <Button className=" border-[1px] rounded-[8px] border-[#3586FF]  px-8 py-3 text-[#FFFFFF] text-center bg-[#3586FF]  text-[16px] font-Gordita-Medium leading-[22.8px]">
+                            <Button className=" border-[1px] rounded-[8px] border-[#2872a1]  px-8 py-3 text-[#FFFFFF] text-center bg-[#2872a1]  text-[16px] font-Gordita-Medium leading-[22.8px]">
                               {section.btn2}
                             </Button>
                           </div>

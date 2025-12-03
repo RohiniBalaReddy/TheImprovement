@@ -436,7 +436,7 @@ export default CostEstimator;
 //         </ul>
 //       </>
 //     )}
-//     <p className="mt-6 text-[#3586FF] underline">
+//     <p className="mt-6 text-[#2872a1] underline">
 //       To apply on this job, email your resume at
 //     </p>
 //   </div>

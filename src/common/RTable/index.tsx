@@ -192,7 +192,7 @@ const RTable = ({
               <td className="text-center">
                 <button
                   onClick={() => handleEditRow(row, rowIndex)}
-                  className="text-[#5297FF] hover:text-[#5297ff] cursor-pointer"
+                  className="text-[#2872a1] hover:text-[#2872a1] cursor-pointer"
                 >
                   <FaEdit />
                 </button>
@@ -218,7 +218,7 @@ const RTable = ({
         <Button
           onClick={() => onPageChange(pageIndex + 1)}
           disabled={!table.getCanNextPage()}
-          className="px-10 py-2 bg-[#3586FF] text-white rounded"
+          className="px-10 py-2 bg-[#2872a1] text-white rounded"
         >
           Next
         </Button>

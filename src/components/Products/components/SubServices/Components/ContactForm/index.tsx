@@ -110,9 +110,9 @@ const ContactForm = ({
 
   return (
     <div className="rounded-[10px] shadow-custom-card bg-white min-h-[inherit] h-full p-6">
-      <p className="font-Gordita-Medium text-[#5297FF] flex items-center gap-2 text-xl mb-4">
+      <p className="font-Gordita-Medium text-[#2872a1] flex items-center gap-2 text-xl mb-4">
         Talk to a {selectedId?.service || "Service"} Expert
-        <MdSupportAgent className="text-[#5297FF]" size={22} />
+        <MdSupportAgent className="text-[#2872a1]" size={22} />
       </p>
 
       <form onSubmit={handleSubmit}>
@@ -166,7 +166,7 @@ const ContactForm = ({
 
           <Button
             type="submit"
-            className="bg-[#5297FF] md:text-[16px] text-[14px] text-white font-Gordita-Medium py-2 rounded-[6px] mt-4"
+            className="bg-[#2872a1] md:text-[16px] text-[14px] text-white font-Gordita-Medium py-2 rounded-[6px] mt-4"
           >
             Get Free Quote
           </Button>
@@ -180,7 +180,7 @@ const ContactForm = ({
             className="md:max-w-[500px] max-w-[370px] z-[1000] bg-white rounded-[12px] p-6 text-center"
           >
             <div className="flex flex-col items-center justify-center gap-3">
-              <div className="w-16 h-16 bg-gray-100 text-[#5297ff] rounded-full flex items-center justify-center">
+              <div className="w-16 h-16 bg-gray-100 text-[#2872a1] rounded-full flex items-center justify-center">
                 <svg
                   className="w-8 h-8"
                   fill="none"
@@ -195,7 +195,7 @@ const ContactForm = ({
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-Gordita-Bold md:text-[24px] text-[#5297FF]">
+              <h3 className="text-xl font-Gordita-Bold md:text-[24px] text-[#2872a1]">
                 Thank You!
               </h3>
               <p className="text-[14px] md:text-[18px] font-Gordita-Medium text-center text-gray-600">
@@ -206,7 +206,7 @@ const ContactForm = ({
               </p>
               <Button
                 onClick={() => setShowConfirmation(false)}
-                className="mt-4 px-5 py-2 bg-[#5297ff] hover:bg-[#5297FF]font-Gordita-Medium text-white text-sm rounded-md transition"
+                className="mt-4 px-5 py-2 bg-[#2872a1] hover:bg-[#2872a1]font-Gordita-Medium text-white text-sm rounded-md transition"
               >
                 Continue
               </Button>

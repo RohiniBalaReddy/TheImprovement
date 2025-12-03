@@ -38,8 +38,8 @@ export default function HowItWorks() {
     <section className="md:py-8 py-4 bg-gradient-to-br from-slate-50 via-white to-blue-50/30 overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-6 sm:px-8">
         <div className="text-center mb-3 lg:mb-5">
-          <div className="inline-flex items-center gap-2 bg-blue-50 text-[#5297ff] px-4 py-2 rounded-full mb-6 border border-blue-100">
-            <div className="w-2 h-2 bg-[#5297ff] rounded-full animate-pulse"></div>
+          <div className="inline-flex items-center gap-2 bg-blue-50 text-[#2872a1] px-4 py-2 rounded-full mb-6 border border-blue-100">
+            <div className="w-2 h-2 bg-[#2872a1] rounded-full animate-pulse"></div>
             <span className="font-Gordita-Medium text-sm tracking-wide">
               OUR PROCESS
             </span>
@@ -47,7 +47,7 @@ export default function HowItWorks() {
         </div>
       </div>
 
-      <h2 className="text-center text-[24px] md:text-[32px] font-Gordita-Bold text-[#5297FF] md:mb-4 mb-2">
+      <h2 className="text-center text-[24px] md:text-[32px] font-Gordita-Bold text-[#2872a1] md:mb-4 mb-2">
         How It Works
       </h2>
 
@@ -65,7 +65,7 @@ export default function HowItWorks() {
 
           <div className="flex-1 md:flex justify-end  hidden">
             <Button
-              className="bg-[#3586FF] font-Gordita-Medium md:px-3 px-3 md:py-3 py-3 md:text-[16px] text-[14px] rounded-[10px] text-white md:max-w-[50%] w-full flex items-center justify-center gap-2"
+              className="bg-[#2872a1] font-Gordita-Medium md:px-3 px-3 md:py-3 py-3 md:text-[16px] text-[14px] rounded-[10px] text-white md:max-w-[50%] w-full flex items-center justify-center gap-2"
               onClick={() => setIsStepFormVisible(true)}
             >
               Book Site Inspection
@@ -87,7 +87,7 @@ export default function HowItWorks() {
                   className="object-cover transition-transform duration-300 hover:scale-[1.03]"
                   sizes="(max-width: 768px) 50vw, 33vw"
                 />
-                <span className="absolute top-3 right-3 px-2 py-1 bg-gradient-to-r from-[#5297ff] to-rose-500 text-white text-[10px] font-Gordita-Bold rounded-full shadow-md md:hidden">
+                <span className="absolute top-3 right-3 px-2 py-1 bg-gradient-to-r from-[#2872a1] to-rose-500 text-white text-[10px] font-Gordita-Bold rounded-full shadow-md md:hidden">
                   {step.id < 10 ? `0${step.id}` : step.id}
                 </span>
               </div>
@@ -95,7 +95,7 @@ export default function HowItWorks() {
 
               <div className="md:mt-4 mt-2">
                 <div className="text-[12px] md:text-[16px]">
-                  <span className="font-Gordita-Bold text-[#5297FF] mr-2 md:block hidden">
+                  <span className="font-Gordita-Bold text-[#2872a1] mr-2 md:block hidden">
                     {step.id < 10 ? `0${step.id}` : step.id}
                   </span>
                   <span className="font-Gordita-Medium md:text-[16px] text-[12px] text-gray-800">

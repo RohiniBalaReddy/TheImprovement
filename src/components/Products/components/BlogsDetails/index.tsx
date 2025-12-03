@@ -24,7 +24,7 @@ const BlogDetails = ({ blog }: { blog: any }) => {
           Blogs
         </div>
         <RightViewArrow />
-        <div className="text-[#3586FF] md:text-[20px] text-[12px]">
+        <div className="text-[#2872a1] md:text-[20px] text-[12px]">
           {blog?.title || ""}
         </div>
       </div>
@@ -39,7 +39,7 @@ const BlogDetails = ({ blog }: { blog: any }) => {
             objectFit="cover"
           />
           <div className="absolute top-4 left-4 flex items-center md:gap-2 gap-1 z-10">
-            <span className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white md:px-4 px-2 md:py-2 py-1 rounded-full font-Gordita-Medium md:text-[12px] text-[10px] shadow-md">
+            <span className="bg-gradient-to-r from-[#2872a1] to-indigo-700 text-white md:px-4 px-2 md:py-2 py-1 rounded-full font-Gordita-Medium md:text-[12px] text-[10px] shadow-md">
               {blog?.blogType}
             </span>
             <span className="bg-white md:px-4 px-2 md:py-2 py-1  rounded-full font-Gordita-Medium md:text-[12px] text-[10px] shadow-md border border-gray-200">
@@ -47,7 +47,7 @@ const BlogDetails = ({ blog }: { blog: any }) => {
             </span>
           </div>
         </div>
-        <h2 className="mb-8 font-Gordita-Medium md:text-[30px] text-[18px] text-center text-[#5297FF]">
+        <h2 className="mb-8 font-Gordita-Medium md:text-[30px] text-[18px] text-center text-[#2872a1]">
           {blog?.title || ""}
         </h2>
         <div className="flex justify-end items-end mb-6">

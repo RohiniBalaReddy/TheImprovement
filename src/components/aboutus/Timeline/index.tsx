@@ -61,7 +61,7 @@ export default function OurJourney() {
                     <div className="absolute left-0 right-0 top-8 h-[2px] rounded-full bg-[#E5ECF8] dark:bg-white/10" />
                     {/* Progress (scroll-aware) */}
                     <div
-                        className="absolute left-0 top-8 h-[2px] rounded-full bg-gradient-to-r from-[#3586FF] to-[#6BA3FF] shadow-[0_0_10px_rgba(53,134,255,0.35)] transition-[width] duration-500 ease-out"
+                        className="absolute left-0 top-8 h-[2px] rounded-full bg-gradient-to-r from-[#2872a1] to-[#6BA3FF] shadow-[0_0_10px_rgba(53,134,255,0.35)] transition-[width] duration-500 ease-out"
                         style={{ width: `${progress}%` }}
                         aria-hidden
                     />
@@ -70,7 +70,7 @@ export default function OurJourney() {
                         {TIMELINE.map((m, i) => (
                             <div key={m.year} className="relative group" role="listitem">
                                 <div
-                                    className="absolute -top-[7px] left-1/2 -translate-x-1/2 h-3.5 w-3.5 rounded-full bg-white dark:bg-[#0b1220] border-2 border-[#3586FF] ring-4 ring-[#EAF2FF] dark:ring-white/10 transition-all duration-300 group-hover:scale-105"
+                                    className="absolute -top-[7px] left-1/2 -translate-x-1/2 h-3.5 w-3.5 rounded-full bg-white dark:bg-[#0b1220] border-2 border-[#2872a1] ring-4 ring-[#EAF2FF] dark:ring-white/10 transition-all duration-300 group-hover:scale-105"
                                 />
                                 <p className="mt-8 text-center font-Gordita-Bold text-[15px] text-[#0b1220] dark:text-white">
                                     {m.year}
@@ -108,7 +108,7 @@ export default function OurJourney() {
                     <ol className="relative border-l border-dashed border-[#E5ECF8] dark:border-white/10">
                         {TIMELINE.map((m, i) => (
                             <li key={m.year} className="mb-8 ml-5">
-                                <span className="absolute -left-1.5 mt-1 h-3.5 w-3.5 rounded-full bg-white dark:bg-[#0b1220] border-2 border-[#3586FF] ring-4 ring-[#EAF2FF] dark:ring-white/10" />
+                                <span className="absolute -left-1.5 mt-1 h-3.5 w-3.5 rounded-full bg-white dark:bg-[#0b1220] border-2 border-[#2872a1] ring-4 ring-[#EAF2FF] dark:ring-white/10" />
                                 <p className="font-Gordita-Bold text-base text-[#0b1220] dark:text-white">{m.year}</p>
                                 <div
                                     ref={(el) => {

@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encodcomg="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- ===== TIER 1: HIGHEST PRIORITY ===== -->
   <url>
-    <loc>https://www.onecasa.in/</loc>
+    <loc>https://www.theimprovementllc.com/</loc>
     <lastmod>2024-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>https://www.onecasa.in/properties</loc>
+    <loc>https://www.theimprovementllc.com/properties</loc>
     <lastmod>2024-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -17,37 +17,37 @@
   
   <!-- City pages - ADD THESE -->
   <url>
-    <loc>https://www.onecasa.in/properties/buy/hyderabad</loc>
+    <loc>https://www.theimprovementllc.com/properties/buy/hyderabad</loc>
     <lastmod>2024-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.onecasa.in/properties/buy/bangalore</loc>
+    <loc>https://www.theimprovementllc.com/properties/buy/bangalore</loc>
     <lastmod>2024-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.onecasa.in/properties/buy/mumbai</loc>
+    <loc>https://www.theimprovementllc.com/properties/buy/mumbai</loc>
     <lastmod>2024-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.onecasa.in/properties/buy/delhi</loc>
+    <loc>https://www.theimprovementllc.com/properties/buy/delhi</loc>
     <lastmod>2024-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.onecasa.in/properties/buy/chennai</loc>
+    <loc>https://www.theimprovementllc.com/properties/buy/chennai</loc>
     <lastmod>2024-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.onecasa.in/properties/buy/pune</loc>
+    <loc>https://www.theimprovementllc.com/properties/buy/pune</loc>
     <lastmod>2024-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -55,28 +55,28 @@
 
   <!-- ===== TIER 2: HIGH PRIORITY ===== -->
   <url>
-    <loc>https://www.onecasa.in/interiors</loc>
+    <loc>https://www.theimprovementllc.com/comteriors</loc>
     <lastmod>2024-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   
   <url>
-    <loc>https://www.onecasa.in/construction</loc>
+    <loc>https://www.theimprovementllc.com/construction</loc>
     <lastmod>2024-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   
   <url>
-    <loc>https://www.onecasa.in/custom-builder</loc>
+    <loc>https://www.theimprovementllc.com/custom-builder</loc>
     <lastmod>2024-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.onecasa.in/solar</loc>
+    <loc>https://www.theimprovementllc.com/solar</loc>
     <lastmod>2024-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -84,21 +84,21 @@
 
   <!-- ===== TIER 3: MEDIUM PRIORITY ===== -->
   <url>
-    <loc>https://www.onecasa.in/legalservices</loc>
+    <loc>https://www.theimprovementllc.com/legalservices</loc>
     <lastmod>2024-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://www.onecasa.in/about-us</loc>
+    <loc>https://www.theimprovementllc.com/about-us</loc>
     <lastmod>2024-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://www.onecasa.in/contact-us</loc>
+    <loc>https://www.theimprovementllc.com/contact-us</loc>
     <lastmod>2024-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -106,28 +106,28 @@
 
   <!-- ===== TIER 4: LOW PRIORITY ===== -->
   <url>
-    <loc>https://www.onecasa.in/services/custom-builder/furnitures</loc>
+    <loc>https://www.theimprovementllc.com/services/custom-builder/furnitures</loc>
     <lastmod>2024-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   
   <url>
-    <loc>https://www.onecasa.in/cart</loc>
+    <loc>https://www.theimprovementllc.com/cart</loc>
     <lastmod>2024-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   
   <url>
-    <loc>https://www.onecasa.in/login</loc>
+    <loc>https://www.theimprovementllc.com/logcom</loc>
     <lastmod>2024-03-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>
   </url>
   
   <url>
-    <loc>https://www.onecasa.in/signup</loc>
+    <loc>https://www.theimprovementllc.com/signup</loc>
     <lastmod>2024-03-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>

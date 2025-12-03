@@ -73,7 +73,7 @@ const TestimonalBuilder = () => {
                   transition-all duration-300
                 "
               >
-                <div className="bg-[#AFCEFF] flex gap-4 rounded-[32px] min-h-[56px] px-3 py-2">
+                <div className="bg-[#2872a1]flex gap-4 rounded-[32px] min-h-[56px] px-3 py-2">
                   <div className="h-[50px] w-[50px] relative rounded-full border-r-2 border-white overflow-hidden">
                     <Image
                       src={`/testimonials/sample-icon.svg`}

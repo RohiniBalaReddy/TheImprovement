@@ -105,7 +105,7 @@ function ServiceTabSection({
                       true,
                     "font-Gordita-Regular bg-[#F4F4F4] text-[#212227] md:mb-1":
                       !selected,
-                    "font-Gordita-Medium bg-[#5297FF] text-[#FDFDFD] focus:outline-none md:mb-1":
+                    "font-Gordita-Medium bg-[#2872a1] text-[#FDFDFD] focus:outline-none md:mb-1":
                       selected,
                   })
                 }

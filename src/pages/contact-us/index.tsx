@@ -166,10 +166,10 @@ function ContactUs() {
           className="object-cover"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-br from-[#5297FF]/20 via-transparent to-[#8A2BE2]/20" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#2872a1]/20 via-transparent to-[#8A2BE2]/20" />
         <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
 
-        <div className="absolute top-0 right-0 h-96 w-96 rounded-full bg-[#5297FF]/20 blur-[100px] animate-pulse-slow" />
+        <div className="absolute top-0 right-0 h-96 w-96 rounded-full bg-[#2872a1]/20 blur-[100px] animate-pulse-slow" />
         <div className="absolute bottom-0 left-0 h-80 w-80 rounded-full bg-[#8A2BE2]/20 blur-[80px] animate-pulse-medium" />
         <div className="absolute top-1/2 left-1/4 h-64 w-64 rounded-full bg-[#00C2FF]/15 blur-[70px] animate-pulse-slow" />
         <div className="relative z-10 max-w-[1200px] mx-auto px-4 md:px-6 py-6 md:py-10 lg:py-16">
@@ -299,7 +299,7 @@ function ContactUs() {
             </div>
 
             <div className="relative">
-              <div className="relative p-[1.5px] rounded-xl lg:rounded-2xl bg-gradient-to-br from-white/40 via-[#5297FF]/50 to-[#8A2BE2]/40 shadow-xl">
+              <div className="relative p-[1.5px] rounded-xl lg:rounded-2xl bg-gradient-to-br from-white/40 via-[#2872a1]/50 to-[#8A2BE2]/40 shadow-xl">
                 <div className="rounded-xl lg:rounded-xl bg-gradient-to-b from-white/95 to-white/90 backdrop-blur-2xl shadow-inner">
                   <form onSubmit={onSubmit} className="p-5 md:p-6 lg:p-8">
                     <div className="mb-5 lg:mb-6">
@@ -322,7 +322,7 @@ function ContactUs() {
                             handleFormChange("firstName", e.target.value)
                           }
                           onBlur={() => markTouched("firstName")}
-                          outerInptCls="bg-white/80 border-gray-200 focus-within:border-[#5297FF]"
+                          outerInptCls="bg-white/80 border-gray-200 focus-within:border-[#2872a1]"
                           labelCls="label-text font-Gordita-Medium"
                           placeholder="e.g., Sachin"
                           className="text-[12px] text-gray-900 placeholder:text-gray-400"
@@ -343,7 +343,7 @@ function ContactUs() {
                             handleFormChange("lastName", e.target.value)
                           }
                           onBlur={() => markTouched("lastName")}
-                          outerInptCls="bg-white/80 border-gray-200 focus-within:border-[#5297FF]"
+                          outerInptCls="bg-white/80 border-gray-200 focus-within:border-[#2872a1]"
                           labelCls="label-text font-Gordita-Medium"
                           placeholder="e.g., Chauhan"
                           className="text-[12px] text-gray-900 placeholder:text-gray-400"
@@ -366,7 +366,7 @@ function ContactUs() {
                             )
                           }
                           onBlur={() => markTouched("contactNumber")}
-                          outerInptCls="bg-white/80 border-gray-200 focus-within:border-[#5297FF]"
+                          outerInptCls="bg-white/80 border-gray-200 focus-within:border-[#2872a1]"
                           labelCls="label-text font-Gordita-Medium"
                           placeholder="10-digit mobile"
                           className="text-[12px] text-gray-900 placeholder:text-gray-400"
@@ -390,7 +390,7 @@ function ContactUs() {
                             handleFormChange("emailAddress", e.target.value)
                           }
                           onBlur={() => markTouched("emailAddress")}
-                          outerInptCls="bg-white/80 border-gray-200 focus-within:border-[#5297FF]"
+                          outerInptCls="bg-white/80 border-gray-200 focus-within:border-[#2872a1]"
                           labelCls="label-text font-Gordita-Medium"
                           placeholder="you@example.com"
                           className="text-[12px] text-gray-900 placeholder:text-gray-400"
@@ -419,7 +419,7 @@ function ContactUs() {
                             handleFormChange("tellUsMore", e.target.value)
                           }
                           onBlur={() => markTouched("tellUsMore")}
-                          outerInptCls="bg-white/80 border-gray-200 focus-within:border-[#5297FF]"
+                          outerInptCls="bg-white/80 border-gray-200 focus-within:border-[#2872a1]"
                           labelCls="label-text font-Gordita-Medium"
                           placeholder={
                             topic === "projects"
@@ -449,7 +449,7 @@ function ContactUs() {
                           "px-6 md:px-8 py-2 md:py-2 rounded-lg text-white text-sm md:text-base font-Gordita-Medium",
                           "transition-all duration-300 shadow-md w-full sm:w-auto",
                           isValid && !isSubmitting
-                            ? "bg-gradient-to-r from-[#5297FF] to-[#8A2BE2] hover:shadow-lg"
+                            ? "bg-gradient-to-r from-[#2872a1] to-[#8A2BE2] hover:shadow-lg"
                             : "bg-gray-400 cursor-not-allowed"
                         )}
                       >

@@ -94,7 +94,7 @@ const SectionSkeleton = ({ type }) => {
                   background:
                     "linear-gradient(180deg, #D3E5FF 0%, #FEFEFE 100%)",
                 }}
-                className="rounded border border-[#3586FF] flex flex-col items-center md:px-[27px] md:py-[24px] md:max-w-[333px] max-w-[158px] px-[22px] py-[14px] animate-pulse"
+                className="rounded border border-[#2872a1] flex flex-col items-center md:px-[27px] md:py-[24px] md:max-w-[333px] max-w-[158px] px-[22px] py-[14px] animate-pulse"
               >
                 <div className="md:block hidden w-[300px] h-[170px] bg-[#bcd7ff] rounded" />
                 <div className="block md:hidden w-[100px] h-[87px] bg-[#bcd7ff] rounded" />

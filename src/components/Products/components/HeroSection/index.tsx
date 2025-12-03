@@ -83,7 +83,7 @@ const BuilderHeroSection = () => {
         <div className="flex flex-row gap-[40px] md:w-[50%] w-full">
           <div className="flex flex-col md:gap-[40px] gap-5 w-full">
             <p className="font-Gordita-Bold md:text-[32px] text-[20px] relative md:static">
-              Construct your <span className="text-[#5297FF]">DREAM HOUSE</span>{" "}
+              Construct your <span className="text-[#2872a1]">DREAM HOUSE</span>{" "}
               as you like.
             </p>
             <p className="font-Gordita-Medium  md:text-[20px] text-[16px] rounded p-3 relative md:static bg-black/20 md:bg-transparent  text-[#ffffff] md:leading-[28.5px] md:max-w-[520px] ">
@@ -176,7 +176,7 @@ const BuilderHeroSection = () => {
                 <div className="relative w-fit">
                   <Button
                     type="button"
-                    className="bg-[#5297ff] hover:bg-[#5297FF]text-white font-Gordita-Medium py-2 px-4 rounded-md"
+                    className="bg-[#2872a1] hover:bg-[#2872a1]text-white font-Gordita-Medium py-2 px-4 rounded-md"
                   >
                     Choose File
                   </Button>
@@ -230,7 +230,7 @@ const BuilderHeroSection = () => {
                 </div>
               </div>
               <div>
-                <Button className="bg-[#5297FF] mt-2 md:py-[6px] py-1 w-full rounded-[6px] text-white font-Gordita-Bold">
+                <Button className="bg-[#2872a1] mt-2 md:py-[6px] py-1 w-full rounded-[6px] text-white font-Gordita-Bold">
                   Submit
                 </Button>
               </div>
@@ -248,7 +248,7 @@ const BuilderHeroSection = () => {
               </div>
               <Link
                 href="/contact-us"
-                className="underline cursor-pointer font-Gordita-Medium text-[#5297FF] text-nowrap text-[10px] md:text-[12px] leading-[20px]"
+                className="underline cursor-pointer font-Gordita-Medium text-[#2872a1] text-nowrap text-[10px] md:text-[12px] leading-[20px]"
                 onClick={() => router.push("/contact-us")}
               >
                 Contact Us

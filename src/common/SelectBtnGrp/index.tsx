@@ -84,7 +84,7 @@ const SelectBtnGrp: React.FC<SelectBtnGrpProps> = ({
                         className={twMerge(
                             `relative md:text-[16px] text-[10px] px-4 py-[6px] border  mb-2 transition duration-300 ease-in-out hover:bg-gray-200`,
                             isSelected(option)
-                                ? 'bg-[#3586FF]  text-white hover:bg-[#3586FF]'
+                                ? 'bg-[#2872a1]  text-white hover:bg-[#2872a1]'
                                 : 'bg-white text-black border-gray-300',
                             btnClass
                         )}

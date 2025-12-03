@@ -27,18 +27,17 @@ export default function MaterialComparison({
         <h2 className="font-Gordita-Bold text-[18px] md:text-[24px] lg:text-[26px] text-[#212227] md:mb-4 mb-2 leading-tight  text-center mx-auto">
           Choose Your Exterior Material
         </h2>
-        <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-yellow-400 mx-auto mt-4 rounded-full"></div>
+        <div className="w-24 h-1 bg-gradient-to-r from-[#2872a1] to-yellow-400 mx-auto mt-4 rounded-full"></div>
 
         <div className="flex md:flex-wrap overflow-auto justify-center md:gap-4 gap-2 md:mb-8 mb-4 mt-2 md:mt-1">
           {materials.map((material) => (
             <Button
               key={material.name}
               onClick={() => setSelectedMaterial(material)}
-              className={`md:px-6 px-3 md:py-3 py-2 rounded-lg  md:text-[14px] text-[12px] font-Gordita-Medium transition-all ${
-                selectedMaterial.name === material.name
-                  ? "bg-[#5297ff] text-white shadow-lg"
-                  : "bg-gray-200 text-gray-700 hover:bg-gray-100"
-              }`}
+              className={`md:px-6 px-3 md:py-3 py-2 rounded-lg  md:text-[14px] text-[12px] font-Gordita-Medium transition-all ${selectedMaterial.name === material.name
+                ? "bg-[#2872a1] text-white shadow-lg"
+                : "bg-gray-200 text-gray-700 hover:bg-gray-100"
+                }`}
             >
               {material.name}
             </Button>
@@ -120,7 +119,7 @@ export default function MaterialComparison({
 
             <div>
               <h3 className="md:text-xl text-[14px] font-Gordita-Bold mb-3 flex items-center gap-2">
-                <Target className="w-5 h-5 text-blue-600" />
+                <Target className="w-5 h-5 text-[#2872a1]" />
                 Best Applications
               </h3>
 

@@ -93,11 +93,10 @@ const PaintingCostEstimator: React.FC = () => {
     <label
       htmlFor={id}
       className={`flex items-center space-x-1 border p-2 rounded cursor-pointer 
-            ${
-              checked
-                ? "bg-[#5297ff] text-slate-100"
-                : "bg-white border-gray-300 hover:bg-blue-50"
-            }
+            ${checked
+          ? "bg-[#2872a1] text-slate-100"
+          : "bg-white border-gray-300 hover:bg-blue-50"
+        }
              ${className}`}
     >
       <input
@@ -301,7 +300,7 @@ const PaintingCostEstimator: React.FC = () => {
           type="single-select"
           name="city"
           label="Where do you live?"
-          labelCls="label-text label-text text-[#5297ff]"
+          labelCls="label-text label-text text-[#2872a1]"
           options={cityOptions}
           rootCls=" rounded-md px-2 bg-white border-b-[1px]  md:px-1 px-1 w-full  border border-[#CFCFCF] rounded-[4px]"
           buttonCls="border-none"
@@ -316,7 +315,7 @@ const PaintingCostEstimator: React.FC = () => {
       <div className="">
         <SelectBtnGrp
           label="  What part of your house do you wish to paint?"
-          labelCls="text-[#5297ff] "
+          labelCls="text-[#2872a1] "
           options={paintAreaOptions.map((o) => o.name)}
           className="gap-2 flex flex-wrap"
           btnClass="md:text-[12px] text-[11px] font-Gordita-Medium rounded-md md:px-[18px] px-[12px] shadow-custom md:py-[8px] py-[5px] border-[1px] border-gray-200 hover:bg-gray-100"
@@ -330,7 +329,7 @@ const PaintingCostEstimator: React.FC = () => {
         )}
       </div>
       <div>
-        <h2 className="font-Gordita-Medium label-text text-[#5297ff] mb-2">
+        <h2 className="font-Gordita-Medium label-text text-[#2872a1] mb-2">
           Select the size of your house
         </h2>
         <div className="flex flex-row md:gap-3 gap-2">
@@ -342,7 +341,7 @@ const PaintingCostEstimator: React.FC = () => {
               value={`${bhk}bhk`}
               checked={formData.bhkType === `${bhk}bhk`}
               onChange={() => handleChange("bhkType", `${bhk}bhk`)}
-              className="md:px-3  p-2 md:text-sm text-[10px] font-Gordita-Medium rounded-lg border border-gray-200 hover:border-blue-400 transition-colors"
+              className="md:px-3  p-2 md:text-sm text-[10px] font-Gordita-Medium rounded-lg border border-gray-200 hover:border-[#1d547] transition-colors"
             >
               {bhk} BHK
             </RadioButton>
@@ -354,7 +353,7 @@ const PaintingCostEstimator: React.FC = () => {
       </div>
 
       <div>
-        <p className="font-Gordita-Medium label-text text-[#5297ff] mb-2">
+        <p className="font-Gordita-Medium label-text text-[#2872a1] mb-2">
           What type of painting does your house require?
         </p>
         <div className="flex flex-col md:flex-row gap-4">
@@ -362,16 +361,15 @@ const PaintingCostEstimator: React.FC = () => {
             <div
               key={option.id}
               className={`relative bg-white  flex-1 border rounded-lg md:p-4 p-1 transition
-                    ${
-                      formData.paintingType === option.title
-                        ? "border-[#5297ff] bg-gradient-to-br from-blue-50 to-blue-100 shadow-xl scale-105 ring-2 ring-blue-200"
-                        : "border-gray-200 bg-gradient-to-br from-white to-gray-50 shadow-lg hover:border-blue-300"
-                    }
+                    ${formData.paintingType === option.title
+                  ? "border-[#2872a1] bg-gradient-to-br from-blue-50 to-blue-100 shadow-xl scale-105 ring-2 ring-blue-200"
+                  : "border-gray-200 bg-gradient-to-br from-white to-gray-50 shadow-lg hover:border-blue-300"
+                }
                   `}
               onClick={() => handleChange("paintingType", option.title)}
             >
               {formData.paintingType === option.title && (
-                <div className="absolute -top-2 -right-2 w-6 h-6 bg-[#5297ff] rounded-full flex items-center justify-center shadow-lg">
+                <div className="absolute -top-2 -right-2 w-6 h-6 bg-[#2872a1] rounded-full flex items-center justify-center shadow-lg">
                   <HiCheck className="w-4 h-4 text-white" />
                 </div>
               )}
@@ -381,7 +379,7 @@ const PaintingCostEstimator: React.FC = () => {
                   <h3 className="font-Gordita-Bold md:text-[14px] text-[12px] text-black text-start md:text-center">
                     {option.title}
                   </h3>
-                  <div className="md:block hidden w-12 h-1  bg-gradient-to-r  from-blue-400 to-purple-500 rounded-full mx-auto mb-3"></div>
+                  <div className="md:block hidden w-12 h-1  bg-gradient-to-r  from-[#1d547] to-purple-500 rounded-full mx-auto mb-3"></div>
                   <div className="md:hidden block w-full h-[1px]  bg-gray-500 mx-auto mb-3"></div>
                   <p className="text-gray-600 md:text-[12px] text-[10px] font-Gordita-Regular md:text-center text-start">
                     {option.subtitle}
@@ -389,7 +387,7 @@ const PaintingCostEstimator: React.FC = () => {
                 </div>
 
                 <div className="relative group cursor-pointer md:mt-2 mt-0 flex items-end justify-end">
-                  <span className="text-[#5297ff] underline font-Gordita-Regular md:text-[10px] text-[8px] ">
+                  <span className="text-[#2872a1] underline font-Gordita-Regular md:text-[10px] text-[8px] ">
                     what's {option.title}?
                   </span>
 
@@ -487,7 +485,7 @@ const PaintingCostEstimator: React.FC = () => {
           <p className="text-red-500 text-sm mt-1">{errors.package}</p>
         )}
 
-        <p className="font-Gordita-Medium label-text text-[#5297ff] mb-2">
+        <p className="font-Gordita-Medium label-text text-[#2872a1] mb-2">
           How would you describe your preference?
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-full mx-auto">
@@ -497,14 +495,13 @@ const PaintingCostEstimator: React.FC = () => {
               onClick={() => handleChange("package", pkg.name)}
               className={`cursor-pointer w-full flex flex-col justify-between md:gap-4 gap-2 md:p-3 p-1 md:rounded-[12px] rounded-[6px] text-center shadow-sm transition-all duration-300
     bg-gradient-to-b ${pkg.headerCls} 
-    ${
-      formData.package === pkg.name
-        ? `ring-2 ${pkg.ringCls} ${pkg.borderCls} scale-[1.01] shadow-md`
-        : "hover:shadow-md hover:scale-[1.01] focus:ring-2 focus:ring-gray-300"
-    }`}
+    ${formData.package === pkg.name
+                  ? `ring-2 ${pkg.ringCls} ${pkg.borderCls} scale-[1.01] shadow-md`
+                  : "hover:shadow-md hover:scale-[1.01] focus:ring-2 focus:ring-gray-300"
+                }`}
             >
               {formData.package === pkg.name && (
-                <div className="absolute -top-2 -right-2 w-6 h-6 bg-[#5297ff] rounded-full flex items-center justify-center shadow-lg">
+                <div className="absolute -top-2 -right-2 w-6 h-6 bg-[#2872a1] rounded-full flex items-center justify-center shadow-lg">
                   <HiCheck className="w-4 h-4 text-white" />
                 </div>
               )}
@@ -753,16 +750,16 @@ const PaintingCostEstimator: React.FC = () => {
 
   const renderEstimator = () => (
     <div className="bg-gradient-to-br from-white to-blue-50 md:rounded-[16px] rounded-[6px] shadow-2xl border border-blue-100 max-w-[900px] w-full mx-auto p-4 md:p-8 text-center transition-all duration-300 hover:shadow-3xl">
-      <h2 className="text-[#5297ff] font-Gordita-Bold text-[16px] md:text-[20px] mb-6 flex items-center justify-center gap-2">
-        <Brush className="w-5 h-5 text-blue-400" />
+      <h2 className="text-[#2872a1] font-Gordita-Bold text-[16px] md:text-[20px] mb-6 flex items-center justify-center gap-2">
+        <Brush className="w-5 h-5 text-[#1d547]" />
         Your Estimated Painting Cost
       </h2>
 
       <div className="flex flex-col md:flex-row md:justify-around gap-4 md:gap-8 mb-6">
         <div className="flex items-center justify-center gap-2 bg-white shadow-sm rounded-md px-4 py-3 border border-blue-100">
-          <Home className="w-5 h-5 text-[#5297ff]" />
+          <Home className="w-5 h-5 text-[#2872a1]" />
           <p className="text-gray-700 text-sm md:text-base">
-            <span className="font-Gordita-Medium text-[#5297ff]">
+            <span className="font-Gordita-Medium text-[#2872a1]">
               House Size:
             </span>{" "}
             {submittedData.bhkType}
@@ -770,9 +767,9 @@ const PaintingCostEstimator: React.FC = () => {
         </div>
 
         <div className="flex items-center justify-center gap-2 bg-white shadow-sm rounded-md px-4 py-3 border border-blue-100">
-          <Brush className="w-5 h-5 text-[#5297ff]" />
+          <Brush className="w-5 h-5 text-[#2872a1]" />
           <p className="text-gray-700 text-sm md:text-base">
-            <span className="font-Gordita-Medium text-[#5297ff]">
+            <span className="font-Gordita-Medium text-[#2872a1]">
               Painting Type:
             </span>{" "}
             {submittedData.paintingType}
@@ -780,9 +777,9 @@ const PaintingCostEstimator: React.FC = () => {
         </div>
 
         <div className="flex items-center justify-center gap-2 bg-white shadow-sm rounded-md px-4 py-3 border border-blue-100">
-          <Ruler className="w-5 h-5 text-[#5297ff]" />
+          <Ruler className="w-5 h-5 text-[#2872a1]" />
           <p className="text-gray-700 text-sm md:text-base">
-            <span className="font-Gordita-Medium text-[#5297ff]">
+            <span className="font-Gordita-Medium text-[#2872a1]">
               Paint Area:
             </span>{" "}
             {submittedData.paintArea}
@@ -806,7 +803,7 @@ const PaintingCostEstimator: React.FC = () => {
       </div>
       <div className="flex items-center justify-center">
         <Button
-          className="mt-8 bg-[#5297ff] flex items-center gap-1 text-white rounded-md font-Gordita-Medium md:text-[16px] text-[12px] md:px-6 px-4 md:py-2.5 py-1.5 hover:bg-blue-600 hover:shadow-lg transition-all duration-300"
+          className="mt-8 bg-[#2872a1] flex items-center gap-1 text-white rounded-md font-Gordita-Medium md:text-[16px] text-[12px] md:px-6 px-4 md:py-2.5 py-1.5 hover:bg-[#2872a1] hover:shadow-lg transition-all duration-300"
           onClick={() => {
             setShowResults(false);
             setCurrentStep(1);
@@ -839,7 +836,7 @@ const PaintingCostEstimator: React.FC = () => {
               <div className="relative md:mb-12 mb-6">
                 <div className="absolute top-4 left-0 right-0 h-1 bg-gray-200 -translate-y-1/2">
                   <div
-                    className="h-full bg-gradient-to-r from-[#5297ff] to-green-500 transition-all duration-500 ease-out"
+                    className="h-full bg-gradient-to-r from-[#2872a1] to-green-500 transition-all duration-500 ease-out"
                     style={{
                       width: `${((currentStep - 1) / 2) * 100}%`,
                     }}
@@ -854,13 +851,12 @@ const PaintingCostEstimator: React.FC = () => {
                     >
                       <div
                         className={`md:w-10 w-7 md:h-10 h-7 flex items-center justify-center rounded-full md:text-[14px] text-[12px] font-Gordita-Bold relative z-10 transition-all duration-300 transform
-          ${
-            currentStep === step
-              ? "bg-[#5297ff] text-white shadow-lg shadow-[#5297ff]/30 scale-110 ring-4 ring-blue-100"
-              : step < currentStep
-              ? "bg-green-500 text-white shadow-lg shadow-green-500/30 scale-105"
-              : "bg-gray-100 text-gray-400 shadow"
-          }`}
+          ${currentStep === step
+                            ? "bg-[#2872a1] text-white shadow-lg shadow-[#2872a1]/30 scale-110 ring-4 ring-blue-100"
+                            : step < currentStep
+                              ? "bg-green-500 text-white shadow-lg shadow-green-500/30 scale-105"
+                              : "bg-gray-100 text-gray-400 shadow"
+                          }`}
                       >
                         {step < currentStep ? (
                           <HiCheck className="w-5 h-5" />
@@ -872,13 +868,12 @@ const PaintingCostEstimator: React.FC = () => {
                       </div>
 
                       <p
-                        className={`md:text-[14px] text-[12px] font-Gordita-Medium mt-3 transition-colors duration-300 ${
-                          currentStep === step
-                            ? "text-[#5297ff] font-Gordita-Bold"
-                            : step < currentStep
+                        className={`md:text-[14px] text-[12px] font-Gordita-Medium mt-3 transition-colors duration-300 ${currentStep === step
+                          ? "text-[#2872a1] font-Gordita-Bold"
+                          : step < currentStep
                             ? "text-green-600"
                             : "text-gray-500"
-                        }`}
+                          }`}
                       >
                         {stepLabels[idx]}
                       </p>
@@ -887,8 +882,8 @@ const PaintingCostEstimator: React.FC = () => {
                         {step < currentStep
                           ? "Completed"
                           : step === currentStep
-                          ? "Active"
-                          : "Pending"}
+                            ? "Active"
+                            : "Pending"}
                       </span>
                     </div>
                   ))}
@@ -920,7 +915,7 @@ const PaintingCostEstimator: React.FC = () => {
                 )}
                 <Button
                   onClick={handleNextStep}
-                  className="flex items-center gap-2 md:px-6 px-3 md:py-2 py-1.5 md:text-[16px] text-[12px] ml-auto bg-[#5297ff] font-Gordita-Medium text-white rounded-md hover:bg-blue-600"
+                  className="flex items-center gap-2 md:px-6 px-3 md:py-2 py-1.5 md:text-[16px] text-[12px] ml-auto bg-[#2872a1] font-Gordita-Medium text-white rounded-md hover:bg-[#2872a1]"
                 >
                   {currentStep < 3 ? (
                     <>

@@ -28,7 +28,7 @@ export default function YearSelect({
                 onChange={(e) => onChange(+e.target.value)}
                 className={twMerge(
                     "w-full border px-3 text-[12px] md:py-2 py-1 rounded-md    overflow-auto",
-                    errorMsg ? "border-red-500 focus:ring-red-500 focus:border-red-500" : "border-gray-300 focus:ring-[#5297ff] focus:border-[#5297ff]"
+                    errorMsg ? "border-red-500 focus:ring-red-500 focus:border-red-500" : "border-gray-300 focus:ring-[#2872a1] focus:border-[#2872a1]"
                 )}
                 required={required}
             >

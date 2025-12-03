@@ -16,14 +16,14 @@ interface PaintProps {
 
 const ServiceCard = ({ title, description, icon: Icon, imageUrl, isActive }: any) => {
   return (
-   
+
     <div className={`
       relative aspect-[4/3] md:w-[400px] w-[300px] md:h-[350px] h-[270px] 
       mx-3 transition-all duration-500 ease-out
       ${isActive ? 'scale-105 opacity-100' : 'scale-95 opacity-70'}
       group cursor-pointer
     `}>
-      
+
       <div className="absolute inset-0 z-0 rounded-2xl overflow-hidden">
         <Image
           src={imageUrl}
@@ -34,16 +34,16 @@ const ServiceCard = ({ title, description, icon: Icon, imageUrl, isActive }: any
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80 rounded-2xl" />
       </div>
 
-      
+
       <div className="relative z-10 h-full flex flex-col justify-end p-8 text-white">
-      
+
         <div className="absolute md:top-1 top-2 left-8">
           <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center border border-white/20">
             <Icon />
           </div>
         </div>
 
-      
+
         <div className="space-y-3 transform transition-transform duration-300 group-hover:translate-y-[-5px]">
           <h3 className="font-Gordita-Medium md:text-[20px] text-[16px] md:leading-6 leading-4 tracking-wide">
             {title}
@@ -53,11 +53,11 @@ const ServiceCard = ({ title, description, icon: Icon, imageUrl, isActive }: any
           </p>
         </div>
 
-        
-        <div className="absolute bottom-4 left-8 w-8 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+
+        <div className="absolute bottom-4 left-8 w-8 h-0.5 bg-[#1d547] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
       </div>
 
-      
+
       <div className="absolute inset-0 rounded-2xl border border-white/10 bg-gradient-to-r from-white/5 to-white/0 backdrop-blur-sm" />
     </div>
   );
@@ -122,7 +122,7 @@ const PaintServices = ({ services }: PaintProps) => {
   return (
     <div className="flex flex-col px-6 py-10 mt-10">
       <div className="flex flex-col gap-8 mx-auto">
-        <h1 className="font-Gordita-Bold text-[32px] leading-11 text-[#3586FF] mx-auto">
+        <h1 className="font-Gordita-Bold text-[32px] leading-11 text-[#2872a1] mx-auto">
           Our Services
         </h1>
         <h2 className="font-Gordita-Medium md:text-[16px] text-[14px] md:leading-6 leading-4 md:max-w-[1200px] max-w-[270px] mx-auto md:text-left text-center">
@@ -137,7 +137,7 @@ const PaintServices = ({ services }: PaintProps) => {
               description={service.description}
               icon={service.icon}
               imageUrl={service.imageUrl}
-               isActive={true}
+              isActive={true}
             />
           ))}
         </div>

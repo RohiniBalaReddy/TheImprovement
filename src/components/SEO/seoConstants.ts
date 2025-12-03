@@ -1,7 +1,7 @@
 // seoConstants.ts
 
 // Base constants
-export const BASE_DEPLOYMENT_URL = "https://www.onecasa.in";
+export const BASE_DEPLOYMENT_URL = "https://www.theimprovementllc.in";
 export const PROJECT_NAME = "OneCasa Real Estate";
 export const PRIMARY_IMAGE_URL = `${BASE_DEPLOYMENT_URL}/images/logobb.png`;
 export const PRIMARY_PHONE = "+918897574909";
@@ -30,9 +30,9 @@ export const CORPORATE_CONTACTS = [
 
 // Social profiles (shared across all pages)
 export const SOCIAL_PROFILES = [
-  "https://www.facebook.com/onecasa",
+  "https://www.facebook.com/theimprovementllc",
   "https://twitter.com/onecasa_in",
-  "https://www.instagram.com/onecasa.in/",
+  "https://www.instagram.com/theimprovementllc.in/",
   "https://www.linkedin.com/company/onecasa1/",
 ];
 
@@ -48,4 +48,4 @@ export const DEFAULT_ADDRESS = {
 export const DEFAULT_OPENING_HOURS = "Mo-Su 09:00-18:00";
 
 export const DEFAULT_KEYWORDS =
-  "OneCasa, onecasa,construction,villa,flats,plots,one casa,One Casa,one-casa,One-Casa, real estate India, property listings, buy property, rent property, construction services India, interior design India, solar installation India, home interiors, furniture design";
+  "OneCasa, theimprovementllc,construction,villa,flats,plots,one casa,One Casa,one-casa,One-Casa, real estate India, property listings, buy property, rent property, construction services India, interior design India, solar installation India, home interiors, furniture design";

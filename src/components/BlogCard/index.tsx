@@ -45,7 +45,7 @@ const BlogCard = ({ data }: any) => {
               <Link
                 href={`/blogs/${id}`}
                 aria-label={`Read more about ${title}`}
-                className=" px-5 py-[4px] rounded-[6px] max-w-[150px]  font-Gordita-Medium text-nowrap md:text-[14px] text-[12px] text-white mt-3 bg-[#5297ff]"
+                className=" px-5 py-[4px] rounded-[6px] max-w-[150px]  font-Gordita-Medium text-nowrap md:text-[14px] text-[12px] text-white mt-3 bg-[#2872a1]"
               >
                 Read More <span className="sr-only">about {title}</span>
               </Link>

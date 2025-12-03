@@ -56,11 +56,11 @@ const DemolitionComponent = () => {
     bgImageUrl: "/images/earthmoves/herosection/herosectionimage.png",
     bookingCtaUrl: { label: "Discover More", url: "" },
     locationcta: [
-  { label: "New York", url: "" },
-  { label: "Los Angeles", url: "" },
-  { label: "Chicago", url: "" },
-  { label: "Houston", url: "" },
-],
+      { label: "New York", url: "" },
+      { label: "Los Angeles", url: "" },
+      { label: "Chicago", url: "" },
+      { label: "Houston", url: "" },
+    ],
 
     selectedId: { id: 2, service: "Demolition" },
   };
@@ -86,7 +86,7 @@ const DemolitionComponent = () => {
         title: "Safety-Focused Demolition",
         description: "Strict safety compliance with trained professionals.",
         icon: "MdSecurity",
-        gradient: "from-blue-600 to-blue-400",
+        gradient: "from-[#2872a1] to-[#1d547]",
       },
       {
         id: 2,

@@ -124,7 +124,7 @@ const CustomInput = forwardRef<CustomInputRef, ICustomInputProps>(
             maxLength={maxLength}
             className={twMerge(
               clsx({
-                'w-full border border-solid rounded-[6px] border-[#C7C2C2] focus:border-blue-400 max-h-28 focus:ring-0 active:outline-none focus:outline-none':
+                'w-full border border-solid rounded-[6px] border-[#C7C2C2] focus:border-[#1d547] max-h-28 focus:ring-0 active:outline-none focus:outline-none':
                   true,
                 'placeholder:text-[12px] placeholder:font-Gordita-Light placeholder:normal-case placeholder:text-gray-500 ':
                   true,
@@ -143,7 +143,7 @@ const CustomInput = forwardRef<CustomInputRef, ICustomInputProps>(
           <div
             className={twMerge(
               clsx({
-                'w-full flex gap-1 bg-white mb-1 bg-none text-[13px] items-center border min-h-[20px] md:min-h-[32px] border-solid rounded-[6px] border-[#C7C2C2] focus-within:border-blue-400 px-[6px] md:px-2 py-1':
+                'w-full flex gap-1 bg-white mb-1 bg-none text-[13px] items-center border min-h-[20px] md:min-h-[32px] border-solid rounded-[6px] border-[#C7C2C2] focus-within:border-[#1d547] px-[6px] md:px-2 py-1':
                   true,
               }),
               outerInptCls,
@@ -206,7 +206,7 @@ const CustomInput = forwardRef<CustomInputRef, ICustomInputProps>(
               <select
                 value={unitsDropdown.value}
                 onChange={(e) => unitsDropdown.onChange(e.target.value)}
-                className="md:text-[13px] text-[12px] bg-blue-300  text-black px-2  pr-4 py-[2px]  -my-4 -mr-2 rounded-[3px] font-Gordita-Medium  border border-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="md:text-[13px] text-[12px] bg-blue-300  text-black px-2  pr-4 py-[2px]  -my-4 -mr-2 rounded-[3px] font-Gordita-Medium  border border-gray-100 focus:outline-none focus:ring-2 focus:ring-[#1d547]"
               >
                 <option className=' text-[12px] text-center  font-Gordita-Medium'>Units </option>
                 {unitsDropdown.options.map((option) => (

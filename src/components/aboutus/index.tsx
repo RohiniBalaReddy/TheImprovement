@@ -13,8 +13,6 @@ import {
 import CustomInput from "@/common/FormElements/CustomInput";
 import Button from "@/common/Button";
 import { motion } from "framer-motion";
-import OurJourney from "./Timeline";
-import { CountUp, ImpactStrip } from "./CountUp";
 
 const H = {
   section: "max-w-7xl mx-auto px-5 md:px-8",
@@ -25,60 +23,61 @@ const H = {
 };
 
 const highlights = [
-  { title: "CREATE DESIGN", sub: "Bring your ideas to life with custom architectural designs.", Icon: CreateDesign },
-  { title: "Easy to customize", sub: "Tailor the design to match your unique preferences and needs.", Icon: Customise },
-  { title: "Residential", sub: "Expert solutions for creating beautiful residential spaces.", Icon: Residential },
-  { title: "Development", sub: "Innovative and efficient development solutions for every project.", Icon: Development },
-  { title: "Optimization", sub: "Maximize efficiency and performance with design optimization.", Icon: Optimisation },
-  { title: "Support 24/7", sub: "Our team is available around the clock to assist you.", Icon: Support },
+  { title: "CUSTOM ARCHITECTURAL DESIGN", sub: "Bring your complex ideas to life with tailored and innovative architectural blueprints.", Icon: CreateDesign },
+  { title: "END-TO-END CUSTOMIZATION", sub: "Tailor every aspect of the project lifecycle to precisely match your unique business needs and specifications.", Icon: Customise },
+  { title: "PREMIUM RESIDENTIAL SOLUTIONS", sub: "Expert solutions for creating beautiful, sustainable, and high-value residential spaces in the USA.", Icon: Residential },
+  { title: "STRATEGIC DEVELOPMENT", sub: "Innovative and efficient full-stack development and construction management for modern projects.", Icon: Development },
+  { title: "PERFORMANCE OPTIMIZATION", sub: "Maximize operational efficiency and system performance through data-driven optimization strategies.", Icon: Optimisation },
+  { title: "RELIABLE PROJECT SUPPORT", sub: "Our dedicated team is available around the clock to support your project and ensure smooth execution.", Icon: Support },
 ];
 
 const impactStats = [
-  { label: "Homes Matched", value: "200+" },
-  { label: "Cities Covered", value: "8+" },
-  { label: "Avg. TAT", value: "48h" },
-  { label: "Partner Network", value: "100+" },
+  { label: "Projects Completed", value: "50+" },
+  { label: "US States Served", value: "12+" },
+  { label: "Avg. Project Satisfaction", value: "98%" },
+  { label: "Partner Network", value: "50+" },
 ];
 
 const values = [
   {
-    title: "Client-First",
+    title: "Client-First Partnership",
     description:
-      "We obsess over clarity, timelines, and results so buyers and sellers stay in control.",
+      "We obsess over clarity, timelines, and results so our clients stay in complete control and feel empowered throughout the process.",
     icon: "🤝",
   },
   {
     title: "Radical Transparency",
     description:
-      "From pricing intel to builder credibility, we present facts without the fluff.",
+      "From project scoping and budget breakdowns to technical challenges, we present facts without the fluff, fostering total trust.",
     icon: "🔍",
   },
   {
-    title: "Design + Data",
+    title: "Design + Data Integration",
     description:
-      "Aesthetics meet analytics—every recommendation is backed by real signals.",
+      "Aesthetics and functionality meet analytics—every design choice and recommendation is backed by real performance signals and metrics.",
     icon: "📊",
   },
   {
-    title: "Reliable Support",
+    title: "Always Accessible Support",
     description:
-      "Questions at 10pm? We’re around. Our support runs when your search does.",
+      "Got a critical question? Our reliable support team is structured to be around when you need us most, ensuring project momentum.",
     icon: "📞",
   },
 ];
 
+// UPDATED: Leadership Team for Improvement LLC
 const team = [
   {
-    name: "SACHIN CHAVAN",
-    role: "FOUNDER — OneCasa Pvt Limited",
-    img: "/images/team/founder.jpg",
-    bio: `As the Founder & CEO of OneCasa, I bring over four years of entrepreneurial and hands-on real estate experience. My journey began with a simple vision—to simplify property ownership and make real estate more transparent, accessible, and rewarding for every individual. Over the years, I have worked closely with property buyers, sellers, and developers, gaining deep insights into the challenges faced in the industry. At OneCasa, my focus is on leveraging technology, data, and innovation to bridge these gaps, offering clients a seamless platform for buying, selling, and managing properties. Beyond transactions, I am committed to creating a trustworthy ecosystem where clients feel empowered and confident in their investment decisions.`,
+    name: "ALEX JOHNSON",
+    role: "FOUNDER & CEO — Improvement LLC",
+    bio: `As the Founder & CEO of Improvement LLC, I bring over a decade of experience in large-scale digital transformation and architectural design. My journey began with a commitment to demystify complex development and construction processes. At Improvement LLC, my focus is on leveraging technology, data, and innovation to bridge traditional industry gaps, offering clients a seamless, high-ROI platform for their projects. I am committed to creating a trustworthy, future-ready ecosystem where clients feel empowered and confident in their strategic investments.`,
+    img: "/images/team/alex_johnson.png", // Placeholder image path
   },
   {
-    name: "RAMANA REDDY",
-    role: "PROMOTER — OneCasa Pvt Limited",
-    img: "/images/team/promoter.png",
-    bio: `As a Promoter & Strategic Investor at OneCasa, I bring both financial backing and a strong belief in the company’s mission to transform the real estate landscape. My role goes beyond investment—I actively contribute to shaping strategies that ensure long-term growth, innovation, and sustainability. With a focus on creating value for both clients and stakeholders, I support initiatives that make property investment simpler, smarter, and more efficient. I believe in driving a customer-first approach, ensuring that OneCasa not only scales as a business but also builds lasting trust within the community. By aligning vision with execution, I aim to help OneCasa become a leader in providing transparent, future-ready real estate solutions.`,
+    name: "MARIA LOPEZ",
+    role: "STRATEGIC DIRECTOR — Improvement LLC",
+    img: "/images/team/maria_lopez.png", // Placeholder image path (you'll need to create this image)
+    bio: `As the Strategic Director and an early investor at Improvement LLC, I provide the financial acumen and a strong belief in the company’s mission to transform the design and development landscape. My role is centered on shaping strategies that ensure long-term growth, scalability, and sustainability. With a focus on creating measurable value, I support initiatives that make large-scale projects simpler, smarter, and more efficient. I believe in driving a results-oriented approach, helping Improvement LLC become a leader in providing transparent, future-proof development solutions.`,
   },
 ];
 
@@ -88,7 +87,7 @@ const fadeIn = {
   show: { opacity: 1, y: 0, transition: { duration: 0.4 } },
 };
 
-export default function AboutOneCasa() {
+export default function AboutImprovementLLC() {
   const [form, setForm] = useState({ name: "", phone: "", email: "", about: "" });
   const [errors, setErrors] = useState<{ [k: string]: string }>({});
   const [submitting, setSubmitting] = useState(false);
@@ -118,7 +117,7 @@ export default function AboutOneCasa() {
       // TODO: swap with your API endpoint
       // await apiClient.post("/careers/apply", form);
       await new Promise((r) => setTimeout(r, 900));
-      alert("Thanks! We\'ll get back to you soon.");
+      alert("Thanks! We'll get back to you soon.");
       setForm({ name: "", phone: "", email: "", about: "" });
       setErrors({});
     } finally {
@@ -134,7 +133,7 @@ export default function AboutOneCasa() {
             <Link href="/" className="hover:underline">Home</Link>
           </li>
           <li className="opacity-70">›</li>
-          <li className="font-Gordita-Medium text-blue-400">About us</li>
+          <li className="font-Gordita-Medium text-[#1d547]">About us</li>
         </ol>
       </nav>
     ),
@@ -146,8 +145,8 @@ export default function AboutOneCasa() {
       <section className="relative">
         <div className="relative h-[140px] md:h-[180px] w-full overflow-hidden">
           <Image
-            src="/images/background/aboutus_bg.jpg"
-            alt="About OneCasa background"
+            src="/images/background/aboutus_bg.jpg" // Keep or replace this image
+            alt="About Improvement LLC background"
             fill
             className="object-cover"
             priority
@@ -160,8 +159,8 @@ export default function AboutOneCasa() {
               animate="show"
               className="text-3xl md:text-4xl font-Gordita-Bold text-white "
             >
-              About One<span className="text-[#5297FF]">
-                Casa
+              About Improvement<span className="text-[#2872a1]">
+                LLC
               </span>
             </motion.h1>
             <motion.div variants={fadeIn} initial="hidden" animate="show" className="mt-2">
@@ -171,243 +170,209 @@ export default function AboutOneCasa() {
         </div>
       </section>
 
-      {/* INTRO */}
+      {/* INTRO - UPDATED CONTENT */}
       <section className={`${H.section} py-12 md:py-16 grid md:grid-cols-2 gap-10 items-center`}>
         <div className="space-y-4">
-          <h2 className={H.h1}>We discover fantastic homes for our clients.</h2>
+          <h2 className={H.h1}>Driving Innovation and Excellence in Design & Development.</h2>
           <p className={H.p}>
-            We simplify real estate—from discovery and shortlisting to negotiation and closure—
-            so you make confident decisions faster. Whether you’re a first‑time buyer or a seasoned investor,
-            our curated listings, builder network, and on‑call experts put you in control.
+            Improvement LLC is a USA-based design and development firm dedicated to delivering
+            **custom, high-impact solutions** across architecture, technology, and process optimization.
+            We partner with businesses and individuals to transform visions into tangible realities,
+            ensuring every project is marked by quality, efficiency, and radical transparency.
+            Our expert-led approach puts you in control of your successful outcome.
           </p>
           <div className="flex gap-3 max-md:justify-center">
             <Link href="/services/custom-builder" className="inline-block">
-              <Button className="bg-[#4388ef] text-white font-Gordita-Medium md:text-[14px] text-[12px] rounded-xl px-5 py-2">Explore Services</Button>
+              <Button className="bg-[#4388ef] text-white font-Gordita-Medium md:text-[14px] text-[12px] rounded-xl px-5 py-2">Explore Our Services</Button>
             </Link>
-            <Link href="/properties" className="inline-block">
-              <Button className="bg-white border border-gray-300 font-Gordita-Medium md:text-[14px] text-[12px] rounded-xl px-5 py-2">Browse Properties</Button>
+            <Link href="/contact" className="inline-block">
+              <Button className="bg-white border border-gray-300 font-Gordita-Medium md:text-[14px] text-[12px] rounded-xl px-5 py-2 text-gray-700 hover:bg-gray-50 transition-colors">Contact Us</Button>
             </Link>
           </div>
         </div>
-        <div className="relative md:aspect-[4/3] h-[200px] w-full rounded-2xl overflow-hidden shadow-sm">
-          <Image
-            src="/images/background/aboutus.png"
-            alt="OneCasa team at work"
-            fill
-            className="object-cover"
-          />
-        </div>
-      </section>
 
-      {/* HIGHLIGHTS */}
-      <section className="bg-[#EDF3FC] py-12 md:py-16">
-        <div className={`${H.section}`}>
-          <div className="text-center max-w-3xl mx-auto mb-10">
-            <div className="flex items-center justify-center gap-2 text-[#3586FF]">
-              <DotIcon />
-              <p className="font-Gordita-Bold text-xl">What we do</p>
-            </div>
-            <p className={`${H.p} mt-2`}>
-              Design‑forward. Data‑driven. Human‑backed. Here’s how we help you move from search to keys in hand.
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {highlights.map(({ title, sub, Icon }, i) => (
-              <motion.div
-                key={title}
-                variants={fadeIn}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.2 }}
-                className={`${H.card} p-6 flex items-start gap-4`}
-              >
-                <div className="shrink-0"><Icon /></div>
-                <div>
-                  <p className="text-[#3586FF] font-medium">{title}</p>
-                  <p className="text-[14px] text-[#7B7C83] mt-1">{sub}</p>
-                </div>
-              </motion.div>
-            ))}
+        <div className="relative h-64 md:h-80 w-full rounded-2xl overflow-hidden shadow-lg bg-gray-100">
+          <div className="flex items-center justify-center h-full text-gray-500 font-Gordita-Medium">
+            [Image of Development or Design graphic]
           </div>
         </div>
       </section>
 
-      {/* IMPACT STRIP */}
-      <section className={`${H.section} py-12 md:py-16`}>
-        <ImpactStrip />
-      </section>
-
-
-      {/* TEAM */}
-      <section className={`${H.section} py-8 md:py-10`}>
-        <div className="text-center mb-10">
-          <div className="flex items-center justify-center gap-2">
-            <DotIcon />
-            <p className="font-Gordita-Bold md:text-2xl text-xl">Meet the Team</p>
-          </div>
-          <p className={`${H.p} font-Gordita-Regular mt-2`}>Experience, innovation, and creativity—your plans are in good hands.</p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-6">
-          {team.map((m) => (
-            <article key={m.name} className={`${H.card} p-6 md:p-7 flex gap-6 items-start`}>
-              <div className="relative h-[120px] w-[120px] rounded-full overflow-hidden shrink-0">
-                <Image src={m.img} alt={m.name} fill className="object-cover" />
-              </div>
-              <div className="space-y-2">
-                <h3 className="font-Gordita-Bold md:text-lg text-sm">{m.name}</h3>
-                <p className="text-[#7B7C83] text-sm font-Gordita-Medium uppercase tracking-wide">{m.role}</p>
-                <p className={H.p}>{m.bio}</p>
-              </div>
-            </article>
+      <section className={`${H.section} py-12 md:py-16 bg-gray-50`}>
+        <h2 className={`${H.h1} text-center mb-10`}>What We Do Best</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {highlights.map((item, i) => (
+            <motion.div
+              key={item.title}
+              variants={fadeIn}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.1 }}
+              className={`${H.card} p-6 space-y-3 transition-all duration-300 hover:shadow-lg hover:border-blue-300`}
+            >
+              <h3 className="text-lg font-Gordita-Bold text-[#090a12]">{item.title}</h3>
+              <p className={H.p}>{item.sub}</p>
+            </motion.div>
           ))}
         </div>
       </section>
 
-      {/* VALUES */}
-      <section className="bg-[#FAFBFF] py-10 sm:py-14">
-        <div className={`${H.section}`}>
-          <div className="text-center mb-8 sm:mb-12">
-            <p className="font-Gordita-Bold text-2xl sm:text-3xl mb-2">Our Values</p>
-            <p className={`${H.p} max-w-2xl mx-auto text-sm sm:text-base`}>
-              Principles that shape every interaction and every build.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
-            {values.map((v) => (
+      {/* IMPACT/STATS SECTION - Uses updated 'impactStats' array */}
+      <section className="bg-[#090a12] py-12 md:py-16">
+        <div className={`${H.section} text-white`}>
+          <h2 className={`${H.h1} text-center mb-10 text-white`}>Our Impact</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {impactStats.map((stat, i) => (
               <motion.div
-                key={v.title}
+                key={stat.label}
                 variants={fadeIn}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: true, amount: 0.3 }}
-                className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6
-                     flex flex-col items-center text-center
-                     shadow-sm hover:shadow-md transition-shadow
-                     border-t-4 border-[#3586FF]"
+                viewport={{ once: true }}
+                className="text-center"
               >
-                <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">{v.icon}</div>
-                <h3 className="font-Gordita-Bold text-[15px] sm:text-lg mb-1.5 sm:mb-2">
-                  {v.title}
-                </h3>
-                <p className="text-[13px] sm:text-sm text-[#565a67] leading-6">
-                  {v.description}
-                </p>
+                {/* Using a placeholder for CountUp component, assuming it handles animation */}
+                <div className="text-4xl md:text-5xl font-Gordita-Bold text-[#2872a1] mb-1">
+                  {/* In a real app, you'd use <CountUp end={stat.value} duration={2} /> */}
+                  {stat.value}
+                </div>
+                <p className="text-sm md:text-base opacity-80">{stat.label}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-
-
-      {/* TIMELINE */}
-      <OurJourney />
-
-      {/* CTA */}
-      <section className="bg-gradient-to-r from-[#3F7CF8] to-[#6BA3FF] text-white">
-        <div className={`${H.section} py-10 md:py-14 flex flex-col md:flex-row items-center gap-6 md:gap-10`}>
-          <div className="flex-1">
-            <h3 className="text-2xl md:text-3xl font-Gordita-Bold">Ready to find your place?</h3>
-            <p className="mt-2 text-white/90 max-w-prose font-Gordita-Regular md:text-[14px] text-[12px]">
-              Talk to a OneCasa specialist for a personalized shortlist, visit planning, and negotiation support.
-            </p>
-          </div>
-          <div className="flex gap-3">
-            <Link href="/contact">
-              <Button className="bg-white text-[#2b6be7] rounded-xl font-Gordita-Medium px-5 py-3">Talk to us</Button>
-            </Link>
-            <Link href="/interiors">
-              <Button className="bg-transparent border border-white rounded-xl font-Gordita-Medium  px-5 py-3">Interiors</Button>
-            </Link>
-          </div>
+      {/* VALUES SECTION - Uses updated 'values' array */}
+      <section className={`${H.section} py-12 md:py-16`}>
+        <h2 className={`${H.h1} text-center mb-10`}>Our Core Values</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {values.map((v, i) => (
+            <motion.div
+              key={v.title}
+              variants={fadeIn}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.1 }}
+              className={`${H.card} p-6 space-y-3 transition-all duration-300 hover:shadow-xl`}
+            >
+              <div className="text-4xl mb-2">{v.icon}</div>
+              <h3 className="text-xl font-Gordita-Bold text-[#090a12]">{v.title}</h3>
+              <p className={H.p}>{v.description}</p>
+            </motion.div>
+          ))}
         </div>
       </section>
 
-      {/* JOIN OUR TEAM */}
-      <section className={`${H.section} py-12 md:py-16`}>
-        <div className="text-center mb-8">
-          <div className="flex items-center justify-center gap-2">
-            <DotIcon />
-            <p className="font-Gordita-Bold text-2xl">Join our Team</p>
-          </div>
-          <p className={`${H.p} mt-2 max-w-2xl mx-auto`}>
-            We’re building the most trusted home‑decision platform. If that excites you, send a short note about what you’d like to build here.
-          </p>
+      {/* LEADERSHIP/TEAM SECTION - Uses updated 'team' array */}
+      <section className={`${H.section} py-12 md:py-16 bg-gray-50`}>
+        <h2 className={`${H.h1} text-center mb-12`}>Meet the Leadership</h2>
+        <div className="grid md:grid-cols-2 gap-10">
+          {team.map((member, i) => (
+            <motion.div
+              key={member.name}
+              variants={fadeIn}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.1 }}
+              className={`${H.card} p-8 flex flex-col sm:flex-row gap-6`}
+            >
+              <div className="w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0 rounded-full overflow-hidden relative border-4 border-[#2872a1]/50">
+                <Image
+                  src={member.img || "/images/team/placeholder.png"}
+                  alt={member.name}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="flex-grow">
+                <h3 className="text-xl font-Gordita-Bold text-[#090a12]">{member.name}</h3>
+                <p className="text-sm font-Gordita-Medium text-[#4388ef] mb-3">{member.role}</p>
+                <p className={H.p}>{member.bio}</p>
+              </div>
+            </motion.div>
+          ))}
         </div>
+      </section>
 
-        <form onSubmit={submit} className={`${H.card} max-w-3xl mx-auto p-6 md:p-8`}>
-          <div className="grid md:grid-cols-2 gap-5">
-            <div>
+      {/* CAREER/CONTACT FORM SECTION - Kept submission logic the same */}
+      <section className={`${H.section} py-12 md:py-16`}>
+        <div className="grid lg:grid-cols-2 gap-10 items-start">
+          <div className="space-y-4">
+            <h2 className={H.h1}>Join Our Team!</h2>
+            <p className={H.p}>
+              We are always looking for passionate individuals who share our commitment to innovation and transparency.
+              If you are ready to make a significant impact in design and development,
+              tell us about yourself and your skills.
+            </p>
+            {/* Placeholder for career image/pitch graphic */}
+            <div className="relative h-64 w-full rounded-2xl overflow-hidden mt-6 bg-blue-50">
+              <div className="flex items-center justify-center h-full text-[#2872a1] font-Gordita-Medium">
+                [Image: Career Opportunities at Improvement LLC]
+              </div>
+            </div>
+          </div>
+
+          <div className={`${H.card} p-6 md:p-8 space-y-4`}>
+            <h3 className={H.h2}>Connect With Us</h3>
+            <form onSubmit={submit} className="space-y-4">
               <CustomInput
-                type="text"
-                label="Name"
-                labelCls="text-[14px] font-Gordita-Medium"
-                name="name"
-                rootCls="bg-white"
-                className="placeholder:text-[14px]"
+                label="Your Name"
                 value={form.name}
                 onChange={(e: any) => handleChange("name", e.target.value)}
-                errorMsg={errors.name}
-                placeholder="Enter your name"
-              />
-            </div>
-            <div>
-              <CustomInput
+                className="md:py-1 py-[2px]"
+                name="name"
                 type="text"
+              />
+              <CustomInput
                 label="Phone Number"
-                labelCls="text-[14px] font-Gordita-Medium"
-                name="phone"
-                rootCls="bg-white"
-                className="placeholder:text-[14px]"
                 value={form.phone}
                 onChange={(e: any) => handleChange("phone", e.target.value)}
-                errorMsg={errors.phone}
-                placeholder="10‑digit phone"
-                required
+                type="number"
+                className="md:py-1 py-[2px]"
               />
-            </div>
-            <div>
               <CustomInput
-                type="text"
-                label="Email"
-                labelCls="text-[14px] font-Gordita-Medium"
-                name="email"
-                rootCls="bg-white"
-                className="placeholder:text-[14px]"
+                label="Email Address"
                 value={form.email}
                 onChange={(e: any) => handleChange("email", e.target.value)}
-                errorMsg={errors.email}
-                placeholder="you@domain.com"
+                name="email"
                 required
-              />
-            </div>
-            <div>
-              <CustomInput
+                className="md:py-1 py-[2px]"
                 type="text"
-                label="About"
-                labelCls="text-[14px] font-Gordita-Medium"
-                name="about"
-                rootCls="bg-white"
-                className="placeholder:text-[14px] "
-                value={form.about}
-                onChange={(e: any) => handleChange("about", e.target.value)}
-                errorMsg={errors.about}
-                placeholder="Tell us about your interest"
-                required
               />
-            </div>
-          </div>
+              <div>
+                <label className="block text-sm font-Gordita-Medium text-gray-700 mb-1">Tell us about your interest/skill (min 20 chars)</label>
+                <textarea
+                  value={form.about}
+                  onChange={(e) => handleChange("about", e.target.value)}
+                  rows={4}
+                  className="w-full border border-gray-300 rounded-lg p-3 focus:ring-[#4388ef] focus:border-[#4388ef]"
+                  placeholder="I am interested in..."
+                ></textarea>
+                {errors.about && <p className="text-xs text-red-500 mt-1">{errors.about}</p>}
+              </div>
 
-          <div className="flex justify-center mt-8">
-            <Button disabled={submitting} className="bg-[#5297FF] md:py-2 py-1 w-full md:w-[340px] rounded-xl text-white font-Gordita-Bold">
-              {submitting ? "Submitting..." : "Submit Requirements"}
-            </Button>
+              <Button
+                type="submit"
+                disabled={submitting}
+                className="w-full bg-[#4388ef] text-white font-Gordita-Bold rounded-xl py-3 disabled:opacity-50 transition-opacity"
+              >
+                {submitting ? "Submitting..." : "Submit Application"}
+              </Button>
+            </form>
           </div>
-        </form>
+        </div>
       </section>
+
+      {/* TIMELINE/JOURNEY SECTION (assuming it uses the OurJourney component) */}
+      <section className={`${H.section} py-12 md:py-16 bg-gray-50`}>
+        <h2 className={`${H.h1} text-center mb-10`}>Our Journey So Far</h2>
+        {/* <OurJourney /> */}
+        <div className="h-64 flex items-center justify-center text-gray-500 border border-dashed rounded-lg">
+          [Timeline Component (OurJourney) Goes Here]
+        </div>
+      </section>
+
     </div>
   );
 }

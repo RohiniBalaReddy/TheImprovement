@@ -38,7 +38,7 @@ export default function MultiSelect(props: IMultiSelectProps) {
           <Listbox.Button as={`div`} className={twMerge(
             clsx({
               "relative min-h-[33px] md:min-h-[38px] w-full flex flex-wrap cursor border rounded-[6px] border-[#C7C2C2] py-2 pl-3 pr-10 text-left focus:outline-none text-[13px] cursor-pointer": true,
-              "border-blue-400": open,
+              "border-[#1d547]": open,
             }), buttonCls,
             clsx({
               [String(openButtonCls)]: open && !!openButtonCls && openButtonCls.trim().length > 0

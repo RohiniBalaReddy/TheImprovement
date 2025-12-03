@@ -105,7 +105,7 @@ export default function SingleSelect(props: ISingleSelectProps) {
                 className={twMerge(
                   clsx({
                     'relative w-full font-500 flex truncate border rounded-[6px] border-[#C7C2C2] py-1 px-3 text-left focus:outline-none text-[13px] cursor-pointer justify-between items-center': true,
-                    'border-blue-400': open,
+                    'border-[#1d547]': open,
                   }),
                   buttonCls,
                   clsx({
@@ -148,9 +148,9 @@ export default function SingleSelect(props: ISingleSelectProps) {
                         <div
                           className={twMerge(
                             clsx({
-                              'px-3 py-1 mb-1 hover:bg-[#3586FF] hover:text-slate-100 cursor-pointer': true,
+                              'px-3 py-1 mb-1 hover:bg-[#2872a1] hover:text-slate-100 cursor-pointer': true,
                               'text-gray-800 bg-white': !selected,
-                              'text-white bg-[#3586FF]': selected,
+                              'text-white bg-[#2872a1]': selected,
                             }),
                             optionCls,
                             clsx({

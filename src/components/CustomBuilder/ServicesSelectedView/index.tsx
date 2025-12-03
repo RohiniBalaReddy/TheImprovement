@@ -63,7 +63,7 @@ const ServicesSelectedView = () => {
       <div className="bg-white p-2">
         <div className="flex items-center justify-between mb-[32px]">
           <div className="w-full flex items-center gap-2 md:mb-4 mb-2">
-            <ClipboardCheck size={24} className="text-[#5297ff] w-6 h-6" />
+            <ClipboardCheck size={24} className="text-[#2872a1] w-6 h-6" />
             <h1 className="font-Gordita-Bold md:text-[18px] text-[14px]">
               Services Selected
             </h1>
@@ -77,7 +77,7 @@ const ServicesSelectedView = () => {
                   key={index}
                   onClick={() => setActiveTab(item)}
                   className={`capitalize  md:px-4 px-2  md:py-2 py-2 font-Gordita-Medium md:text-[16px] text-[10px] text-nowrap md:rounded-[8px] rounded-[4px] ${activeTab === item
-                    ? "bg-[#5297ff] text-white"
+                    ? "bg-[#2872a1] text-white"
                     : "bg-gray-200 text-gray-800"
                     }`}
                 >
@@ -178,7 +178,7 @@ const renderServiceDetails = (serviceData: any) => {
                       {value.map((item: string, index: number) => (
                         <span
                           key={index}
-                          className="px-3 py-1 text-nowrap bg-blue-100 text-[#5297FF] rounded text-xs capitalize"
+                          className="px-3 py-1 text-nowrap bg-blue-100 text-[#2872a1] rounded text-xs capitalize"
                         >
                           {item.replace(/_/g, " ")}
                         </span>

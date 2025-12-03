@@ -95,7 +95,7 @@
 //       <div className="relative flex items-center space-x-2">
 //         <label
 //           htmlFor={name}
-//           className="bg-[#5297FF]hover:bg-blue-700 text-white px-3 py-2 rounded-md cursor-pointer"
+//           className="bg-[#2872a1]hover:bg-blue-700 text-white px-3 py-2 rounded-md cursor-pointer"
 //         >
 //           Choose File
 //         </label>
@@ -283,7 +283,7 @@ const FileInput = ({
         <div className="relative flex items-center space-x-2">
           <label
             htmlFor={name}
-            className="bg-[#5297FF]hover:bg-blue-700 text-white px-3 py-2 rounded-md cursor-pointer"
+            className="bg-[#2872a1]hover:bg-blue-700 text-white px-3 py-2 rounded-md cursor-pointer"
           >
             {uploading ? "Uploading..." : "Choose File"}
           </label>

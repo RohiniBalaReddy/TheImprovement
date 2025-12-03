@@ -161,7 +161,7 @@ export default function SignUpComponent() {
                   />
                 </div>
                 <div className="flex flex-col relative">
-                  <p className="font-Gordita-Bold text-[32px] text-[#5297FF]">
+                  <p className="font-Gordita-Bold text-[32px] text-[#2872a1]">
                     ONE<span className="text-white">CASA</span>
                   </p>
                   <p className="text-[12px] mt-[-10px] text-center text-white">
@@ -249,7 +249,7 @@ export default function SignUpComponent() {
                 <div className="flex gap-4">
                   <Button
                     className={`w-[75px] h-[40px] rounded-md border-2 border-black font-Gordita-Medium ${signUpDetails.agent === true
-                      ? "bg-[#5297ff] !text-white"
+                      ? "bg-[#2872a1] !text-white"
                       : "bg-gray-200 text-black "
                       }`}
                     onClick={() => handleAgentSelection(true)}
@@ -258,7 +258,7 @@ export default function SignUpComponent() {
                   </Button>
                   <Button
                     className={`w-[75px] h-[40px] rounded-md border-2 border-black font-Gordita-Medium ${signUpDetails.agent === false
-                      ? "bg-[#5297ff] !text-white"
+                      ? "bg-[#2872a1] !text-white"
                       : "bg-gray-200 text-black border-2 border-black"
                       }`}
                     onClick={() => handleAgentSelection(false)}
@@ -270,7 +270,7 @@ export default function SignUpComponent() {
 
               <Button
                 type="submit"
-                className="w-full h-[45px] rounded-md bg-[#5297ff] text-white font-Gordita-Medium"
+                className="w-full h-[45px] rounded-md bg-[#2872a1] text-white font-Gordita-Medium"
                 onClick={handleSignup}
               >
                 Create Account
@@ -280,7 +280,7 @@ export default function SignUpComponent() {
                   Already have an account?{" "}
                   <Link
                     href="/login"
-                    className="text-[#5297FF] font-Gordita-Medium"
+                    className="text-[#2872a1] font-Gordita-Medium"
                   >
                     Login
                   </Link>

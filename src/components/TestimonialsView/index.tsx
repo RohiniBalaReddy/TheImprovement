@@ -56,8 +56,8 @@ const TestimonialsView = () => {
   const [openModal, setOpenModal] = useState<boolean>(false);
   const [currentpage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);
-   const session = useSession();
-   const [user, setUser] = useState<any>(null);
+  const session = useSession();
+  const [user, setUser] = useState<any>(null);
 
   const [testimonial, setTestimonial] = useState<Testimonial>({
     name: "",
@@ -77,7 +77,7 @@ const TestimonialsView = () => {
   const [loading, setLoading] = useState(false);
   const [originalData, setOriginalData] = useState<Testimonial | null>(null);
 
-  
+
   useEffect(() => {
     if (session?.status === "authenticated") {
       setUser(session.data?.user);
@@ -85,7 +85,7 @@ const TestimonialsView = () => {
   }, [session?.status]);
 
 
- 
+
   const handleFormChange = (name: string, value: any) => {
     setTestimonial((curr: Testimonial) => ({ ...curr, [name]: value }));
   };
@@ -115,16 +115,16 @@ const TestimonialsView = () => {
     e.preventDefault();
     setLoading(true);
     const payload = {
-    name: testimonial.name,
-    content: testimonial.content,
-    userimage: testimonial.userimage,
-    rating: testimonial.rating,
-    category: testimonial.category,
-    location: testimonial.location,
-    testimonialImages: testimonial.testimonialImages,
-    testimonialVideos: testimonial.testimonialVideos,
-    user:user?.id,
-  };
+      name: testimonial.name,
+      content: testimonial.content,
+      userimage: testimonial.userimage,
+      rating: testimonial.rating,
+      category: testimonial.category,
+      location: testimonial.location,
+      testimonialImages: testimonial.testimonialImages,
+      testimonialVideos: testimonial.testimonialVideos,
+      user: user?.id,
+    };
 
     if (updateId && !isDataChanged(originalData, testimonial)) {
       setOpenModal(false);
@@ -136,7 +136,7 @@ const TestimonialsView = () => {
       if (!updateId) {
         res = await apiClient.post(
           apiClient.URLS.testimonials,
-        payload,
+          payload,
           true
         );
       } else {
@@ -183,29 +183,29 @@ const TestimonialsView = () => {
     setOriginalData(null);
   };
   const pretty = (s: string) =>
-  s.split("_").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+    s.split("_").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
 
- const filtersConfig = [
-  {
-    groupLabel: "Category",
-    key: "category",
-    options: CATEGORY_OPTIONS.map(c => ({
-      id: c.category.toLowerCase(),  
-      label: pretty(c.category)
-    })),
-  },
-  {
-    groupLabel: "Rating",
-    key: "rating",
-    options: ratingOptions.map(r => ({
-      id: String(r),                  
-      label: String(r),
-    })),
-  },
-] as const;
+  const filtersConfig = [
+    {
+      groupLabel: "Category",
+      key: "category",
+      options: CATEGORY_OPTIONS.map(c => ({
+        id: c.category.toLowerCase(),
+        label: pretty(c.category)
+      })),
+    },
+    {
+      groupLabel: "Rating",
+      key: "rating",
+      options: ratingOptions.map(r => ({
+        id: String(r),
+        label: String(r),
+      })),
+    },
+  ] as const;
 
 
-  
+
   const fetchTestimonials = useCallback(async () => {
     try {
       setLoading(true);
@@ -276,7 +276,7 @@ const TestimonialsView = () => {
     fetchTestimonials();
   }, [fetchTestimonials]);
 
- 
+
   type FiltersState = { [key: string]: Record<string, boolean> };
   const [selectedFilters, setSelectedFilters] = useState<FiltersState>({});
   const [searchQuery, setSearchQuery] = useState("");
@@ -290,29 +290,29 @@ const TestimonialsView = () => {
     setCurrentPage(1);
   }, [searchQuery, selectedFilters]);
 
- const filteredData = useMemo(() => {
-  const text = searchQuery.trim().toLowerCase();
-  const activeCats = pickActive("category");   
-  const activeRatings = pickActive("rating");
+  const filteredData = useMemo(() => {
+    const text = searchQuery.trim().toLowerCase();
+    const activeCats = pickActive("category");
+    const activeRatings = pickActive("rating");
 
-  return allData.filter(t => {
-    const cat = String(t.category || "").toLowerCase();
-    const matchesText =
-      !text ||
-      t.name?.toLowerCase().includes(text) ||
-      t.content?.toLowerCase().includes(text) ||
-      t.location?.toLowerCase().includes(text) ||
-      cat.includes(text);
+    return allData.filter(t => {
+      const cat = String(t.category || "").toLowerCase();
+      const matchesText =
+        !text ||
+        t.name?.toLowerCase().includes(text) ||
+        t.content?.toLowerCase().includes(text) ||
+        t.location?.toLowerCase().includes(text) ||
+        cat.includes(text);
 
-    const matchesCat =
-      activeCats.length === 0 || activeCats.includes(cat);
+      const matchesCat =
+        activeCats.length === 0 || activeCats.includes(cat);
 
-    const matchesRating =
-      activeRatings.length === 0 || activeRatings.includes(String(t.rating));
+      const matchesRating =
+        activeRatings.length === 0 || activeRatings.includes(String(t.rating));
 
-    return matchesText && matchesCat && matchesRating;
-  });
-}, [allData, searchQuery, selectedFilters]);
+      return matchesText && matchesCat && matchesRating;
+    });
+  }, [allData, searchQuery, selectedFilters]);
 
 
 
@@ -341,7 +341,7 @@ const TestimonialsView = () => {
 
   return (
     <div className="min-w-full flex flex-col md:px-10 px-3 gap-y-5">
-    
+
       <div className="sticky top-0 z-10">
         <div className="flex items-center justify-between bg-white/90 backdrop-blur border border-slate-200 shadow-[0_6px_24px_rgba(2,6,23,0.06)] rounded-xl px-5 py-2 mt-[50px]">
           <div className="flex items-center gap-3">
@@ -350,19 +350,19 @@ const TestimonialsView = () => {
             </div>
             <div className="heading-text">Testimonials</div>
           </div>
-        
-            <Button
-              className="flex md:px-5 px-3 md:py-2 py-1 label-text rounded-lg bg-[#3586FF] !font-Gordita-Medium items-center gap-2 text-white shadow-[0_6px_20px_rgba(53,134,255,0.30)] hover:bg-[#2E74E0] active:scale-[.99] transition"
-              onClick={() => setOpenModal(true)}
-              
-            >
-              + Add New
-            </Button>
-         
+
+          <Button
+            className="flex md:px-5 px-3 md:py-2 py-1 label-text rounded-lg bg-[#2872a1] !font-Gordita-Medium items-center gap-2 text-white shadow-[0_6px_20px_rgba(53,134,255,0.30)] hover:bg-[#2E74E0] active:scale-[.99] transition"
+            onClick={() => setOpenModal(true)}
+
+          >
+            + Add New
+          </Button>
+
         </div>
       </div>
 
-     
+
       <div className="w-full">
         <ReusableSearchFilter
           searchText={searchQuery}
@@ -376,7 +376,7 @@ const TestimonialsView = () => {
         />
       </div>
 
-      
+
       <div className="grid md:gap-5 gap-2 grid-cols-2 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {displayedData?.length > 0 &&
           displayedData.map((t) => (
@@ -402,10 +402,10 @@ const TestimonialsView = () => {
                     <FaUser className="md:w-8 w-5 md:h-8 h-5" />
                   </div>
                 )}
-                
-                 <span className='absolute top-2 right-2 md:text-[12px]  bg-blue-50 text-blue-700 ring-blue-200 font-Gordita-Medium  text-[10px] md:px-2 px-1 py-0.5 rounded-full'>
-                    {t.category || "General"}
-                  </span>
+
+                <span className='absolute top-2 right-2 md:text-[12px]  bg-blue-50 text-blue-700 ring-blue-200 font-Gordita-Medium  text-[10px] md:px-2 px-1 py-0.5 rounded-full'>
+                  {t.category || "General"}
+                </span>
               </div>
 
               <div className="p-2 md:p-4 flex flex-col md:gap-2 gap-1">
@@ -423,7 +423,7 @@ const TestimonialsView = () => {
                 </p>
 
                 <div className="flex items-center md:gap-2 gap-1">
-                 
+
                   {t.location && (
                     <span className="md:text-[12px] text-[10px] text-slate-600 flex items-center gap-1">
                       <FaMapMarkerAlt /> {t.location}
@@ -432,39 +432,39 @@ const TestimonialsView = () => {
                 </div>
 
                 <div className="flex items-center justify-end gap-2 pt-2">
-                 
-                    <Button
-                      onClick={() => handleEdit(t)}
-                     
-                      className="
+
+                  <Button
+                    onClick={() => handleEdit(t)}
+
+                    className="
                           md:px-3 px-2 md:py-1.5 py-0.5  md:rounded-md rounded-[6px] bg-[#3f85ed] text-white
                         hover:bg-[#2E74E0] active:scale-[.99] transition
                         flex items-center gap-2
                       "
-                    >
-                      <FaEdit className="md:w-[12px] w-[9px] md:h-[12px] h-[9px]" />
-                      <span className="text-[12px] font-Gordita-Medium md:block hidden">
-                        Edit
-                      </span>
-                    </Button>
-                 
+                  >
+                    <FaEdit className="md:w-[12px] w-[9px] md:h-[12px] h-[9px]" />
+                    <span className="text-[12px] font-Gordita-Medium md:block hidden">
+                      Edit
+                    </span>
+                  </Button>
 
-                 
-                    <Button
-                      onClick={() => t.id && handleDelete(t.id)}
-                     
-                      className="
+
+
+                  <Button
+                    onClick={() => t.id && handleDelete(t.id)}
+
+                    className="
                         md:px-3 px-2 md:py-1.5 py-0.5 md:rounded-md rounded-[6px] bg-red-500 text-white
                         hover:bg-red-600 active:scale-[.99] transition
                         flex items-center gap-2
                       "
-                    >
-                      <FaTrash className="md:w-[12px] w-[9px] md:h-[12px] h-[9px]" />
-                      <span className="text-[12px] md:block hidden font-Gordita-Medium">
-                        Delete
-                      </span>
-                    </Button>
-                 
+                  >
+                    <FaTrash className="md:w-[12px] w-[9px] md:h-[12px] h-[9px]" />
+                    <span className="text-[12px] md:block hidden font-Gordita-Medium">
+                      Delete
+                    </span>
+                  </Button>
+
                 </div>
               </div>
             </div>
@@ -484,7 +484,7 @@ const TestimonialsView = () => {
         </div>
       )}
 
-     
+
       {openModal && (
         <Drawer
           open={openModal}
@@ -553,11 +553,11 @@ const TestimonialsView = () => {
                   label="Category"
                   labelCls="font-Gordita-Medium label-text text-[#000000]"
                   rootCls="px-1 py-1 w-full rounded-[6px]"
-                 
+
                   type="single-select"
-                  
+
                   options={CATEGORY_OPTIONS}
-                  
+
                   selectedOption={
                     CATEGORY_OPTIONS.find(
                       (item) => item.category === testimonial.category
@@ -577,7 +577,7 @@ const TestimonialsView = () => {
                   rootCls="px-1 md:py-2 py-1 w-full rounded-[6px] "
                   selectedOption={String(testimonial.rating || "")}
                   type="single-select"
-                
+
                   handleChange={(name: string, val: any) =>
                     handleFormChange(name, Number(val))
                   }
@@ -611,38 +611,38 @@ const TestimonialsView = () => {
                     handleFormChange(e.target.name ?? "", e.target.value ?? "")
                   }
                 />
-                
-                  <div className="col-span-1 md:col-span-1 w-full">
-            <ImageUploader
-              label="Upload Testimonial Images"
-              onFilesChange={(files: string[]) =>
-                handleimageUpload("testimonialImages", files)
-              }
-              maxFiles={5}
-              maxFileSize={10}
-              folderName="testimonialImages"
-              acceptedFormats={["image/png", "image/jpg", "image/jpeg"]}
-              outerCls="border-blue-200 border-2 rounded-md p-3 bg-blue-50"
-              initialUrls={testimonial.testimonialImages || []}
-              buttonCls="bg-[#5297ff] hover:bg-blue-600 transition-colors"
-            />
-          </div>
 
-          <div className="col-span-1 md:col-span-1 w-full">
-            <ImageUploader
-              label="Upload Testimonial Videos"
-              onFilesChange={(files: string[]) =>
-                handleimageUpload("testimonialVideos", files)
-              }
-              maxFiles={2}
-              maxFileSize={50}
-              folderName="testimonialVideos"
-              acceptedFormats={["video/mp4", "video/mov"]}
-              outerCls="border-green-200 border-2 rounded-md p-3 bg-green-50"
-              initialUrls={testimonial.testimonialVideos || []}
-              buttonCls="bg-green-500 hover:bg-green-600 transition-colors"
-            />
-          </div>
+                <div className="col-span-1 md:col-span-1 w-full">
+                  <ImageUploader
+                    label="Upload Testimonial Images"
+                    onFilesChange={(files: string[]) =>
+                      handleimageUpload("testimonialImages", files)
+                    }
+                    maxFiles={5}
+                    maxFileSize={10}
+                    folderName="testimonialImages"
+                    acceptedFormats={["image/png", "image/jpg", "image/jpeg"]}
+                    outerCls="border-blue-200 border-2 rounded-md p-3 bg-blue-50"
+                    initialUrls={testimonial.testimonialImages || []}
+                    buttonCls="bg-[#2872a1] hover:bg-[#2872a1] transition-colors"
+                  />
+                </div>
+
+                <div className="col-span-1 md:col-span-1 w-full">
+                  <ImageUploader
+                    label="Upload Testimonial Videos"
+                    onFilesChange={(files: string[]) =>
+                      handleimageUpload("testimonialVideos", files)
+                    }
+                    maxFiles={2}
+                    maxFileSize={50}
+                    folderName="testimonialVideos"
+                    acceptedFormats={["video/mp4", "video/mov"]}
+                    outerCls="border-green-200 border-2 rounded-md p-3 bg-green-50"
+                    initialUrls={testimonial.testimonialVideos || []}
+                    buttonCls="bg-green-500 hover:bg-green-600 transition-colors"
+                  />
+                </div>
               </div>
 
               <div className="flex items-center justify-end gap-3 md:mt-6 mt-3 md:px-10 px-4 md:mb-6 mb-3">
@@ -654,7 +654,7 @@ const TestimonialsView = () => {
                   Cancel
                 </Button>
                 <Button
-                  className="text-white md:px-4 px-2  md:py-2 py-1 md:text-[16px] text-[12px]  rounded-md bg-[#3586FF] hover:bg-[#2E74E0] shadow-[0_6px_20px_rgba(53,134,255,0.35)] active:scale-[.99] transition font-Gordita-Medium"
+                  className="text-white md:px-4 px-2  md:py-2 py-1 md:text-[16px] text-[12px]  rounded-md bg-[#2872a1] hover:bg-[#2E74E0] shadow-[0_6px_20px_rgba(53,134,255,0.35)] active:scale-[.99] transition font-Gordita-Medium"
                   type="submit"
                 >
                   Submit

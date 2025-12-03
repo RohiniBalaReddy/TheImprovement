@@ -11,7 +11,7 @@ const Plumbing = () => {
         title="Expert Plumbing Services | Reliable Repairs & Installations | OneCasa"
         description="Get professional plumbing services for your home and business. From leak repairs to pipe installations, our expert plumbers ensure efficient and long-lasting solutions."
         keywords="Plumbing Services, Leak Repair, Pipe Installation, Home Plumbing, Commercial Plumbing, Emergency Plumber, Drain Cleaning, Plumbing Maintenance, Water Heater Repair"
-        imageUrl="https://www.onecasa.in/images/logobb.png"
+        imageUrl="https://www.theimprovementllc.in/images/logobb.png"
       />
 
       <PlumbingComponent />

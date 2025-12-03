@@ -11,7 +11,7 @@ function UserProfile() {
         title="User Profile | OneCasa"
         description="Manage your OneCasa profile, update personal details, track property interests, and view saved listings with ease."
         keywords="User Profile, OneCasa Account, Real Estate Dashboard, Saved Properties, Profile Management, OneCasa Listings, Property Interests"
-        imageUrl="https://www.onecasa.in/images/logobb.png"
+        imageUrl="https://www.theimprovementllc.in/images/logobb.png"
       />
 
       <ProfileView />

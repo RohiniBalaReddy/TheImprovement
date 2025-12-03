@@ -106,303 +106,303 @@ import {
 } from "react-icons/md";
 
 export const iconMap: { [key: string]: React.ReactNode } = {
-  first_name: <FaUser className="text-[#5297FF] md:text-[18px] text-[14px]" />,
-  last_name: <FaUser className="text-[#5297FF] md:text-[18px] text-[14px]" />,
-  email: <FaEnvelope className="text-[#5297FF] md:text-[18px] text-[14px]" />,
-  mobile: <FaPhone className="text-[#5297FF] md:text-[18px] text-[14px]" />,
-  city: <FaCity className="text-[#5297FF] md:text-[18px] text-[14px]" />,
+  first_name: <FaUser className="text-[#2872a1] md:text-[18px] text-[14px]" />,
+  last_name: <FaUser className="text-[#2872a1] md:text-[18px] text-[14px]" />,
+  email: <FaEnvelope className="text-[#2872a1] md:text-[18px] text-[14px]" />,
+  mobile: <FaPhone className="text-[#2872a1] md:text-[18px] text-[14px]" />,
+  city: <FaCity className="text-[#2872a1] md:text-[18px] text-[14px]" />,
   state: (
-    <MdLocationCity className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdLocationCity className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
-  locality: <FiMapPin className="text-[#5297FF] md:text-[18px] text-[14px]" />,
+  locality: <FiMapPin className="text-[#2872a1] md:text-[18px] text-[14px]" />,
   pincode: (
-    <FaMapMarkerAlt className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaMapMarkerAlt className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   address_line_1: (
-    <FaHome className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaHome className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   length: (
-    <FaRulerHorizontal className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaRulerHorizontal className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   featureBreakDown: (
-    <FaProjectDiagram className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaProjectDiagram className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   width: (
-    <FaRulerVertical className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaRulerVertical className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   address_line_2: (
-    <FaHome className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaHome className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   construction_type: (
-    <MdApartment className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdApartment className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   property_type: (
-    <FaBuilding className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaBuilding className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   construction_scope: (
-    <FaLayerGroup className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaLayerGroup className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   total_area: (
-    <FaRulerCombined className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaRulerCombined className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
-  area_unit: <FaCompass className="text-[#5297FF] md:text-[18px] text-[14px]" />,
+  area_unit: <FaCompass className="text-[#2872a1] md:text-[18px] text-[14px]" />,
   adjacent_roads: (
-    <FaMap className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaMap className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   land_facing: (
-    <FaCompass className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaCompass className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   total_floors: (
-    <FaBuilding className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaBuilding className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
-  gate_side: <FiMapPin className="text-[#5297FF] md:text-[18px] text-[14px]" />,
+  gate_side: <FiMapPin className="text-[#2872a1] md:text-[18px] text-[14px]" />,
 
   staircase_gate: (
-    <MdStairs className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdStairs className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   propertyimages: (
-    <MdPhotoLibrary className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdPhotoLibrary className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   additionoptions: (
-    <FaThList className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaThList className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   additional_details: (
-    <MdNotes className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdNotes className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
-  floors: <FiLayers className="text-[#5297FF] md:text-[18px] text-[14px]" />,
+  floors: <FiLayers className="text-[#2872a1] md:text-[18px] text-[14px]" />,
   combinationtypes: (
-    <MdMergeType className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdMergeType className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   additionalrequirement: (
-    <MdNoteAlt className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdNoteAlt className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   recommendedDepth: (
-    <MdHeight className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdHeight className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   borewellDiameter: (
-    <MdStraighten className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdStraighten className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
-  hydroSurvey: <FaWater className="text-[#5297FF] md:text-[18px] text-[14px]" />,
+  hydroSurvey: <FaWater className="text-[#2872a1] md:text-[18px] text-[14px]" />,
   casingType: (
-    <MdSettingsInputComposite className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdSettingsInputComposite className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   drillingtype: (
-    <MdEngineering className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdEngineering className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   casingDepth: (
-    <MdVerticalAlignBottom className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdVerticalAlignBottom className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   pumpBrand: (
-    <FaPumpSoap className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaPumpSoap className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   additionalRequirement: (
-    <MdNoteAlt className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdNoteAlt className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   centringMaterial: (
-    <FaTools className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaTools className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   totalArea: (
-    <FiMaximize2 className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FiMaximize2 className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   steelBrand: (
-    <FaIndustry className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaIndustry className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
 
   isScaffoldingRequired: (
-    <FaHardHat className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaHardHat className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   cementBrand: (
-    <GiCementShoes className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <GiCementShoes className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   typeOfWork: (
-    <FaLayerGroup className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaLayerGroup className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
-  brickType: <FaCubes className="text-[#5297FF] md:text-[18px] text-[14px]" />,
+  brickType: <FaCubes className="text-[#2872a1] md:text-[18px] text-[14px]" />,
   brickQuality: (
-    <FaStarHalfAlt className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaStarHalfAlt className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
 
-  cementType: <FaCube className="text-[#5297FF] md:text-[18px] text-[14px]" />,
+  cementType: <FaCube className="text-[#2872a1] md:text-[18px] text-[14px]" />,
   plasteringRequired: (
-    <GiTrowel className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <GiTrowel className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   plasteringType: (
-    <MdChecklist className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdChecklist className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   basementRequired: (
-    <GiBrickWall className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <GiBrickWall className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   basementArea: (
-    <GiStairs className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <GiStairs className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   basementHeight: (
-    <MdOutlineHeight className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdOutlineHeight className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   railingMaterial: (
-    <MdOutlineBalcony className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdOutlineBalcony className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   railingType: (
-    <MdLinearScale className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdLinearScale className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
 
   structureType: (
-    <GiHomeGarage className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <GiHomeGarage className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   elevationDetails: (
-    <GiPerspectiveDiceSixFacesRandom className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <GiPerspectiveDiceSixFacesRandom className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
 
   wiringType: (
-    <MdOutlineCable className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdOutlineCable className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   wireBrand: (
-    <FaIndustry className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaIndustry className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   switchBrand: (
-    <MdToggleOn className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdToggleOn className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   totalPowerPoints: (
-    <MdPower className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdPower className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   totalLights: (
-    <MdLightbulbOutline className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdLightbulbOutline className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
-  totalFans: <FaFan className="text-[#5297FF] md:text-[18px] text-[14px]" />,
+  totalFans: <FaFan className="text-[#2872a1] md:text-[18px] text-[14px]" />,
   safetyEquipment: (
-    <MdHealthAndSafety className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdHealthAndSafety className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
 
   paintType: (
-    <GiPaintRoller className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <GiPaintRoller className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   paintBrand: (
-    <FaIndustry className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaIndustry className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
 
   numberOfCoats: (
-    <GiPaintBrush className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <GiPaintBrush className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   surfacePreparation: (
-    <BsTools className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <BsTools className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   roomCount: (
-    <MdMeetingRoom className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdMeetingRoom className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   surfaceType: (
-    <GiBrickWall className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <GiBrickWall className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   finishType: (
-    <MdInvertColors className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdInvertColors className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
 
   flooringMaterial: (
-    <FaRegBuilding className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaRegBuilding className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
 
   materialThickness: (
-    <FaWeightHanging className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaWeightHanging className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   installationType: (
-    <FaCogs className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaCogs className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   isSkirtingRequired: (
-    <MdOutlineHomeWork className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdOutlineHomeWork className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
 
   numberOfRooms: (
-    <FaHome className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaHome className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   ceilingMaterial: (
-    <MdOutlineApartment className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdOutlineApartment className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   ceilingDesign: (
-    <MdOutlineDesignServices className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdOutlineDesignServices className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   lightingOptions: (
-    <MdOutlineLight className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdOutlineLight className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   ceilingFinish: (
-    <MdOutlineLight className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdOutlineLight className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   roomType: <MdRoom />,
 
   pipeMaterial: (
-    <FaWrench className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaWrench className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   pipeBrand: (
-    <FaRegBuilding className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaRegBuilding className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   fixtureBrand: (
-    <FaTools className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaTools className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   totalBathrooms: (
-    <MdBathtub className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdBathtub className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   indianBathrooms: (
-    <MdShower className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdShower className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   westernBathrooms: (
-    <MdBathtub className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdBathtub className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   totalKitchens: (
-    <FaConciergeBell className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaConciergeBell className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
-  waterSource: <FaTint className="text-[#5297FF] md:text-[18px] text-[14px]" />,
+  waterSource: <FaTint className="text-[#2872a1] md:text-[18px] text-[14px]" />,
   pipeThickness: (
-    <MdStraighten className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdStraighten className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
 
   isDrainageRequired: (
-    <MdOutlineWaterDrop className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdOutlineWaterDrop className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   id: undefined,
   modularKitchen: (
-    <MdKitchen className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdKitchen className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
-  wardrobes: <BiCloset className="text-[#5297FF] md:text-[18px] text-[14px]" />,
-  cabinetry: <FiTool className="text-[#5297FF] md:text-[18px] text-[14px]" />,
+  wardrobes: <BiCloset className="text-[#2872a1] md:text-[18px] text-[14px]" />,
+  cabinetry: <FiTool className="text-[#2872a1] md:text-[18px] text-[14px]" />,
   furnitureDesign: (
-    <FaCouch className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaCouch className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   wallPaneling: (
-    <GiWoodFrame className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <GiWoodFrame className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   decorStyle: (
-    <FaPalette className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaPalette className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   soundProofing: (
-    <FaVolumeMute className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaVolumeMute className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   smartHomeFeatures: (
-    <MdSmartphone className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdSmartphone className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   storageSolutions: (
-    <BiBox className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <BiBox className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   additionalRequirements: (
-    <MdAddCircleOutline className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdAddCircleOutline className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   furnitureLayout: (
-    <BiGridAlt className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <BiGridAlt className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   ecoFriendlyMaterials: (
-    <GiEcology className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <GiEcology className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   childPetFriendly: (
-    <FaBaby className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaBaby className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
   materialPreferences: (
-    <MdOutlineStorage className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdOutlineStorage className="text-[#2872a1] md:text-[18px] text-[14px]" />
   ),
-  bhkType: <FaHome className="text-[#5297FF] md:text-[18px] text-[14px]" />,
-  rooms: <MdMeetingRoom className="text-[#5297FF] md:text-[18px] text-[14px]" />,
-  plywood: <GiWoodBeam className="text-[#5297FF] md:text-[18px] text-[14px]" />,
+  bhkType: <FaHome className="text-[#2872a1] md:text-[18px] text-[14px]" />,
+  rooms: <MdMeetingRoom className="text-[#2872a1] md:text-[18px] text-[14px]" />,
+  plywood: <GiWoodBeam className="text-[#2872a1] md:text-[18px] text-[14px]" />,
   combinationTypes: (
-    <FaFileAlt className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <FaFileAlt className="text-[#2872a1] md:text-[18px] text-[14px]" />
 
   ),
   drillingType: (
-    <MdMergeType className="text-[#5297FF] md:text-[18px] text-[14px]" />
+    <MdMergeType className="text-[#2872a1] md:text-[18px] text-[14px]" />
   )
 };
 export const filtersdata = [

@@ -282,7 +282,7 @@ const CustomBuilderDetailsView = () => {
           </Button>
           <Button
             onClick={startTour}
-            className="inline-flex items-center  text-[12px] bg-[#5297FF]text-white rounded-lg px-2 md:py-1  hover:bg-blue-700"
+            className="inline-flex items-center  text-[12px] bg-[#2872a1]text-white rounded-lg px-2 md:py-1  hover:bg-blue-700"
             aria-label="Take a tour of this page"
           >
             <HelpCircle className="w-3 h-3" />
@@ -407,7 +407,7 @@ const CustomBuilderDetailsView = () => {
               className="w-[120px] max-md:w-[100px] bg-white border border-gray-200 md:rounded-xl rounded-md shadow-custom hover:shadow-md transition-all p-3 text-center group"
             >
               <div className="mx-auto mb-2 grid place-items-center w-10 h-10 rounded-full bg-gray-100 group-hover:bg-blue-50">
-                <Icon className="w-5 h-5 text-gray-700 group-hover:text-[#5297ff]" />
+                <Icon className="w-5 h-5 text-gray-700 group-hover:text-[#2872a1]" />
               </div>
               <span className="text-[12px] md:text-[14px] font-Gordita-Medium text-gray-800">
                 {it.label}
@@ -452,7 +452,7 @@ const CustomBuilderDetailsView = () => {
                 Construction Progress
               </h3>
               <p className="text-gray-600 text-sm text-center">
-                <span className="inline-block w-3 h-3 bg-[#3586FF] rounded-full mr-2 align-middle" />
+                <span className="inline-block w-3 h-3 bg-[#2872a1] rounded-full mr-2 align-middle" />
                 {pieChartData[0]?.progress.toFixed(0)}% work ongoing
               </p>
             </div>
@@ -461,7 +461,7 @@ const CustomBuilderDetailsView = () => {
 
         {/* Overview bars */}
         <SectionCard className="w-full md:p-6 p-4">
-          <p className="md:hidden mb-3 font-Gordita-Bold text-[16px] text-[#5297ff]">
+          <p className="md:hidden mb-3 font-Gordita-Bold text-[16px] text-[#2872a1]">
             Project Days Overview :
           </p>
           <div className="space-y-3">
@@ -485,7 +485,7 @@ const CustomBuilderDetailsView = () => {
             />
           </div>
           <div className="text-[14px] md:text-[16px] mt-5 flex items-center">
-            <span className="inline-block w-4 h-4 bg-[#3586FF] rounded-full mr-2" />
+            <span className="inline-block w-4 h-4 bg-[#2872a1] rounded-full mr-2" />
             <p className="text-gray-800">
               <span className="text-[#ebb042] font-Gordita-Bold">
                 {customBuilder?.logs?.length} days
@@ -522,7 +522,7 @@ const SectionTitle = ({
 }) => (
   <div className="flex items-center gap-2 mb-3">
     {icon}
-    <h2 className="text-[#5297ff] dark:text-blue-400 font-Gordita-Bold text-[16px] md:text-[18px]">
+    <h2 className="text-[#2872a1] dark:text-[#1d547] font-Gordita-Bold text-[16px] md:text-[18px]">
       {title}
     </h2>
   </div>
@@ -556,7 +556,7 @@ const StatRow = ({
     </div>
     <div className="w-full sm:flex-1 h-[6px] bg-gray-200 rounded-full overflow-hidden">
       <div
-        className="h-full bg-[#3586FF] rounded-full"
+        className="h-full bg-[#2872a1] rounded-full"
         style={{ width: `${barPct || 0}%` }}
       />
     </div>
@@ -566,7 +566,7 @@ const StatRow = ({
 const ProgressBar = ({ pct }: { pct: number }) => (
   <div className="relative w-full h-4 bg-gray-200 rounded-full overflow-hidden shadow-sm">
     <div
-      className="absolute h-4 bg-[#3586FF] rounded-full transition-all duration-700 min-w-[10px]"
+      className="absolute h-4 bg-[#2872a1] rounded-full transition-all duration-700 min-w-[10px]"
       style={{ width: `${pct || 0}%` }}
     />
     <span className="absolute inset-0 grid place-items-center text-[10px] font-Gordita-Medium">

@@ -12,14 +12,14 @@ const AboutUs = () => {
 
       <div className="relative flex flex-col lg:flex-row gap-12 lg:gap-16 justify-between items-center px-6 sm:px-4 lg:px-12 py-16 lg:py-20 mt-10 max-w-7xl mx-auto">
         <div className="flex flex-col md:gap-8 gap-4  relative z-10">
-          <div className="inline-flex items-center gap-2 md:text-[16px] text-[14px] bg-blue-50 text-[#5297ff] px-4 py-2 rounded-full w-fit ">
-            <div className="w-2 h-2 bg-[#5297ff] rounded-full"></div>
+          <div className="inline-flex items-center gap-2 md:text-[16px] text-[14px] bg-blue-50 text-[#2872a1] px-4 py-2 rounded-full w-fit ">
+            <div className="w-2 h-2 bg-[#2872a1] rounded-full"></div>
             <span className="font-Gordita-Medium  md:text-[16px] text-[14px] tracking-wide">
               WHO WE ARE
             </span>
           </div>
 
-          <h1 className="font-Gordita-Bold text-[24px] lg:text-[32px] leading-11 lg:leading-[52px] text-[#3586FF]">
+          <h1 className="font-Gordita-Bold text-[24px] lg:text-[32px] leading-11 lg:leading-[52px] text-[#2872a1]">
             About us
           </h1>
 
@@ -39,7 +39,7 @@ const AboutUs = () => {
               <div className="flex flex-row gap-4 sm:gap-2 md:pt-4 pt-2">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <div className="w-4 h-4 bg-[#5297ff] rounded-full"></div>
+                    <div className="w-4 h-4 bg-[#2872a1] rounded-full"></div>
                   </div>
                   <span className="font-Gordita-Regular text-gray-700 md:text-[18px] text-[12px]">
                     Licensed & Insured
@@ -48,7 +48,7 @@ const AboutUs = () => {
 
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <div className="w-4 h-4 bg-[#5297ff] rounded-full"></div>
+                    <div className="w-4 h-4 bg-[#2872a1] rounded-full"></div>
                   </div>
                   <span className="font-Gordita-Regular text-gray-700 md:text-[18px] text-[12px]">
                     Competitive Pricing
@@ -67,13 +67,13 @@ const AboutUs = () => {
           <div className="flex gap-4 md:pt-4 pt-2">
             <Button
               onClick={() => router.push("/about-us")}
-              className="bg-[#5297ff] text-white md:px-8 px-3 md:py-3 py-1 md:text-[16px] text-[12px] rounded-lg font-Gordita-Medium hover:bg-[#5297FF]transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
+              className="bg-[#2872a1] text-white md:px-8 px-3 md:py-3 py-1 md:text-[16px] text-[12px] rounded-lg font-Gordita-Medium hover:bg-[#2872a1]transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
             >
               Learn More
             </Button>
             <Button
               onClick={() => router.push("/contact-us")}
-              className="border border-gray-300 text-gray-700 md:px-8 px-3 md:py-3 py-1 md:text-[16px] text-[12px] rounded-lg font-Gordita-Medium hover:border-blue-300 hover:text-[#5297FF] transition-all duration-300"
+              className="border border-gray-300 text-gray-700 md:px-8 px-3 md:py-3 py-1 md:text-[16px] text-[12px] rounded-lg font-Gordita-Medium hover:border-blue-300 hover:text-[#2872a1] transition-all duration-300"
             >
               Contact Us
             </Button>
@@ -83,7 +83,7 @@ const AboutUs = () => {
 
         <div className="relative aspect-[16/9] md:w-[700px] w-full h-[380px] lg:h-[500px]">
           <div className="absolute -top-4 -right-4 w-8 h-8 bg-yellow-400 rounded-full animate-bounce z-20"></div>
-          <div className="absolute -bottom-2 -left-4 w-6 h-6 bg-blue-400 rounded-full animate-bounce z-20 delay-300"></div>
+          <div className="absolute -bottom-2 -left-4 w-6 h-6 bg-[#1d547] rounded-full animate-bounce z-20 delay-300"></div>
 
           <div className="absolute -inset-6 bg-gradient-to-r from-blue-200/50 via-cyan-200/30 to-purple-200/20 rounded-3xl transform rotate-3 blur-sm"></div>
           <div className="absolute -inset-4 bg-gradient-to-r from-blue-100 to-cyan-100 rounded-2xl transform rotate-2"></div>

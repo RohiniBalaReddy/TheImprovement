@@ -107,7 +107,7 @@ const WhyToChoose = ({
             {features.map((item: any) => (
               <div
                 key={item.id}
-                className="group bg-white/70 backdrop-blur-md border-t-4 border-blue-100 hover:border-[#5297ff] shadow-sm hover:shadow-lg transition-all duration-300 p-5 rounded-2xl"
+                className="group bg-white/70 backdrop-blur-md border-t-4 border-blue-100 hover:border-[#2872a1] shadow-sm hover:shadow-lg transition-all duration-300 p-5 rounded-2xl"
               >
                 <div className="flex items-start gap-5">
                   <div className="flex-shrink-0">

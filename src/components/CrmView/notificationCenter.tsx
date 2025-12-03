@@ -112,7 +112,7 @@ export default function NotificationCenter({
                   {upcomingFollowUps.length > 0 && (
                     <div>
                       <div className="bg-blue-50 px-4 py-2 flex items-center gap-2">
-                        <FaCalendarAlt className="text-blue-600 text-[14px]" />
+                        <FaCalendarAlt className="text-[#2872a1] text-[14px]" />
                         <h4 className="text-[13px] font-Gordita-Bold text-blue-700">
                           Upcoming ({upcomingFollowUps.length})
                         </h4>
@@ -151,7 +151,7 @@ function NotificationItem({ lead, type }: NotificationItemProps) {
   const dotColor = {
     overdue: "bg-red-500",
     today: "bg-yellow-500",
-    upcoming: "bg-blue-500",
+    upcoming: "bg-[#2872a1]",
   }[type];
 
   return (

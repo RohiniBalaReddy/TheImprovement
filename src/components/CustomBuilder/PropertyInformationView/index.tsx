@@ -72,47 +72,47 @@ export default function PropertyInformationView() {
         {
           label: "Project Scope",
           value: propertyInfo?.project_scope || "N/A",
-          icon: <Hammer className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />,
+          icon: <Hammer className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />,
         },
         {
           label: "Total Area",
           value: `${propertyInfo?.total_area?.size || "0"} ${propertyInfo?.total_area?.unit
             }`,
-          icon: <Ruler className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />,
+          icon: <Ruler className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />,
         },
         {
           label: "Total floors",
           value: propertyInfo?.totalFloors || "N/A",
           icon: (
-            <FaBuilding className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />
+            <FaBuilding className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />
           ),
         },
         {
           label: "Style Preference",
           value: propertyInfo?.style_preference || "N/A",
-          icon: <Palette className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />,
+          icon: <Palette className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />,
         },
         {
           label: "Budget",
           value: propertyInfo?.budget
             ? `₹ ${Number(propertyInfo.budget).toLocaleString()}`
             : "₹ 0",
-          icon: <Wallet className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />,
+          icon: <Wallet className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />,
         },
         {
           label: "Special Requirements",
           value: propertyInfo?.special_requirements || "N/A",
-          icon: <Star className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />,
+          icon: <Star className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />,
         },
         {
           label: "Additional Details",
           value: propertyInfo?.additional_details || "N/A",
-          icon: <Info className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />,
+          icon: <Info className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />,
         },
         {
           label: "Color Scheme",
           value: propertyInfo?.color_scheme || [],
-          icon: <Palette className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />,
+          icon: <Palette className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />,
           isColorScheme: true,
         },
       ]
@@ -120,51 +120,51 @@ export default function PropertyInformationView() {
         {
           label: "Construction Scope",
           value: scope || "N/A",
-          icon: <Hammer className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />,
+          icon: <Hammer className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />,
         },
         {
           label: "Total Area",
           value: `${propertyInfo?.total_area?.size || "0"} ${propertyInfo?.total_area?.unit || ""
             }`,
-          icon: <Ruler className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />,
+          icon: <Ruler className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />,
         },
         {
           label: "Length",
           value: `${propertyInfo?.length?.size || "0"} ${propertyInfo?.length?.unit || ""
             }`,
-          icon: <Ruler className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />,
+          icon: <Ruler className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />,
         },
         {
           label: "Width",
           value: `${propertyInfo?.width?.size || "0"} ${propertyInfo?.width?.unit || ""
             }`,
-          icon: <Ruler className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />,
+          icon: <Ruler className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />,
         },
         {
           label: "Total Floors",
           value: propertyInfo?.total_floors || "0",
-          icon: <Layers className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />,
+          icon: <Layers className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />,
         },
         {
           label: "Land Facing",
           value: propertyInfo?.land_facing || "N/A",
-          icon: <Compass className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />,
+          icon: <Compass className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />,
         },
         {
           label: "Gate Side",
           value: propertyInfo?.gate_side || "N/A",
-          icon: <DoorOpen className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />,
+          icon: <DoorOpen className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />,
         },
         {
           label: "Adjacent Roads",
           value: propertyInfo?.adjacent_roads || "0",
-          icon: <FaRoad className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />,
+          icon: <FaRoad className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />,
         },
         {
           label: "Staircase Gate",
           value: propertyInfo?.staircase_gate || "N/A",
           icon: (
-            <BiDoorOpen className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />
+            <BiDoorOpen className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />
           ),
         },
         {
@@ -172,7 +172,7 @@ export default function PropertyInformationView() {
           value: customBuilder?.estimatedCost
             ? `₹ ${Number(customBuilder.estimatedCost).toLocaleString()}`
             : "₹ 0",
-          icon: <Wallet className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />,
+          icon: <Wallet className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />,
         },
       ];
 
@@ -192,27 +192,27 @@ export default function PropertyInformationView() {
         floor.portionDetails && {
           label: "Portions",
           value: floor.portions || "N/A",
-          icon: <LayoutGrid className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />,
+          icon: <LayoutGrid className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />,
         },
         firstPortion && {
           label: "Bed Rooms",
           value: firstPortion.bedrooms || "N/A",
-          icon: <BedDouble className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />,
+          icon: <BedDouble className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />,
         },
         firstPortion && {
           label: "Balconies",
           value: firstPortion.balconies || "N/A",
-          icon: <Flower2 className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />,
+          icon: <Flower2 className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />,
         },
         firstPortion && {
           label: "Bath Rooms",
           value: firstPortion.bathrooms || "N/A",
-          icon: <Bath className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />,
+          icon: <Bath className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />,
         },
         {
           label: "Type of Portions",
           value: floor.type_of_portions || "N/A",
-          icon: <Layers className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />,
+          icon: <Layers className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />,
         },
         {
           label: "Ground Floor",
@@ -220,7 +220,7 @@ export default function PropertyInformationView() {
             ? floor.ground_floor_details
             : [],
           icon: (
-            <ClipboardList className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />
+            <ClipboardList className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />
           ),
         },
 
@@ -230,14 +230,14 @@ export default function PropertyInformationView() {
           label: "Additional Rooms",
           value: firstPortion.additional_rooms,
           icon: (
-            <ClipboardList className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />
+            <ClipboardList className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />
           ),
         },
 
         firstPortion && {
           label: "Indian Bathroom",
           value: firstPortion.indian_bathroom_required ? "Yes" : "No",
-          icon: <Bath className="md:w-5 w-3 md:h-5 h-3 text-[#5297FF]" />,
+          icon: <Bath className="md:w-5 w-3 md:h-5 h-3 text-[#2872a1]" />,
         },
       ].filter(Boolean);
 
@@ -261,7 +261,7 @@ export default function PropertyInformationView() {
         </div>
         <div className="md:space-y-6 space-y-3 md:p-5 p-3 mx-auto md:max-w-full w-full max-w-none">
           <div className="w-full flex items-center md:gap-2 gap-1 md:mb-6 mb-3">
-            <LuInfo className="text-[#5297ff] md:w-6 w-3 md:h-6 h-3" />
+            <LuInfo className="text-[#2872a1] md:w-6 w-3 md:h-6 h-3" />
             <h1 className="font-Gordita-Bold md:text-[24px] text-[16px]">
               Property Information
             </h1>
@@ -294,8 +294,8 @@ export default function PropertyInformationView() {
           <div className="md:space-y-4 space-y-2 mx-auto w-full ">
             <div className="bg-white md:rounded-[10px] rounded-[4px]  border border-gray-100 w-full max-w-full md:p-6 p-3">
               <h3 className="  text-gray-800 md:mb-4 mb-2 flex items-center md:gap-2 gap-1">
-                <RiBuilding2Line className="text-[#5297FF] md:w-[16px] w-[8px] h-[8px] md:h-[16px]" />
-                <span className="text-[#5297FF] md:text-[20px] text-[14px] font-Gordita-Medium">
+                <RiBuilding2Line className="text-[#2872a1] md:w-[16px] w-[8px] h-[8px] md:h-[16px]" />
+                <span className="text-[#2872a1] md:text-[20px] text-[14px] font-Gordita-Medium">
                   Basic Information
                 </span>
               </h3>
@@ -345,8 +345,8 @@ export default function PropertyInformationView() {
 
             <div className="bg-white w-full md:rounded-[10px] rounded-[4px] border border-gray-100 md:p-6 p-3">
               <h3 className="text-gray-800 md:mb-4 mb-2 flex items-center md:gap-2 gap-1">
-                <FaBuilding className="text-[#5297FF] md:w-[16px] w-[8px] h-[8px] md:h-[16px]" />
-                <span className="text-[#5297FF] md:text-[20px] text-[14px] font-Gordita-Medium">
+                <FaBuilding className="text-[#2872a1] md:w-[16px] w-[8px] h-[8px] md:h-[16px]" />
+                <span className="text-[#2872a1] md:text-[20px] text-[14px] font-Gordita-Medium">
                   Floors Information
                 </span>
               </h3>
@@ -359,7 +359,7 @@ export default function PropertyInformationView() {
                         key={floor.id}
                         onClick={() => setActiveFloor(index)}
                         className={`md:px-4 px-2 md:py-2 py-1 rounded-md md:text-[14px] text-[10px] font-Gordita-Medium  ${activeFloor === index
-                          ? "bg-[#5297ff] text-white "
+                          ? "bg-[#2872a1] text-white "
                           : "bg-gray-200 text-gray-800 "
                           }`}
                       >
@@ -405,7 +405,7 @@ export default function PropertyInformationView() {
                                       (detail: string, i: number) => (
                                         <span
                                           key={i}
-                                          className="md:px-2 px-2 md:py-1 py-1 bg-blue-100 border-[#5297ff] text-[#5297FF] md:rounded-[10px] rounded-[4px] md:text-[14px] text-[10px] capitalize"
+                                          className="md:px-2 px-2 md:py-1 py-1 bg-blue-100 border-[#2872a1] text-[#2872a1] md:rounded-[10px] rounded-[4px] md:text-[14px] text-[10px] capitalize"
                                         >
                                           {detail}
                                         </span>
@@ -432,8 +432,8 @@ export default function PropertyInformationView() {
 
             <div className="bg-white md:rounded-[10px] w-full rounded-[4px]  border border-gray-100 p-3 md:p-6">
               <h3 className="text-gray-800 md:mb-4 mb-2 flex items-center md:gap-2 gap-1">
-                <FiPlusCircle className="text-[#5297FF] md:w-[16px] w-[8px] h-[8px] md:h-[16px]" />
-                <span className="text-[#5297FF] md:text-[20px] text-[14px] font-Gordita-Medium">
+                <FiPlusCircle className="text-[#2872a1] md:w-[16px] w-[8px] h-[8px] md:h-[16px]" />
+                <span className="text-[#2872a1] md:text-[20px] text-[14px] font-Gordita-Medium">
                   Additional Features
                 </span>
               </h3>
@@ -450,7 +450,7 @@ export default function PropertyInformationView() {
                           (option: string, index: number) => (
                             <span
                               key={index}
-                              className="md:px-3 px-2 md:py-2 py-1 font-Gordita-Regular bg-blue-100 text-[#5297FF] md:rounded-[10px] rounded-[4px] md:text-xs text-[10px] capitalize"
+                              className="md:px-3 px-2 md:py-2 py-1 font-Gordita-Regular bg-blue-100 text-[#2872a1] md:rounded-[10px] rounded-[4px] md:text-xs text-[10px] capitalize"
                             >
                               {option}
                             </span>
@@ -491,7 +491,7 @@ export default function PropertyInformationView() {
                                 (option: string, index: number) => (
                                   <span
                                     key={`${pIndex}-${index}`}
-                                    className="md:px-3 px-2 md:py-2 py-1 font-Gordita-Regular bg-blue-100 text-[#5297FF] md:rounded-[10px] rounded-[4px] md:text-xs text-[10px] capitalize"
+                                    className="md:px-3 px-2 md:py-2 py-1 font-Gordita-Regular bg-blue-100 text-[#2872a1] md:rounded-[10px] rounded-[4px] md:text-xs text-[10px] capitalize"
                                   >
                                     {option}
                                   </span>
@@ -523,8 +523,8 @@ export default function PropertyInformationView() {
 
             <div className="bg-white md:rounded-[10px] rounded-[4px] border border-gray-100 md:p-6  p-3 md:col-span-2 lg:col-span-3">
               <h3 className="text-gray-800 md:mb-4 mb-2 flex items-center md:gap-2 gap-1">
-                <MdPermMedia className="text-[#5297FF] md:w-[16px] w-[8px] h-[8px] md:h-[16px]" />
-                <span className="text-[#5297FF] md:text-[20px] text-[14px] font-Gordita-Medium">
+                <MdPermMedia className="text-[#2872a1] md:w-[16px] w-[8px] h-[8px] md:h-[16px]" />
+                <span className="text-[#2872a1] md:text-[20px] text-[14px] font-Gordita-Medium">
                   {" "}
                   Property Images
                 </span>

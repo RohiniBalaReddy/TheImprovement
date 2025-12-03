@@ -52,7 +52,7 @@ export default function MobileBlogCard({ data }: any) {
               className="w-[30px] h-[30px] bg-[#F9F9F9] rounded-full shadow-custom border-[1px] border-[#DEDEDE] flex items-center justify-center cursor-pointer transform hover:scale-125"
               aria-label={`Read more about ${title}`}
             >
-              <LuArrowRight className="-rotate-45 w-[20px] h-[20px] text-[#5297ff]" />
+              <LuArrowRight className="-rotate-45 w-[20px] h-[20px] text-[#2872a1]" />
             </Link>
           </div>
           <div className="max-w-[197px] min-h-[38px]">

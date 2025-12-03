@@ -44,21 +44,21 @@ const Gallery: React.FC<Props> = ({ projects }) => {
     filter === "All"
       ? projects
       : projects.filter(
-          (project) =>
-            project.category?.toLowerCase().includes(filter.toLowerCase()) ||
-            project.title.toLowerCase().includes(filter.toLowerCase())
-        );
+        (project) =>
+          project.category?.toLowerCase().includes(filter.toLowerCase()) ||
+          project.title.toLowerCase().includes(filter.toLowerCase())
+      );
 
   return (
     <section className="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-20">
           <div className="inline-flex items-center gap-3 mb-4">
-            <div className="w-12 h-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full"></div>
+            <div className="w-12 h-1 bg-gradient-to-r from-[#2872a1] to-cyan-500 rounded-full"></div>
             <span className="font-Gordita-Bold text-[18px] md:text-[24px] lg:text-[26px] text-[#212227] md:mb-4 mb-2 leading-tight">
               Our Portfolio
             </span>
-            <div className="w-12 h-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full"></div>
+            <div className="w-12 h-1 bg-gradient-to-r from-cyan-500 to-[#2872a1] rounded-full"></div>
           </div>
 
           <h2 className="font-Gordita-Bold text-[18px] md:text-[24px] lg:text-[26px] text-[#212227] md:mb-4 mb-2 leading-tight">
@@ -73,19 +73,19 @@ const Gallery: React.FC<Props> = ({ projects }) => {
 
           <div className="flex flex-wrap justify-center gap-2 md:gap-12 md:mt-8 mt-3">
             <div className="text-center">
-              <div className="text-[12px] md:text-[16px] font-Gordita-Bold text-blue-600">
+              <div className="text-[12px] md:text-[16px] font-Gordita-Bold text-[#2872a1]">
                 150+
               </div>
               <div className="text-gray-600">Projects Completed</div>
             </div>
             <div className="text-center">
-              <div className="text-[12px] md:text-[16px] font-Gordita-Bold text-blue-600">
+              <div className="text-[12px] md:text-[16px] font-Gordita-Bold text-[#2872a1]">
                 98%
               </div>
               <div className="text-gray-600">Client Satisfaction</div>
             </div>
             <div className="text-center">
-              <div className="text-[12px] md:text-[16px] font-Gordita-Bold text-blue-600">
+              <div className="text-[12px] md:text-[16px] font-Gordita-Bold text-[#2872a1]">
                 15+
               </div>
               <div className="text-gray-600">Years Experience</div>
@@ -98,11 +98,10 @@ const Gallery: React.FC<Props> = ({ projects }) => {
             <Button
               key={category}
               onClick={() => setFilter(category)}
-              className={`md:px-6 px-3 md:py-3 py-2 md:text-[16px] text-[12px] btn-txt rounded-full font-Gordita-Medium transition-all duration-300 ${
-                filter === category
-                  ? "bg-blue-500 text-white shadow-lg"
-                  : "bg-gray-200 text-gray-700 hover:bg-gray-100 border border-gray-200"
-              }`}
+              className={`md:px-6 px-3 md:py-3 py-2 md:text-[16px] text-[12px] btn-txt rounded-full font-Gordita-Medium transition-all duration-300 ${filter === category
+                ? "bg-[#2872a1] text-white shadow-lg"
+                : "bg-gray-200 text-gray-700 hover:bg-gray-100 border border-gray-200"
+                }`}
             >
               {category}
             </Button>
@@ -155,7 +154,7 @@ const Gallery: React.FC<Props> = ({ projects }) => {
               </div>
 
               <div className="md:p-6 p-3">
-                <h3 className="md:text-lg text-[12px] font-Gordita-Bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                <h3 className="md:text-lg text-[12px] font-Gordita-Bold text-gray-900 mb-2 group-hover:text-[#2872a1] transition-colors duration-300">
                   {project.title}
                 </h3>
 
@@ -245,15 +244,15 @@ const Gallery: React.FC<Props> = ({ projects }) => {
                   </h4>
                   <ul className="md:space-y-2 space-y-1 text-gray-600 font-Gordita-Medium md:text-[14px] text-[10px]">
                     <li className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#2872a1] rounded-full"></div>
                       Premium Quality Materials
                     </li>
                     <li className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#2872a1] rounded-full"></div>
                       Expert Craftsmanship
                     </li>
                     <li className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#2872a1] rounded-full"></div>
                       Timely Completion
                     </li>
                   </ul>

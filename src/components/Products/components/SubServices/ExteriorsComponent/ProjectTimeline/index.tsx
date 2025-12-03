@@ -49,7 +49,7 @@ export default function ProjectTimeline() {
           <p className="text-[14px] font-Gordita-Medium md:text-[16px] text-gray-600 leading-relaxed px-4">
             Step-by-step process for a smooth installation
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-yellow-400 mx-auto mt-4 rounded-full"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#2872a1] to-yellow-400 mx-auto mt-4 rounded-full"></div>
         </div>
 
         <div className="grid grid-cols-2 md:hidden gap-2">
@@ -61,7 +61,7 @@ export default function ProjectTimeline() {
               <h3 className="text-[14px] font-Gordita-Bold mb-1">
                 {phase.phase}
               </h3>
-              <span className="text-[12px] font-Gordita-Medium text-blue-600 bg-blue-100 px-2 py-1 rounded-full">
+              <span className="text-[12px] font-Gordita-Medium text-[#2872a1] bg-blue-100 px-2 py-1 rounded-full">
                 {phase.duration}
               </span>
             </div>
@@ -74,13 +74,12 @@ export default function ProjectTimeline() {
           {projectPhases.map((phase, index) => (
             <div
               key={index}
-              className={`relative mb-14 flex ${
-                index % 2 === 0
-                  ? "justify-end pr-[55%]"
-                  : "justify-start pl-[55%]"
-              }`}
+              className={`relative mb-14 flex ${index % 2 === 0
+                ? "justify-end pr-[55%]"
+                : "justify-start pl-[55%]"
+                }`}
             >
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-[#5297ff] border-4 border-white rounded-full shadow-lg"></div>
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-[#2872a1] border-4 border-white rounded-full shadow-lg"></div>
 
               <div className="bg-white w-full max-w-md p-6 rounded-xl shadow-xl border border-gray-100">
                 <div className="flex justify-between items-start mb-4">
@@ -96,7 +95,7 @@ export default function ProjectTimeline() {
                       key={idx}
                       className="flex items-center gap-2 text-gray-600 font-Gordita-Regular"
                     >
-                      <Check className="w-4 h-4 text-[#5297ff]" />
+                      <Check className="w-4 h-4 text-[#2872a1]" />
                       {task}
                     </li>
                   ))}

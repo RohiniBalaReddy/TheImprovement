@@ -28,7 +28,7 @@ const PriceBreakdownTooltip = ({
     <div className="relative group text-nowrap">
       <Info className="inline-block ml-2 text-gray-500 cursor-pointer" />
       <div className="absolute z-10 invisible group-hover:visible bg-white border border-gray-200 rounded-md shadow-lg w-auto left-0 mt-2">
-        <h3 className="font-bold mb-2 bg-[#5297FF] text-white p-4">
+        <h3 className="font-bold mb-2 bg-[#2872a1] text-white p-4">
           {packageData.title} - {formatCurrency(packageData.sqftPrice)}/sq.ft
           (Incl. GST)
         </h3>

@@ -178,9 +178,9 @@ export function LeadActionsMenu({
             sx={{ minHeight: 10, py: 0.5, fontSize: 12 }}
           >
             <ListItemIcon>
-              <FaEdit className="text-blue-600 md:text-[12px] text-[10px]" />
+              <FaEdit className="text-[#2872a1] md:text-[12px] text-[10px]" />
             </ListItemIcon>
-            <span className="text-blue-600 md:text-[12px] text-[10px] font-Gordita-Medium">
+            <span className="text-[#2872a1] md:text-[12px] text-[10px] font-Gordita-Medium">
               Edit
             </span>
           </MenuItem>
@@ -206,7 +206,7 @@ export function LeadActionsMenu({
         isOpen={confirmOpen}
         closeModal={() => setConfirmOpen(false)}
         rootCls="z-[99999]"
-        titleCls="font-Gordita-Medium md:text-[18px] text-[12px] text-center text-[#5297FF]"
+        titleCls="font-Gordita-Medium md:text-[18px] text-[12px] text-center text-[#2872a1]"
         isCloseRequired={false}
         className="md:max-w-[500px] max-w-[270px]"
       >

@@ -47,7 +47,7 @@ function Ribbon({ children }: { children: React.ReactNode }) {
 function GradientRing() {
     return (
         <div className="absolute inset-0 rounded-2xl pointer-events-none">
-            <div className="absolute -inset-[1.5px] rounded-2xl bg-[conic-gradient(var(--tw-gradient-stops))] from-indigo-500 via-blue-500 to-fuchsia-500 opacity-20 blur-[2px]" />
+            <div className="absolute -inset-[1.5px] rounded-2xl bg-[conic-gradient(var(--tw-gradient-stops))] from-indigo-500 via-[#2872a1] to-fuchsia-500 opacity-20 blur-[2px]" />
         </div>
     );
 }

@@ -227,7 +227,7 @@ const TrendsClient: React.FC<Props> = ({
           <Button
             key={b.key}
             className={`px-4 py-1 font-Gordita-Medium rounded-lg text-nowrap  label-text  flex items-center gap-2 ${activeChart === (b.key as any)
-              ? "bg-[#5297ff] text-white"
+              ? "bg-[#2872a1] text-white"
               : "bg-gray-100 text-gray-700"
               }`}
             onClick={() => setActiveChart(b.key)}
@@ -241,7 +241,7 @@ const TrendsClient: React.FC<Props> = ({
             <Button
               key={t}
               className={`md:px-3 px-2 py-[2px] font-Gordita-Medium md:text-[14px] text-[12px] rounded ${timeRange === t
-                ? "bg-[#5297ff] text-white"
+                ? "bg-[#2872a1] text-white"
                 : "bg-gray-100 text-gray-700"
                 }`}
               onClick={() => setTimeRange(t)}
@@ -255,7 +255,7 @@ const TrendsClient: React.FC<Props> = ({
       <div className="bg-white md:p-4 p-2 rounded-lg shadow">
         {activeChart === "progress" && (
           <>
-            <h3 className="md:text-lg text-[14px] font-Gordita-Bold text-[#5297FF] md:mb-4 mb-2">
+            <h3 className="md:text-lg text-[14px] font-Gordita-Bold text-[#2872a1] md:mb-4 mb-2">
               Progress Status Breakdown
             </h3>
             <div className="h-80 p-2 overflow-x-auto w-full">
@@ -297,7 +297,7 @@ const TrendsClient: React.FC<Props> = ({
 
         {activeChart === "timeline" && (
           <>
-            <h3 className="md:text-lg text-[14px] font-Gordita-Bold text-[#5297FF] md:mb-4 mb-2">
+            <h3 className="md:text-lg text-[14px] font-Gordita-Bold text-[#2872a1] md:mb-4 mb-2">
               Progress Timeline
             </h3>
             <div className="h-80 p-2 overflow-x-auto w-full">
@@ -338,7 +338,7 @@ const TrendsClient: React.FC<Props> = ({
 
         {activeChart === "burnup" && (
           <>
-            <h3 className="md:text-lg text-[14px] font-Gordita-Bold text-[#5297FF] md:mb-4 mb-2">
+            <h3 className="md:text-lg text-[14px] font-Gordita-Bold text-[#2872a1] md:mb-4 mb-2">
               Burn-up (Days)
             </h3>
             <div className="h-80 p-2 overflow-x-auto w-full">
@@ -389,7 +389,7 @@ const TrendsClient: React.FC<Props> = ({
 
         {activeChart === "cfd" && (
           <>
-            <h3 className="md:text-lg text-[14px] font-Gordita-Bold text-[#5297FF] md:mb-4 mb-2">
+            <h3 className="md:text-lg text-[14px] font-Gordita-Bold text-[#2872a1] md:mb-4 mb-2">
               Cumulative Flow Diagram
             </h3>
             <div className="h-80 p-2 overflow-x-auto w-full">
@@ -449,7 +449,7 @@ const TrendsClient: React.FC<Props> = ({
 
         {activeChart === "breakdown" && (
           <>
-            <h3 className="md:text-lg text-[14px] font-Gordita-Bold text-[#5297FF] md:mb-4 mb-2">
+            <h3 className="md:text-lg text-[14px] font-Gordita-Bold text-[#2872a1] md:mb-4 mb-2">
               Phase Days Breakdown
             </h3>
             <div className="h-80">

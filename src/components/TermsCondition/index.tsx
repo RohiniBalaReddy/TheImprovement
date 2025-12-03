@@ -43,7 +43,7 @@ const TermsAndConditions = () => {
 
       <p className="mt-8">
         If you have any questions about these Terms and Conditions, please contact us at{' '}
-        <a href="mailto:support@yourwebsite.com" className="text-[#5297ff] underline">support@yourwebsite.com</a>.
+        <a href="mailto:support@yourwebsite.com" className="text-[#2872a1] underline">support@yourwebsite.com</a>.
       </p>
     </div>
   );

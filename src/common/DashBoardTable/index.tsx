@@ -189,7 +189,7 @@ export const DashboardTable = ({
               </div>
             )}
             <Button
-              className="bg-[#5297ff] text-[24px] text-white px-[14px] py-1 rounded-full"
+              className="bg-[#2872a1] text-[24px] text-white px-[14px] py-1 rounded-full"
               onClick={handleAddData}
             >
               +

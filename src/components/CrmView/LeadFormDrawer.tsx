@@ -257,7 +257,7 @@ export default function LeadFormDrawer({
       <div className="w-full flex flex-col md:gap-3 gap-2 pb-10">
         {/* Header */}
         <div className="border-b border-gray-200 md:p-5 p-3 bg-gray-50 rounded-tl-2xl">
-          <h1 className="heading-text text-center text-blue-600">
+          <h1 className="heading-text text-center text-[#2872a1]">
             {leadId ? "Edit Lead" : "Add New Lead"}
           </h1>
         </div>
@@ -269,7 +269,7 @@ export default function LeadFormDrawer({
         >
           {/* Basic Information */}
           <div className="flex flex-col gap-3 border-2 shadow border-gray-200 md:p-3 px-2 py-1 rounded-md">
-            <h2 className="font-Gordita-Medium md:text-[18px] text-[14px] text-[#5297FF]">
+            <h2 className="font-Gordita-Medium md:text-[18px] text-[14px] text-[#2872a1]">
               Basic Information
             </h2>
             <div className="w-full grid grid-cols-2 md:grid-cols-2 gap-y-1 gap-x-3">
@@ -351,7 +351,7 @@ export default function LeadFormDrawer({
 
           {/* Property Details */}
           <div className="flex flex-col gap-3 border-2 shadow border-gray-200 md:p-3 px-2 py-1 rounded-md">
-            <h2 className="font-Gordita-Medium md:text-[18px] text-[14px] text-[#5297FF]">
+            <h2 className="font-Gordita-Medium md:text-[18px] text-[14px] text-[#2872a1]">
               Property Details
             </h2>
             <div className="w-full grid grid-cols-2 md:grid-cols-2 gap-y-1 gap-x-3">
@@ -503,7 +503,7 @@ export default function LeadFormDrawer({
 
           {/* Lead Details */}
           <div className="flex flex-col gap-3 border-2 shadow border-gray-200 md:p-3 px-2 py-1 rounded-md">
-            <h2 className="font-Gordita-Medium md:text-[18px] text-[14px] text-[#5297FF]">
+            <h2 className="font-Gordita-Medium md:text-[18px] text-[14px] text-[#2872a1]">
               Lead Details
             </h2>
             <div className="w-full grid grid-cols-2 md:grid-cols-2 gap-y-1 gap-x-2">
@@ -552,7 +552,7 @@ export default function LeadFormDrawer({
 
           {/* Source Information */}
           <div className="flex flex-col gap-3 border-2 shadow border-gray-200 md:p-3 px-2 py-1 rounded-md">
-            <h2 className="font-Gordita-Medium md:text-[18px] text-[14px] text-[#5297FF]">
+            <h2 className="font-Gordita-Medium md:text-[18px] text-[14px] text-[#2872a1]">
               Source Information
             </h2>
             <div className="w-full grid grid-cols-2 md:grid-cols-2 gap-y-1 gap-x-3">

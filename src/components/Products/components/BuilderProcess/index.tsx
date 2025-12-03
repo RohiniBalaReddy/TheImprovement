@@ -41,7 +41,7 @@ const BuilderProcess = () => {
   return (
     <div className="relative py-10">
       <h2 className="md:text-[24px] text-[18px] font-Gordita-Bold text-center leading-[46px] mb-[50px]">
-        How It <span className="text-[#3586FF]">Works</span>
+        How It <span className="text-[#2872a1]">Works</span>
       </h2>
 
       <div className="relative">
@@ -69,13 +69,13 @@ const BuilderProcess = () => {
                       objectFit="cover"
                       className="transition-transform duration-500 group-hover:scale-105"
                     />
-                    <span className="absolute top-0 left-0 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-[16px] md:text-[20px] font-Gordita-Bold py-1 px-3 rounded-br-lg shadow-md">
+                    <span className="absolute top-0 left-0 bg-gradient-to-r from-[#2872a1] to-indigo-600 text-white text-[16px] md:text-[20px] font-Gordita-Bold py-1 px-3 rounded-br-lg shadow-md">
                       {index + 1}
                     </span>
                   </div>
 
                   <div className="md:p-2 p-1 text-center">
-                    <p className="md:text-[16px] text-[14px] font-Gordita-Bold text-[#3586FF] mb-1">
+                    <p className="md:text-[16px] text-[14px] font-Gordita-Bold text-[#2872a1] mb-1">
                       {item.title}
                     </p>
                     <p className="md:text-[12px] text-[10px] text-gray-600 leading-snug">
@@ -91,7 +91,7 @@ const BuilderProcess = () => {
         <div className="absolute top-1/3 -left-6 z-30">
           <button
             onClick={gotoPrev}
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-md hover:scale-110 transition-all duration-300"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-r from-[#2872a1] to-indigo-600 text-white shadow-md hover:scale-110 transition-all duration-300"
           >
             ‹
           </button>
@@ -99,7 +99,7 @@ const BuilderProcess = () => {
         <div className="absolute top-1/3 -right-6 z-30">
           <button
             onClick={gotoNext}
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-md hover:scale-110 transition-all duration-300"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-r from-[#2872a1] to-indigo-600 text-white shadow-md hover:scale-110 transition-all duration-300"
           >
             ›
           </button>

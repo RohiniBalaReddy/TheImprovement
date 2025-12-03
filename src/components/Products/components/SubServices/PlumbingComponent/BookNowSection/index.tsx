@@ -17,17 +17,15 @@ export default function BookNowSection({ listItems }: BookNowProps) {
         {listItems.map((item, index) => {
           return (
             <div
-              className={`xl:w-1/3 lg:w-1/3 md:w-1/1 sm:w-1/1  rounded-[8px] w-full md:max-w-[451px] min-h-[272px]  max-w-[390px] flex items-center gap-x-[10px] ${
-                index % 2 === 0
-                  ? "bg-gradient-to-r from-[#5192EF] to-[#3586FF]"
+              className={`xl:w-1/3 lg:w-1/3 md:w-1/1 sm:w-1/1  rounded-[8px] w-full md:max-w-[451px] min-h-[272px]  max-w-[390px] flex items-center gap-x-[10px] ${index % 2 === 0
+                  ? "bg-gradient-to-r from-[#5192EF] to-[#2872a1]"
                   : "bg-[#ABCDFF]"
-              }`}
+                }`}
             >
               <div className="flex flex-col  gap-y-[40px] px-5 mb-[30px]">
                 <div
-                  className={`flex flex-col  gap-y-[8px] ${
-                    index % 2 === 0 ? "text-[#FFFFFF]" : "text-[#212227]"
-                  }`}
+                  className={`flex flex-col  gap-y-[8px] ${index % 2 === 0 ? "text-[#FFFFFF]" : "text-[#212227]"
+                    }`}
                 >
                   <div className="mb-[10px]">
                     <h1 className="font-Gordita-Medium text-[25px] leading-[35.62px] italic ">
@@ -42,18 +40,16 @@ export default function BookNowSection({ listItems }: BookNowProps) {
                 </div>
                 <div className="max-w-[137px] min-h-[42px] relative cursor-pointer">
                   <Button
-                    className={`max-w-[132px] min-h-[38px] px-[24px]  py-[12px] text-[12px] font-Lato-Bold leading-[14.4px] tracking-[0.16em] ${
-                      index % 2 === 0
+                    className={`max-w-[132px] min-h-[38px] px-[24px]  py-[12px] text-[12px] font-Lato-Bold leading-[14.4px] tracking-[0.16em] ${index % 2 === 0
                         ? "bg-[#FFFFFF] text-[#3E8AFB]"
                         : "bg-[#3E8AFB] text-[#FFFFFF]"
-                    }`}
+                      }`}
                   >
                     Book now
                   </Button>
                   <div
-                    className={` max-w-[121px] min-h-[38px] w-full h-full border-[1px] border-solid  absolute top-1 left-1 ${
-                      index % 2 === 0 ? "border-[#FFFFFF]" : "border-[#3E8AFB]"
-                    }`}
+                    className={` max-w-[121px] min-h-[38px] w-full h-full border-[1px] border-solid  absolute top-1 left-1 ${index % 2 === 0 ? "border-[#FFFFFF]" : "border-[#3E8AFB]"
+                      }`}
                   ></div>
                 </div>
               </div>

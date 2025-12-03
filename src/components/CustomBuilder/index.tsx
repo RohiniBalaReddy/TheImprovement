@@ -33,7 +33,7 @@ const Badge = ({
 }) => {
   const palette =
     tone === "blue"
-      ? "bg-blue-50 text-[#5297ff] ring-1 ring-blue-100 dark:bg-[#5297ff]/10 dark:text-blue-300 dark:ring-[#5297ff]/20"
+      ? "bg-blue-50 text-[#2872a1] ring-1 ring-blue-100 dark:bg-[#2872a1]/10 dark:text-blue-300 dark:ring-[#2872a1]/20"
       : "bg-gray-50 text-gray-700 ring-1 ring-gray-200 dark:bg-white/5 dark:text-gray-300 dark:ring-white/10";
   return (
     <span
@@ -139,7 +139,7 @@ const CustomBuilderView = () => {
   return (
     <div className="w-full max-w-7xl max-md:mx-auto p-4 md:p-8">
       <div className="flex items-center justify-between md:mb-6 mb-3">
-        <h1 className="text-[20px] md:text-2xl font-Gordita-Bold tracking-tight text-[#5297FF] dark:text-blue-400">
+        <h1 className="text-[20px] md:text-2xl font-Gordita-Bold tracking-tight text-[#2872a1] dark:text-[#1d547]">
           My Custom Home Projects
         </h1>
       </div>
@@ -210,7 +210,7 @@ const CustomBuilderView = () => {
                     onClick={() =>
                       router.push(`/user/custom-builder/${item?.id}`)
                     }
-                    className="inline-flex items-center justify-center font-Gordita-Medium rounded-md bg-[#5297FF] text-white px-3 md:py-1.5 py-[2px] md:text-sm text-[12px] font-medium hover:bg-blue-700 active:bg-blue-800 transition-colors"
+                    className="inline-flex items-center justify-center font-Gordita-Medium rounded-md bg-[#2872a1] text-white px-3 md:py-1.5 py-[2px] md:text-sm text-[12px] font-medium hover:bg-blue-700 active:bg-blue-800 transition-colors"
                   >
                     View Details
                   </Button>
@@ -302,7 +302,7 @@ const CustomBuilderView = () => {
                   </div>
 
                   <div className="w-full md:max-w-[260px]">
-                    <p className="text-sm font-Gordita-Medium text-[#5297ff] dark:text-gray-300 mb-2">
+                    <p className="text-sm font-Gordita-Medium text-[#2872a1] dark:text-gray-300 mb-2">
                       Property Image
                     </p>
                     <div className="relative md:h-[140px] h-[120px] w-full rounded-lg overflow-hidden ring-1 ring-gray-200/80 dark:ring-white/10">

@@ -13,7 +13,7 @@ const CustomBuilderUserProfile = () => {
         title="Custom Builder Details | OneCasa"
         description="Explore detailed information about custom builders, including property details, construction progress, and contact information."
         keywords="Custom Builder Details, Home Construction, Builder Profile, OneCasa Construction, Property Development, Construction Progress"
-        imageUrl="https://www.onecasa.in/images/onecasa-logo.png"
+        imageUrl="https://www.theimprovementllc.in/images/theimprovementllc-logo.png"
       />
 
       <CustomBuilderUserProfileView />

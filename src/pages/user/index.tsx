@@ -11,7 +11,7 @@ const Admin = () => {
         title="Admin Dashboard | OneCasa"
         description="Manage and monitor your real estate business efficiently with the OneCasa Admin Dashboard. Track listings, user activity, and analytics seamlessly."
         keywords="Admin Dashboard, Real Estate Management, OneCasa Admin, Property Management, User Analytics, Business Dashboard, Listings Control"
-        imageUrl="https://www.onecasa.in/images/logobb.png"
+        imageUrl="https://www.theimprovementllc.in/images/logobb.png"
       />
       <DashboardView />
     </div>

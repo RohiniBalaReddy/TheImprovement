@@ -46,7 +46,7 @@ const services = [
     label: "Flooring",
     href: "/services/flooring",
   },
-  
+
   {
     image: "/images/services/plumbing.png",
     label: "Plumbing",
@@ -104,8 +104,8 @@ const OneStopSol = () => {
                     style={{ objectFit: "cover" }}
                     className="absolute md:rounded-[10px] rounded-[6px] group-hover:scale-125 transition-all ease-in-out duration-500 w-full h-full overflow-hidden"
                   />
-                  <div className="absolute bottom-0 md:py-[10px] py-[4px] md:px-[10px] px-[10px] bg-[#081221] transition-all ease-in-out duration-500 w-full rounded-b-[10px]">
-                    <p className="text-center text-[#EFEFEF] group-hover:text-[#3586FF] transition-all ease-in-out duration-500 font-Gordita-Medium md:text-[14px] text-[10px] ">
+                  <div className="absolute bottom-0 md:py-[10px] py-[4px] md:px-[10px] px-[10px] bg-[#1c3559] transition-all ease-in-out duration-500 w-full rounded-b-[10px]">
+                    <p className="text-center text-[#EFEFEF] group-hover:text-[#2872a1] transition-all ease-in-out duration-500 font-Gordita-Medium md:text-[14px] text-[10px] ">
                       {item.label}
                     </p>
                   </div>

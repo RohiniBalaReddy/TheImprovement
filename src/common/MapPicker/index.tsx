@@ -143,7 +143,7 @@ const MapPicker: React.FC<MapPickerProps> = ({
                         </p>
                     </div>
                     {onClose && (
-                        <Button onClick={onClose} className="text-sm text-[#5297ff] hover:underline px-2 py-1">
+                        <Button onClick={onClose} className="text-sm text-[#2872a1] hover:underline px-2 py-1">
                             Close
                         </Button>
                     )}
@@ -205,7 +205,7 @@ const MapPicker: React.FC<MapPickerProps> = ({
 
                     <Button
                         onClick={() => onLocationSelect(marker)}
-                        className="bg-[#5297ff] hover:bg-[#5297FF] text-white font-Gordita-Medium px-4 py-2 rounded-md"
+                        className="bg-[#2872a1] hover:bg-[#2872a1] text-white font-Gordita-Medium px-4 py-2 rounded-md"
                     >
                         Confirm this location
                     </Button>

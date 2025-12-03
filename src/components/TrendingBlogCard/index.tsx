@@ -25,14 +25,14 @@ const TrendingBlogCard = ({ data }: any) => {
             className="rounded-lg object-cover group-hover:scale-105 transition-transform duration-300"
           />
           <div className="absolute top-3 left-3">
-            <span className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white w-fit whitespace-nowrap text-center md:px-3 px-1 md:py-1.5 py-0.5 rounded-md font-Gordita-Medium md:text-[12px] text-[10px] leading-[22px]  shadow-md">
+            <span className="bg-gradient-to-r from-[#2872a1] to-indigo-700 text-white w-fit whitespace-nowrap text-center md:px-3 px-1 md:py-1.5 py-0.5 rounded-md font-Gordita-Medium md:text-[12px] text-[10px] leading-[22px]  shadow-md">
               {data?.blogType}
             </span>
           </div>
         </div>
 
         <div className="flex flex-1 flex-col justify-between py-1">
-          <h3 className=" md:text-[16px] text-[12px] leading-[22px] font-Gordita-Medium flex-1 max-w-[400px] group-hover:text-[#5297ff] transition-colors duration-200">
+          <h3 className=" md:text-[16px] text-[12px] leading-[22px] font-Gordita-Medium flex-1 max-w-[400px] group-hover:text-[#2872a1] transition-colors duration-200">
             {data?.title}
           </h3>
           <div className="flex items-center justify-between mt-5">
@@ -40,7 +40,7 @@ const TrendingBlogCard = ({ data }: any) => {
               <AiOutlineCalendar className="h-4 w-4 text-gray-500" />
               {updateAt}
             </span>
-            <span className="text-[#5297ff] font-Gordita-Medium text-[14px] group-hover:translate-x-1 transition-transform duration-200 flex items-center gap-1">
+            <span className="text-[#2872a1] font-Gordita-Medium text-[14px] group-hover:translate-x-1 transition-transform duration-200 flex items-center gap-1">
               Read more
               <HiArrowNarrowRight className="h-4 w-4" />
             </span>

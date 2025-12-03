@@ -28,7 +28,7 @@ const OurPartners = ({ images }: any) => {
     {
       number: "50+",
       label: "Global Partners",
-      color: "from-cyan-400 to-[#5297ff]",
+      color: "from-cyan-400 to-[#2872a1]",
       icon: <FaGlobe size={28} />,
     },
     {
@@ -40,7 +40,7 @@ const OurPartners = ({ images }: any) => {
     {
       number: "24/7",
       label: "Support",
-      color: "from-blue-400 to-purple-400",
+      color: "from-[#1d547] to-purple-400",
       icon: <FaClock size={28} />,
     },
     {
@@ -59,7 +59,7 @@ const OurPartners = ({ images }: any) => {
 
       <div className="relative max-w-7xl mx-auto">
         <div className="text-center md:mb-8 mb-5">
-          <div className="inline-flex items-center gap-3 bg-[#5297ff] backdrop-blur-sm border border-white/30 text-white md:px-6 px-3 md:py-3 py-2 rounded-full md:mb-6 mb-3">
+          <div className="inline-flex items-center gap-3 bg-[#2872a1] backdrop-blur-sm border border-white/30 text-white md:px-6 px-3 md:py-3 py-2 rounded-full md:mb-6 mb-3">
             <div className="w-2 h-2 bg-white rounded-full animate-ping"></div>
             <span className="font-Gordita-Medium md:text-[14px] text-[12px] tracking-wider">
               TRUSTED PARTNERSHIPS
@@ -112,7 +112,7 @@ const OurPartners = ({ images }: any) => {
               key={index}
               className="relative flex flex-col items-center justify-center md:p-6 p-3 rounded-3xl bg-gradient-to-tr from-white/5 to-white/10 backdrop-blur-md shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 border border-white/20"
             >
-              <div className="text-[#5297FF] mb-3">{stat.icon}</div>
+              <div className="text-[#2872a1] mb-3">{stat.icon}</div>
 
               <div
                 className={`text-[16px] md:text-[18px] font-Gordita-Bold bg-gradient-to-r ${stat.color} bg-clip-text text-transparent`}

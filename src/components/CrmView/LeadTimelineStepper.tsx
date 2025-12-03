@@ -108,7 +108,7 @@ export default function LeadTimelineStepper({
                   className={[
                     "relative z-10 flex items-center justify-center md:h-8 h-5 md:w-8 w-5 rounded-full border-2 transition-all duration-300 shadow-sm",
                     isActive
-                      ? "bg-blue-600 border-blue-600 text-white scale-110"
+                      ? "bg-[#2872a1] border-[#2872a1] text-white scale-110"
                       : isDone
                         ? "bg-green-50 border-green-500 text-green-600"
                         : "bg-white border-gray-300 text-gray-400",
@@ -120,10 +120,10 @@ export default function LeadTimelineStepper({
                 <div className="flex flex-col items-center md:mt-2 mt-1">
                   <span
                     className={`text-[8px] md:text-[12px] font-Gordita-Medium ${isActive
-                        ? "textx-[5297ff]"
-                        : isDone
-                          ? "text-gray-800"
-                          : "text-gray-500"
+                      ? "textx-[5297ff]"
+                      : isDone
+                        ? "text-gray-800"
+                        : "text-gray-500"
                       }`}
                   >
                     {prettyLabel(step.status)}

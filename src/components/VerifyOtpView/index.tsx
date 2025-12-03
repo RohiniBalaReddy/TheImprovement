@@ -158,7 +158,7 @@ const VerifyOtpView = () => {
                   />
                 </div>
                 <div className="flex flex-col relative">
-                  <p className="font-Gordita-Bold text-[32px] text-[#5297FF]">
+                  <p className="font-Gordita-Bold text-[32px] text-[#2872a1]">
                     ONE
                     <span className="text-white">CASA</span>
                   </p>
@@ -201,7 +201,7 @@ const VerifyOtpView = () => {
                         pattern="[0-9]*"
                         maxLength={1}
                         value={data}
-                        className="w-12 h-12 md:text-xl text-[12px] text-center border border-gray-300 rounded-lg focus:border-[#5297ff] focus:ring-2 focus:ring-blue-200 outline-none transition-all"
+                        className="w-12 h-12 md:text-xl text-[12px] text-center border border-gray-300 rounded-lg focus:border-[#2872a1] focus:ring-2 focus:ring-blue-200 outline-none transition-all"
                         onChange={(e) => handleChange(e.target.value, index)}
                         onKeyDown={(e) => handleKeyDown(e, index)}
                         onFocus={() => setIsFocused(true)}
@@ -218,7 +218,7 @@ const VerifyOtpView = () => {
                     {canResend ? (
                       <Button
                         onClick={handleResendOtp}
-                        className="text-[#5297FF] hover:text-[#5297ff] font-Gordita-Medium md:text-sm text-[12px]"
+                        className="text-[#2872a1] hover:text-[#2872a1] font-Gordita-Medium md:text-sm text-[12px]"
                       >
                         Resend OTP
                       </Button>
@@ -232,7 +232,7 @@ const VerifyOtpView = () => {
 
                 <Button
                   type="submit"
-                  className="w-full py-2 bg-[#5297ff] hover:bg-[#5297FF]text-white font-Gordita-Medium rounded-lg transition-colors"
+                  className="w-full py-2 bg-[#2872a1] hover:bg-[#2872a1]text-white font-Gordita-Medium rounded-lg transition-colors"
                   disabled={otp.some(digit => digit === "")}
                 >
                   Verify OTP

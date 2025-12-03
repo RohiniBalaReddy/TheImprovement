@@ -31,12 +31,12 @@ const TabPill: React.FC<{
   <button
     onClick={onClick}
     className={`inline-flex items-center gap-2 rounded-full border px-3 md:px-4 md:py-1.5 py-1 transition
-      ${active ? "bg-[#5297ff] text-white border-[#5297ff]" : "bg-white text-gray-700 border-gray-200 hover:bg-gray-50"}`}
+      ${active ? "bg-[#2872a1] text-white border-[#2872a1]" : "bg-white text-gray-700 border-gray-200 hover:bg-gray-50"}`}
   >
     <span className="shrink-0">{icon}</span>
     <span className="btn-text capitalize">{label}</span>
     <span
-      className={`ml-1 inline-flex h-5 min-w-[20px] items-center justify-center rounded-full px-1.5 text-[11px] font-Gordita-Bold ${active ? "bg-white text-[#5297ff]" : "bg-gray-100 text-gray-700"
+      className={`ml-1 inline-flex h-5 min-w-[20px] items-center justify-center rounded-full px-1.5 text-[11px] font-Gordita-Bold ${active ? "bg-white text-[#2872a1]" : "bg-gray-100 text-gray-700"
         }`}
     >
       {count}
@@ -220,7 +220,7 @@ export default function QueriesView() {
         <div className="flex items-start justify-between md:px-6 px-3 md:py-6 py-4">
           <div className="flex items-center gap-2">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-50 ring-1 ring-blue-100">
-              <HelpCircle className="text-[#5297ff] md:w-6 md:h-6 w-4 h-4" />
+              <HelpCircle className="text-[#2872a1] md:w-6 md:h-6 w-4 h-4" />
             </div>
             <div>
               <h1 className="heading-text">Queries</h1>
@@ -248,7 +248,7 @@ export default function QueriesView() {
                         type="radio"
                         id={filter.id}
                         name="dateFilter"
-                        className="accent-[#5297ff]"
+                        className="accent-[#2872a1]"
                         checked={selectedDateFilter === filter.id}
                         onChange={() => setSelectedDateFilter(filter.id)}
                       />
@@ -344,14 +344,14 @@ export default function QueriesView() {
 
                     <div className="mt-4 flex items-center justify-between">
                       <div className="flex items-center gap-2 text-gray-500">
-                        <FaCalendarAlt className="text-[#5297FF] md:w-[16px] md:h-[16px] h-[12px] w-[12px]" />
+                        <FaCalendarAlt className="text-[#2872a1] md:w-[16px] md:h-[16px] h-[12px] w-[12px]" />
                         <p className="sublabel-text">
                           Created on <span className="font-Gordita-Medium">{formatDate(item.createdAt)}</span>
                         </p>
                       </div>
 
                       <Button
-                        className="rounded-lg bg-[#5297ff] text-white btn-text px-3 md:px-4 py-2"
+                        className="rounded-lg bg-[#2872a1] text-white btn-text px-3 md:px-4 py-2"
                         onClick={() => handleClick(index)}
                       >
                         View Details

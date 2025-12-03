@@ -17,8 +17,8 @@ interface UploadProgressLoaderProps {
     overlay?: boolean;
 }
 
-const RING_BORDER = "border-blue-600";
-const FILL_BLUE = "bg-[#5297ff]";
+const RING_BORDER = "border-[#2872a1]";
+const FILL_BLUE = "bg-[#2872a1]";
 
 const icons = [
     { id: 1, Icon: HiOutlineHome, label: "Real Estate" },

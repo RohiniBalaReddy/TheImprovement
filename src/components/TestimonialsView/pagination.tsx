@@ -46,7 +46,7 @@ const PaginationControls = React.memo(
       <Button
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className="bg-[#5297FF] hover:bg-[#5297ff] flex items-center gap-1 text-[12px] md:text-[14px] text-white px-3 py-2 rounded-md font-Gordita-Medium"
+        className="bg-[#2872a1] hover:bg-[#2872a1] flex items-center gap-1 text-[12px] md:text-[14px] text-white px-3 py-2 rounded-md font-Gordita-Medium"
       >
         {/* Next */}
         <FaChevronRight />

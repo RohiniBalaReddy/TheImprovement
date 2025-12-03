@@ -325,7 +325,7 @@ export default function ProfileView() {
             </div>
             <div>
               <Button
-                className="px-2 md:py-1 py-[2px] rounded-lg border border-[#5297ff] text-[#5297FF] hover:bg-blue-50 transition-colors"
+                className="px-2 md:py-1 py-[2px] rounded-lg border border-[#2872a1] text-[#2872a1] hover:bg-blue-50 transition-colors"
                 onClick={() => {
                   setOpenProfileModal(true);
                 }}
@@ -401,7 +401,7 @@ export default function ProfileView() {
 
                   <div className="flex justify-center">
                     <Button
-                      className="bg-[#5297FF]hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-Gordita-Medium"
+                      className="bg-[#2872a1]hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-Gordita-Medium"
                       onClick={handleSaveProfile}
                     >
                       Save Changes
@@ -703,7 +703,7 @@ const CardContainer = ({
         </div>
 
         <Button
-          className=" px-2 md:py-1 py-[2px] rounded-lg border border-[#5297ff] text-[#5297FF] hover:bg-blue-50 transition-colors"
+          className=" px-2 md:py-1 py-[2px] rounded-lg border border-[#2872a1] text-[#2872a1] hover:bg-blue-50 transition-colors"
           onClick={() => {
             if (title === "Address Information") {
               handleAddAddressClick();
@@ -716,7 +716,7 @@ const CardContainer = ({
             {title !== "Address Information" ? (
               <EditIcon />
             ) : (
-              <FaPlus className="text-[#5297FF]" size={12} />
+              <FaPlus className="text-[#2872a1]" size={12} />
             )}
             <span className="md:text-sm text-[12px] font-Gordita-Medium">
               {title !== "Address Information" ? "Edit" : "Add"}
@@ -754,7 +754,7 @@ const CardContainer = ({
                     </div>
                     <div className="flex items-center gap-2">
                       <Button
-                        className="px-3 md:py-1 py-[2px] rounded-md border border-[#5297ff] text-[#5297FF] md:text-sm text-[12px] hover:bg-blue-50"
+                        className="px-3 md:py-1 py-[2px] rounded-md border border-[#2872a1] text-[#2872a1] md:text-sm text-[12px] hover:bg-blue-50"
                         onClick={() => handleEditClick(addressArray)}
                       >
                         <div className="flex items-center gap-1">
@@ -836,7 +836,7 @@ const CardContainer = ({
                         type="text"
                         name={item.key}
                         rootCls="bg-white"
-                        className="w-full h-12 px-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5297ff] focus:border-[#5297ff]"
+                        className="w-full h-12 px-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2872a1] focus:border-[#2872a1]"
                         onChange={(e) => handleAddressChange(e, item.key)}
                         value={item.value}
                       />
@@ -844,7 +844,7 @@ const CardContainer = ({
                   ))}
                 </div>
                 <Button
-                  className="bg-[#5297FF]hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-Gordita-Medium"
+                  className="bg-[#2872a1]hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-Gordita-Medium"
                   onClick={onAddresInfoSave}
                   disabled={isLoading}
                 >
@@ -889,7 +889,7 @@ const CardContainer = ({
                           }
                           name={item.key}
                           rootCls={`${item.key === "emailaddress" ? 'bg-gray-100' : 'bg-white'}`}
-                          className="w-full h-12 px-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5297ff] focus:border-[#5297ff]"
+                          className="w-full h-12 px-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2872a1] focus:border-[#2872a1]"
                           value={item.value}
                           onChange={(e) =>
                             handleInputChange(item.key, e.target.value, title)
@@ -903,7 +903,7 @@ const CardContainer = ({
 
                 <Button
                   onClick={handleSubmit}
-                  className="bg-[#5297FF]hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-Gordita-Medium"
+                  className="bg-[#2872a1]hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-Gordita-Medium"
                   disabled={isLoading}
                 >
                   {isLoading ? "Saving..." : "Save Changes"}
